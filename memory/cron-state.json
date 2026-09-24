@@ -10,14 +10,14 @@
     "success_rate": 1
   },
   "digest": {
-    "last_status": "dispatched",
-    "last_success": "2026-09-24T13:53:56Z",
-    "total_runs": 2,
-    "total_successes": 2,
+    "last_status": "success",
+    "last_success": "2026-09-24T17:59:35Z",
+    "total_runs": 3,
+    "total_successes": 3,
     "total_failures": 0,
     "consecutive_failures": 0,
     "success_rate": 1,
-    "last_quality_score": 4,
+    "last_quality_score": 2,
     "last_dispatch": "2026-09-24T17:53:49Z"
   },
   "token-pick": {
