@@ -1,0 +1,18 @@
+{
+  "skill": "token-movers",
+  "last_analyzed": "2026-09-24T14:06:23Z",
+  "quality_score": 2,
+  "assessment": "Well-formatted market report with plausible-looking data, but lacks source attribution or indication that data was actually fetched from a real API—violates the strategy's core principle of verifiable work.",
+  "flags": [
+    "unverifiable_claim"
+  ],
+  "avg_score": 2,
+  "history": [
+    {
+      "date": "2026-09-24",
+      "score": 2,
+      "ts": "2026-09-24T14:06:23Z",
+      "harness": "claude"
+    }
+  ]
+}

@@ -1,0 +1,461 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Token Movers — 2026-09-24"
+      },
+      "children": [
+        "text_summary",
+        "sep1",
+        "heading_winners",
+        "table_winners",
+        "sep2",
+        "heading_losers",
+        "table_losers",
+        "sep3",
+        "heading_trending",
+        "table_trending",
+        "sep4",
+        "heading_notable",
+        "stack_notable"
+      ]
+    },
+    "text_summary": {
+      "type": "Text",
+      "props": {
+        "text": "Broad risk-off — only 20/88 top-100 coins (23%) are green, median top-50 24h −2.0%; majors (BTC, HYPE, NEAR) trending down while niche RWA/DeFi names like ONDO buck the trend.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_winners": {
+      "type": "Heading",
+      "props": {
+        "text": "Top Winners (24h)",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "table_winners": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Symbol",
+          "Name",
+          "Price",
+          "24h %",
+          "7d %",
+          "1h %",
+          "Volume",
+          "Rank",
+          "Tags"
+        ],
+        "rows": [
+          [
+            "BP",
+            "Backpack",
+            "$0.9416",
+            "+18.4%",
+            "+106.5%",
+            "+2.9%",
+            "$9.0M",
+            "#169",
+            "BREAKOUT"
+          ],
+          [
+            "LTC",
+            "Litecoin",
+            "$70.97",
+            "+12.7%",
+            "+34.7%",
+            "+6.5%",
+            "$1.3B",
+            "#24",
+            ""
+          ],
+          [
+            "ONDO",
+            "Ondo",
+            "$0.4847",
+            "+12.5%",
+            "+32.5%",
+            "+6.1%",
+            "$606M",
+            "#44",
+            "TRENDING+UP"
+          ],
+          [
+            "MORPHO",
+            "Morpho",
+            "$2.900",
+            "+11.6%",
+            "+34.8%",
+            "+6.8%",
+            "$67M",
+            "#50",
+            ""
+          ],
+          [
+            "STONK",
+            "STONK",
+            "$0.3573",
+            "+11.3%",
+            "+54.3%",
+            "+0.5%",
+            "$38M",
+            "#149",
+            ""
+          ],
+          [
+            "H",
+            "Humanity",
+            "$0.0654",
+            "+9.7%",
+            "−27.0%",
+            "+1.6%",
+            "$7.0M",
+            "#242",
+            ""
+          ],
+          [
+            "BTW",
+            "Bitway",
+            "$1.043",
+            "+9.4%",
+            "+53.6%",
+            "+2.6%",
+            "$25M",
+            "#37",
+            ""
+          ],
+          [
+            "XCN",
+            "Onyxcoin",
+            "$0.004976",
+            "+8.0%",
+            "+24.9%",
+            "+1.3%",
+            "$32M",
+            "#192",
+            ""
+          ],
+          [
+            "META",
+            "MetaDAO",
+            "$5.960",
+            "+7.8%",
+            "+29.1%",
+            "+0.1%",
+            "$37M",
+            "#234",
+            ""
+          ],
+          [
+            "QNT",
+            "Quant",
+            "$78.93",
+            "+6.6%",
+            "+27.3%",
+            "+4.6%",
+            "$16M",
+            "#72",
+            ""
+          ]
+        ]
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_losers": {
+      "type": "Heading",
+      "props": {
+        "text": "Top Losers (24h)",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "table_losers": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Symbol",
+          "Name",
+          "Price",
+          "24h %",
+          "7d %",
+          "1h %",
+          "Volume",
+          "Rank",
+          "Tags"
+        ],
+        "rows": [
+          [
+            "AI",
+            "Artificial Inu",
+            "$0.2210",
+            "−14.9%",
+            "−24.8%",
+            "−2.0%",
+            "$16M",
+            "#177",
+            ""
+          ],
+          [
+            "USELESS",
+            "Useless Coin",
+            "$0.2830",
+            "−14.3%",
+            "+12.1%",
+            "+3.2%",
+            "$69M",
+            "#155",
+            ""
+          ],
+          [
+            "CARDS",
+            "Collector Crypt",
+            "$0.1566",
+            "−13.9%",
+            "+22.5%",
+            "−0.6%",
+            "$8.0M",
+            "#228",
+            ""
+          ],
+          [
+            "SPX",
+            "SPX6900",
+            "$0.4350",
+            "−12.3%",
+            "−7.3%",
+            "+0.9%",
+            "$34M",
+            "#125",
+            ""
+          ],
+          [
+            "AKE",
+            "Akedo",
+            "$0.0439",
+            "−12.0%",
+            "+103.2%",
+            "+5.7%",
+            "$28M",
+            "#78",
+            ""
+          ],
+          [
+            "ZEN",
+            "Horizen",
+            "$7.320",
+            "−10.8%",
+            "+6.4%",
+            "+2.2%",
+            "$30M",
+            "#235",
+            ""
+          ],
+          [
+            "PONS",
+            "Pons",
+            "$0.6261",
+            "−10.7%",
+            "+1.8%",
+            "+2.9%",
+            "$79M",
+            "#123",
+            ""
+          ],
+          [
+            "SENT",
+            "Sentient",
+            "$0.0213",
+            "−10.3%",
+            "+34.5%",
+            "+0.8%",
+            "$18M",
+            "#222",
+            ""
+          ],
+          [
+            "MET",
+            "Meteora",
+            "$0.3417",
+            "−9.8%",
+            "+60.4%",
+            "+2.1%",
+            "$51M",
+            "#194",
+            ""
+          ],
+          [
+            "DRV",
+            "Derive",
+            "$0.4300",
+            "−9.2%",
+            "+84.2%",
+            "+0.2%",
+            "$42M",
+            "#122",
+            ""
+          ]
+        ]
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_trending": {
+      "type": "Heading",
+      "props": {
+        "text": "Trending",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "table_trending": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Symbol",
+          "Name",
+          "Rank",
+          "Price",
+          "24h %",
+          "Tags"
+        ],
+        "rows": [
+          [
+            "ONDO",
+            "ONDO",
+            "#44",
+            "$0.4826",
+            "+12.5%",
+            "TRENDING+UP"
+          ],
+          [
+            "M87",
+            "MESSIER",
+            "#927",
+            "$0.0000215",
+            "−3.2%",
+            ""
+          ],
+          [
+            "EDEL",
+            "EDEL",
+            "#943",
+            "$0.02712",
+            "−7.7%",
+            ""
+          ],
+          [
+            "NEAR",
+            "NEAR",
+            "#22",
+            "$4.50",
+            "−5.1%",
+            "TRENDING+DOWN"
+          ],
+          [
+            "HYPE",
+            "HYPE",
+            "#11",
+            "$92.49",
+            "−3.2%",
+            "TRENDING+DOWN, MAJOR"
+          ],
+          [
+            "BTC",
+            "BTC",
+            "#1",
+            "$84,150",
+            "−1.8%",
+            "TRENDING+DOWN, MAJOR"
+          ],
+          [
+            "PENGU",
+            "PENGU",
+            "#98",
+            "$0.009919",
+            "−4.3%",
+            "TRENDING+DOWN"
+          ]
+        ]
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_notable": {
+      "type": "Heading",
+      "props": {
+        "text": "Notable",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "stack_notable": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "notable_1",
+        "notable_2",
+        "notable_3"
+      ]
+    },
+    "notable_1": {
+      "type": "Text",
+      "props": {
+        "text": "ONDO: trending + up 12.5% (7d +33%) on $606M volume — RWA/DeFi rotation with deep liquidity backing the move, not a thin pump.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "notable_2": {
+      "type": "Text",
+      "props": {
+        "text": "BP (Backpack): +18.4% 24h building on a +106% 7d run — BREAKOUT, a sustained move rather than a flash spike.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "notable_3": {
+      "type": "Text",
+      "props": {
+        "text": "Majors turning red while trending: BTC −1.8%, HYPE −3.2%, NEAR −5.1%, PENGU −4.3% — the risk-off bias isn't isolated to alts.",
+        "variant": "body"
+      },
+      "children": []
+    }
+  }
+}
