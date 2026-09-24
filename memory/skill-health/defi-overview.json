@@ -1,0 +1,16 @@
+{
+  "skill": "defi-overview",
+  "last_analyzed": "2026-09-24T13:55:10Z",
+  "quality_score": 4,
+  "assessment": "Substantive, well-structured DeFi market report with specific, verifiable data and proper sourcing — actionable signal delivered with appropriate caution on unresolved movers",
+  "flags": [],
+  "avg_score": 4,
+  "history": [
+    {
+      "date": "2026-09-24",
+      "score": 4,
+      "ts": "2026-09-24T13:55:10Z",
+      "harness": "claude"
+    }
+  ]
+}
