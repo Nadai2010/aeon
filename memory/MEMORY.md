@@ -11,6 +11,7 @@
 ## Recent Digests
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-09-24 | AI agents | OpenAI Medicare breach, Amazon vs Muse, Alibaba AgentCore |
 
 ## Skills Built
 | Skill | Date | Notes |
