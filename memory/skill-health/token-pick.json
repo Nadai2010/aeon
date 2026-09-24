@@ -1,0 +1,18 @@
+{
+  "skill": "token-pick",
+  "last_analyzed": "2026-09-24T13:53:04Z",
+  "quality_score": 2,
+  "assessment": "Ran but produced only boilerplate prompt with no substantive work, findings, or analysis",
+  "flags": [
+    "low_quality"
+  ],
+  "avg_score": 2,
+  "history": [
+    {
+      "date": "2026-09-24",
+      "score": 2,
+      "ts": "2026-09-24T13:53:04Z",
+      "harness": "claude"
+    }
+  ]
+}

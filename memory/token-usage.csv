@@ -1,2 +1,3 @@
 date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-09-24,digest,claude-sonnet-5,2785,17086,2018802,109162
+2026-09-24,token-pick,claude-sonnet-5,2646,22783,1893715,97938
