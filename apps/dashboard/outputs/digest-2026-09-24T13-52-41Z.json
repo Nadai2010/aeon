@@ -1,0 +1,152 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Crypto Digest",
+        "description": "crypto — 2026-09-24"
+      },
+      "children": [
+        "tldr-text",
+        "sep-1",
+        "item-1-link",
+        "item-1-desc",
+        "item-1-why",
+        "sep-2",
+        "item-2-link",
+        "item-2-desc",
+        "item-2-why",
+        "sep-3",
+        "item-3-link",
+        "item-3-desc",
+        "item-3-why",
+        "sep-4",
+        "glance-section"
+      ]
+    },
+    "tldr-text": {
+      "type": "Text",
+      "props": {
+        "text": "TL;DR: Injective flips on protocol-level compliance today, Solana keeps grinding higher on a 12-week ETF streak, and BitMEX's 11-year run is officially over.",
+        "variant": "lead"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "item-1-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Injective's Meridian upgrade goes live today, bakes compliance into its EVM",
+        "href": "https://www.kucoin.com/news/flash/injective-meridian-upgrade-aims-for-september-24-mainnet-activation",
+        "source": "KuCoin"
+      }
+    },
+    "item-1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Injective halts its chain around 15:00 UTC today to activate Meridian (~99% \"yes\" vote), letting issuers embed transfer restrictions and compliance rules directly into tokenized assets on its EVM.",
+        "variant": "body"
+      }
+    },
+    "item-1-why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: it's a bid to capture regulated RWA issuance that's currently stuck on permissioned chains — a real differentiator if institutions bite.",
+        "variant": "body"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "item-2-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Solana clears $117 on a 12-week ETF inflow streak, Alpenglow lands Sept 28",
+        "href": "https://invezz.com/news/2026/09/22/solana-nears-120-but-12-weeks-of-etf-inflows-may-not-be-the-real-catalyst/",
+        "source": "Invezz"
+      }
+    },
+    "item-2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "SOL is up ~21% over 30 days after a short squeeze liquidated over $21M in bearish bets; US spot Solana ETFs have now logged 12 straight weeks of net inflows. The Alpenglow consensus upgrade begins mainnet activation September 28.",
+        "variant": "body"
+      }
+    },
+    "item-2-why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: Alpenglow is Solana's biggest consensus change since launch — a clean rollout removes a standing objection to SOL as institutional collateral.",
+        "variant": "body"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "item-3-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "BitMEX shuts down for good after 11 years",
+        "href": "https://www.theblock.co/post/409495/bitmex-to-shut-down-permanently",
+        "source": "The Block"
+      }
+    },
+    "item-3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "BitMEX ceased operations September 23, ending the run of the exchange that pioneered 100x leveraged perpetual futures. Its BMEX token crashed 90% on the news; users still holding funds now face a $50-or-1%/year fee.",
+        "variant": "body"
+      }
+    },
+    "item-3-why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: one of crypto's original derivatives venues folding is a marker of how far perp trading has consolidated toward Binance/OKX-scale compliant players.",
+        "variant": "body"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "glance-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "glance-heading",
+        "glance-item-1",
+        "glance-item-2"
+      ]
+    },
+    "glance-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Also worth a glance",
+        "level": "h3"
+      }
+    },
+    "glance-item-1": {
+      "type": "Text",
+      "props": {
+        "text": "Trump-Xi summit in Washington today has BTC/ETH swinging on macro headlines rather than crypto news — May's summit knocked BTC down ~5%",
+        "variant": "body"
+      }
+    },
+    "glance-item-2": {
+      "type": "Text",
+      "props": {
+        "text": "SEC's \"Regulation Crypto Assets\" proposal (tailored offering exemptions + investment-contract safe harbor) has a comment deadline of October 20.",
+        "variant": "body"
+      }
+    }
+  }
+}
