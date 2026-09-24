@@ -1,0 +1,59 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "idea-forge"
+      },
+      "children": [
+        "stack-content"
+      ]
+    },
+    "stack-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "command-text",
+        "separator-1",
+        "question-text",
+        "instruction-text"
+      ]
+    },
+    "command-text": {
+      "type": "Text",
+      "props": {
+        "text": "[idea-forge::pick]",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "question-text": {
+      "type": "Heading",
+      "props": {
+        "text": "Which of this week's ideas should I mark as next to build?",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "instruction-text": {
+      "type": "Text",
+      "props": {
+        "text": "Reply with the idea's name.",
+        "variant": "caption"
+      },
+      "children": []
+    }
+  }
+}

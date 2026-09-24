@@ -1,0 +1,32 @@
+{
+  "ideas": [
+    {
+      "date": "2026-09-24",
+      "name": "Proof of Bounded Autonomy",
+      "one_liner": "Checkable, badge-able spec extracted from Aeon's own PR-gated, stateless, git-committed-memory architecture.",
+      "tfe": {"timing": 5, "fit": 4, "edge": 4, "total": 13},
+      "fit_tag": "skill (aeon-doctor pattern, generalized) + chain"
+    },
+    {
+      "date": "2026-09-24",
+      "name": "Agent Endpoint Credit Bureau",
+      "one_liner": "Public, queryable trust layer for x402 agent endpoints, built on cortx-reliability's existing proceed/warn/block scoring.",
+      "tfe": {"timing": 5, "fit": 4, "edge": 4, "total": 13},
+      "fit_tag": "skill (cortx-reliability, extended)"
+    },
+    {
+      "date": "2026-09-24",
+      "name": "Agent Governance Audit-as-a-Service",
+      "one_liner": "sc-audit's invariant-modeling + adversarial-verify methodology applied to agent tool-scopes instead of smart contracts.",
+      "tfe": {"timing": 5, "fit": 3, "edge": 4, "total": 12},
+      "fit_tag": "skill (sc-audit methodology, new domain)"
+    },
+    {
+      "date": "2026-09-24",
+      "name": "x402 Fleet Spend Governance",
+      "one_liner": "spend-watch's dollar-rooted cost attribution pointed at agent-to-agent x402 spend instead of cloud cost.",
+      "tfe": {"timing": 4, "fit": 4, "edge": 3, "total": 11},
+      "fit_tag": "skill (spend-watch + finance-district-mcp/base-mcp)"
+    }
+  ]
+}

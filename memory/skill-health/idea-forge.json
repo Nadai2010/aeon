@@ -1,0 +1,18 @@
+{
+  "skill": "idea-forge",
+  "last_analyzed": "2026-09-24T14:18:44Z",
+  "quality_score": 2,
+  "assessment": "Skill ran but produced only a user prompt without analyzing or presenting any ideas, context, or recommendation—no substantive work product.",
+  "flags": [
+    "empty_output"
+  ],
+  "avg_score": 2,
+  "history": [
+    {
+      "date": "2026-09-24",
+      "score": 2,
+      "ts": "2026-09-24T14:18:44Z",
+      "harness": "claude"
+    }
+  ]
+}
