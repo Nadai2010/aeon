@@ -1,0 +1,18 @@
+{
+  "skill": "write-tweet",
+  "last_analyzed": "2026-09-24T14:07:13Z",
+  "quality_score": 2,
+  "assessment": "Low-quality output: references a draft but doesn't show it—violates CLAUDE.md requirement that substance (the actual tweet) must be in stdout, not elsewhere",
+  "flags": [
+    "low_quality"
+  ],
+  "avg_score": 2,
+  "history": [
+    {
+      "date": "2026-09-24",
+      "score": 2,
+      "ts": "2026-09-24T14:07:13Z",
+      "harness": "claude"
+    }
+  ]
+}
