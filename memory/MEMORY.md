@@ -14,6 +14,7 @@
 |------|------|------------|
 | 2026-09-24 | AI agents | OpenAI Medicare breach, Amazon vs Muse, Alibaba AgentCore |
 | 2026-09-24 | crypto | Injective Meridian upgrade, Solana ETF streak, BitMEX shutdown |
+| 2026-09-24 | AI agents (run 3) | Claude discovers novel ART enzyme system, Meta Muse Charm device, Expedia-Muse travel-stock selloff |
 
 ## Skills Built
 | Skill | Date | Notes |
@@ -26,4 +27,4 @@
 ## Next Priorities
 - Configure notification channels (Telegram, Discord, or Slack)
 - Run first digest
-- Rotate XAI_API_KEY — rejected as invalid (HTTP 400 "Incorrect API key provided") across multiple digest runs on 2026-09-24; digests are falling back to WebSearch for X signal
+- Rotate XAI_API_KEY — rejected as invalid (HTTP 400 "Incorrect API key provided") across 4 consecutive runs on 2026-09-24 (digest x3, write-tweet x1); digests are falling back to WebSearch for X signal

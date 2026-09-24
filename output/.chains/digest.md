@@ -1,22 +1,22 @@
-ℹ️ Crypto Digest
+ℹ️ AI agents digest
 
-*crypto — 2026-09-24*
+*AI agents — 2026-09-24*
 
-_TL;DR: Injective flips on protocol-level compliance today, Solana keeps grinding higher on a 12-week ETF streak, and BitMEX's 11-year run is officially over._
+_TL;DR: Agents moved out of chat windows today — into a bacteriophage genome, a keychain hardware device, and travel-sector stock prices._
 
-1. *Injective's Meridian upgrade goes live today, bakes compliance into its EVM*
-   Injective halts its chain around 15:00 UTC today to activate Meridian (~99% "yes" vote), letting issuers embed transfer restrictions and compliance rules directly into tokenized assets on its EVM.
-   Why it matters: it's a bid to capture regulated RWA issuance that's currently stuck on permissioned chains — a real differentiator if institutions bite.
-   https://www.kucoin.com/news/flash/injective-meridian-upgrade-aims-for-september-24-mainnet-activation
+1. *Claude autonomously discovers a novel CRISPR-like enzyme system*
+   Anthropic's life sciences group let Claude agents mine ~200,000 phage protein clusters across 949 autonomous sessions (21.5 hours, 215.6M tokens), surfacing "ART" (array-associated reverse transcriptases) — a CRISPR-like repeat system nobody had characterized before. Anthropic doesn't yet know what ART does and is inviting outside scientists to propose follow-up work.
+   Why it matters: first concrete case of an Anthropic agent leading a real scientific discovery rather than assisting with code — and there's an open call if you work in the space.
+   https://www.anthropic.com/news/claude-discovers-novel-enzyme-system
 
-2. *Solana clears $117 on a 12-week ETF inflow streak, Alpenglow lands Sept 28*
-   SOL is up ~21% over 30 days after a short squeeze liquidated over $21M in bearish bets; US spot Solana ETFs have now logged 12 straight weeks of net inflows. The Alpenglow consensus upgrade begins mainnet activation September 28.
-   Why it matters: Alpenglow is Solana's biggest consensus change since launch — a clean rollout removes a standing objection to SOL as institutional collateral.
-   https://invezz.com/news/2026/09/22/solana-nears-120-but-12-weeks-of-etf-inflows-may-not-be-the-real-catalyst/
+2. *Meta unveils Muse Charm, a keychain-sized always-on AI agent*
+   At Meta Connect, Zuckerberg showed Muse Charm — an AirPods-case-sized device with a 2" touchscreen, 5G, and the full Muse voice/avatar stack — that reads/sends email, books travel, and completes purchases with no phone required. Shipping by the holidays; price and specs still unannounced.
+   Why it matters: the first mainstream bet that a personal agent belongs in a dedicated always-on device, not just an app — rivals now have to answer with hardware or explain why not.
+   https://techcrunch.com/2026/09/23/meta-made-a-tamagotchi-like-wearable-for-its-muse-ai-agent/
 
-3. *BitMEX shuts down for good after 11 years*
-   BitMEX ceased operations September 23, ending the run of the exchange that pioneered 100x leveraged perpetual futures. Its BMEX token crashed 90% on the news; users still holding funds now face a $50-or-1%/year fee.
-   Why it matters: one of crypto's original derivatives venues folding is a marker of how far perp trading has consolidated toward Binance/OKX-scale compliant players.
-   https://www.theblock.co/post/409495/bitmex-to-shut-down-permanently
+3. *Expedia's Muse hotel-booking tie-up sends travel stocks tumbling*
+   Expedia will let US travelers search and book hotels directly inside Meta's Muse, staying merchant of record while payment completes in-agent. Markets read it as agents starting to disintermediate travel search: Expedia -7%, Airbnb -6%, Booking Holdings -5% the same day.
+   Why it matters: the first time an agentic-commerce integration has moved travel-sector share prices, not just headlines.
+   https://finance.yahoo.com/markets/stocks/articles/travel-booking-stocks-tumble-muse-180858515.html
 
-*Also worth a glance:* Trump-Xi summit in Washington today has BTC/ETH swinging on macro headlines rather than crypto news — May's summit knocked BTC down ~5% · SEC's "Regulation Crypto Assets" proposal (tailored offering exemptions + investment-contract safe harbor) has a comment deadline of October 20.
+*Also worth a glance:* OpenAI shipped GPT-6 Sol/Luna with a 50% API price cut · Anthropic countered with Claude Opus 5.5 — both pitched around agent workloads

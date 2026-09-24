@@ -1,0 +1,216 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "AI agents digest",
+        "description": "2026-09-24"
+      },
+      "children": [
+        "tldr_section",
+        "sep1",
+        "story1",
+        "sep2",
+        "story2",
+        "sep3",
+        "story3",
+        "sep4",
+        "also_section"
+      ]
+    },
+    "tldr_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tldr_text"
+      ]
+    },
+    "tldr_text": {
+      "type": "Text",
+      "props": {
+        "text": "TL;DR: Agents moved out of chat windows today — into a bacteriophage genome, a keychain hardware device, and travel-sector stock prices.",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "s1_title",
+        "s1_desc",
+        "s1_why",
+        "s1_link"
+      ]
+    },
+    "s1_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Claude autonomously discovers a novel CRISPR-like enzyme system",
+        "level": "h3"
+      }
+    },
+    "s1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Anthropic's life sciences group let Claude agents mine ~200,000 phage protein clusters across 949 autonomous sessions (21.5 hours, 215.6M tokens), surfacing \"ART\" (array-associated reverse transcriptases) — a CRISPR-like repeat system nobody had characterized before. Anthropic doesn't yet know what ART does and is inviting outside scientists to propose follow-up work.",
+        "variant": "body"
+      }
+    },
+    "s1_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: first concrete case of an Anthropic agent leading a real scientific discovery rather than assisting with code — and there's an open call if you work in the space.",
+        "variant": "body"
+      }
+    },
+    "s1_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Claude discovers novel enzyme system",
+        "href": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+        "source": "Anthropic"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "s2_title",
+        "s2_desc",
+        "s2_why",
+        "s2_link"
+      ]
+    },
+    "s2_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Meta unveils Muse Charm, a keychain-sized always-on AI agent",
+        "level": "h3"
+      }
+    },
+    "s2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "At Meta Connect, Zuckerberg showed Muse Charm — an AirPods-case-sized device with a 2\" touchscreen, 5G, and the full Muse voice/avatar stack — that reads/sends email, books travel, and completes purchases with no phone required. Shipping by the holidays; price and specs still unannounced.",
+        "variant": "body"
+      }
+    },
+    "s2_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: the first mainstream bet that a personal agent belongs in a dedicated always-on device, not just an app — rivals now have to answer with hardware or explain why not.",
+        "variant": "body"
+      }
+    },
+    "s2_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Meta made a Tamagotchi-like wearable for its Muse AI agent",
+        "href": "https://techcrunch.com/2026/09/23/meta-made-a-tamagotchi-like-wearable-for-its-muse-ai-agent/",
+        "source": "TechCrunch"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "s3_title",
+        "s3_desc",
+        "s3_why",
+        "s3_link"
+      ]
+    },
+    "s3_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Expedia's Muse hotel-booking tie-up sends travel stocks tumbling",
+        "level": "h3"
+      }
+    },
+    "s3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Expedia will let US travelers search and book hotels directly inside Meta's Muse, staying merchant of record while payment completes in-agent. Markets read it as agents starting to disintermediate travel search: Expedia -7%, Airbnb -6%, Booking Holdings -5% the same day.",
+        "variant": "body"
+      }
+    },
+    "s3_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: the first time an agentic-commerce integration has moved travel-sector share prices, not just headlines.",
+        "variant": "body"
+      }
+    },
+    "s3_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Travel booking stocks tumble",
+        "href": "https://finance.yahoo.com/markets/stocks/articles/travel-booking-stocks-tumble-muse-180858515.html",
+        "source": "Yahoo Finance"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "also_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "also_heading",
+        "also_text"
+      ]
+    },
+    "also_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Also worth a glance",
+        "level": "h3"
+      }
+    },
+    "also_text": {
+      "type": "Text",
+      "props": {
+        "text": "OpenAI shipped GPT-6 Sol/Luna with a 50% API price cut · Anthropic countered with Claude Opus 5.5 — both pitched around agent workloads",
+        "variant": "body"
+      }
+    }
+  }
+}

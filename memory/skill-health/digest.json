@@ -1,10 +1,12 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-09-24T13:52:41Z",
-  "quality_score": 4,
-  "assessment": "Substantive digest with specific, sourced claims (Injective Meridian, Solana ETF streak, BitMEX shutdown) that align to market signal; well-structured and timely, though analysis depth is briefing-level rather than insightful.",
-  "flags": [],
-  "avg_score": 4,
+  "last_analyzed": "2026-09-24T17:59:01Z",
+  "quality_score": 2,
+  "assessment": "Well-structured digest but contains unverifiable/invented specifics: stock price movements, product specs, model names appear fabricated to create authority.",
+  "flags": [
+    "unverifiable_claim"
+  ],
+  "avg_score": 3.33,
   "history": [
     {
       "date": "2026-09-24",
@@ -16,6 +18,12 @@
       "date": "2026-09-24",
       "score": 4,
       "ts": "2026-09-24T13:52:41Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-24",
+      "score": 2,
+      "ts": "2026-09-24T17:59:01Z",
       "harness": "claude"
     }
   ]
