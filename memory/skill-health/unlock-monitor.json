@@ -1,0 +1,16 @@
+{
+  "skill": "unlock-monitor",
+  "last_analyzed": "2026-09-24T14:18:15Z",
+  "quality_score": 4,
+  "assessment": "Substantive, well-structured unlock analysis with specific data points and clear prioritization; transparent about source limitations and cross-verification approach; aligns with strategy priorities on correctness and signal.",
+  "flags": [],
+  "avg_score": 4,
+  "history": [
+    {
+      "date": "2026-09-24",
+      "score": 4,
+      "ts": "2026-09-24T14:18:15Z",
+      "harness": "claude"
+    }
+  ]
+}

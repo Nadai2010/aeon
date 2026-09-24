@@ -1,0 +1,524 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Unlock Monitor — Sep 22-28"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "highlight-text",
+        "sep-1",
+        "crisis-heading",
+        "crisis-stack",
+        "sep-2",
+        "strain-heading",
+        "strain-stack",
+        "sep-3",
+        "digestible-heading",
+        "digestible-stack",
+        "sep-4",
+        "supply-heading",
+        "supply-text",
+        "sep-5",
+        "caveat-alert",
+        "sources-text"
+      ]
+    },
+    "highlight-text": {
+      "type": "Text",
+      "props": {
+        "text": "This week's most leveraged: $H (Humanity Protocol) unlocks Fri Sep 25 at $19.2M — 4.8x its own daily volume. But the one to actually watch is $XPL (Plasma): $158M, 63% of circulating supply, first time insider tokens are transferable — and it's the start of a 24-month monthly stream, not a one-off.",
+        "variant": "lead"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "crisis-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "CRISIS (> 2.4x daily vol)",
+        "level": "h2"
+      }
+    },
+    "crisis-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "h-section",
+        "stbl-section",
+        "xpl-section"
+      ]
+    },
+    "h-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "h-badge",
+        "h-date",
+        "h-metrics",
+        "h-notes"
+      ]
+    },
+    "h-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "$H — Humanity Protocol"
+      }
+    },
+    "h-date": {
+      "type": "Text",
+      "props": {
+        "text": "Fri Sep 25"
+      }
+    },
+    "h-metrics": {
+      "type": "Grid",
+      "props": {
+        "columns": 4,
+        "gap": "md"
+      },
+      "children": [
+        "h-stat-tokens",
+        "h-stat-supply",
+        "h-stat-usd",
+        "h-stat-vol"
+      ]
+    },
+    "h-stat-tokens": {
+      "type": "Stat",
+      "props": {
+        "label": "Tokens",
+        "value": "266M"
+      }
+    },
+    "h-stat-supply": {
+      "type": "Stat",
+      "props": {
+        "label": "Supply",
+        "value": "7.3%"
+      }
+    },
+    "h-stat-usd": {
+      "type": "Stat",
+      "props": {
+        "label": "USD Value",
+        "value": "$19.2M"
+      }
+    },
+    "h-stat-vol": {
+      "type": "Stat",
+      "props": {
+        "label": "vs Daily Vol",
+        "value": "4.8x"
+      }
+    },
+    "h-notes": {
+      "type": "Text",
+      "props": {
+        "text": "Vesting/recipient unclear · 30d +1.8%, roughly flat → market asleep",
+        "variant": "muted"
+      }
+    },
+    "stbl-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stbl-badge",
+        "stbl-date",
+        "stbl-metrics",
+        "stbl-notes"
+      ]
+    },
+    "stbl-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "$STBL — RWA-stablecoin governance token"
+      }
+    },
+    "stbl-date": {
+      "type": "Text",
+      "props": {
+        "text": "Sat Sep 26"
+      }
+    },
+    "stbl-metrics": {
+      "type": "Grid",
+      "props": {
+        "columns": 4,
+        "gap": "md"
+      },
+      "children": [
+        "stbl-stat-tokens",
+        "stbl-stat-supply",
+        "stbl-stat-usd",
+        "stbl-stat-vol"
+      ]
+    },
+    "stbl-stat-tokens": {
+      "type": "Stat",
+      "props": {
+        "label": "Tokens",
+        "value": "210M"
+      }
+    },
+    "stbl-stat-supply": {
+      "type": "Stat",
+      "props": {
+        "label": "Supply",
+        "value": "4.4%"
+      }
+    },
+    "stbl-stat-usd": {
+      "type": "Stat",
+      "props": {
+        "label": "USD Value",
+        "value": "$5.3M"
+      }
+    },
+    "stbl-stat-vol": {
+      "type": "Stat",
+      "props": {
+        "label": "vs Daily Vol",
+        "value": "2.5x"
+      }
+    },
+    "stbl-notes": {
+      "type": "Text",
+      "props": {
+        "text": "30d -0.5% (flat) → market asleep. Note: unlock lands inside hot RWA/tokenization narrative (ONDO +13% this week) — narrative tailwind may cushion sell pressure more than raw ratio implies.",
+        "variant": "muted"
+      }
+    },
+    "xpl-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "xpl-badge",
+        "xpl-date",
+        "xpl-metrics",
+        "xpl-notes"
+      ]
+    },
+    "xpl-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "$XPL — Plasma"
+      }
+    },
+    "xpl-date": {
+      "type": "Text",
+      "props": {
+        "text": "Fri Sep 25"
+      }
+    },
+    "xpl-metrics": {
+      "type": "Grid",
+      "props": {
+        "columns": 4,
+        "gap": "md"
+      },
+      "children": [
+        "xpl-stat-tokens",
+        "xpl-stat-supply",
+        "xpl-stat-usd",
+        "xpl-stat-vol"
+      ]
+    },
+    "xpl-stat-tokens": {
+      "type": "Stat",
+      "props": {
+        "label": "Tokens",
+        "value": "1.81B"
+      }
+    },
+    "xpl-stat-supply": {
+      "type": "Stat",
+      "props": {
+        "label": "Supply",
+        "value": "63.2%"
+      }
+    },
+    "xpl-stat-usd": {
+      "type": "Stat",
+      "props": {
+        "label": "USD Value",
+        "value": "~$158M"
+      }
+    },
+    "xpl-stat-vol": {
+      "type": "Stat",
+      "props": {
+        "label": "vs Daily Vol",
+        "value": "1.0–1.3x"
+      }
+    },
+    "xpl-notes": {
+      "type": "Text",
+      "props": {
+        "text": "Cliff unlock · team+investor (50/50 split) · bumped CRISIS on recipient override (zero-cost-basis team/investor unlocking for first time) · wide reported volume range $52M–$256M/day, low confidence · 30d -50.4% → priced in on price action, but this cliff starts a 24-month linear stream — overhang doesn't end Friday, it begins.",
+        "variant": "muted"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "strain-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "STRAIN (1.0x–2.4x)",
+        "level": "h2"
+      }
+    },
+    "strain-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "soso-section"
+      ]
+    },
+    "soso-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "soso-badge",
+        "soso-date",
+        "soso-metrics",
+        "soso-notes"
+      ]
+    },
+    "soso-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "$SOSO"
+      }
+    },
+    "soso-date": {
+      "type": "Text",
+      "props": {
+        "text": "Thu Sep 24 (today)"
+      }
+    },
+    "soso-metrics": {
+      "type": "Grid",
+      "props": {
+        "columns": 4,
+        "gap": "md"
+      },
+      "children": [
+        "soso-stat-tokens",
+        "soso-stat-supply",
+        "soso-stat-usd",
+        "soso-stat-vol"
+      ]
+    },
+    "soso-stat-tokens": {
+      "type": "Stat",
+      "props": {
+        "label": "Tokens",
+        "value": "23.5M"
+      }
+    },
+    "soso-stat-supply": {
+      "type": "Stat",
+      "props": {
+        "label": "Supply",
+        "value": "6.0%"
+      }
+    },
+    "soso-stat-usd": {
+      "type": "Stat",
+      "props": {
+        "label": "USD Value",
+        "value": "$6.8M"
+      }
+    },
+    "soso-stat-vol": {
+      "type": "Stat",
+      "props": {
+        "label": "vs Daily Vol",
+        "value": "1.8x"
+      }
+    },
+    "soso-notes": {
+      "type": "Text",
+      "props": {
+        "text": "Made ATL Sep 17 then +25% bounce → priced in (sellers likely already through worst of it)",
+        "variant": "muted"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "digestible-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "DIGESTIBLE (0.3x–1.0x)",
+        "level": "h2"
+      }
+    },
+    "digestible-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "soon-section"
+      ]
+    },
+    "soon-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "soon-badge",
+        "soon-date",
+        "soon-metrics",
+        "soon-notes"
+      ]
+    },
+    "soon-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "$SOON"
+      }
+    },
+    "soon-date": {
+      "type": "Text",
+      "props": {
+        "text": "Wed Sep 23 (already occurred)"
+      }
+    },
+    "soon-metrics": {
+      "type": "Grid",
+      "props": {
+        "columns": 4,
+        "gap": "md"
+      },
+      "children": [
+        "soon-stat-tokens",
+        "soon-stat-supply",
+        "soon-stat-usd",
+        "soon-stat-vol"
+      ]
+    },
+    "soon-stat-tokens": {
+      "type": "Stat",
+      "props": {
+        "label": "Tokens",
+        "value": "~20.2M"
+      }
+    },
+    "soon-stat-supply": {
+      "type": "Stat",
+      "props": {
+        "label": "Supply",
+        "value": "~4%"
+      }
+    },
+    "soon-stat-usd": {
+      "type": "Stat",
+      "props": {
+        "label": "USD Value",
+        "value": "~$5M"
+      }
+    },
+    "soon-stat-vol": {
+      "type": "Stat",
+      "props": {
+        "label": "vs Daily Vol",
+        "value": "~1.0x"
+      }
+    },
+    "soon-notes": {
+      "type": "Text",
+      "props": {
+        "text": "30d -5.7% (roughly flat) → absorbable",
+        "variant": "muted"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "supply-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Supply Read",
+        "level": "h2"
+      }
+    },
+    "supply-text": {
+      "type": "Text",
+      "props": {
+        "text": "Real pressure this week is concentrated in two names for different reasons: $H and $STBL are small-cap unlocks that are large relative to their own thin daily volume (CRISIS by the numbers), while $XPL is the structural story — a $158M, 63%-of-supply cliff that hands team and investors their first-ever liquid tokens and kicks off two years of monthly unlocks, landing on a token already down 50% in 30 days. That's priced-in for Friday specifically, but it's not a one-and-done event — expect continued overhang into Q4. $STBL's unlock is cushioned by a live RWA-tokenization narrative tailwind.",
+        "variant": "body"
+      }
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "caveat-alert": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "Data Confidence Caveat",
+        "message": "Primary unlock trackers (Tokenomist, CoinGecko unlocks page) returned stale/authwalled data this run — figures below are cross-verified via secondary financial press (KuCoin, PANews, BeInCrypto) rather than a single primary source."
+      }
+    },
+    "sources-text": {
+      "type": "Text",
+      "props": {
+        "text": "Sources: tokenomist=fail(authwall), defillama=fail(no-data-returned), cryptorank=ok, dropstab=fail(no-data-returned), coingecko=fail(stale-countdown)",
+        "variant": "caption"
+      }
+    }
+  }
+}
