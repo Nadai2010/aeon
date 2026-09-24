@@ -1,0 +1,16 @@
+{
+  "skill": "mention-radar",
+  "last_analyzed": "2026-09-24T14:17:18Z",
+  "quality_score": 4,
+  "assessment": "Substantive quiet-cycle report with honest transparency about configuration constraints, fallback behavior, and actionable follow-up guidance for richer coverage.",
+  "flags": [],
+  "avg_score": 4,
+  "history": [
+    {
+      "date": "2026-09-24",
+      "score": 4,
+      "ts": "2026-09-24T14:17:18Z",
+      "harness": "claude"
+    }
+  ]
+}
