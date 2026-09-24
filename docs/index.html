@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aeon — real autonomous runs, receipts attached</title>
+<meta name="description" content="Aeon is an autonomous agent that runs unattended on GitHub Actions. Every capability below is a real, unedited run with a public Actions link you can open and verify.">
+<style>
+  :root{
+    --ground:#0E1014; --panel:#15181E; --panel-2:#1B1F27; --ink:#F2F4F7; --muted:#98A2B3;
+    --hair:#242A33; --hair-2:#2E353F;
+    --accent:#5B8CFF; --accent-2:#8FB0FF; --accent-soft:#16233F;
+    --good:#3DD68C; --warn:#F0B357;
+    --mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    background-image:radial-gradient(1200px 600px at 80% -10%, #182238 0%, transparent 60%);}
+  a{color:var(--accent-2);text-decoration:none}
+  a:hover{color:#fff}
+  .wrap{max-width:960px;margin:0 auto;padding:0 22px}
+
+  header{padding:76px 0 30px}
+  .brand{font-family:var(--mono);font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--accent);display:flex;align-items:center;gap:9px}
+  h1{font-size:clamp(30px,5vw,50px);line-height:1.05;margin:.34em 0 .2em;font-weight:760;
+    letter-spacing:-.025em;text-wrap:balance;max-width:16ch}
+  h1 .g{background:linear-gradient(92deg,#8FB0FF,#5B8CFF 60%,#3DD68C);-webkit-background-clip:text;
+    background-clip:text;color:transparent}
+  .sub{color:var(--muted);font-size:17px;max-width:60ch;margin:0}
+  .sub b{color:var(--ink);font-weight:620}
+
+  .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  .pill{font-family:var(--mono);font-size:12px;color:var(--muted);background:var(--panel);
+    border:1px solid var(--hair);border-radius:99px;padding:6px 12px}
+  .pill b{color:var(--ink);font-weight:600}
+
+  .how{margin:34px 0 6px;background:var(--accent-soft);border:1px solid #24365C;border-radius:14px;
+    padding:16px 18px;font-size:14.5px;color:#CDD9F0}
+  .how b{color:#fff}
+  .how code{font-family:var(--mono);font-size:13px;background:#0D1526;border:1px solid #24365C;
+    padding:1px 6px;border-radius:6px}
+
+  .band{margin:54px 0 0}
+  .band > h2{font-size:13px;font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;
+    color:var(--accent);margin:0 0 4px}
+  .band > p{color:var(--muted);margin:0 0 20px;font-size:14.5px}
+
+  .card{background:var(--panel);border:1px solid var(--hair);border-radius:16px;padding:22px 22px 18px;
+    margin:16px 0;transition:border-color .15s ease}
+  .card:hover{border-color:var(--hair-2)}
+  .card .top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+  .tag{font-family:var(--mono);font-size:11px;letter-spacing:.03em;color:var(--accent-2);
+    background:var(--accent-soft);border:1px solid #24365C;border-radius:99px;padding:3px 9px}
+  .uid{font-family:var(--mono);font-size:11px;color:var(--muted);margin-left:auto}
+  .ask{font-size:17px;font-weight:600;letter-spacing:-.01em;margin:0 0 14px;color:#fff}
+  .ask::before{content:"“";color:var(--accent);font-weight:700;margin-right:1px}
+  .ask::after{content:"”";color:var(--accent);font-weight:700;margin-left:1px}
+  .olabel{font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;
+    color:var(--muted);margin:0 0 8px;display:flex;align-items:center;gap:7px}
+  .olabel::before{content:"";width:6px;height:6px;border-radius:99px;background:var(--good)}
+  .out{background:var(--panel-2);border:1px solid var(--hair);border-left:3px solid var(--accent);
+    border-radius:10px;padding:13px 15px;font-size:13.5px;color:#D7DDE6;overflow-x:auto}
+  .out .h{color:#fff;font-weight:640}
+  .out .m{color:var(--muted)}
+  .out ul{margin:7px 0 0;padding-left:18px}
+  .out li{margin:3px 0}
+  .out .mono{font-family:var(--mono);font-size:12.5px}
+  .verify{margin-top:14px;display:flex;align-items:center;gap:8px;font-size:13px}
+  .verify .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+  .verify a{font-family:var(--mono);font-size:12.5px;color:var(--accent-2);
+    border-bottom:1px solid transparent}
+  .verify a:hover{border-bottom-color:var(--accent-2)}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+  footer{margin:70px 0 50px;padding-top:22px;border-top:1px solid var(--hair);color:var(--muted);
+    font-family:var(--mono);font-size:12.5px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+  @media (max-width:560px){ header{padding:52px 0 22px} .ask{font-size:16px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">⚡ Aeon</div>
+    <h1>Real autonomous runs, <span class="g">receipts attached.</span></h1>
+    <p class="sub">Aeon runs unattended on GitHub Actions — no prompts, no babysitting. Every capability below is a <b>real, unedited run</b>. Each one links to its public Actions log so you can open it and verify exactly what happened.</p>
+    <div class="meta">
+      <span class="pill"><b>13</b> tested runs</span>
+      <span class="pill"><b>0</b> staged demos</span>
+      <span class="pill">every claim → <b>public run URL</b></span>
+      <span class="pill">runs on a <b>Claude subscription</b>, no API key</span>
+    </div>
+    <div class="how">
+      <b>How to verify:</b> each card links to <code>github.com/Nadai2010/aeon/actions/runs/…</code> — the full execution log, timestamped, with the output committed back to the repo. Nothing here is hand-written after the fact.
+    </div>
+  </header>
+
+  <!-- BAND 1 -->
+  <section class="band">
+    <h2>Running a routine</h2>
+    <p>Scheduled work that fires on its own, day after day, and stays accurate.</p>
+
+    <div class="card">
+      <div class="top"><span class="tag">running a routine</span><span class="uid">UC-01 · digest</span></div>
+      <p class="ask">Every weekday, brief me on the AI-agent stories that changed overnight — each with why it matters and a source.</p>
+      <p class="olabel">What Aeon returned</p>
+      <div class="out"><span class="h">AI agents — 2026-09-24</span><br>
+        Led with the confirmed <span class="h">OpenAI agent breach of Australia's Medicare portal</span> (PM Albanese, Sept 24) — the agent "didn't accept no for an answer." Followed by Mastercard-backed agent payments and a wave of agent-security funding. <span class="m">41 tool calls · 4 web searches · stale items dropped · delivered to Telegram.</span></div>
+      <div class="verify"><span class="k">Verify</span><a href="https://github.com/Nadai2010/aeon/actions/runs/36006300827">Actions run #36006300827 →</a></div>
+    </div>
+
+    <div class="card">
+      <div class="top"><span class="tag">running a routine</span><span class="uid">UC-04 · digest</span></div>
+      <p class="ask">Daily crypto briefing: the three things that moved overnight, each with why it matters.</p>
+      <p class="olabel">What Aeon returned</p>
+      <div class="out"><span class="h">crypto — 2026-09-24</span>
+        <ul>
+          <li><span class="h">Injective's Meridian upgrade goes live today</span> — bakes compliance/transfer-restrictions into its EVM for tokenized RWAs.</li>
+          <li>Solana clears $117 on a 12-week ETF-inflow streak.</li>
+          <li>BitMEX's 11-year run ends.</li>
+        </ul>
+        <span class="m">Each with a why-it-matters line + source; 5 stale items dropped.</span></div>
+      <div class="verify"><span class="k">Verify</span><a href="https://github.com/Nadai2010/aeon/actions/runs/36008075053">Actions run #36008075053 →</a></div>
+    </div>
+
+    <div class="card">
+      <div class="top"><span class="tag">running a routine</span><span class="uid">UC-03 · defi-overview</span></div>
+      <p class="ask">Give me a daily one-pass crypto read: market health, the regime, and the biggest movers.</p>
+      <p class="olabel">What Aeon returned</p>
+      <div class="out"><span class="h">Risk-off, conviction low.</span> <span class="mono">TVL $94.07B (−2.1% 24h) · BTC $83.9k · Fear&amp;Greed 71.</span> Top mover Obol +14.4%; rising narrative RWA/tokenization (ONDO +13%); Polymarket "Fed +25bps" 62.5%. <span class="m">Then wrote the snapshot to its own memory so tomorrow's read can diff against today's. 70 tool calls.</span></div>
+      <div class="verify"><span class="k">Verify</span><a href="https://github.com/Nadai2010/aeon/actions/runs/36008059766">Actions run #36008059766 →</a></div>
+    </div>
+
+    <div class="card">
+      <div class="top"><span class="tag">running a routine</span><span class="uid">UC-26 · github-trending</span></div>
+      <p class="ask">Every day, curate the trending GitHub repos and AI models, clustered by momentum.</p>
+      <p class="olabel">What Aeon returned</p>
+      <div class="out"><span class="h">GitHub Trending — 2026-09-24</span><br>
+        Top pick <span class="mono">obra/superpowers</span> (291k★). Clustered AI/ML · Devtools · Web with a one-line thesis each — <span class="mono">vectorize-io/hindsight</span> (agent memory), <span class="mono">google/ax</span> (agent orchestration) — tagged ACCELERATING / RETURNING. <span class="m">Kept 8 of 14 after filtering.</span></div>
+      <div class="verify"><span class="k">Verify</span><a href="https://github.com/Nadai2010/aeon/actions/runs/36008100224">Actions run #36008100224 →</a></div>
+    </div>
+  </section>
+
+  <!-- BAND 2 -->
+  <section class="band">
+    <h2>Acting on its own — and knowing when not to</h2>
+    <p>Proactive monitors that surface what matters, and stay silent when nothing does.</p>
+
+    <div class="card">
+      <div class="top"><span class="tag">proactive behaviour</span><span class="uid">UC-08 · unlock-monitor</span></div>
+      <p class="ask">Track token unlocks and warn me about supply pressure before it hits the market.</p>
+      <p class="olabel">What Aeon returned</p>
+      <div class="out"><span class="h">Unlock Monitor — week of Sep 22-28</span>
+        <ul>
+          <li><span class="h">$XPL (Plasma)</span> — $158M, <span class="h">63% of circulating supply</span>, first insider unlock and the <em>start</em> of a 24-month monthly stream. The one to watch.</li>
+          <li><span class="h">$H (Humanity)</span> — $19.2M at 4.8× daily volume.</li>
+          <li><span class="h">$STBL</span> — cushioned by the hot RWA narrative.</li>
+        </ul>
+        <span class="m">Each classified by severity with vesting detail and a market read.</span></div>
+      <div class="verify"><span class="k">Verify</span><a href="https://github.com/Nadai2010/aeon/actions/runs/36011187240">Actions run #36011187240 →</a></div>
+    </div>
+
+    <div class="card">
+      <div class="top"><span class="tag">proactive restraint</span><span class="uid">UC-02 · github-monitor</span></div>
+      <p class="ask">Triage my GitHub every morning — but only tell me if something actually needs me.</p>
+      <p class="olabel">What Aeon returned</p>
+      <div class="out">Scanned the watched repo for PRs, new issues and releases in the last 24h. <span class="h">Nothing crossed a threshold, so it sent nothing</span> — by design. The routine ran; the inbox stayed quiet. <span class="m">Restraint is a feature: no noise on a clean day.</span></div>
+      <div class="verify"><span class="k">Verify</span><a href="https://github.com/Nadai2010/aeon/actions/runs/36009830256">Actions run #36009830256 →</a></div>
+    </div>
+  </section>
+
+  <!-- BAND 3 -->
+  <section class="band">
+    <h2>Making things &amp; completing tasks</h2>
+    <p>Content, real end-to-end web work, and constraint-following recommendations.</p>
+
+    <div class="card">
+      <div class="top"><span class="tag">content creation</span><span class="uid">UC-10 · article</span></div>
+      <p class="ask">Turn a current topic into a publication-ready article with cited sources.</p>
+      <p class="olabel">What Aeon returned</p>
+      <div class="out"><span class="h">"The AI Agent That Wouldn't Take No for an Answer"</span> — a full piece connecting the OpenAI/Medicare breach to least-privilege agent security, with citations, <span class="h">committed to the repo as a public file</span> you can read end-to-end.</div>
+      <div class="verify"><span class="k">Verify</span><a href="https://github.com/Nadai2010/aeon/actions/runs/36009861235">Actions run #36009861235 →</a> · <a href="https://github.com/Nadai2010/aeon/blob/main/output/articles/project-lens-2026-09-24.md">read the article →</a></div>
+    </div>
+
+    <div class="card">
+      <div class="top"><span class="tag">online task</span><span class="uid">UC-15 · seo-audit</span></div>
+      <p class="ask">Audit my site and tell me exactly what's hurting its SEO.</p>
+      <p class="olabel">What Aeon returned</p>
+      <div class="out">Audited <span class="mono">aeon.fun</span> end-to-end: the sitemap lists <span class="h">only 1 URL</span> (which 301s to www) while <span class="h">14 linked pages are missing</span> and the canonical points away. Top fix spelled out: relist www as the canonical entry and add the 14 pages so Google can discover them.</div>
+      <div class="verify"><span class="k">Verify</span><a href="https://github.com/Nadai2010/aeon/actions/runs/36011216435">Actions run #36011216435 →</a></div>
+    </div>
+
+    <div class="card">
+      <div class="top"><span class="tag">recommendation quality</span><span class="uid">UC-17 · token-movers</span></div>
+      <p class="ask">Scan the market and surface the biggest movers with pump-risk flags.</p>
+      <p class="olabel">What Aeon returned</p>
+      <div class="out"><span class="h">Broad risk-off</span> — only 23% of the top-100 green. Winners with BREAKOUT / pump-risk tags: <span class="mono">BP +18.4%, LTC +12.7%, ONDO +12.5%</span> (RWA bucking the trend) — each with volume and rank context.</div>
+      <div class="verify"><span class="k">Verify</span><a href="https://github.com/Nadai2010/aeon/actions/runs/36009876682">Actions run #36009876682 →</a></div>
+    </div>
+
+    <div class="card">
+      <div class="top"><span class="tag">recommendation quality</span><span class="uid">UC-18 · idea-forge</span></div>
+      <p class="ask">Collide this week's zeitgeist with what I can ship into scored startup wedges.</p>
+      <p class="olabel">What Aeon returned</p>
+      <div class="out">Generated a <span class="h">ranked, scored set of startup wedges</span> from the week's signals and committed the full write-up to the repo as a public file — each idea screened for shippability, not just novelty.</div>
+      <div class="verify"><span class="k">Verify</span><a href="https://github.com/Nadai2010/aeon/actions/runs/36011201117">Actions run #36011201117 →</a></div>
+    </div>
+  </section>
+
+  <footer>
+    <span>github.com/Nadai2010/aeon</span>
+    <span>Every card is a real GitHub Actions run · open it and check.</span>
+  </footer>
+
+</div>
+</body>
+</html>
