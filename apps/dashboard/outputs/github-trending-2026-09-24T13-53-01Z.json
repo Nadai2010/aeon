@@ -1,0 +1,570 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Trending — 2026-09-24"
+      },
+      "children": [
+        "heading-top-pick",
+        "item-superpowers",
+        "separator-1",
+        "heading-ai-ml",
+        "stack-ai-ml",
+        "separator-2",
+        "heading-devtools",
+        "item-harness-sdk",
+        "separator-3",
+        "heading-web-apps",
+        "item-univer",
+        "separator-4",
+        "heading-other",
+        "item-mvt",
+        "separator-5",
+        "text-sources"
+      ]
+    },
+    "heading-top-pick": {
+      "type": "Heading",
+      "props": {
+        "text": "Top pick",
+        "level": "h2"
+      }
+    },
+    "item-superpowers": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "header-superpowers",
+        "desc-superpowers"
+      ]
+    },
+    "header-superpowers": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "link-superpowers",
+        "stat-superpowers"
+      ]
+    },
+    "link-superpowers": {
+      "type": "StoryLink",
+      "props": {
+        "title": "obra/superpowers",
+        "href": "https://github.com/obra/superpowers"
+      }
+    },
+    "stat-superpowers": {
+      "type": "Stat",
+      "props": {
+        "value": "291k"
+      }
+    },
+    "desc-superpowers": {
+      "type": "Text",
+      "props": {
+        "text": "Hitting 291k stars in under a year by working across Claude, Cursor, Devin and Gemini alike suggests the agentic-coding world is consolidating around shared workflows, not single platforms.",
+        "variant": "body"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-ai-ml": {
+      "type": "Heading",
+      "props": {
+        "text": "AI/ML",
+        "level": "h2"
+      }
+    },
+    "stack-ai-ml": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item-hindsight",
+        "item-ax",
+        "item-cli-anything",
+        "item-financial-services"
+      ]
+    },
+    "item-hindsight": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "header-hindsight",
+        "desc-hindsight"
+      ]
+    },
+    "header-hindsight": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "link-hindsight",
+        "stat-hindsight",
+        "badge-hindsight-lang",
+        "badge-hindsight-status"
+      ]
+    },
+    "link-hindsight": {
+      "type": "StoryLink",
+      "props": {
+        "title": "vectorize-io/hindsight",
+        "href": "https://github.com/vectorize-io/hindsight"
+      }
+    },
+    "stat-hindsight": {
+      "type": "Stat",
+      "props": {
+        "value": "27k",
+        "delta": "+1.6k today",
+        "trend": "up"
+      }
+    },
+    "badge-hindsight-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python"
+      }
+    },
+    "badge-hindsight-status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "desc-hindsight": {
+      "type": "Text",
+      "props": {
+        "text": "Agent memory that learns across sessions instead of resetting each run — 1,600+ stars in one day.",
+        "variant": "body"
+      }
+    },
+    "item-ax": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "header-ax",
+        "desc-ax"
+      ]
+    },
+    "header-ax": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "link-ax",
+        "stat-ax",
+        "badge-ax-lang",
+        "badge-ax-status"
+      ]
+    },
+    "link-ax": {
+      "type": "StoryLink",
+      "props": {
+        "title": "google/ax",
+        "href": "https://github.com/google/ax"
+      }
+    },
+    "stat-ax": {
+      "type": "Stat",
+      "props": {
+        "value": "9.8k",
+        "delta": "+1.4k today",
+        "trend": "up"
+      }
+    },
+    "badge-ax-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Go"
+      }
+    },
+    "badge-ax-status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "desc-ax": {
+      "type": "Text",
+      "props": {
+        "text": "Google open-sourcing its own agent orchestration runtime signals where it wants the ecosystem to standardize.",
+        "variant": "body"
+      }
+    },
+    "item-cli-anything": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "header-cli-anything",
+        "desc-cli-anything"
+      ]
+    },
+    "header-cli-anything": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "link-cli-anything",
+        "stat-cli-anything",
+        "badge-cli-anything-lang",
+        "badge-cli-anything-status"
+      ]
+    },
+    "link-cli-anything": {
+      "type": "StoryLink",
+      "props": {
+        "title": "HKUDS/CLI-Anything",
+        "href": "https://github.com/HKUDS/CLI-Anything"
+      }
+    },
+    "stat-cli-anything": {
+      "type": "Stat",
+      "props": {
+        "value": "50k",
+        "delta": "+415 today",
+        "trend": "up"
+      }
+    },
+    "badge-cli-anything-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python"
+      }
+    },
+    "badge-cli-anything-status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "desc-cli-anything": {
+      "type": "Text",
+      "props": {
+        "text": "Wraps any existing CLI tool with an agent-native interface so LLMs can drive software never built for them.",
+        "variant": "body"
+      }
+    },
+    "item-financial-services": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "header-financial-services",
+        "desc-financial-services"
+      ]
+    },
+    "header-financial-services": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "link-financial-services",
+        "stat-financial-services",
+        "badge-financial-services-lang",
+        "badge-financial-services-status"
+      ]
+    },
+    "link-financial-services": {
+      "type": "StoryLink",
+      "props": {
+        "title": "anthropics/financial-services",
+        "href": "https://github.com/anthropics/financial-services"
+      }
+    },
+    "stat-financial-services": {
+      "type": "Stat",
+      "props": {
+        "value": "37k",
+        "delta": "+510 today",
+        "trend": "up"
+      }
+    },
+    "badge-financial-services-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python"
+      }
+    },
+    "badge-financial-services-status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "desc-financial-services": {
+      "type": "Text",
+      "props": {
+        "text": "Anthropic's own reference agents for IB, equity research and wealth management, deployable via Cowork or the Managed Agents API.",
+        "variant": "body"
+      }
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-devtools": {
+      "type": "Heading",
+      "props": {
+        "text": "Devtools",
+        "level": "h2"
+      }
+    },
+    "item-harness-sdk": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "header-harness-sdk",
+        "desc-harness-sdk"
+      ]
+    },
+    "header-harness-sdk": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "link-harness-sdk",
+        "stat-harness-sdk",
+        "badge-harness-sdk-lang",
+        "badge-harness-sdk-status"
+      ]
+    },
+    "link-harness-sdk": {
+      "type": "StoryLink",
+      "props": {
+        "title": "strands-agents/harness-sdk",
+        "href": "https://github.com/strands-agents/harness-sdk"
+      }
+    },
+    "stat-harness-sdk": {
+      "type": "Stat",
+      "props": {
+        "value": "8.1k",
+        "delta": "+463 today",
+        "trend": "up"
+      }
+    },
+    "badge-harness-sdk-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python"
+      }
+    },
+    "badge-harness-sdk-status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "desc-harness-sdk": {
+      "type": "Text",
+      "props": {
+        "text": "Build and fully control an agent harness end-to-end in Python or TypeScript instead of bolting one onto a framework.",
+        "variant": "body"
+      }
+    },
+    "separator-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-web-apps": {
+      "type": "Heading",
+      "props": {
+        "text": "Web/Apps",
+        "level": "h2"
+      }
+    },
+    "item-univer": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "header-univer",
+        "desc-univer"
+      ]
+    },
+    "header-univer": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "link-univer",
+        "stat-univer",
+        "badge-univer-lang",
+        "badge-univer-status"
+      ]
+    },
+    "link-univer": {
+      "type": "StoryLink",
+      "props": {
+        "title": "dream-num/univer",
+        "href": "https://github.com/dream-num/univer"
+      }
+    },
+    "stat-univer": {
+      "type": "Stat",
+      "props": {
+        "value": "17k",
+        "delta": "+1.1k today",
+        "trend": "up"
+      }
+    },
+    "badge-univer-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript"
+      }
+    },
+    "badge-univer-status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "outline"
+      }
+    },
+    "desc-univer": {
+      "type": "Text",
+      "props": {
+        "text": "A mature spreadsheet/office engine repositioning as the runtime agents use to actually edit docs, sheets and PDFs.",
+        "variant": "body"
+      }
+    },
+    "separator-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-other": {
+      "type": "Heading",
+      "props": {
+        "text": "Other",
+        "level": "h2"
+      }
+    },
+    "item-mvt": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "header-mvt",
+        "desc-mvt"
+      ]
+    },
+    "header-mvt": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "link-mvt",
+        "stat-mvt",
+        "badge-mvt-lang",
+        "badge-mvt-status"
+      ]
+    },
+    "link-mvt": {
+      "type": "StoryLink",
+      "props": {
+        "title": "mvt-project/mvt",
+        "href": "https://github.com/mvt-project/mvt"
+      }
+    },
+    "stat-mvt": {
+      "type": "Stat",
+      "props": {
+        "value": "14.6k",
+        "delta": "+275 today",
+        "trend": "up"
+      }
+    },
+    "badge-mvt-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python"
+      }
+    },
+    "badge-mvt-status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "outline"
+      }
+    },
+    "desc-mvt": {
+      "type": "Text",
+      "props": {
+        "text": "Amnesty-built forensics toolkit for spotting phone spyware like Pegasus — resurging in trending, often a live-investigation signal.",
+        "variant": "body"
+      }
+    },
+    "separator-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text-sources": {
+      "type": "Text",
+      "props": {
+        "text": "sources: trending=ok · gh_api=fail (read-only mode; substituted public REST API via curl for created_at) · kept 8/14",
+        "variant": "caption"
+      }
+    }
+  }
+}

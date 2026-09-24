@@ -1,0 +1,16 @@
+{
+  "skill": "github-trending",
+  "last_analyzed": "2026-09-24T13:53:01Z",
+  "quality_score": 4,
+  "assessment": "Substantive trending report with real repos, specific metrics, and analytical context; transparent about data sources and read-only mode workarounds.",
+  "flags": [],
+  "avg_score": 4,
+  "history": [
+    {
+      "date": "2026-09-24",
+      "score": 4,
+      "ts": "2026-09-24T13:53:01Z",
+      "harness": "claude"
+    }
+  ]
+}
