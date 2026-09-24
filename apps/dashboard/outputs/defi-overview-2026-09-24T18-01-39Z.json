@@ -1,0 +1,534 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "DeFi Overview — 2026-09-24",
+        "description": "Crypto — 2026-09-24 | DeFi Mixed: TVL -2% and DEX volume -10% falling, stables flat"
+      },
+      "children": [
+        "conviction_badge",
+        "tvl_stat",
+        "sep1",
+        "chains_section",
+        "sep2",
+        "movers_section",
+        "sep3",
+        "fees_section",
+        "sep4",
+        "dex_section",
+        "sep5",
+        "stables_stat",
+        "sep6",
+        "yields_section",
+        "sep7",
+        "macro_section",
+        "sep8",
+        "sources"
+      ]
+    },
+    "conviction_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "chop (conviction low)",
+        "variant": "outline"
+      }
+    },
+    "tvl_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Total Value Locked",
+        "value": "$94.7B",
+        "delta": "-2.0% 24h, +8.6% 7d",
+        "trend": "down"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "chains_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "chains_heading",
+        "chains_table"
+      ]
+    },
+    "chains_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Top Chains",
+        "level": "h3"
+      }
+    },
+    "chains_table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Chain",
+          "TVL",
+          "24h Change"
+        ],
+        "rows": [
+          [
+            "Ethereum",
+            "$53.3B",
+            "-2.2%"
+          ],
+          [
+            "Solana",
+            "$6.4B",
+            "-1.9%"
+          ],
+          [
+            "Base",
+            "$6.1B",
+            "-1.9%"
+          ]
+        ]
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "movers_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "movers_heading",
+        "movers_table"
+      ]
+    },
+    "movers_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Movers",
+        "level": "h3"
+      }
+    },
+    "movers_table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Name",
+          "Change",
+          "TVL Movement",
+          "Note"
+        ],
+        "rows": [
+          [
+            "Obol Staking Pool",
+            "+13.6%",
+            "$636M → $723M",
+            "no obvious catalyst, 2nd day rising"
+          ],
+          [
+            "Steakhouse Financial",
+            "−17.5%",
+            "$3.12B → $2.57B",
+            "no obvious catalyst, 2nd day falling"
+          ],
+          [
+            "Bittensor (chain)",
+            "−7.5%",
+            "$619M → $573M",
+            "no obvious catalyst"
+          ],
+          [
+            "Chain gainers",
+            "—",
+            "—",
+            "no chain gainer cleared the +5%/$500M bar today"
+          ]
+        ]
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "fees_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "fees_leaders_heading",
+        "fees_leaders_table",
+        "fees_beating_heading",
+        "fees_beating_table"
+      ]
+    },
+    "fees_leaders_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Fees Leaders (24h)",
+        "level": "h3"
+      }
+    },
+    "fees_leaders_table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Protocol",
+          "Fees",
+          "vs 7d Avg"
+        ],
+        "rows": [
+          [
+            "Tether",
+            "$17.2M",
+            "+0.6%"
+          ],
+          [
+            "Circle USDC",
+            "$7.2M",
+            "+2.2%"
+          ],
+          [
+            "PumpSwap",
+            "$3.5M",
+            "flat"
+          ]
+        ]
+      }
+    },
+    "fees_beating_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Fees Beating TVL (7d Comparison)",
+        "level": "h4"
+      }
+    },
+    "fees_beating_table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Protocol",
+          "Fees 24h Change",
+          "TVL 7d Change",
+          "Signal"
+        ],
+        "rows": [
+          [
+            "GMX V2 Perps",
+            "+164.7%",
+            "+2.0%",
+            "demand outrunning deposits"
+          ],
+          [
+            "HyperLend Pooled",
+            "+236.7%",
+            "−6.7%",
+            "fee growth even as deposits shrink"
+          ]
+        ]
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "dex_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "dex_stat",
+        "dex_table"
+      ]
+    },
+    "dex_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "DEX Volume (24h)",
+        "value": "$10.1B",
+        "delta": "-10.1%",
+        "trend": "down"
+      }
+    },
+    "dex_table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "DEX",
+          "24h Volume"
+        ],
+        "rows": [
+          [
+            "Uniswap",
+            "$3.0B"
+          ],
+          [
+            "PancakeSwap",
+            "$749M"
+          ],
+          [
+            "Aerodrome Slipstream",
+            "$483M"
+          ]
+        ]
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stables_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Stablecoins",
+        "value": "$313.5B",
+        "delta": "-0.25% 24h (flat), no single-issuer move ≥1%",
+        "trend": "neutral"
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {}
+    },
+    "yields_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "real_yield_heading",
+        "real_yield_table",
+        "incentive_heading",
+        "incentive_table"
+      ]
+    },
+    "real_yield_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Real Yield (Sustainable, ≥$10M)",
+        "level": "h3"
+      }
+    },
+    "real_yield_table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Pair / Protocol / Chain",
+          "APY Base",
+          "TVL",
+          "Risk"
+        ],
+        "rows": [
+          [
+            "WSOL-USDC / Raydium / Solana",
+            "63.6%",
+            "$43.5M",
+            "concentrated LP/IL risk"
+          ],
+          [
+            "ETH-LINK / Uniswap v4 / ETH",
+            "57.3%",
+            "$22.8M",
+            "concentrated LP/IL risk"
+          ],
+          [
+            "WETH-USDT / Uniswap v3 / ETH",
+            "48.4%",
+            "$108.5M",
+            "concentrated LP/IL risk"
+          ]
+        ]
+      }
+    },
+    "incentive_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Incentive Yield (Points/Emissions, ≥$25M)",
+        "level": "h3"
+      }
+    },
+    "incentive_table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Pair / Protocol / Chain",
+          "APY",
+          "TVL"
+        ],
+        "rows": [
+          [
+            "USDC-AERO / Aerodrome / Base",
+            "24.1% via AERO rewards",
+            "$36.8M"
+          ],
+          [
+            "sdCRV / Stake DAO / ETH",
+            "12.7% via CRV rewards",
+            "$41.8M"
+          ]
+        ]
+      }
+    },
+    "sep7": {
+      "type": "Separator",
+      "props": {}
+    },
+    "macro_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "macro_heading",
+        "macro_prices",
+        "macro_sentiment",
+        "macro_odds",
+        "macro_take"
+      ]
+    },
+    "macro_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Macro",
+        "level": "h3"
+      }
+    },
+    "macro_prices": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "btc_stat",
+        "eth_stat"
+      ]
+    },
+    "btc_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "BTC",
+        "value": "$84,128",
+        "delta": "-0.2%",
+        "trend": "neutral"
+      }
+    },
+    "eth_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "ETH",
+        "value": "$2,670",
+        "delta": "+0.1%",
+        "trend": "up"
+      }
+    },
+    "macro_sentiment": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "fng_stat",
+        "breadth_stat"
+      ]
+    },
+    "fng_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Fear & Greed",
+        "value": "71",
+        "delta": "Greed"
+      }
+    },
+    "breadth_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Breadth",
+        "value": "11/20",
+        "delta": "up from 2/20 this morning"
+      }
+    },
+    "macro_odds": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "odds_title",
+        "fed_odds",
+        "etf_flows_text"
+      ]
+    },
+    "odds_title": {
+      "type": "Text",
+      "props": {
+        "text": "Hot market: Fed +25bps after Oct 2026 meeting",
+        "variant": "lead"
+      }
+    },
+    "fed_odds": {
+      "type": "Progress",
+      "props": {
+        "value": 65.5,
+        "label": "Fed hike probability"
+      }
+    },
+    "etf_flows_text": {
+      "type": "Text",
+      "props": {
+        "text": "ETF flows: $2B+ net creations (Sep 18/21/22) — strongest bullish datum today",
+        "variant": "body"
+      }
+    },
+    "macro_take": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "take_heading",
+        "take_text"
+      ]
+    },
+    "take_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Take",
+        "level": "h4"
+      }
+    },
+    "take_text": {
+      "type": "Text",
+      "props": {
+        "text": "BTC flat, breadth up to 11/20 from 2/20 this morning; ETF flows turned to $2B+ net creations (Sep 18/21/22) — the strongest bullish datum today. Fed-hike odds broke the 65% level flagged this morning. RWA (ONDO +24.4%) still the lone standout trending name.",
+        "variant": "body"
+      }
+    },
+    "sep8": {
+      "type": "Separator",
+      "props": {}
+    },
+    "sources": {
+      "type": "Text",
+      "props": {
+        "text": "Sources: llama_tvl=ok llama_dex=ok llama_fees=ok llama_stables=ok llama_yields=ok coingecko=ok fng=ok polymarket=ok websearch=ok | var: none",
+        "variant": "caption"
+      }
+    }
+  }
+}
