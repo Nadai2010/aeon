@@ -6,58 +6,65 @@ tags:
   - macro
   - defi
 resource: https://api.llama.fi
-timestamp: 2026-09-24T00:00:00Z
+timestamp: 2026-09-24T17:59:51Z
 ---
 
 # Market Context (as of 2026-09-24)
 
-> **Take:** chop — BTC -2.1% 24h (18/20 top-caps still green over 7d) as a broad pullback hits nearly everything at once. Conviction: low.
+> **Take:** chop — BTC roughly flat (-0.2% 24h, +10.2% 7d) as breadth improves to 11/20 green even while DEX volume falls 10.1% 24h. Conviction: low.
 
 ## Signal Snapshot
-- BTC $83,905 (-2.1% 24h, +9.4% 7d) · dominance 58.7% (n/a 24h pp, first snapshot)
-- ETH $2,663 (-1.9% 24h, +8.5% 7d) · ETH/BTC 0.0317
-- SOL $114.70 (-1.8% 24h, +13.8% 7d)
-- Total mcap $2.86T (-4.5% 24h) · DEX vol $10.1B 24h
-- Breadth: 2/20 green 24h · 18/20 green 7d
+- BTC $84,128 (-0.2% 24h, +10.2% 7d) · dominance 58.6% (-0.1pp 24h)
+- ETH $2,670 (+0.1% 24h, +8.9% 7d) · ETH/BTC 0.0317
+- SOL $116.62 (+1.8% 24h, +15.7% 7d)
+- Total mcap $2.88T (-2.3% 24h) · DEX vol $10.08B 24h
+- Breadth: 11/20 green 24h · 16/20 green 7d
 - Fear & Greed: 71 (Greed) — yesterday 71
 
 ## What Changed Since Last Refresh
-First snapshot — no prior `market-context.md` to diff against. Baseline established today.
+- Breadth swung sharply: 2/20 green 24h at this morning's snapshot → 11/20 green now — the earlier broad pullback partially reversed intraday.
+- BTC recovered from -2.1% 24h this morning to essentially flat (-0.2%) — the selloff eased, not reversed.
+- Polymarket "Fed +25bps after Oct 2026 meeting" ticked up to 65.5% YES (was 62.5% this morning) — the >65% breakout level flagged this morning as a narrative-tracker watch condition has now triggered.
+- ONDO's RWA rally intensified: +13.0% 24h this morning → +24.4% now, still the sole sustained green trending name across both checks today.
 
 ## Active Narratives
-- **RWA / tokenization** — phase: rising. Evidence: ONDO +13.0% 24h while BTC -2.1% — the only top-trending coin in the green today.
-- **Perp DEX demand** — phase: rising. Evidence: GMX V2 fees +175% 7d on TVL +2.2% 7d (fee growth outrunning deposits); Hyperliquid, HYPE, LIT all trending.
-- **Fed rate-hike repricing** — phase: emerging. Evidence: Polymarket "Fed +25bps after Oct 2026 meeting" trading 62.5% YES on $511K 24h vol — market now leans hike, not cut.
+- **RWA / tokenization** — phase: rising. Evidence: ONDO #1 trending, +24.4% 24h (up from +13.0% this morning) — still the only trending coin holding a sustained rally, no second RWA name has joined yet.
+- **Perp DEX demand** — phase: rising. Evidence: GMX V2 Perps fees +164.7% 7d on TVL +2.0% 7d; HyperLend Pooled fees +236.7% 7d despite TVL -6.7% — fee growth decoupling from (outrunning) deposits on perp/lending infra.
+- **Fed rate-path repricing** — phase: rising (was emerging this morning). Evidence: "Fed +25bps after Oct 2026 meeting" now 65.5% YES on $485K 24h vol, up 3pp since this morning; today's US jobless-claims print is the near-term catalyst.
 
 ## Top DeFi Protocols (TVL, 7d change)
-- Lido: $25.93B (+9.5%)
-- Aave V3: $18.08B (+6.8%)
-- SSV Network: $13.89B (+8.5%)
-- Morpho Blue: $10.82B (+5.7%)
-- Binance staked ETH: $9.87B (+8.8%)
+- Lido: $26.05B (+8.4%)
+- Aave V3: $18.19B (+6.9%)
+- SSV Network: $13.96B (+7.7%)
+- Morpho Blue: $10.86B (+5.7%)
+- Binance staked ETH: $9.92B (+7.9%)
 
 ## Chain Flow (top 3 by TVL, 7d)
-- Ethereum: $53.05B (+7.6%)
-- Solana: $6.34B (+9.8%)
-- Base: $6.11B (+3.7%)
+- Ethereum: $53.29B (+8.1%)
+- Solana: $6.41B (+10.9%)
+- Base: $6.14B (+10.7%)
 
 ## Stablecoins
-Total: $313.67B (+1.0% 7d). USDT $183.48B · USDC $76.25B · USDS $6.59B · USDe $4.90B · combined mcap share ~11.0%.
+Total: $313.5B (+0.5% 7d, roughly flat -0.25% 24h). USDT $183.5B · USDC $76.0B · USDS $6.6B · USDe $4.9B · combined mcap share ~10.9%. No single stablecoin moved ≥1% 24h.
 
 ## Trending (CoinGecko)
-- ONDO — RWA/tokenization narrative, $0.486 (+13.0% 24h) — sole green top-trending coin
-- HYPE — Hyperliquid, $92.79 (-2.7% 24h) — perp-DEX demand narrative
-- NEAR — $4.51 (-4.6% 24h) — broad infra pullback with the rest of the market
+- ONDO — RWA/tokenization narrative, $0.519 (+24.4% 24h) — strongest trending name for the second check running
+- BP (Backpack) — exchange token, $0.99 (+24.3% 24h) — CEX-adjacent breakout, matches today's token-movers [BREAKOUT] flag
+- LTC — Litecoin, $72.51 (+19.4% 24h) — legacy-payments name catching a bid alongside the broader recovery
 
 ## Prediction Markets (Polymarket, top by 24h vol)
 | Market | YES% | 24h Vol | Liquidity |
 |--------|------|---------|-----------|
-| Fed +25bps after Oct 2026 meeting | 62.5% | $511K | $386K |
-| Fed holds rates after Oct 2026 meeting | 36.5% | $533K | $284K |
+| Will the Fed increase interest rates by 25 bps after the October 2026 meeting? | 65.5% | $485K | $395K |
+| Will there be no change in Fed interest rates after the October 2026 meeting? | 34.5% | $389K | $359K |
+
+## Macro Catalysts (next 48h)
+- US initial jobless claims (week ending Sep 19) — today's print, the near-term input to the Fed-hike-odds market above.
+- BTC spot ETFs swung from mid-Sept redemptions to $2B+ net creations across Sep 18/21/22 (Bloomberg) — flow momentum turning supportive into the Sep 30 PCE report and Oct 2 jobs report.
 
 ## Implications for Downstream Skills
-- **token-pick:** favor RWA (ONDO) and perp-DEX (HYPE-adjacent) exposure; broad majors are in a weak-breadth pullback, not a fresh entry signal.
-- **narrative-tracker:** watch RWA/tokenization for emerging→rising confirmation via a second trending RWA name; watch Fed-hike-odds market for a break above 65% YES.
+- **token-pick:** RWA (ONDO) momentum is building for a second straight check — still needs a second trending RWA name to confirm sector breadth, not just a single-asset rally. Perp/lending infra (GMX V2, HyperLend) showing fees outrunning TVL — real demand, not incentive-driven.
+- **narrative-tracker:** Fed-hike-odds market just broke the 65% YES level flagged this morning — worth a note that the watch condition triggered. RWA still rising, not yet peak — hold off calling it topped.
 
 ## Token Picks Made
 | Date | Token | Price | Thesis |
