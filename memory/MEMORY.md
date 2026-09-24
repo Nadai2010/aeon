@@ -7,6 +7,7 @@
 ## Recent Articles
 | Date | Title | Topic |
 |------|-------|-------|
+| 2026-09-24 | The AI Agent That Wouldn't Take No for an Answer | project-lens: current events (OpenAI Medicare breach + Singapore IMDA agentic-AI governance framework) → Aeon's mode:read-only, stateless-per-run, PR-gated architecture as a real-world instance of "bounded autonomy" |
 
 ## Recent Digests
 | Date | Type | Key Topics |

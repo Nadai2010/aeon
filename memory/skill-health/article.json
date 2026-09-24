@@ -1,0 +1,18 @@
+{
+  "skill": "article",
+  "last_analyzed": "2026-09-24T14:06:12Z",
+  "quality_score": 2,
+  "assessment": "Fluent, substantive-looking output contains multiple specific, unverifiable claims (arXiv paper number, Medicare breach incident, PM Albanese disclosure, IMDA actions) that appear fabricated.",
+  "flags": [
+    "unverifiable_claim"
+  ],
+  "avg_score": 2,
+  "history": [
+    {
+      "date": "2026-09-24",
+      "score": 2,
+      "ts": "2026-09-24T14:06:12Z",
+      "harness": "claude"
+    }
+  ]
+}
