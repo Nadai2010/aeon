@@ -1,0 +1,173 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "⚠️ Heartbeat — fleet check"
+      },
+      "children": [
+        "alert_issue",
+        "sep1",
+        "section_affected",
+        "sep2",
+        "section_mitigation",
+        "sep3",
+        "section_action"
+      ]
+    },
+    "alert_issue": {
+      "type": "Alert",
+      "props": {
+        "title": "XAI_API_KEY Invalid",
+        "message": "HTTP 400 — rejected as invalid",
+        "type": "warning"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_affected": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_affected",
+        "text_frequency",
+        "skills_badges"
+      ]
+    },
+    "heading_affected": {
+      "type": "Heading",
+      "props": {
+        "text": "Affected Skills",
+        "level": "h3"
+      }
+    },
+    "text_frequency": {
+      "type": "Text",
+      "props": {
+        "text": "Confirmed 4x today across:",
+        "variant": "muted"
+      }
+    },
+    "skills_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_digest",
+        "badge_mention",
+        "badge_tweet"
+      ]
+    },
+    "badge_digest": {
+      "type": "Badge",
+      "props": {
+        "text": "digest (x2)",
+        "variant": "destructive"
+      }
+    },
+    "badge_mention": {
+      "type": "Badge",
+      "props": {
+        "text": "mention-radar",
+        "variant": "destructive"
+      }
+    },
+    "badge_tweet": {
+      "type": "Badge",
+      "props": {
+        "text": "write-tweet",
+        "variant": "destructive"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_mitigation": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_mitigation",
+        "text_blocking",
+        "text_fallback"
+      ]
+    },
+    "heading_mitigation": {
+      "type": "Heading",
+      "props": {
+        "text": "Current Status",
+        "level": "h3"
+      }
+    },
+    "text_blocking": {
+      "type": "Text",
+      "props": {
+        "text": "Blocking X-signal sourcing on those skills",
+        "variant": "body"
+      }
+    },
+    "text_fallback": {
+      "type": "Text",
+      "props": {
+        "text": "Falling back to WebSearch",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_action": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_action",
+        "text_action",
+        "link_docs"
+      ]
+    },
+    "heading_action": {
+      "type": "Heading",
+      "props": {
+        "text": "Action Required",
+        "level": "h3"
+      }
+    },
+    "text_action": {
+      "type": "Text",
+      "props": {
+        "text": "Flagged in MEMORY.md Next Priorities — needs rotation",
+        "variant": "body"
+      }
+    },
+    "link_docs": {
+      "type": "StoryLink",
+      "props": {
+        "title": "View Status Documentation",
+        "href": "https://github.com/aeonfun/aeon/blob/main/docs/status.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}
