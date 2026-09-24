@@ -1,0 +1,297 @@
+{
+  "root": "card_seo",
+  "state": {},
+  "elements": {
+    "card_seo": {
+      "type": "Card",
+      "props": {
+        "title": "SEO Audit",
+        "description": "aeon.fun"
+      },
+      "children": [
+        "alert_header",
+        "sep_1",
+        "section_status",
+        "sep_2",
+        "section_missing",
+        "sep_3",
+        "section_fix"
+      ]
+    },
+    "alert_header": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "message": "Sitemap incomplete and missing canonical configuration"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_status": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_status",
+        "stat_score",
+        "stat_pages",
+        "text_baseline",
+        "text_sitemap",
+        "text_canonical"
+      ]
+    },
+    "heading_status": {
+      "type": "Heading",
+      "props": {
+        "text": "Current Status",
+        "level": "h2"
+      }
+    },
+    "stat_score": {
+      "type": "Stat",
+      "props": {
+        "label": "SEO Score",
+        "value": "100"
+      }
+    },
+    "stat_pages": {
+      "type": "Stat",
+      "props": {
+        "label": "Pages Indexed",
+        "value": "1"
+      }
+    },
+    "text_baseline": {
+      "type": "Text",
+      "props": {
+        "text": "First run, no baseline."
+      }
+    },
+    "text_sitemap": {
+      "type": "Text",
+      "props": {
+        "text": "Sitemap lists only aeon.fun/ which 301 redirects to www.aeon.fun/ and is missing 14 linked pages."
+      }
+    },
+    "text_canonical": {
+      "type": "Text",
+      "props": {
+        "text": "Canonical configuration points bare-domain root away to www."
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_missing": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_missing",
+        "text_missing_intro",
+        "grid_missing_pages"
+      ]
+    },
+    "heading_missing": {
+      "type": "Heading",
+      "props": {
+        "text": "Missing Pages",
+        "level": "h2"
+      }
+    },
+    "text_missing_intro": {
+      "type": "Text",
+      "props": {
+        "text": "14 linked pages are missing from the sitemap:"
+      }
+    },
+    "grid_missing_pages": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "sm"
+      },
+      "children": [
+        "link_docs",
+        "link_security",
+        "link_hooks",
+        "link_architecture",
+        "link_transparency",
+        "link_ecosystem",
+        "link_developers",
+        "link_blog",
+        "link_audits",
+        "link_changelog",
+        "link_about",
+        "link_contact",
+        "link_privacy",
+        "link_terms"
+      ]
+    },
+    "link_docs": {
+      "type": "StoryLink",
+      "props": {
+        "title": "/docs",
+        "href": "https://www.aeon.fun/docs"
+      }
+    },
+    "link_security": {
+      "type": "StoryLink",
+      "props": {
+        "title": "/security",
+        "href": "https://www.aeon.fun/security"
+      }
+    },
+    "link_hooks": {
+      "type": "StoryLink",
+      "props": {
+        "title": "/hooks",
+        "href": "https://www.aeon.fun/hooks"
+      }
+    },
+    "link_architecture": {
+      "type": "StoryLink",
+      "props": {
+        "title": "/architecture",
+        "href": "https://www.aeon.fun/architecture"
+      }
+    },
+    "link_transparency": {
+      "type": "StoryLink",
+      "props": {
+        "title": "/transparency",
+        "href": "https://www.aeon.fun/transparency"
+      }
+    },
+    "link_ecosystem": {
+      "type": "StoryLink",
+      "props": {
+        "title": "/ecosystem",
+        "href": "https://www.aeon.fun/ecosystem"
+      }
+    },
+    "link_developers": {
+      "type": "StoryLink",
+      "props": {
+        "title": "/developers",
+        "href": "https://www.aeon.fun/developers"
+      }
+    },
+    "link_blog": {
+      "type": "StoryLink",
+      "props": {
+        "title": "/blog",
+        "href": "https://www.aeon.fun/blog"
+      }
+    },
+    "link_audits": {
+      "type": "StoryLink",
+      "props": {
+        "title": "/audits",
+        "href": "https://www.aeon.fun/audits"
+      }
+    },
+    "link_changelog": {
+      "type": "StoryLink",
+      "props": {
+        "title": "/changelog",
+        "href": "https://www.aeon.fun/changelog"
+      }
+    },
+    "link_about": {
+      "type": "StoryLink",
+      "props": {
+        "title": "/about",
+        "href": "https://www.aeon.fun/about"
+      }
+    },
+    "link_contact": {
+      "type": "StoryLink",
+      "props": {
+        "title": "/contact",
+        "href": "https://www.aeon.fun/contact"
+      }
+    },
+    "link_privacy": {
+      "type": "StoryLink",
+      "props": {
+        "title": "/privacy",
+        "href": "https://www.aeon.fun/privacy"
+      }
+    },
+    "link_terms": {
+      "type": "StoryLink",
+      "props": {
+        "title": "/terms",
+        "href": "https://www.aeon.fun/terms"
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_fix": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_fix",
+        "fix_rec_1",
+        "fix_rec_2"
+      ]
+    },
+    "heading_fix": {
+      "type": "Heading",
+      "props": {
+        "text": "Recommended Fixes",
+        "level": "h2"
+      }
+    },
+    "fix_rec_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text_rec_1a",
+        "link_rec_1",
+        "text_rec_1b"
+      ]
+    },
+    "text_rec_1a": {
+      "type": "Text",
+      "props": {
+        "text": "Relist"
+      }
+    },
+    "link_rec_1": {
+      "type": "Link",
+      "props": {
+        "label": "https://www.aeon.fun/",
+        "href": "https://www.aeon.fun/"
+      }
+    },
+    "text_rec_1b": {
+      "type": "Text",
+      "props": {
+        "text": "as the canonical sitemap entry"
+      }
+    },
+    "fix_rec_2": {
+      "type": "Text",
+      "props": {
+        "text": "Add the 14 missing pages to the sitemap so Google can discover them via sitemap.xml."
+      }
+    }
+  }
+}

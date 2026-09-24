@@ -1,0 +1,3 @@
+⚠️ SEO Audit — aeon.fun
+
+SEO — aeon.fun 100 (1 page). First run, no baseline. Sitemap only lists 1 URL (aeon.fun/) which 301s to www.aeon.fun/ and is missing 14 linked pages (/docs /security /hooks /architecture /transparency /ecosystem /developers /blog /audits /changelog /about /contact /privacy /terms). Canonical also points bare-domain root away to www. Top fix: relist https://www.aeon.fun/ as the canonical sitemap entry and add the 14 missing pages so Google can discover them via sitemap.xml.
