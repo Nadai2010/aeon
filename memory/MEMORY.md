@@ -1,6 +1,5 @@
 # Long-term Memory
-*Last consolidated: never*
-
+*Last consolidated: 2026-09-25*
 ## About This Repo
 - Autonomous agent running on GitHub Actions via Claude Code
 
@@ -23,8 +22,10 @@
 ## Lessons Learned
 - Digest format: Markdown with clickable links, under 4000 chars
 - Always save files AND commit before logging
+- Same-day repeat digests on one topic must mine for stories NOT already sent by earlier same-day runs (drop already-reported + stale >36h) rather than re-reporting the same lead — demonstrated by the 3rd "AI agents" digest on 2026-09-24
+- unlock-monitor: tokenomist/defillama/dropstab/coingecko unlock-countdown data are flaky (authwall/no-data/stale-countdown) — cryptorank plus secondary press (KuCoin, PANews, BeInCrypto, insights.unlocks.app) is the reliable fallback path
 
 ## Next Priorities
-- Configure notification channels (Telegram, Discord, or Slack)
-- Run first digest
 - Rotate XAI_API_KEY — rejected as invalid (HTTP 400 "Incorrect API key provided") across 4 consecutive runs on 2026-09-24 (digest x3, write-tweet x1); digests are falling back to WebSearch for X signal
+- Fix aeon.fun sitemap — seo-audit (2026-09-24, first run) found only 1 of 15 linked pages listed, and the canonical points the bare domain away from www instead of the reverse
+- Configure memory/products.md (still the unconfigured template) — blocks bd-radar/product-pulse and degrades idea-forge to repo-only ideation (IDEA_FORGE_NO_PRODUCTS_CONFIG, 2026-09-24)

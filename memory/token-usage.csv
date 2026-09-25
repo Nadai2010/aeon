@@ -4,4 +4,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-09-24,token-movers,claude-sonnet-5,2638,20115,1900988,57639
 2026-09-24,seo-audit,claude-sonnet-5,2507,24429,1467896,46403
 2026-09-24,defi-overview,claude-sonnet-5,3379,42020,6277833,155301
-2026-09-25,price-alert,claude-sonnet-5,2209,2070,272329,23071
+2026-09-25,memory-flush,claude-sonnet-5,2356,11556,826850,38469
