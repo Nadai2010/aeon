@@ -161,7 +161,7 @@
     <h1>Real runs. Receipts attached.</h1>
     <p class="lede">Aeon works unattended on GitHub Actions. No prompts, no babysitting. Everything on this page is a genuine, unedited run, and each one links to its public execution log so you can open it and check exactly what happened.</p>
     <div class="facts reveal">
-      <div class="fact"><div class="n">10</div><div class="l">verified runs, all linked</div></div>
+      <div class="fact"><div class="n">14</div><div class="l">verified runs, all linked</div></div>
       <div class="fact"><div class="n">0</div><div class="l">staged demos</div></div>
       <div class="fact"><div class="n">1&nbsp;click</div><div class="l">to verify any claim</div></div>
       <div class="fact"><div class="n">84</div><div class="l">skills the agent can draw on</div></div>
@@ -251,6 +251,14 @@
         <div class="verify"><a class="btn" href="https://github.com/Nadai2010/aeon/actions/runs/36009830256">Verify the run <span class="ic"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a><span class="uid">run #36009830256</span></div>
       </div></div>
 
+      <div class="shell reveal"><div class="core">
+        <div class="top"><span class="cap">proactive behaviour</span><span class="uid">UC-28 · monitor-polymarket</span></div>
+        <p class="ask">Monitor the prediction markets and tell me where the real volume and moves are.</p>
+        <p class="rlabel">What Aeon returned</p>
+        <div class="ret">It found the meaningful 24 hour volume sat in Sunday's NFL slate (<span class="mono">KC at 85 percent vs MIA</span>, <span class="mono">SEA at 76 percent vs WAS</span>), ignored the zero volume novelty markets, and set a baseline so it can flag real moves next time. <span class="m">No noise, just the live liquidity.</span></div>
+        <div class="verify"><a class="btn" href="https://github.com/Nadai2010/aeon/actions/runs/36108869645">Verify the run <span class="ic"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a><span class="uid">run #36108869645</span></div>
+      </div></div>
+
     </div>
   </section>
 
@@ -293,6 +301,30 @@
         <p class="rlabel">What Aeon returned</p>
         <div class="ret">A <b>ranked, scored set of startup wedges</b> drawn from the week's signals, committed to the repo as a public file. Every idea screened for whether it can actually ship, not just for novelty.</div>
         <div class="verify"><a class="btn" href="https://github.com/Nadai2010/aeon/actions/runs/36011201117">Verify the run <span class="ic"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a><span class="uid">run #36011201117</span></div>
+      </div></div>
+
+      <div class="shell reveal"><div class="core">
+        <div class="top"><span class="cap">online task</span><span class="uid">UC-25 · vuln-scanner</span></div>
+        <p class="ask">Audit a trending open-source repo for real security vulnerabilities and report them responsibly.</p>
+        <p class="rlabel">What Aeon returned</p>
+        <div class="ret">It picked a trending repo (<span class="mono">HKUDS/CLI-Anything</span>), ran a full multi-scanner audit (semgrep, trufflehog, OSV, plus an agentic pass), and <b>confirmed a HIGH-severity code-injection vulnerability</b> (CWE-94) with a verified proof-of-concept. It also flagged 14 low-severity dependency CVEs and wrote a full report. <span class="m">A real finding, not a guess.</span></div>
+        <div class="verify"><a class="btn" href="https://github.com/Nadai2010/aeon/actions/runs/36108849145">Verify the run <span class="ic"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a><a class="alt" href="https://github.com/Nadai2010/aeon/blob/main/output/articles/vuln-scan-2026-09-25.md">read the report</a></div>
+      </div></div>
+
+      <div class="shell reveal"><div class="core">
+        <div class="top"><span class="cap">content creation</span><span class="uid">UC-27 · video-script</span></div>
+        <p class="ask">Turn my project into a recording-ready video script with every claim verified.</p>
+        <p class="rlabel">What Aeon returned</p>
+        <div class="ret">A recording ready, four minute script built around the verify-the-run idea. It verified every claim against the source, and <b>caught an inconsistency</b> (a stat that did not match the number of linked runs) and flagged it instead of repeating an unverified number. <span class="m">Committed to the repo.</span></div>
+        <div class="verify"><a class="btn" href="https://github.com/Nadai2010/aeon/actions/runs/36108859743">Verify the run <span class="ic"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a><span class="uid">run #36108859743</span></div>
+      </div></div>
+
+      <div class="shell reveal"><div class="core">
+        <div class="top"><span class="cap">memory</span><span class="uid">UC-29 · memory-flush</span></div>
+        <p class="ask">Consolidate what you learned this week into durable memory I can rely on later.</p>
+        <p class="rlabel">What Aeon returned</p>
+        <div class="ret">It read the week's logs and promoted <b>two lessons and two next priorities</b> into its long term memory, then pruned two stale items that were already done. <span class="m">So the next run builds on what it learned instead of starting cold.</span></div>
+        <div class="verify"><a class="btn" href="https://github.com/Nadai2010/aeon/actions/runs/36108880012">Verify the run <span class="ic"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a><span class="uid">run #36108880012</span></div>
       </div></div>
 
     </div>
