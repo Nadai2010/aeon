@@ -150,5 +150,15 @@
     "total_failures": 0,
     "consecutive_failures": 0,
     "success_rate": 1
+  },
+  "video-script": {
+    "last_status": "success",
+    "last_success": "2026-09-25T07:44:30Z",
+    "total_runs": 1,
+    "total_successes": 1,
+    "total_failures": 0,
+    "consecutive_failures": 0,
+    "success_rate": 1,
+    "last_quality_score": 4
   }
 }
