@@ -190,5 +190,9 @@
     "consecutive_failures": 0,
     "success_rate": 1,
     "last_quality_score": 2
+  },
+  "chain:benchmark-chain": {
+    "last_status": "success",
+    "last_success": "2026-09-25T08:23:50Z"
   }
 }
