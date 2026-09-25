@@ -1,0 +1,16 @@
+{
+  "skill": "vuln-scanner",
+  "last_analyzed": "2026-09-25T07:58:54Z",
+  "quality_score": 4,
+  "assessment": "Good output — substantive vulnerability findings with specific CWE details, clear scanner status, and transparent constraint reporting. Properly surfaces signal with decision point (staged follow-up run needed).",
+  "flags": [],
+  "avg_score": 4,
+  "history": [
+    {
+      "date": "2026-09-25",
+      "score": 4,
+      "ts": "2026-09-25T07:58:54Z",
+      "harness": "claude"
+    }
+  ]
+}

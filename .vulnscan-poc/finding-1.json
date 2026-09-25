@@ -1,0 +1,8 @@
+{
+  "id": "finding-1",
+  "target_repo": "HKUDS/CLI-Anything",
+  "target_commit": "34f519533bc175d2fe287ab8316b0dd99bb9cc43",
+  "severity": "high",
+  "attacker_controls": "the width/height/opacity/offset_x/offset_y/font_size fields of a layer object inside a loaded .gimp-cli.json project file (open_project only checks for 'version' and 'canvas' keys, no schema/type validation on layers)",
+  "attacker_achieves": "arbitrary Script-Fu s-expression injection into the batch script executed by the real GIMP subprocess via render_project, because _build_layer_script splices these fields into the generated script unescaped and unquoted (unlike the string fields, which go through _script_fu_escape)"
+}

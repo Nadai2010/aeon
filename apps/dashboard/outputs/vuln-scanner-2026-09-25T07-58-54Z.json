@@ -1,0 +1,179 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "⚠️ Vuln Scanner",
+        "description": "HKUDS/CLI-Anything"
+      },
+      "children": [
+        "alert_finding",
+        "sep1",
+        "disclosure_stack",
+        "sep2",
+        "scanner_section",
+        "sep3",
+        "alert_cves",
+        "sep4",
+        "link_report"
+      ]
+    },
+    "alert_finding": {
+      "type": "Alert",
+      "props": {
+        "title": "1 Confirmed Finding",
+        "message": "HIGH severity - CWE-94 Script-Fu code injection",
+        "type": "error"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "disclosure_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_pvr",
+        "text_blocked",
+        "text_staged"
+      ]
+    },
+    "text_pvr": {
+      "type": "Text",
+      "props": {
+        "text": "Disclosure via: PVR — enabled + designated by SECURITY.md",
+        "variant": "body"
+      }
+    },
+    "text_blocked": {
+      "type": "Text",
+      "props": {
+        "text": "Filing blocked this run by token scope (403, not PVR-disabled)",
+        "variant": "caption"
+      }
+    },
+    "text_staged": {
+      "type": "Text",
+      "props": {
+        "text": "Staged for a properly-credentialed follow-up run",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "scanner_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "scanner_heading",
+        "scanners_list",
+        "poc_text"
+      ]
+    },
+    "scanner_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Scanners",
+        "level": "h4"
+      }
+    },
+    "scanners_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_semgrep",
+        "badge_trufflehog",
+        "badge_trufflehog_git",
+        "badge_osv",
+        "badge_fuzz",
+        "badge_agentic"
+      ]
+    },
+    "badge_semgrep": {
+      "type": "Badge",
+      "props": {
+        "text": "semgrep = ok",
+        "variant": "default"
+      }
+    },
+    "badge_trufflehog": {
+      "type": "Badge",
+      "props": {
+        "text": "trufflehog = ok",
+        "variant": "default"
+      }
+    },
+    "badge_trufflehog_git": {
+      "type": "Badge",
+      "props": {
+        "text": "trufflehog-git = ok (shallow clone)",
+        "variant": "default"
+      }
+    },
+    "badge_osv": {
+      "type": "Badge",
+      "props": {
+        "text": "osv = ok",
+        "variant": "default"
+      }
+    },
+    "badge_fuzz": {
+      "type": "Badge",
+      "props": {
+        "text": "fuzz = skip",
+        "variant": "secondary"
+      }
+    },
+    "badge_agentic": {
+      "type": "Badge",
+      "props": {
+        "text": "agentic = ok",
+        "variant": "default"
+      }
+    },
+    "poc_text": {
+      "type": "Text",
+      "props": {
+        "text": "PoC gate: verified",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "alert_cves": {
+      "type": "Alert",
+      "props": {
+        "title": "Additional CVEs Noted",
+        "message": "14 public dependency CVEs (npm, low severity) — bump PR blocked by token-scope limit, not individually staged",
+        "type": "warning"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "link_report": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Report",
+        "href": "output/articles/vuln-scan-2026-09-25.md"
+      }
+    }
+  }
+}
