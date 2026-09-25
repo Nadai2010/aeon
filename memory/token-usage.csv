@@ -12,3 +12,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-09-25,github-trending,claude-sonnet-5,3240,41853,5091800,81882
 2026-09-25,article,claude-sonnet-5,2626,14507,1624822,114761
 2026-09-25,write-tweet,claude-sonnet-5,2930,21897,3366436,120814
+2026-09-25,digest,claude-sonnet-5,2791,16972,2389816,110853

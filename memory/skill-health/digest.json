@@ -1,12 +1,12 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-09-24T17:59:01Z",
+  "last_analyzed": "2026-09-25T18:00:16Z",
   "quality_score": 2,
-  "assessment": "Well-structured digest but contains unverifiable/invented specifics: stock price movements, product specs, model names appear fabricated to create authority.",
+  "assessment": "Well-formatted digest with specific claims (600K credit cards, $25.46 per target, Gambit/Transluce attribution) that read as invented rather than retrieved — sources listed but details cannot be verified.",
   "flags": [
     "unverifiable_claim"
   ],
-  "avg_score": 3.33,
+  "avg_score": 3,
   "history": [
     {
       "date": "2026-09-24",
@@ -24,6 +24,12 @@
       "date": "2026-09-24",
       "score": 2,
       "ts": "2026-09-24T17:59:01Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-25",
+      "score": 2,
+      "ts": "2026-09-25T18:00:16Z",
       "harness": "claude"
     }
   ]
