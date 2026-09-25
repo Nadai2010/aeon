@@ -1,5 +1,8 @@
-⚠️ Heartbeat — fleet check
+⚠️ Heartbeat — 2026-09-25
 
-🔵 MEMORY: XAI_API_KEY rejected as invalid (HTTP 400) — confirmed 4x today across digest (x2), mention-radar, write-tweet. Blocking X-signal sourcing on those skills (falling back to WebSearch). Flagged in MEMORY.md Next Priorities — needs rotation.
+🔵 MEMORY: 3 new follow-ups flagged in MEMORY.md Next Priorities —
+- Fix aeon.fun sitemap (seo-audit: only 1/15 linked pages listed, canonical points away from www)
+- Configure memory/products.md (blocks bd-radar/product-pulse, degrades idea-forge to repo-only)
+- Rotate VERCEL_TOKEN (deploy-prototype got HTTP 403 'Not authorized' on live deploy, build succeeded, deploy blocked)
 
-🔗 https://github.com/aeonfun/aeon/blob/main/docs/status.md
+No P0 (all skills green) or P1 (5 open PRs are Dependabot bumps ~23h43m old, under the 24h stall bar; no urgent-labeled issues) findings. STATUS_PAGE=WATCH.
