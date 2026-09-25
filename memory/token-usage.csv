@@ -5,3 +5,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-09-24,seo-audit,claude-sonnet-5,2507,24429,1467896,46403
 2026-09-24,defi-overview,claude-sonnet-5,3379,42020,6277833,155301
 2026-09-25,vuln-scanner,claude-sonnet-5,4521,85146,20254657,201947
+2026-09-25,github-trending,claude-sonnet-5,2644,17415,1867267,94924

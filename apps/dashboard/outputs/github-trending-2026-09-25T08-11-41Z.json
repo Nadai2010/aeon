@@ -1,0 +1,313 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Trending — 2026-09-25"
+      },
+      "children": [
+        "section_top_pick",
+        "sep1",
+        "section_devtools",
+        "sep2",
+        "section_web_apps",
+        "sep3",
+        "section_sources"
+      ]
+    },
+    "section_top_pick": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_top_pick",
+        "toppick_repo",
+        "toppick_desc"
+      ]
+    },
+    "heading_top_pick": {
+      "type": "Heading",
+      "props": {
+        "text": "Top pick",
+        "level": "h3"
+      }
+    },
+    "toppick_repo": {
+      "type": "StoryLink",
+      "props": {
+        "title": "superdesigndev/treg",
+        "href": "https://github.com/superdesigndev/treg",
+        "source": "GitHub"
+      }
+    },
+    "toppick_desc": {
+      "type": "Text",
+      "props": {
+        "text": "The \"OpenRouter for agent tools\" framing signals the next fragmentation point in agent tooling is credentials, not models — and someone is already building the unifying layer.",
+        "variant": "body"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_devtools": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_devtools",
+        "devtools_repo1"
+      ]
+    },
+    "heading_devtools": {
+      "type": "Heading",
+      "props": {
+        "text": "Devtools",
+        "level": "h3"
+      }
+    },
+    "devtools_repo1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "devtools_repo1_line",
+        "devtools_repo1_desc"
+      ]
+    },
+    "devtools_repo1_line": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "devtools_repo1_link",
+        "devtools_repo1_badges"
+      ]
+    },
+    "devtools_repo1_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "superdesigndev/treg",
+        "href": "https://github.com/superdesigndev/treg",
+        "source": "GitHub",
+        "score": "468★ today (3.3k total)"
+      }
+    },
+    "devtools_repo1_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_python",
+        "badge_accelerating"
+      ]
+    },
+    "badge_python": {
+      "type": "Badge",
+      "props": {
+        "text": "Python"
+      }
+    },
+    "badge_accelerating": {
+      "type": "Badge",
+      "props": {
+        "text": "[ACCELERATING]",
+        "variant": "secondary"
+      }
+    },
+    "devtools_repo1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Unifies scattered agent-tool API keys behind one proxy — the OpenRouter pattern applied to credentials, not models.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_web_apps": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_web_apps",
+        "web_apps_list"
+      ]
+    },
+    "heading_web_apps": {
+      "type": "Heading",
+      "props": {
+        "text": "Web/Apps",
+        "level": "h3"
+      }
+    },
+    "web_apps_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "web_apps_repo1",
+        "web_apps_repo2"
+      ]
+    },
+    "web_apps_repo1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "web_apps_repo1_line",
+        "web_apps_repo1_desc"
+      ]
+    },
+    "web_apps_repo1_line": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "web_apps_repo1_link",
+        "web_apps_repo1_badges"
+      ]
+    },
+    "web_apps_repo1_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "FxEmbed/FxEmbed",
+        "href": "https://github.com/FxEmbed/FxEmbed",
+        "source": "GitHub",
+        "score": "182★ today (5.4k total)"
+      }
+    },
+    "web_apps_repo1_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_typescript",
+        "badge_returning1"
+      ]
+    },
+    "badge_typescript": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript"
+      }
+    },
+    "badge_returning1": {
+      "type": "Badge",
+      "props": {
+        "text": "[RETURNING]",
+        "variant": "secondary"
+      }
+    },
+    "web_apps_repo1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "FixTweet successor now fixes Bluesky embeds too — proof the embed-fixing pattern is spreading past X.",
+        "variant": "body"
+      }
+    },
+    "web_apps_repo2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "web_apps_repo2_line",
+        "web_apps_repo2_desc"
+      ]
+    },
+    "web_apps_repo2_line": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "web_apps_repo2_link",
+        "web_apps_repo2_badges"
+      ]
+    },
+    "web_apps_repo2_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "julyx10/lap",
+        "href": "https://github.com/julyx10/lap",
+        "source": "GitHub",
+        "score": "122★ today (3.0k total)"
+      }
+    },
+    "web_apps_repo2_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_vue",
+        "badge_returning2"
+      ]
+    },
+    "badge_vue": {
+      "type": "Badge",
+      "props": {
+        "text": "Vue"
+      }
+    },
+    "badge_returning2": {
+      "type": "Badge",
+      "props": {
+        "text": "[RETURNING]",
+        "variant": "secondary"
+      }
+    },
+    "web_apps_repo2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Local-first photo manager with face recognition and dedup — no cloud upload needed for huge personal libraries.",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_sources": {
+      "type": "Text",
+      "props": {
+        "text": "sources: trending=ok · gh_api=fail (read-only mode; substituted public REST API via curl for created_at) · kept 3/14",
+        "variant": "caption"
+      }
+    }
+  }
+}
