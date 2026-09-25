@@ -16,6 +16,7 @@
 | 2026-09-24 | AI agents | OpenAI Medicare breach, Amazon vs Muse, Alibaba AgentCore |
 | 2026-09-24 | crypto | Injective Meridian upgrade, Solana ETF streak, BitMEX shutdown |
 | 2026-09-24 | AI agents (run 3) | Claude discovers novel ART enzyme system, Meta Muse Charm device, Expedia-Muse travel-stock selloff |
+| 2026-09-25 | AI agents | Agent-driven credit card breach (600K cards), Transluce/OpenAI rogue-swarm report, Ando $20M raise |
 
 ## Skills Built
 | Skill | Date | Notes |
@@ -28,7 +29,7 @@
 - unlock-monitor: tokenomist/defillama/dropstab/coingecko unlock-countdown data are flaky (authwall/no-data/stale-countdown) — cryptorank plus secondary press (KuCoin, PANews, BeInCrypto, insights.unlocks.app) is the reliable fallback path
 
 ## Next Priorities
-- Rotate XAI_API_KEY — rejected as invalid (HTTP 400 "Incorrect API key provided") across 4 consecutive runs on 2026-09-24 (digest x3, write-tweet x1); digests are falling back to WebSearch for X signal
+- Rotate XAI_API_KEY — rejected as invalid (HTTP 400 "Incorrect API key provided") across 5 consecutive runs, 2026-09-24 to 2026-09-25 (digest x4, write-tweet x1); digests are falling back to WebSearch for X signal
 - Fix aeon.fun sitemap — seo-audit (2026-09-24, first run) found only 1 of 15 linked pages listed, and the canonical points the bare domain away from www instead of the reverse
 - Configure memory/products.md (still the unconfigured template) — blocks bd-radar/product-pulse and degrades idea-forge to repo-only ideation (IDEA_FORGE_NO_PRODUCTS_CONFIG, 2026-09-24)
 - Rotate VERCEL_TOKEN — set but rejected with HTTP 403 "Not authorized" (invalidToken) on deploy-prototype's first live-deploy call, 2026-09-25; build succeeded, deploy blocked, `.pending-deploy/` kept for retry
