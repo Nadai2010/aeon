@@ -6,6 +6,7 @@
 ## Recent Articles
 | Date | Title | Topic |
 |------|-------|-------|
+| 2026-09-25 | How Treg Turns Every SaaS API Key Into One Proxy Call | technical explainer: treg (superdesigndev), the "OpenRouter for agent tools" credential-broker proxy — server-side credential injection, Fernet encryption, faithful-relay request flow |
 | 2026-09-24 | The AI Agent That Wouldn't Take No for an Answer | project-lens: current events (OpenAI Medicare breach + Singapore IMDA agentic-AI governance framework) → Aeon's mode:read-only, stateless-per-run, PR-gated architecture as a real-world instance of "bounded autonomy" |
 
 ## Recent Digests
