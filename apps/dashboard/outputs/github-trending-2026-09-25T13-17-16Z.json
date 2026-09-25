@@ -1,0 +1,598 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Trending — 2026-09-25"
+      },
+      "children": [
+        "top_pick_section",
+        "sep_1",
+        "aiml_section",
+        "sep_2",
+        "devtools_section",
+        "sep_3",
+        "web_section",
+        "sep_4",
+        "infra_section",
+        "sep_5",
+        "footer"
+      ]
+    },
+    "top_pick_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "top_pick_label",
+        "top_pick_repo",
+        "top_pick_desc"
+      ]
+    },
+    "top_pick_label": {
+      "type": "Text",
+      "props": {
+        "text": "Top pick",
+        "variant": "lead"
+      }
+    },
+    "top_pick_repo": {
+      "type": "StoryLink",
+      "props": {
+        "title": "anthropics/skills",
+        "href": "https://github.com/anthropics/skills"
+      }
+    },
+    "top_pick_desc": {
+      "type": "Text",
+      "props": {
+        "text": "The reference implementation behind Anthropic's Agent Skills spec — today's board shows it rippling outward into impeccable (a skill built on top of it) and claude-plugins-official (the marketplace packaging skills for distribution).",
+        "variant": "body"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "aiml_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "aiml_heading",
+        "aiml_item_1",
+        "aiml_item_2"
+      ]
+    },
+    "aiml_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "AI/ML",
+        "level": "h2"
+      }
+    },
+    "aiml_item_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "aiml_1_header",
+        "aiml_1_desc"
+      ]
+    },
+    "aiml_1_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "aiml_1_link",
+        "aiml_1_stat",
+        "aiml_1_lang",
+        "aiml_1_status"
+      ]
+    },
+    "aiml_1_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "anthropics/skills",
+        "href": "https://github.com/anthropics/skills"
+      }
+    },
+    "aiml_1_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "178k",
+        "delta": "+155t",
+        "trend": "up"
+      }
+    },
+    "aiml_1_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python",
+        "variant": "secondary"
+      }
+    },
+    "aiml_1_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      }
+    },
+    "aiml_1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Reference implementation of the open Agent Skills standard — the shared spec every pack here builds against.",
+        "variant": "body"
+      }
+    },
+    "aiml_item_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "aiml_2_header",
+        "aiml_2_desc"
+      ]
+    },
+    "aiml_2_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "aiml_2_link",
+        "aiml_2_stat",
+        "aiml_2_lang",
+        "aiml_2_status"
+      ]
+    },
+    "aiml_2_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "NVIDIA/Model-Optimizer",
+        "href": "https://github.com/NVIDIA/Model-Optimizer"
+      }
+    },
+    "aiml_2_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "4.3k",
+        "delta": "+360t",
+        "trend": "up"
+      }
+    },
+    "aiml_2_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python",
+        "variant": "secondary"
+      }
+    },
+    "aiml_2_status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "default"
+      }
+    },
+    "aiml_2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Just shipped v0.47.0 two days ago — explains today's spike after averaging under 5 stars/day for two years.",
+        "variant": "body"
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "devtools_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "devtools_heading",
+        "devtools_item_1",
+        "devtools_item_2",
+        "devtools_item_3"
+      ]
+    },
+    "devtools_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Devtools",
+        "level": "h2"
+      }
+    },
+    "devtools_item_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "devtools_1_header",
+        "devtools_1_desc"
+      ]
+    },
+    "devtools_1_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "devtools_1_link",
+        "devtools_1_stat",
+        "devtools_1_lang",
+        "devtools_1_status"
+      ]
+    },
+    "devtools_1_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "anthropics/claude-plugins-official",
+        "href": "https://github.com/anthropics/claude-plugins-official"
+      }
+    },
+    "devtools_1_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "36.8k",
+        "delta": "+62t",
+        "trend": "up"
+      }
+    },
+    "devtools_1_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python",
+        "variant": "secondary"
+      }
+    },
+    "devtools_1_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      }
+    },
+    "devtools_1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "1,000+ open issues already — the community is submitting Claude Code plugins faster than Anthropic can review them.",
+        "variant": "body"
+      }
+    },
+    "devtools_item_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "devtools_2_header",
+        "devtools_2_desc"
+      ]
+    },
+    "devtools_2_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "devtools_2_link",
+        "devtools_2_stat",
+        "devtools_2_lang",
+        "devtools_2_status"
+      ]
+    },
+    "devtools_2_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "pbakaus/impeccable",
+        "href": "https://github.com/pbakaus/impeccable"
+      }
+    },
+    "devtools_2_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "71k",
+        "delta": "+527t",
+        "trend": "up"
+      }
+    },
+    "devtools_2_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "JavaScript",
+        "variant": "secondary"
+      }
+    },
+    "devtools_2_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      }
+    },
+    "devtools_2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "61 no-LLM detector rules catch AI design tells — Inter font, purple gradients — that Anthropic's skill misses.",
+        "variant": "body"
+      }
+    },
+    "devtools_item_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "devtools_3_header",
+        "devtools_3_desc"
+      ]
+    },
+    "devtools_3_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "devtools_3_link",
+        "devtools_3_stat",
+        "devtools_3_lang",
+        "devtools_3_status"
+      ]
+    },
+    "devtools_3_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "derv82/wifit3",
+        "href": "https://github.com/derv82/wifit3"
+      }
+    },
+    "devtools_3_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "702",
+        "delta": "+168t",
+        "trend": "up"
+      }
+    },
+    "devtools_3_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python",
+        "variant": "secondary"
+      }
+    },
+    "devtools_3_status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "default"
+      }
+    },
+    "devtools_3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Reimplements WPA handshake capture, PMKID harvesting and WPS PixieDust attacks in pure Python — no aircrack-ng, no drivers.",
+        "variant": "body"
+      }
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "web_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "web_heading",
+        "web_item_1"
+      ]
+    },
+    "web_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Web/Apps",
+        "level": "h2"
+      }
+    },
+    "web_item_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "web_1_header",
+        "web_1_desc"
+      ]
+    },
+    "web_1_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "web_1_link",
+        "web_1_stat",
+        "web_1_lang",
+        "web_1_status"
+      ]
+    },
+    "web_1_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "paperclipai/paperclip",
+        "href": "https://github.com/paperclipai/paperclip"
+      }
+    },
+    "web_1_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "83.5k",
+        "delta": "+1,853t",
+        "trend": "up"
+      }
+    },
+    "web_1_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript",
+        "variant": "secondary"
+      }
+    },
+    "web_1_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      }
+    },
+    "web_1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Orchestrates whole AI \"companies\" — org charts, budgets, and goal-setting for an entire hired team of agents.",
+        "variant": "body"
+      }
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "infra_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "infra_heading",
+        "infra_item_1"
+      ]
+    },
+    "infra_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Infra",
+        "level": "h2"
+      }
+    },
+    "infra_item_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "infra_1_header",
+        "infra_1_desc"
+      ]
+    },
+    "infra_1_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "infra_1_link",
+        "infra_1_stat",
+        "infra_1_lang",
+        "infra_1_status"
+      ]
+    },
+    "infra_1_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "kelseyhightower/kubernetes-the-hard-way",
+        "href": "https://github.com/kelseyhightower/kubernetes-the-hard-way"
+      }
+    },
+    "infra_1_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "50k",
+        "delta": "+105t",
+        "trend": "up"
+      }
+    },
+    "infra_1_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Markdown",
+        "variant": "secondary"
+      }
+    },
+    "infra_1_status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "default"
+      }
+    },
+    "infra_1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "The decade-old no-shortcuts K8s guide is trending again — a pushback signal against over-automated infra tooling today.",
+        "variant": "body"
+      }
+    },
+    "sep_5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "footer": {
+      "type": "Alert",
+      "props": {
+        "title": "Sources",
+        "message": "trending=ok · gh_api=fail (read-only mode; substituted public REST API via curl for created_at/releases) · kept 7/16",
+        "type": "info"
+      }
+    }
+  }
+}

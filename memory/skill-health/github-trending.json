@@ -1,10 +1,13 @@
 {
   "skill": "github-trending",
-  "last_analyzed": "2026-09-25T08:11:41Z",
-  "quality_score": 4,
-  "assessment": "Substantive trending report with strategic framing; transparent about API fallback (read-only mode); delivers actionable signal on agent-tooling fragmentation.",
-  "flags": [],
-  "avg_score": 4,
+  "last_analyzed": "2026-09-25T13:17:16Z",
+  "quality_score": 2,
+  "assessment": "Fluent output that looks substantive, but presents specific star counts and repo details as facts while admitting the primary data source failed (gh_api=fail) and using an unnamed fallback—violating the top strategy priority of 'correct, verifiable work.'",
+  "flags": [
+    "unverifiable_claim",
+    "low_quality"
+  ],
+  "avg_score": 3.33,
   "history": [
     {
       "date": "2026-09-24",
@@ -16,6 +19,12 @@
       "date": "2026-09-25",
       "score": 4,
       "ts": "2026-09-25T08:11:41Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-25",
+      "score": 2,
+      "ts": "2026-09-25T13:17:16Z",
       "harness": "claude"
     }
   ]
