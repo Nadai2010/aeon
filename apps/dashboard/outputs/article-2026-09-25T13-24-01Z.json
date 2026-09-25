@@ -1,0 +1,51 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Technical Explainer"
+      },
+      "children": [
+        "stack_content"
+      ]
+    },
+    "stack_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_title",
+        "text_description",
+        "link_article"
+      ]
+    },
+    "heading_title": {
+      "type": "Heading",
+      "props": {
+        "text": "The Trick Behind Claude's Agent Skills: Most of Every Skill Never Loads",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "text_description": {
+      "type": "Text",
+      "props": {
+        "text": "Agent Skills work by keeping almost every installed capability off Claude's context entirely — only a ~100-token name-and-description stub stays loaded, and the real instructions, reference files, and scripts are pulled off disk one bash read at a time, only when the task actually needs them.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "link_article": {
+      "type": "Link",
+      "props": {
+        "label": "Read article",
+        "href": "output/articles/explainer-2026-09-25-agent-skills.md"
+      },
+      "children": []
+    }
+  }
+}

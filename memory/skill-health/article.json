@@ -1,10 +1,13 @@
 {
   "skill": "article",
-  "last_analyzed": "2026-09-25T08:17:55Z",
-  "quality_score": 4,
-  "assessment": "Substantive technical explainer on Treg's proxy credential pattern with critical risk analysis, well-sourced, and properly structured—aligns with operator priorities on depth and verifiable work.",
-  "flags": [],
-  "avg_score": 3,
+  "last_analyzed": "2026-09-25T13:24:01Z",
+  "quality_score": 2,
+  "assessment": "Skill ran but violated core output requirement: CLAUDE.md explicitly requires final output to carry substantive content inline, not defer to external files; actual article verifiability is opaque.",
+  "flags": [
+    "low_quality",
+    "unverifiable_claim"
+  ],
+  "avg_score": 2.67,
   "history": [
     {
       "date": "2026-09-24",
@@ -16,6 +19,12 @@
       "date": "2026-09-25",
       "score": 4,
       "ts": "2026-09-25T08:17:55Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-25",
+      "score": 2,
+      "ts": "2026-09-25T13:24:01Z",
       "harness": "claude"
     }
   ]
