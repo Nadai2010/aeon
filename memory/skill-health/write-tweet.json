@@ -1,8 +1,8 @@
 {
   "skill": "write-tweet",
-  "last_analyzed": "2026-09-24T14:07:13Z",
+  "last_analyzed": "2026-09-25T08:23:17Z",
   "quality_score": 2,
-  "assessment": "Low-quality output: references a draft but doesn't show it—violates CLAUDE.md requirement that substance (the actual tweet) must be in stdout, not elsewhere",
+  "assessment": "Ran but lacks substance — outputs an interaction prompt instead of the actual tweet draft, violating the rule that skill output must carry the substantive work product, not just a pointer to it.",
   "flags": [
     "low_quality"
   ],
@@ -12,6 +12,12 @@
       "date": "2026-09-24",
       "score": 2,
       "ts": "2026-09-24T14:07:13Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-25",
+      "score": 2,
+      "ts": "2026-09-25T08:23:17Z",
       "harness": "claude"
     }
   ]

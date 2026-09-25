@@ -1,0 +1,1 @@
+{"model":"grok-4.6","input":[{"role":"user","content":"Search X for what people are saying about the GitHub project treg (superdesigndev/treg), a credential-broker proxy for agent tool API keys, in the last 24 hours. Return the 5 most notable tweets with @handle and summary."}],"tools":[{"type":"x_search"}]}
