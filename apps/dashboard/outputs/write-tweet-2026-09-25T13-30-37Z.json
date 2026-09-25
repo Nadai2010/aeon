@@ -1,0 +1,262 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Tweet Drafts: Agent Skills",
+        "description": "progressive disclosure & the trust gap"
+      },
+      "children": [
+        "section_1liner",
+        "sep1",
+        "section_2punch",
+        "sep2",
+        "section_paragraph",
+        "sep3",
+        "section_longtweet",
+        "sep4",
+        "section_thread",
+        "sep5",
+        "recommendations"
+      ]
+    },
+    "section_1liner": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "badge_1liner",
+        "text_1a",
+        "text_1b"
+      ]
+    },
+    "badge_1liner": {
+      "type": "Badge",
+      "props": {
+        "text": "one-liner",
+        "variant": "secondary"
+      }
+    },
+    "text_1a": {
+      "type": "Text",
+      "props": {
+        "text": "1a. Claude doesn't decide to load a skill. It just loses a fuzzy-match roulette.",
+        "variant": "lead"
+      }
+    },
+    "text_1b": {
+      "type": "Text",
+      "props": {
+        "text": "1b. 3.8 million SKILL.md files exist. Almost none of them have been read by a human.",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_2punch": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "badge_2punch",
+        "text_2a",
+        "text_2b"
+      ]
+    },
+    "badge_2punch": {
+      "type": "Badge",
+      "props": {
+        "text": "two-punch",
+        "variant": "secondary"
+      }
+    },
+    "text_2a": {
+      "type": "Text",
+      "props": {
+        "text": "2a. 178,096 stars on anthropics/skills in a year. 26% of skills in the wild ship with a real vulnerability. Adoption outran review.",
+        "variant": "lead"
+      }
+    },
+    "text_2b": {
+      "type": "Text",
+      "props": {
+        "text": "2b. Everyone is excited that skills are nearly free to install. Nobody is asking what \"nearly free\" does to the incentive to actually read one before running it.",
+        "variant": "lead"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_paragraph": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "badge_paragraph",
+        "text_3a",
+        "text_3b"
+      ]
+    },
+    "badge_paragraph": {
+      "type": "Badge",
+      "props": {
+        "text": "paragraph",
+        "variant": "secondary"
+      }
+    },
+    "text_3a": {
+      "type": "Text",
+      "props": {
+        "text": "3a. Progressive disclosure means Claude reads a skill's real instructions only after a one-line description convinces it to. That's not judgment, it's a coin flip written by whoever authored the description. 26% of skills in the wild fail that flip.",
+        "variant": "body"
+      }
+    },
+    "text_3b": {
+      "type": "Text",
+      "props": {
+        "text": "3b. A new hire doesn't memorize the handbook, they read a one-line job title and ask when they're stuck. Anthropic built Agent Skills on exactly that analogy. The gap: a human employee has judgment about when to check the manual. Claude has a string match.",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_longtweet": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "badge_longtweet",
+        "text_4a",
+        "text_4b"
+      ]
+    },
+    "badge_longtweet": {
+      "type": "Badge",
+      "props": {
+        "text": "long tweet",
+        "variant": "secondary"
+      }
+    },
+    "text_4a": {
+      "type": "Text",
+      "props": {
+        "text": "4a. Agent Skills work because almost nothing loads: about 100 tokens of metadata per skill, always in context, and the real instructions - under 5,000 tokens - only load if your request matches a one-line description. Everything else, scripts included, sits on disk at zero cost until Claude decides to run it. That's the trick that let 3.8 million SKILL.md files ship across 282,200 repos in about a year. It's also why 26% of a large sample carried a real vulnerability - the description field is the entire security boundary, and nobody's reviewing it.",
+        "variant": "body"
+      }
+    },
+    "text_4b": {
+      "type": "Text",
+      "props": {
+        "text": "4b. The standard has already spread past Claude - OpenAI Codex and GitHub Copilot support the same Agent Skills format now. That's the part worth sitting with: an entire ecosystem is converging on \"a folder plus a description field\" as the interface between an agent and a new capability. Nobody would ship an OS where installing an app meant trusting one sentence the app wrote about itself. That's exactly what every agent using this spec does today, and it's spreading faster than anyone is auditing it.",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "section_thread": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "badge_thread",
+        "thread_part_5a",
+        "thread_divider",
+        "thread_part_5b"
+      ]
+    },
+    "badge_thread": {
+      "type": "Badge",
+      "props": {
+        "text": "thread opener",
+        "variant": "secondary"
+      }
+    },
+    "thread_part_5a": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_5a_main",
+        "text_5a_bullets"
+      ]
+    },
+    "text_5a_main": {
+      "type": "Text",
+      "props": {
+        "text": "5a. Anthropic's Agent Skills stay almost entirely off Claude's context - one ~100-token stub per skill, everything else loaded on demand. It's the reason installing 100 skills costs about the same as installing 5. It's also why 26% of them ship a real vulnerability.",
+        "variant": "lead"
+      }
+    },
+    "text_5a_bullets": {
+      "type": "Text",
+      "props": {
+        "text": "• How the 3-tier load actually works: metadata, then instructions, then scripts — each gated behind a bash read\n• Why a fuzzy-matched description field is the entire trust boundary\n• The onboarding-guide analogy Anthropic uses, and exactly where it breaks\n• The numbers: 178k stars, 3.8M SKILL.md files, 26% vulnerable, 157 confirmed malicious skills\n• What would actually break the \"adding skills is nearly free\" claim as libraries scale",
+        "variant": "caption"
+      }
+    },
+    "thread_divider": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "thread_part_5b": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text_5b_main",
+        "text_5b_bullets"
+      ]
+    },
+    "text_5b_main": {
+      "type": "Text",
+      "props": {
+        "text": "5b. Would you let a new hire read one sentence about a task, then hand them the keys to run whatever script sits on the shelf labeled with that sentence? That's how every Claude Agent Skill gets executed.",
+        "variant": "lead"
+      }
+    },
+    "text_5b_bullets": {
+      "type": "Text",
+      "props": {
+        "text": "• The \"metadata-only default\" and what \"matching a description\" actually authorizes\n• The trust-gap numbers: 632 vulnerabilities found, one threat actor behind 54% of confirmed malicious skills\n• Anthropic's own advice (\"only run skills you wrote or got from Anthropic\") vs. a 3.8M-file open ecosystem\n• Where the new-hire analogy breaks down: judgment vs. string match\n• The open question researchers are flagging: does routing accuracy collapse as the skill library grows?",
+        "variant": "caption"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "recommendations": {
+      "type": "Alert",
+      "props": {
+        "title": "Editor's Pick",
+        "message": "best: #4a — long tweet / structural critique. It's the one that actually proves the claim with numbers instead of asserting it: names the token budget, ties it to the adoption number, then ties that same mechanism to the vulnerability rate. Runner-up: #3a for compression of the same idea into one paragraph.",
+        "type": "info"
+      }
+    }
+  }
+}
