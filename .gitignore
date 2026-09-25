@@ -70,3 +70,6 @@ skills/remotion/project/props.json
 # Operator working files — LOCAL ONLY, never publish (submission drafts + benchmark strategy)
 /SUBMISSIONS.md
 /BENCHMARK.md
+
+# vuln-scanner clones its target repo here at run time; never commit (stray gitlink breaks checkout/Pages)
+.vulnwork*
