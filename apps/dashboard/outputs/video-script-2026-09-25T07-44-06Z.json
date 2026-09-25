@@ -1,0 +1,116 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "Video script: Click the Receipt"
+      },
+      "children": [
+        "heading-main",
+        "sep1",
+        "details-stack",
+        "sep2",
+        "link-section"
+      ]
+    },
+    "heading-main": {
+      "type": "Heading",
+      "props": {
+        "text": "🎬 Video script ready — \"Click the Receipt\"",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "details-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "runtime-stat",
+        "angle-section"
+      ]
+    },
+    "runtime-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Runtime",
+        "value": "~4:00"
+      },
+      "children": []
+    },
+    "angle-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "angle-label",
+        "angle-text",
+        "mismatch-alert"
+      ]
+    },
+    "angle-label": {
+      "type": "Text",
+      "props": {
+        "text": "Angle",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "angle-text": {
+      "type": "Text",
+      "props": {
+        "text": "Cold-open on clicking \"Verify the run\" on the Aeon showcase page (nadai2010.github.io/aeon) and landing on the real, matching GitHub Actions log — the receipts-first mechanism is the story.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "mismatch-alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Key Issue",
+        "message": "Page claims \"13 tested runs\" but only 10 run links are actually present. Script flags this mismatch instead of repeating the unreconciled number.",
+        "type": "info"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "script-link"
+      ]
+    },
+    "script-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "2026-09-25-receipts-showcase.md",
+        "href": "https://github.com/Nadai2010/aeon/blob/main/output/video-scripts/2026-09-25-receipts-showcase.md",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}

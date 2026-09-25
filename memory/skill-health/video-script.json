@@ -1,0 +1,16 @@
+{
+  "skill": "video-script",
+  "last_analyzed": "2026-09-25T07:44:06Z",
+  "quality_score": 4,
+  "assessment": "Substantive video script with critical editorial decision — caught and flagged a discrepancy (13 claimed runs vs 10 actual links) rather than repeating unverified claims, demonstrating alignment to correctness priority.",
+  "flags": [],
+  "avg_score": 4,
+  "history": [
+    {
+      "date": "2026-09-25",
+      "score": 4,
+      "ts": "2026-09-25T07:44:06Z",
+      "harness": "claude"
+    }
+  ]
+}
