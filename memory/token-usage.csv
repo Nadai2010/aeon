@@ -9,4 +9,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-09-25,article,claude-sonnet-5,2499,9866,1489886,112246
 2026-09-25,write-tweet,claude-sonnet-5,2650,18456,2285616,103901
 2026-09-25,deploy-prototype,claude-sonnet-5,2777,14451,1795473,40290
-2026-09-25,heartbeat,claude-sonnet-5,2487,13823,1213617,67316
+2026-09-25,defi-overview,claude-sonnet-5,3367,47497,6524254,183959

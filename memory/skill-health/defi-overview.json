@@ -1,8 +1,8 @@
 {
   "skill": "defi-overview",
-  "last_analyzed": "2026-09-24T18:01:39Z",
+  "last_analyzed": "2026-09-25T13:15:27Z",
   "quality_score": 4,
-  "assessment": "Substantive, well-sourced market snapshot with specific data, source validation, and actionable signal—aligns strongly with operator priorities for correctness and brevity.",
+  "assessment": "Substantive DeFi dashboard with verifiable sourced data, clean structure, and clear signal surfacing (NEAR breakout, fee patterns, yield analysis) — professional daily report quality.",
   "flags": [],
   "avg_score": 4,
   "history": [
@@ -16,6 +16,12 @@
       "date": "2026-09-24",
       "score": 4,
       "ts": "2026-09-24T18:01:39Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-25",
+      "score": 4,
+      "ts": "2026-09-25T13:15:27Z",
       "harness": "claude"
     }
   ]

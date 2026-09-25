@@ -1,0 +1,502 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "DeFi Overview",
+        "description": "2026-09-25"
+      },
+      "children": [
+        "header-stack",
+        "sep1",
+        "tvl-stat",
+        "sep2",
+        "top-chains-section",
+        "sep3",
+        "movers-section",
+        "sep4",
+        "fees-section",
+        "sep5",
+        "dex-section",
+        "sep6",
+        "stables-section",
+        "sep7",
+        "yields-section",
+        "sep8",
+        "macro-section",
+        "sep9",
+        "sources"
+      ]
+    },
+    "header-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "header-text",
+        "status-badge"
+      ]
+    },
+    "header-text": {
+      "type": "Text",
+      "props": {
+        "text": "Crypto",
+        "variant": "body"
+      }
+    },
+    "status-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "rotation (conviction medium) | DeFi Sideways: TVL/volume both under move thresholds, grind day",
+        "variant": "outline"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "tvl-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "TVL",
+        "value": "$95.53B",
+        "delta": "+0.7% (24h), +8.4% (7d)",
+        "trend": "up"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "top-chains-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "top-chains-heading",
+        "chain-eth",
+        "chain-sol",
+        "chain-base"
+      ]
+    },
+    "top-chains-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Top Chains",
+        "level": "h3"
+      }
+    },
+    "chain-eth": {
+      "type": "Text",
+      "props": {
+        "text": "1. Ethereum — $53.75B (+7.9% 7d)"
+      }
+    },
+    "chain-sol": {
+      "type": "Text",
+      "props": {
+        "text": "2. Solana — $6.52B (+10.5% 7d)"
+      }
+    },
+    "chain-base": {
+      "type": "Text",
+      "props": {
+        "text": "3. Base — $6.28B (+12.6% 7d)"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "movers-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "movers-heading",
+        "mover-bittensor",
+        "mover-near"
+      ]
+    },
+    "movers-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Movers",
+        "level": "h3"
+      }
+    },
+    "mover-bittensor": {
+      "type": "Text",
+      "props": {
+        "text": "↑ Bittensor +7.8% ($566M → $610M) — no obvious catalyst"
+      }
+    },
+    "mover-near": {
+      "type": "Text",
+      "props": {
+        "text": "↑ NEAR Bridge +26.1% ($112M → $141M) — Near ecosystem-wide TVL breakout, 4 protocols up 14-26% today"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "fees-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "fees-leaders-heading",
+        "fee-tether",
+        "fee-circle",
+        "fee-hyperliquid",
+        "sep4a",
+        "fees-beating-heading",
+        "fees-beating-spark",
+        "fees-beating-hyperlend"
+      ]
+    },
+    "fees-leaders-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Fees Leaders (24h)",
+        "level": "h3"
+      }
+    },
+    "fee-tether": {
+      "type": "Text",
+      "props": {
+        "text": "1. Tether — $17.4M (+1% vs 7d avg)"
+      }
+    },
+    "fee-circle": {
+      "type": "Text",
+      "props": {
+        "text": "2. Circle USDC — $7.2M (+2% vs 7d avg)"
+      }
+    },
+    "fee-hyperliquid": {
+      "type": "Text",
+      "props": {
+        "text": "3. Hyperliquid Perps — $3.5M (+15% vs 7d avg)"
+      }
+    },
+    "sep4a": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "fees-beating-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Fees Beating TVL",
+        "level": "h4"
+      }
+    },
+    "fees-beating-spark": {
+      "type": "Text",
+      "props": {
+        "text": "• Spark Liquidity Layer — fees +278% / TVL +2% (7d, $2.56B TVL) — demand outrunning deposits"
+      }
+    },
+    "fees-beating-hyperlend": {
+      "type": "Text",
+      "props": {
+        "text": "• HyperLend Pooled — fees +146% / TVL -14% (7d) — deposits shrinking while usage grows, 2nd day"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "dex-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "dex-heading",
+        "dex-stat",
+        "dex-item1",
+        "dex-item2",
+        "dex-item3"
+      ]
+    },
+    "dex-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "DEX Volume (24h)",
+        "level": "h3"
+      }
+    },
+    "dex-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Total DEX Volume",
+        "value": "$10.42B",
+        "delta": "+3.0%",
+        "trend": "up"
+      }
+    },
+    "dex-item1": {
+      "type": "Text",
+      "props": {
+        "text": "Top: Uniswap V3 $1.71B"
+      }
+    },
+    "dex-item2": {
+      "type": "Text",
+      "props": {
+        "text": "Uniswap V4 $1.35B"
+      }
+    },
+    "dex-item3": {
+      "type": "Text",
+      "props": {
+        "text": "PancakeSwap V3 $649M"
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stables-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stables-heading",
+        "stables-stat",
+        "stables-note"
+      ]
+    },
+    "stables-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stablecoins",
+        "level": "h3"
+      }
+    },
+    "stables-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Total Stables TVL",
+        "value": "$312.2B",
+        "delta": "+0.2%",
+        "trend": "neutral"
+      }
+    },
+    "stables-note": {
+      "type": "Text",
+      "props": {
+        "text": "USDS +1.7% only notable single-issuer move",
+        "variant": "caption"
+      }
+    },
+    "sep7": {
+      "type": "Separator",
+      "props": {}
+    },
+    "yields-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "yields-heading",
+        "real-yield-heading",
+        "real-yield-disclaimer",
+        "real-yield-1",
+        "real-yield-2",
+        "real-yield-3",
+        "sep7a",
+        "incentive-yield-heading",
+        "incentive-yield-note",
+        "incentive-yield-1",
+        "incentive-yield-2"
+      ]
+    },
+    "yields-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Yield Opportunities",
+        "level": "h3"
+      }
+    },
+    "real-yield-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Real Yield (sustainable, ≥$10M, filtered)",
+        "level": "h4"
+      }
+    },
+    "real-yield-disclaimer": {
+      "type": "Text",
+      "props": {
+        "text": "All concentrated LPs, IL risk flagged",
+        "variant": "caption"
+      }
+    },
+    "real-yield-1": {
+      "type": "Text",
+      "props": {
+        "text": "• WETH-USDT (Uniswap V3, ETH) — 58.8% apyBase ($109M TVL)"
+      }
+    },
+    "real-yield-2": {
+      "type": "Text",
+      "props": {
+        "text": "• ETH-USDT (Uniswap V4, ETH) — 53.9% apyBase ($32M TVL)"
+      }
+    },
+    "real-yield-3": {
+      "type": "Text",
+      "props": {
+        "text": "• ETH-LINK (Uniswap V4, ETH) — 47.0% apyBase ($23M TVL)"
+      }
+    },
+    "sep7a": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "incentive-yield-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Incentive Yield (points / emissions, ≥$25M)",
+        "level": "h4"
+      }
+    },
+    "incentive-yield-note": {
+      "type": "Text",
+      "props": {
+        "text": "Temporary yields via protocol rewards",
+        "variant": "caption"
+      }
+    },
+    "incentive-yield-1": {
+      "type": "Text",
+      "props": {
+        "text": "• USDC-AERO (Aerodrome, Base) — 26.1% apy via AERO rewards ($38M TVL)"
+      }
+    },
+    "incentive-yield-2": {
+      "type": "Text",
+      "props": {
+        "text": "• SDCRV (Stake DAO, ETH) — 13.7% apy via CRV rewards ($41M TVL)"
+      }
+    },
+    "sep8": {
+      "type": "Separator",
+      "props": {}
+    },
+    "macro-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "macro-heading",
+        "btc-stat",
+        "eth-stat",
+        "sep8a",
+        "fng-text",
+        "breadth-text",
+        "narrative-text",
+        "sep8b",
+        "polymarket-note"
+      ]
+    },
+    "macro-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Macro Context",
+        "level": "h3"
+      }
+    },
+    "btc-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Bitcoin (BTC)",
+        "value": "$84,538",
+        "delta": "+1.0%",
+        "trend": "up"
+      }
+    },
+    "eth-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Ethereum (ETH)",
+        "value": "$2,721",
+        "delta": "+2.5%",
+        "trend": "up"
+      }
+    },
+    "sep8a": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "fng-text": {
+      "type": "Text",
+      "props": {
+        "text": "Fear & Greed Index: 71 (Greed)"
+      }
+    },
+    "breadth-text": {
+      "type": "Text",
+      "props": {
+        "text": "Market Breadth: 15/20"
+      }
+    },
+    "narrative-text": {
+      "type": "Text",
+      "props": {
+        "text": "Hot narrative: Near ecosystem breakout (NEAR #1 trending +14.1%)"
+      }
+    },
+    "sep8b": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "polymarket-note": {
+      "type": "Alert",
+      "props": {
+        "title": "Polymarket Note",
+        "message": "No macro-relevant Polymarket markets cleared filters this run (esports/tennis dominate 24h volume)",
+        "type": "info"
+      }
+    },
+    "sep9": {
+      "type": "Separator",
+      "props": {}
+    },
+    "sources": {
+      "type": "Text",
+      "props": {
+        "text": "Sources: llama_tvl=ok llama_dex=ok llama_fees=ok llama_stables=ok llama_yields=ok coingecko=ok fng=ok polymarket=ok websearch=ok",
+        "variant": "caption"
+      }
+    }
+  }
+}
