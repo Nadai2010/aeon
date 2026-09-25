@@ -1,0 +1,125 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "deploy-prototype"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "project-info",
+        "sep1",
+        "build-section",
+        "sep2",
+        "deploy-section"
+      ]
+    },
+    "project-info": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "project-name",
+        "project-desc"
+      ]
+    },
+    "project-name": {
+      "type": "Heading",
+      "props": {
+        "text": "aeon-prototype-pomodoro-timer",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "project-desc": {
+      "type": "Text",
+      "props": {
+        "text": "A minimal focus timer. 25 on, 5 off. Start, pause, reset.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "build-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "build-label",
+        "build-status"
+      ]
+    },
+    "build-label": {
+      "type": "Heading",
+      "props": {
+        "text": "Build",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "build-status": {
+      "type": "Badge",
+      "props": {
+        "text": "✓ Success",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "deploy-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "deploy-alert",
+        "retry-info"
+      ]
+    },
+    "deploy-alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Vercel Deploy Failed",
+        "message": "http=403 (forbidden/invalidToken) — Invalid or missing authentication token",
+        "type": "error"
+      },
+      "children": []
+    },
+    "retry-info": {
+      "type": "Text",
+      "props": {
+        "text": ".pending-deploy kept for retry",
+        "variant": "caption"
+      },
+      "children": []
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "skill": "deploy-prototype",
+  "last_analyzed": "2026-09-25T08:32:55Z",
+  "quality_score": 3,
+  "assessment": "Built successfully but deployment blocked by invalid Vercel token; surfaces the failure signal clearly and honestly with specific error code and actionable retention of pending state, aligning with the strategy's priority on surfacing signal early. Primary objective incomplete due to infrastructure/config issue, not skill execution.",
+  "flags": [],
+  "avg_score": 3,
+  "history": [
+    {
+      "date": "2026-09-25",
+      "score": 3,
+      "ts": "2026-09-25T08:32:55Z",
+      "harness": "claude"
+    }
+  ]
+}
