@@ -66,3 +66,7 @@ skills/remotion/project/props.json
 
 # eyebrow local snapshot cache (content-addressed; not committed)
 .eyebrow/
+
+# Operator working files — LOCAL ONLY, never publish (submission drafts + benchmark strategy)
+/SUBMISSIONS.md
+/BENCHMARK.md
