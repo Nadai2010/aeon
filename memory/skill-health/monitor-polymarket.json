@@ -1,0 +1,16 @@
+{
+  "skill": "monitor-polymarket",
+  "last_analyzed": "2026-09-25T07:46:50Z",
+  "quality_score": 3,
+  "assessment": "Skill ran successfully, provided substantive market data with specific volumes/odds, and gave clear verdict + actionable next steps; held at 3 by cold-start (empty watchlists, no alerts to act on).",
+  "flags": [],
+  "avg_score": 3,
+  "history": [
+    {
+      "date": "2026-09-25",
+      "score": 3,
+      "ts": "2026-09-25T07:46:50Z",
+      "harness": "claude"
+    }
+  ]
+}

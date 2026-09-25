@@ -1,0 +1,118 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Prediction markets — 2026-09-25",
+        "description": "Both watchlists are empty (first configured run) — nothing to compare against yet."
+      },
+      "children": [
+        "heading-kalshi",
+        "text-kalshi-discovery",
+        "heading-top-markets",
+        "table-markets",
+        "text-additional-markets",
+        "text-verdict",
+        "alert-verdict",
+        "sep-1",
+        "heading-setup",
+        "text-setup-hint"
+      ]
+    },
+    "heading-kalshi": {
+      "type": "Heading",
+      "props": {
+        "text": "Kalshi",
+        "level": "h2"
+      }
+    },
+    "text-kalshi-discovery": {
+      "type": "Text",
+      "props": {
+        "text": "MONITOR_KALSHI_NO_CONFIG. Default discovery (events?status=open, no sort) mostly surfaces zero-volume novelty markets (Pope, Mars, NATO chair), so real volume was found by probing known series instead. All meaningful 24h volume sits in Sunday's (Sep 27) NFL slate — nothing else cleared $25k."
+      }
+    },
+    "heading-top-markets": {
+      "type": "Heading",
+      "props": {
+        "text": "Top Markets by Volume (24h)",
+        "level": "h3"
+      }
+    },
+    "table-markets": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Matchup",
+          "Implied %",
+          "Contracts (Yes/No)"
+        ],
+        "rows": [
+          [
+            "KC @ 85% vs MIA 14%",
+            "KC favored",
+            "133k / 111k"
+          ],
+          [
+            "SEA @ 76% vs WAS 25%",
+            "SEA favored",
+            "70k / 33k"
+          ],
+          [
+            "NE @ 41% vs JAC 60%",
+            "JAC favored",
+            "56k / 9k"
+          ],
+          [
+            "BUF @ 76% vs LAC 25%",
+            "BUF favored",
+            "52k / 46k"
+          ],
+          [
+            "TEN @ 44% vs NYG 57%",
+            "NYG favored",
+            "51k / 11k"
+          ]
+        ]
+      }
+    },
+    "text-additional-markets": {
+      "type": "Text",
+      "props": {
+        "text": "All markets flat/efficiently priced, no moves >2pp, tight books.\n\nAlso live: KXFED-26OCT (Fed Oct 28 decision, ~4.00% threshold at 67%, $1.5k vol) and hourly KXBTC price-range markets — both modest volume, no alerts."
+      }
+    },
+    "text-verdict": {
+      "type": "Text",
+      "props": {
+        "text": "Verdict: All quiet — no Kalshi alerts, no Polymarket coverage (empty watchlist)."
+      }
+    },
+    "alert-verdict": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "message": "No alerts at this time. Waiting for watchlist configuration to enable comparative tracking."
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "heading-setup": {
+      "type": "Heading",
+      "props": {
+        "text": "Setup Hint",
+        "level": "h2"
+      }
+    },
+    "text-setup-hint": {
+      "type": "Text",
+      "props": {
+        "text": "Add event slugs to skills/monitor-polymarket/watchlist-polymarket.md and tickers to watchlist-kalshi.md (e.g. KXFED-26OCT, KXNFLGAME-*, KXBTC-*) to get real comparative tracking instead of cold-start discovery."
+      }
+    }
+  }
+}
