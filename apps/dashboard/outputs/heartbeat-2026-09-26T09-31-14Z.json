@@ -1,0 +1,41 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat — fleet check"
+      },
+      "children": [
+        "stack-content"
+      ]
+    },
+    "stack-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alert-stalled",
+        "link-prs"
+      ]
+    },
+    "alert-stalled": {
+      "type": "Alert",
+      "props": {
+        "title": "STALLED: PR #1–#5",
+        "message": "Dependabot dependency bumps: dashboard, github-actions, webhook, mcp-server, cli\n\nOpen ~44h, since 2026-09-24 13:24 UTC — past the 24h bar for the first time.",
+        "type": "warning"
+      }
+    },
+    "link-prs": {
+      "type": "Link",
+      "props": {
+        "label": "View pull requests",
+        "href": "https://github.com/aeonframework/aeon/pulls"
+      }
+    }
+  }
+}
