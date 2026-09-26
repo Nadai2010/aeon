@@ -1,0 +1,23 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "New Article"
+      },
+      "children": [
+        "story-link-1"
+      ]
+    },
+    "story-link-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "GitHub's Most-Starred Agent Skills Repo Isn't Anthropic's — It's Not Even Close",
+        "href": "https://github.com/Nadai2010/aeon/blob/main/output/articles/2026-09-26.md",
+        "source": "GitHub"
+      }
+    }
+  }
+}

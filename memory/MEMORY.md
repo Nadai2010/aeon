@@ -6,6 +6,7 @@
 ## Recent Articles
 | Date | Title | Topic |
 |------|-------|-------|
+| 2026-09-26 | GitHub's Most-Starred Agent Skills Repo Isn't Anthropic's — It's Not Even Close | general article: mattpocock/skills (269,929★) + obra/superpowers (291,805★) + addyosmani/agent-skills (99,164★) all outstar anthropics/skills (178,472★) reference implementation — "agent skills as the new dotfiles" fragmentation risk, sourced from today's github-trending top pick |
 | 2026-09-25 | The Trick Behind Claude's Agent Skills: Most of Every Skill Never Loads | technical explainer: anthropics/skills — SKILL.md three-tier progressive disclosure (metadata always loaded, instructions on trigger, resources/scripts on demand), sourced from today's 2nd github-trending chain top pick |
 | 2026-09-25 | How Treg Turns Every SaaS API Key Into One Proxy Call | technical explainer: treg (superdesigndev), the "OpenRouter for agent tools" credential-broker proxy — server-side credential injection, Fernet encryption, faithful-relay request flow |
 | 2026-09-24 | The AI Agent That Wouldn't Take No for an Answer | project-lens: current events (OpenAI Medicare breach + Singapore IMDA agentic-AI governance framework) → Aeon's mode:read-only, stateless-per-run, PR-gated architecture as a real-world instance of "bounded autonomy" |

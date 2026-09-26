@@ -1,13 +1,12 @@
 {
   "skill": "article",
-  "last_analyzed": "2026-09-25T13:24:01Z",
+  "last_analyzed": "2026-09-26T09:49:34Z",
   "quality_score": 2,
-  "assessment": "Skill ran but violated core output requirement: CLAUDE.md explicitly requires final output to carry substantive content inline, not defer to external files; actual article verifiability is opaque.",
+  "assessment": "Output is metadata (title + link) without substantive content; CLAUDE.md explicitly requires work substance in final message, not just pointers to it",
   "flags": [
-    "low_quality",
     "unverifiable_claim"
   ],
-  "avg_score": 2.67,
+  "avg_score": 2.5,
   "history": [
     {
       "date": "2026-09-24",
@@ -25,6 +24,12 @@
       "date": "2026-09-25",
       "score": 2,
       "ts": "2026-09-25T13:24:01Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-26",
+      "score": 2,
+      "ts": "2026-09-26T09:49:34Z",
       "harness": "claude"
     }
   ]

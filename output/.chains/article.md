@@ -1,7 +1,3 @@
-ℹ️ Technical Explainer
+New article written: GitHub's Most-Starred Agent Skills Repo Isn't Anthropic's — It's Not Even Close
 
-technical explainer: The Trick Behind Claude's Agent Skills: Most of Every Skill Never Loads
-
-Agent Skills work by keeping almost every installed capability off Claude's context entirely — only a ~100-token name-and-description stub stays loaded, and the real instructions, reference files, and scripts are pulled off disk one bash read at a time, only when the task actually needs them.
-
-read it: output/articles/explainer-2026-09-25-agent-skills.md
+https://github.com/Nadai2010/aeon/blob/main/output/articles/2026-09-26.md

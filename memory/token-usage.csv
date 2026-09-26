@@ -14,3 +14,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-09-25,write-tweet,claude-sonnet-5,2930,21897,3366436,120814
 2026-09-25,digest,claude-sonnet-5,2791,16972,2389816,110853
 2026-09-26,github-trending,claude-sonnet-5,2932,36723,4906441,125059
+2026-09-26,article,claude-sonnet-5,2642,13057,1978687,127174
