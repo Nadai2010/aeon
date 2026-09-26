@@ -6,31 +6,32 @@ tags:
   - macro
   - defi
 resource: https://api.llama.fi
-timestamp: 2026-09-25T13:15:00Z
+timestamp: 2026-09-26T13:55:00Z
 ---
 
-# Market Context (as of 2026-09-25)
+# Market Context (as of 2026-09-26)
 
-> **Take:** rotation — BTC +1.0% 24h while dominance slips to 58.25% (from 58.6%) as ETH (+2.5%) and SOL (+5.8%) both outpace it, with breadth clearing 15/20 green. Conviction: medium.
+> **Take:** chop — BTC +0.1% 24h and ETH -0.2% while total market cap fell -3.4%, a broad long-tail altcoin drawdown outside the top-20 majors. Conviction: low.
 
 ## Signal Snapshot
-- BTC $84,538 (+1.0% 24h, +8.3% 7d) · dominance 58.25% (-0.35pp vs yesterday's snapshot)
-- ETH $2,720.55 (+2.5% 24h, +8.5% 7d) · ETH/BTC 0.0322
-- SOL $120.85 (+5.8% 24h, +14.4% 7d)
-- Total mcap $2.91T (-0.9% 24h) · DEX vol $10.42B 24h
-- Breadth: 15/20 green 24h · 15/20 green 7d
-- Fear & Greed: 71 (Greed) — yesterday 71
+- BTC $83,935 (+0.1% 24h, +3.4% 7d) · dominance 58.28% (+0.03pp vs yesterday's snapshot)
+- ETH $2,684.77 (-0.2% 24h, +1.9% 7d) · ETH/BTC 0.0320
+- SOL $120.65 (+1.3% 24h, +8.2% 7d)
+- Total mcap $2.89T (-3.4% 24h) · DEX vol $10.35B 24h
+- Breadth: 9/20 green 24h · 13/20 green 7d
+- Fear & Greed: 74 (Greed) — yesterday 71
 
 ## What Changed Since Last Refresh
-- Breadth jumped from 11/20 to 15/20 green 24h — the first check this cycle to clear the >14/20 risk-on bar.
-- BTC dominance slipped to 58.25% (from 58.6%) as ETH (+2.5%) and SOL (+5.8%) both outpaced BTC (+1.0%) — alts leading, not BTC.
-- TVL and DEX volume both turned up after two straight down-days: TVL $95.53B (+0.7% 24h), DEX vol $10.42B (+3.0% 24h).
-- NEAR ecosystem ignited: NEAR itself #1 trending (+14.1% 24h) with four Near-native DeFi protocols up 14-26% 24h TVL — a signal absent from yesterday's snapshot.
+- Breadth collapsed from 15/20 to 9/20 green 24h — reversing yesterday's first risk-on clearance this cycle.
+- NEAR reversed hard: was +14.1% and #1 trending yesterday, now -6.7% 24h with NEAR Bridge TVL -11.1% — the "Near ecosystem breakout" unwound in a single day.
+- F&G rose to 74 (Greed) from 71 even as breadth deteriorated and total mcap fell -3.4% — sentiment lagging price action.
+- Fees-beating-TVL signal (Spark Liquidity Layer) persists for a 3rd check but decayed sharply: fees/TVL 7d ratio dropped from +278%/+2.1% to +118%/+0.4%.
 
 ## Active Narratives
-- **Near ecosystem** — phase: rising. Evidence: NEAR #1 trending +14.1% 24h; LiNEAR +18.8% (1d) / +36.6% (7d), Meta Pool Near +18.6% / +41.9%, Rhea Lend +14.4% / +41.0%, NEAR Bridge +26.1% / +111.9% — four protocols breaking out simultaneously.
-- **RWA / tokenization** — phase: rising. Evidence: ONDO #3 trending, +20.6% 24h — third consecutive snapshot holding a sustained rally (was +13.0%, then +24.4%, now +20.6%); still no second RWA name confirming sector breadth.
-- **Perp/lending fee growth** — phase: rising. Evidence: Spark Liquidity Layer fees +278% 7d vs TVL +2.1% 7d ($2.56B TVL); HyperLend Pooled fees +146% 7d vs TVL -13.6% — fee growth still decoupling from deposits, second-day confirmation of yesterday's flag.
+- **Near ecosystem** — phase: fading. Evidence: NEAR -6.7% 24h (was +14.1% top trending yesterday); NEAR Bridge TVL -11.1% 24h, reversing yesterday's +26.1% breakout in one session.
+- **Bittensor / AI-compute** — phase: emerging. Evidence: TAO +7.8% 24h, Bittensor chain TVL +11.4% 24h / +27.5% 7d — a fresh signal absent from yesterday's snapshot.
+- **Base DeFi (Aerodrome-led)** — phase: rising. Evidence: AERO +14.3% 24h (top trending gainer); Base chain TVL +6.3% 7d, best 7d growth among the top-6 chains; Aerodrome Slipstream TVL +5.4% 1d.
+- **Perp/lending fee growth** — phase: rising (3rd check). Evidence: Spark Liquidity Layer fees +118% 7d vs TVL +0.4% 7d ($2.55B TVL) — fee growth still decoupling from deposits, though the ratio has cooled sharply from yesterday's +278%.
 
 ## Top DeFi Protocols (TVL, 7d change)
 - Lido: $26.79B (+9.8%)
@@ -40,34 +41,33 @@ timestamp: 2026-09-25T13:15:00Z
 - Binance staked ETH: $10.12B (+8.6%)
 
 ## Chain Flow (top 3 by TVL, 7d)
-- Ethereum: $53.75B (+7.9%)
-- Solana: $6.52B (+10.5%)
-- Base: $6.28B (+12.6%)
+- Ethereum: $53.53B (+2.4%)
+- Solana: $6.61B (+4.9%)
+- Base: $6.27B (+6.3%)
 
 ## Stablecoins
-Total: $312.2B (+0.7% 7d, +0.2% 24h). USDT $183.7B · USDC $75.6B · USDS $6.6B (+1.7% 24h, notable) · USDe $4.9B · combined share ~10.7% of total mcap.
+Total: $312.75B (+0.6% 7d, -0.2% 24h). USDT $183.76B · USDC $75.44B (-1.3% 24h, notable) · USDS $6.64B (+1.5% 24h, notable) · USDe $4.94B · combined share ~10.8% of total mcap.
 
 ## Trending (CoinGecko)
-- NEAR — Near ecosystem breakout, $5.04 (+14.1% 24h) — top trending, confirmed by four Near-native DeFi protocols posting double-digit TVL gains
-- BP (Backpack) — exchange token, $1.34 (+46.5% 24h) — second straight day of outsized gains (was +24.3% yesterday)
-- ONDO — RWA/tokenization, $0.55 (+20.6% 24h) — third consecutive snapshot holding a rally
+- AERO (Aerodrome) — Base DeFi breakout, $0.90 (+14.3% 24h) — leads all trending gainers alongside Base's best-in-class 7d TVL growth
+- ENA (Ethena) — $0.28 (+12.9% 24h) — price pump not yet confirmed by TVL (USDe TVL only +0.7% 24h)
+- TAO (Bittensor) — $327.81 (+7.8% 24h) — chain TVL +11.4% 24h / +27.5% 7d, new AI-compute signal
 
 ## Prediction Markets (Polymarket, top by 24h vol)
 | Market | YES% | 24h Vol | Liquidity |
 |--------|------|---------|-----------|
-| Dota 2: GamerLegion vs 1win - Game 2 Winner | 22.5% | $902K | $40K |
-| Korea Open: Katie Volynets vs Kimberly Birrell | 34.5% | $618K | $10K |
-| Counter-Strike: Alliance vs Sinners (BO3) | 25.5% | $416K | $21K |
+| Will Spain win on 2026-09-26? | 49.5% | $1.52M | $959K |
+| Will the U.S. invade Iran before 2027? | 16.5% | $779K | $691K |
+| Valorant: LOUD vs EDward Gaming (BO3) | 94.5% | $582K | $37K |
 
-No macro/politics/crypto-specific market cleared the volume or liquidity screens this run — today's top tables are esports/tennis only; the Fed-hike market from yesterday's snapshot dropped out of the top-10 by both volume and liquidity.
+Top-liquidity table cleared zero markets — all ten are effectively-settled 2028 Democratic-nomination long shots (YES ≤0.05%), filtered by the ≥3%/≤97% screen.
 
 ## Macro Catalysts (next 48h)
-- Fed policy path and the Core PCE inflation print remain the dominant near-term catalysts into Q4 — a hot PCE tightens rate-cut odds and pressures BTC/ETH, a soft print supports risk appetite.
-- BTC spot ETFs booked their biggest single inflow day of 2026 on Sep 21 ($999M, led by IBIT $381M) and are now net positive YTD for the first time since April — a supportive flow backdrop.
+- Two Fed stablecoin reserve/capital proposals remain in an active public comment window — a slow-moving regulatory overhang for issuers (Tether, Circle) rather than a today-mover.
 
 ## Implications for Downstream Skills
-- **token-pick:** Near ecosystem (NEAR, LiNEAR, Meta Pool Near, Rhea Lend, NEAR Bridge) is the freshest, broadest breakout today — four protocols confirming simultaneously beats ONDO's single-asset RWA rally on breadth. RWA still needs a second name to confirm sector-wide participation.
-- **narrative-tracker:** Watch Near ecosystem over the next 48h to see if it's real rotation or 1-day noise. RWA has now sustained three straight checks — re-evaluate toward "peak" if ONDO cools without a second name joining.
+- **token-pick:** Bittensor/TAO is the freshest emerging signal (TVL +27.5% 7d, price +7.8% 24h) — favor AI-compute exposure over NEAR, which gave back its entire breakout in one session.
+- **narrative-tracker:** Downgrade Near ecosystem from "rising" to "fading" — NEAR Bridge TVL -11.1% and price -6.7% reversed yesterday's breakout. Watch Bittensor for a second confirming day before upgrading to "rising."
 
 ## Token Picks Made
 | Date | Token | Price | Thesis |
@@ -75,4 +75,4 @@ No macro/politics/crypto-specific market cleared the volume or liquidity screens
 
 ---
 *Sources — btc/eth: CoinGecko · defi: DeFiLlama · sentiment: alternative.me · markets: Polymarket*
-*Source status: coingecko=ok defillama=ok fng=ok polymarket=ok websearch=ok*
+*Source status: coingecko=ok(fallback: markets/global via plain curl, no key configured) defillama=ok fng=ok polymarket=ok websearch=ok*
