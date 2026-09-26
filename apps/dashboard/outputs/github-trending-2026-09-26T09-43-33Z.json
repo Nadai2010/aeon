@@ -1,0 +1,329 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Trending",
+        "description": "2026-09-26"
+      },
+      "children": [
+        "stack-content"
+      ]
+    },
+    "stack-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "section-top-pick",
+        "sep-1",
+        "section-ai-ml",
+        "sep-2",
+        "section-devtools",
+        "sep-3",
+        "section-infra",
+        "sep-4",
+        "text-sources"
+      ]
+    },
+    "section-top-pick": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-top-pick",
+        "storylink-top-pick",
+        "text-top-pick-desc"
+      ]
+    },
+    "heading-top-pick": {
+      "type": "Heading",
+      "props": {
+        "text": "Top pick",
+        "level": "h3"
+      }
+    },
+    "storylink-top-pick": {
+      "type": "StoryLink",
+      "props": {
+        "title": "mattpocock/skills",
+        "href": "https://github.com/mattpocock/skills",
+        "source": "GitHub"
+      }
+    },
+    "text-top-pick-desc": {
+      "type": "Text",
+      "props": {
+        "text": "The reference Agent Skills repo now has a rival: one developer's personal skills folder just eclipsed it in stars."
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-ai-ml": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-ai-ml",
+        "repo-ai-ml"
+      ]
+    },
+    "heading-ai-ml": {
+      "type": "Heading",
+      "props": {
+        "text": "AI/ML",
+        "level": "h3"
+      }
+    },
+    "repo-ai-ml": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "storylink-ai-ml",
+        "badges-ai-ml",
+        "text-ai-ml-desc"
+      ]
+    },
+    "storylink-ai-ml": {
+      "type": "StoryLink",
+      "props": {
+        "title": "mattpocock/skills",
+        "href": "https://github.com/mattpocock/skills",
+        "source": "GitHub"
+      }
+    },
+    "badges-ai-ml": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-ai-ml-stars",
+        "badge-ai-ml-lang",
+        "badge-ai-ml-status"
+      ]
+    },
+    "badge-ai-ml-stars": {
+      "type": "Badge",
+      "props": {
+        "text": "583 ⭐ today (270k total)",
+        "variant": "default"
+      }
+    },
+    "badge-ai-ml-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Shell",
+        "variant": "outline"
+      }
+    },
+    "badge-ai-ml-status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "text-ai-ml-desc": {
+      "type": "Text",
+      "props": {
+        "text": "A single dev's Claude Code skills directory just out-starred Anthropic's own official skills repo, 270k vs 178k."
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-devtools": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-devtools",
+        "repo-devtools"
+      ]
+    },
+    "heading-devtools": {
+      "type": "Heading",
+      "props": {
+        "text": "Devtools",
+        "level": "h3"
+      }
+    },
+    "repo-devtools": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "storylink-devtools",
+        "badges-devtools",
+        "text-devtools-desc"
+      ]
+    },
+    "storylink-devtools": {
+      "type": "StoryLink",
+      "props": {
+        "title": "androoAGI/starnet",
+        "href": "https://github.com/androoAGI/starnet",
+        "source": "GitHub"
+      }
+    },
+    "badges-devtools": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-devtools-stars",
+        "badge-devtools-lang",
+        "badge-devtools-status"
+      ]
+    },
+    "badge-devtools-stars": {
+      "type": "Badge",
+      "props": {
+        "text": "93 ⭐ today (578 total)",
+        "variant": "default"
+      }
+    },
+    "badge-devtools-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "JavaScript",
+        "variant": "outline"
+      }
+    },
+    "badge-devtools-status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "secondary"
+      }
+    },
+    "text-devtools-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Dormant for months, this desktop AI-crew harness spiked 16x its average daily stars overnight."
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section-infra": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-infra",
+        "repo-infra"
+      ]
+    },
+    "heading-infra": {
+      "type": "Heading",
+      "props": {
+        "text": "Infra",
+        "level": "h3"
+      }
+    },
+    "repo-infra": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "storylink-infra",
+        "badges-infra",
+        "text-infra-desc"
+      ]
+    },
+    "storylink-infra": {
+      "type": "StoryLink",
+      "props": {
+        "title": "openbao/openbao",
+        "href": "https://github.com/openbao/openbao",
+        "source": "GitHub"
+      }
+    },
+    "badges-infra": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-infra-stars",
+        "badge-infra-lang",
+        "badge-infra-status"
+      ]
+    },
+    "badge-infra-stars": {
+      "type": "Badge",
+      "props": {
+        "text": "49 ⭐ today (7.9k total)",
+        "variant": "default"
+      }
+    },
+    "badge-infra-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Go",
+        "variant": "outline"
+      }
+    },
+    "badge-infra-status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "secondary"
+      }
+    },
+    "text-infra-desc": {
+      "type": "Text",
+      "props": {
+        "text": "HashiCorp Vault's open-source fork, now Linux-Foundation-governed, is trending again as BSL license fatigue lingers."
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text-sources": {
+      "type": "Text",
+      "props": {
+        "text": "sources: trending=ok, gh_api=fail (read-only mode, substituted public REST API via curl for created_at), kept 3/16",
+        "variant": "caption"
+      }
+    }
+  }
+}
