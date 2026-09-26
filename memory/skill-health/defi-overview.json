@@ -1,8 +1,8 @@
 {
   "skill": "defi-overview",
-  "last_analyzed": "2026-09-25T13:15:27Z",
+  "last_analyzed": "2026-09-26T14:00:57Z",
   "quality_score": 4,
-  "assessment": "Substantive DeFi dashboard with verifiable sourced data, clean structure, and clear signal surfacing (NEAR breakout, fee patterns, yield analysis) — professional daily report quality.",
+  "assessment": "Substantive, well-sourced DeFi snapshot with verifiable metrics, clear narratives, and all data checks passing — executes the overview task effectively with specific figures across TVL, fees, yields, and chains. Lacks deep causal analysis or prescriptive recommendations, but appropriate for a status-report skill.",
   "flags": [],
   "avg_score": 4,
   "history": [
@@ -22,6 +22,12 @@
       "date": "2026-09-25",
       "score": 4,
       "ts": "2026-09-25T13:15:27Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-26",
+      "score": 4,
+      "ts": "2026-09-26T14:00:57Z",
       "harness": "claude"
     }
   ]
