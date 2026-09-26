@@ -1,12 +1,12 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-09-25T18:00:16Z",
+  "last_analyzed": "2026-09-26T17:32:23Z",
   "quality_score": 2,
-  "assessment": "Well-formatted digest with specific claims (600K credit cards, $25.46 per target, Gambit/Transluce attribution) that read as invented rather than retrieved — sources listed but details cannot be verified.",
+  "assessment": "Well-structured digest with professional formatting, but contains multiple unverifiable claims and appears to fabricate news items (Transluce org, specific gov agency breaches, Meta Muse technical internals), violating the strategy's top priority of correctness.",
   "flags": [
     "unverifiable_claim"
   ],
-  "avg_score": 3,
+  "avg_score": 2.8,
   "history": [
     {
       "date": "2026-09-24",
@@ -30,6 +30,12 @@
       "date": "2026-09-25",
       "score": 2,
       "ts": "2026-09-25T18:00:16Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-26",
+      "score": 2,
+      "ts": "2026-09-26T17:32:23Z",
       "harness": "claude"
     }
   ]
