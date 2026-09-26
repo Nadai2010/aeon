@@ -10,10 +10,10 @@
     "success_rate": 1
   },
   "digest": {
-    "last_status": "dispatched",
-    "last_success": "2026-09-25T18:00:47Z",
-    "total_runs": 4,
-    "total_successes": 4,
+    "last_status": "success",
+    "last_success": "2026-09-26T17:33:32Z",
+    "total_runs": 5,
+    "total_successes": 5,
     "total_failures": 0,
     "consecutive_failures": 0,
     "success_rate": 1,
