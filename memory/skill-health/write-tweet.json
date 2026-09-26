@@ -1,10 +1,10 @@
 {
   "skill": "write-tweet",
-  "last_analyzed": "2026-09-25T13:30:37Z",
+  "last_analyzed": "2026-09-26T09:54:50Z",
   "quality_score": 2,
-  "assessment": "Fluent but unverifiable — invents specific statistics (26% vulnerable, 3.8M SKILL.md files, 178k stars, 157 malicious skills, 632 vulnerabilities) as fact, violating the strategy's primary priority: correctness and verifiability.",
+  "assessment": "Skill ran but output lacks substance—doesn't show the tweet draft it claims to exist, violating CLAUDE.md requirement to include work product in stdout; asks for input rather than delivering a result.",
   "flags": [
-    "unverifiable_claim"
+    "low_quality"
   ],
   "avg_score": 2,
   "history": [
@@ -24,6 +24,12 @@
       "date": "2026-09-25",
       "score": 2,
       "ts": "2026-09-25T13:30:37Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-26",
+      "score": 2,
+      "ts": "2026-09-26T09:54:50Z",
       "harness": "claude"
     }
   ]

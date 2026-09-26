@@ -1,36 +1,53 @@
-tweet drafts: Agent Skills — progressive disclosure & the trust gap
+## Tweet Drafts: agent skills repo star race
 
-— one-liner —
-1a. Claude doesn't decide to load a skill. It just loses a fuzzy-match roulette.
-1b. 3.8 million SKILL.md files exist. Almost none of them have been read by a human.
+### Tier 1 — One-liner
+**1a. Hot take**
+> Anthropic wrote the skills spec. Three outsiders wrote the repos everyone actually stars.
 
-— two-punch —
-2a. 178,096 stars on anthropics/skills in a year. 26% of skills in the wild ship with a real vulnerability. Adoption outran review.
-2b. Everyone is excited that skills are nearly free to install. Nobody is asking what "nearly free" does to the incentive to actually read one before running it.
+**1b. Observation**
+> 660,898 stars across three unofficial skill repos. The spec's own reference sits at 178,472.
 
-— paragraph —
-3a. Progressive disclosure means Claude reads a skill's real instructions only after a one-line description convinces it to. That's not judgment, it's a coin flip written by whoever authored the description. 26% of skills in the wild fail that flip.
-3b. A new hire doesn't memorize the handbook, they read a one-line job title and ask when they're stuck. Anthropic built Agent Skills on exactly that analogy. The gap: a human employee has judgment about when to check the manual. Claude has a string match.
+### Tier 2 — Two-punch
+**2a. Data drop**
+> mattpocock/skills passed 269k stars in about 7.5 months. anthropics/skills, the spec's reference implementation, took a year to hit 178k. Adoption picked a side.
 
-— long tweet —
-4a. Agent Skills work because almost nothing loads: about 100 tokens of metadata per skill, always in context, and the real instructions - under 5,000 tokens - only load if your request matches a one-line description. Everything else, scripts included, sits on disk at zero cost until Claude decides to run it. That's the trick that let 3.8 million SKILL.md files ship across 282,200 repos in about a year. It's also why 26% of a large sample carried a real vulnerability - the description field is the entire security boundary, and nobody's reviewing it.
-4b. The standard has already spread past Claude - OpenAI Codex and GitHub Copilot support the same Agent Skills format now. That's the part worth sitting with: an entire ecosystem is converging on "a folder plus a description field" as the interface between an agent and a new capability. Nobody would ship an OS where installing an app meant trusting one sentence the app wrote about itself. That's exactly what every agent using this spec does today, and it's spreading faster than anyone is auditing it.
+**2b. Reframe**
+> Nobody forked Anthropic's skills repo to build a bigger one. Three people just wrote their own, and all three now outstar the original.
 
-— thread opener —
-5a. Anthropic's Agent Skills stay almost entirely off Claude's context - one ~100-token stub per skill, everything else loaded on demand. It's the reason installing 100 skills costs about the same as installing 5. It's also why 26% of them ship a real vulnerability.
+### Tier 3 — Paragraph
+**3a. Narrative**
+> Matt Pocock published his personal .agents folder as mattpocock/skills. Jesse Vincent built a prescriptive methodology called superpowers. Addy Osmani shipped production guardrails. None of them coordinated. All three now outstar Anthropic's own reference repo.
+
+**3b. Sardonic**
+> The company that wrote the Agent Skills spec has 178k stars on its reference repo. The three people who didn't write the spec have 660k combined. Reference implementations: read by nobody, forked by nobody, starred least of all.
+
+### Tier 4 — Long tweet
+**4a. Data-driven**
+> anthropics/skills: 178,472 stars, about a year old, the official reference implementation of the Agent Skills spec. mattpocock/skills: 269,929 stars, built in 7.5 months, a solo dev's personal instruction folder. obra/superpowers: 291,805 stars, a full prescriptive methodology. addyosmani/agent-skills: 99,164 stars, production-guardrails flavored. Three independent bets on what a "skill" should be, and none of them resemble the spec's own example. Combined, they outstar the reference 3.7x.
+
+**4b. Structural critique**
+> A spec's reference implementation is supposed to be the thing everyone measures against. When three unrelated repos, curated-minimal, prescriptive-workflow, production-guardrails, all outstar it, the reference stops being the center of gravity. What's left isn't one standard, it's three camps that happen to share a file format. That's the dotfiles problem: everyone's setup works in isolation and breaks the moment you try to merge two of them.
+
+### Tier 5 — Thread opener
+**5a. Thesis-first**
+> The Agent Skills spec has a reference implementation. It also has three unofficial rivals that outstar it combined, 3.7 to 1. That's not a fluke, it's what happens when a spec ships before a convention does.
 ---
-- How the 3-tier load actually works: metadata, then instructions, then scripts — each gated behind a bash read
-- Why a fuzzy-matched description field is the entire trust boundary
-- The onboarding-guide analogy Anthropic uses, and exactly where it breaks
-- The numbers: 178k stars, 3.8M SKILL.md files, 26% vulnerable, 157 confirmed malicious skills
-- What would actually break the "adding skills is nearly free" claim as libraries scale
+- anthropics/skills: 178k stars, ~1yr, the spec's own example
+- mattpocock/skills 270k (7.5mo) + obra/superpowers 292k + addyosmani/agent-skills 99k = 661k combined
+- Three incompatible philosophies: curated-minimal, prescriptive-methodology, production-guardrails
+- The dotfiles parallel: popular in isolation, incompatible the moment you merge two setups
+- AGENTS.md already past 60k repos — the real convergence signal, and it's not stars
 
-5b. Would you let a new hire read one sentence about a task, then hand them the keys to run whatever script sits on the shelf labeled with that sentence? That's how every Claude Agent Skill gets executed.
+**5b. Structural critique**
+> Nobody forked Anthropic's skills repo. Three different people just wrote their own from scratch, and all three now have more stars than the original. That's not competition, that's the reference implementation losing its job.
 ---
-- The metadata-only default and what "matching a description" actually authorizes
-- The trust-gap numbers: 632 vulnerabilities found, one threat actor behind 54% of confirmed malicious skills
-- Anthropic's own advice ("only run skills you wrote or got from Anthropic") vs. a 3.8M-file open ecosystem
-- Where the new-hire analogy breaks down: judgment vs. string match
-- The open question researchers are flagging: does routing accuracy collapse as the skill library grows?
+- The numbers: 178k (anthropic) vs 270k / 292k / 99k across three unofficial repos
+- Each repo bets on a different philosophy of what a "skill" even is
+- AgentConn's framing: star velocity measures enthusiasm, not maturity
+- The real convergence signal is AGENTS.md, already past 60k repos, quietly doing what stars can't
+- Open question: does a shared file format count as a standard if nobody agrees what goes in it?
 
-best: #4a — long tweet / structural critique. It's the one that actually proves the claim with numbers instead of asserting it: names the token budget, ties it to the adoption number, then ties that same mechanism to the vulnerability rate. Runner-up: #3a for compression of the same idea into one paragraph.
+**Best overall:** #3b — sardonic paragraph, the "read by nobody, forked by nobody, starred least of all" kicker is the most quotable line in the batch.
+**Best per tier:** 1b (stat lands harder than framing) / 2a (cleanest data contrast) / 3b (sardonic punch) / 4b (structural critique, most thinky) / 5a (cleaner thesis-first hook)
+
+<!-- Correlation ID: chain-3eb4b37016e35e00de331d691d15557a -->

@@ -1,0 +1,43 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Write Tweet",
+        "description": "Ready for refinement"
+      },
+      "children": [
+        "stack"
+      ]
+    },
+    "stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "badge",
+        "message"
+      ]
+    },
+    "badge": {
+      "type": "Badge",
+      "props": {
+        "text": "revise",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "message": {
+      "type": "Text",
+      "props": {
+        "text": "Want to refine this draft? Reply with a change and I'll revise it.",
+        "variant": "body"
+      },
+      "children": []
+    }
+  }
+}
