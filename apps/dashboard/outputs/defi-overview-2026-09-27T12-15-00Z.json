@@ -1,0 +1,497 @@
+{
+  "root": "card-defi-overview",
+  "state": {},
+  "elements": {
+    "card-defi-overview": {
+      "type": "Card",
+      "props": {
+        "title": "DeFi Overview — 2026-09-27",
+        "description": "Crypto — 2026-09-27 | Chop (conviction low) | DeFi Mixed: TVL/stables edging up while DEX volume craters"
+      },
+      "children": [
+        "status-stack",
+        "tvl-stat",
+        "sep-1",
+        "top-chains-heading",
+        "top-chains-table",
+        "sep-2",
+        "movers-heading",
+        "movers-table",
+        "sep-3",
+        "fees-leaders-heading",
+        "fees-leaders-table",
+        "sep-4",
+        "fees-beating-heading",
+        "fees-beating-table",
+        "sep-5",
+        "dex-vol-heading",
+        "dex-vol-stat",
+        "dex-vol-table",
+        "sep-6",
+        "stables-heading",
+        "stables-stat",
+        "stables-note",
+        "sep-7",
+        "real-yield-heading",
+        "real-yield-table",
+        "sep-8",
+        "incentive-yield-heading",
+        "incentive-yield-table",
+        "sep-9",
+        "macro-heading",
+        "btc-stat",
+        "eth-stat",
+        "fng-stat",
+        "breadth-stat",
+        "market-odds-label",
+        "market-odds-text",
+        "sep-10",
+        "sources-text"
+      ]
+    },
+    "status-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-conviction",
+        "badge-sentiment"
+      ]
+    },
+    "badge-conviction": {
+      "type": "Badge",
+      "props": {
+        "text": "Conviction: Low",
+        "variant": "secondary"
+      }
+    },
+    "badge-sentiment": {
+      "type": "Badge",
+      "props": {
+        "text": "DeFi Mixed",
+        "variant": "outline"
+      }
+    },
+    "tvl-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Total Value Locked",
+        "value": "$96.07B",
+        "delta": "+0.66% (24h) / +3.16% (7d)",
+        "trend": "up"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "top-chains-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Top Chains",
+        "level": "h3"
+      }
+    },
+    "top-chains-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Chain",
+          "TVL"
+        ],
+        "rows": [
+          [
+            "Ethereum",
+            "$53.82B"
+          ],
+          [
+            "Solana",
+            "$6.73B (+1.5%)"
+          ],
+          [
+            "Base",
+            "$6.30B"
+          ]
+        ]
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "movers-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Movers",
+        "level": "h3"
+      }
+    },
+    "movers-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Protocol",
+          "Direction",
+          "Change",
+          "TVL Range",
+          "Catalyst"
+        ],
+        "rows": [
+          [
+            "Bittensor",
+            "↑",
+            "+5.2%",
+            "$620M → $652M",
+            "No obvious catalyst"
+          ],
+          [
+            "World Chain",
+            "↑",
+            "+16.0%",
+            "$434M → $504M",
+            "No obvious catalyst"
+          ],
+          [
+            "Liquid Collective",
+            "↓",
+            "-13.6%",
+            "$861M → $744M",
+            "No obvious catalyst"
+          ]
+        ]
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "fees-leaders-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Fees Leaders (24h)",
+        "level": "h3"
+      }
+    },
+    "fees-leaders-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Protocol",
+          "24h Fees",
+          "Change"
+        ],
+        "rows": [
+          [
+            "Tether",
+            "$17.6M",
+            "Flat"
+          ],
+          [
+            "Circle USDC",
+            "$7.3M",
+            "-1.3%"
+          ],
+          [
+            "PumpSwap",
+            "$5.6M",
+            "+45.5%"
+          ]
+        ]
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "fees-beating-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Fees Beating TVL Growth (7d)",
+        "level": "h3"
+      }
+    },
+    "fees-beating-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Protocol",
+          "Fees (7d)",
+          "TVL (7d)",
+          "TVL",
+          "Note"
+        ],
+        "rows": [
+          [
+            "Veda",
+            "+52%",
+            "+3.9%",
+            "$1.9B",
+            "Fees growing faster than TVL"
+          ],
+          [
+            "HyperLend Pooled",
+            "+113%",
+            "-16.2%",
+            "—",
+            "4th check: fees still climbing despite shrinking deposits"
+          ]
+        ]
+      }
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "dex-vol-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "DEX Volume",
+        "level": "h3"
+      }
+    },
+    "dex-vol-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "24h DEX Volume",
+        "value": "$7.44B",
+        "delta": "-28.0%",
+        "trend": "down"
+      }
+    },
+    "dex-vol-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Exchange",
+          "24h Volume",
+          "Change"
+        ],
+        "rows": [
+          [
+            "Uniswap V4",
+            "$920M",
+            "-25.0%"
+          ],
+          [
+            "Uniswap V3",
+            "$637M",
+            "-57.4%"
+          ],
+          [
+            "PumpSwap",
+            "$514M",
+            "+20.6%"
+          ]
+        ]
+      }
+    },
+    "sep-6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stables-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stablecoins",
+        "level": "h3"
+      }
+    },
+    "stables-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Total Stablecoin Supply",
+        "value": "$312.97B",
+        "delta": "+1.0% (24h)",
+        "trend": "up"
+      }
+    },
+    "stables-note": {
+      "type": "Text",
+      "props": {
+        "text": "Notable: USDS +1.5% (only notable single-issuer move)",
+        "variant": "caption"
+      }
+    },
+    "sep-7": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "real-yield-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Real Yield — Sustainable, ≥$10M TVL (Concentrated volatile LPs, IL risk flagged)",
+        "level": "h3"
+      }
+    },
+    "real-yield-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "LP Pair",
+          "Protocol",
+          "Chain",
+          "APY",
+          "TVL"
+        ],
+        "rows": [
+          [
+            "WSOL-USDC",
+            "Raydium",
+            "Solana",
+            "41.7% apyBase",
+            "$39M"
+          ],
+          [
+            "UNI-WETH",
+            "Uniswap V3",
+            "Ethereum",
+            "36.7% apyBase",
+            "$19M"
+          ],
+          [
+            "ETH-UNI",
+            "Uniswap V4",
+            "Ethereum",
+            "29.2% apyBase",
+            "$10M"
+          ]
+        ]
+      }
+    },
+    "sep-8": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "incentive-yield-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Incentive Yield — Points/Emissions, ≥$25M TVL",
+        "level": "h3"
+      }
+    },
+    "incentive-yield-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "LP Pair",
+          "Protocol",
+          "Chain",
+          "APY",
+          "TVL",
+          "Reward Token"
+        ],
+        "rows": [
+          [
+            "USDC-AERO",
+            "Aerodrome",
+            "Base",
+            "25.5% apy",
+            "$42M",
+            "AERO rewards"
+          ],
+          [
+            "SDCRV",
+            "Stake DAO",
+            "Ethereum",
+            "13.4% apy",
+            "$42M",
+            "CRV rewards"
+          ]
+        ]
+      }
+    },
+    "sep-9": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "macro-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Macro",
+        "level": "h3"
+      }
+    },
+    "btc-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Bitcoin",
+        "value": "$84,937",
+        "delta": "+0.9%",
+        "trend": "up"
+      }
+    },
+    "eth-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Ethereum",
+        "value": "$2,712.76",
+        "delta": "+0.9%",
+        "trend": "up"
+      }
+    },
+    "fng-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Fear & Greed Index",
+        "value": "70",
+        "delta": "Greed",
+        "trend": "up"
+      }
+    },
+    "breadth-stat": {
+      "type": "Progress",
+      "props": {
+        "label": "Market Breadth (positive coins)",
+        "value": 14,
+        "max": 20
+      }
+    },
+    "market-odds-label": {
+      "type": "Text",
+      "props": {
+        "text": "Hot Market Odds (Polymarket):",
+        "variant": "lead"
+      }
+    },
+    "market-odds-text": {
+      "type": "Text",
+      "props": {
+        "text": "US × Iran ceasefire continues through Sept 30: YES 89.5%",
+        "variant": "body"
+      }
+    },
+    "sep-10": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sources-text": {
+      "type": "Text",
+      "props": {
+        "text": "Data sources: llama_tvl=ok, llama_dex=ok, llama_fees=ok, llama_stables=ok, llama_yields=ok, coingecko=ok, fng=ok, polymarket=ok, websearch=ok | Variables: none",
+        "variant": "caption"
+      }
+    }
+  }
+}
