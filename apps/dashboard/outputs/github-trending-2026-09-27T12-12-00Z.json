@@ -1,0 +1,433 @@
+{
+  "root": "main_card",
+  "state": {},
+  "elements": {
+    "main_card": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Trending — 2026-09-27"
+      },
+      "children": [
+        "top_pick_section",
+        "sep1",
+        "aiml_section",
+        "sep2",
+        "devtools_section",
+        "sep3",
+        "infra_section",
+        "sep4",
+        "sources_text"
+      ]
+    },
+    "top_pick_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "top_pick_label",
+        "repo_hindsight",
+        "top_pick_desc"
+      ]
+    },
+    "top_pick_label": {
+      "type": "Heading",
+      "props": {
+        "text": "Top pick",
+        "level": "h3"
+      }
+    },
+    "repo_hindsight": {
+      "type": "StoryLink",
+      "props": {
+        "title": "vectorize-io/hindsight",
+        "href": "https://github.com/vectorize-io/hindsight",
+        "source": "GitHub"
+      }
+    },
+    "top_pick_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Persistent agent memory that improves with use instead of just retrieving transcripts pulled the sharpest spike on today's board — 4,463 stars in a single day."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "aiml_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "aiml_heading",
+        "aiml_repo1",
+        "aiml_repo2"
+      ]
+    },
+    "aiml_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "AI/ML",
+        "level": "h2"
+      }
+    },
+    "aiml_repo1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "aiml_r1_header",
+        "aiml_r1_stats",
+        "aiml_r1_desc"
+      ]
+    },
+    "aiml_r1_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "aiml_r1_link",
+        "aiml_r1_badge_lang",
+        "aiml_r1_badge_status"
+      ]
+    },
+    "aiml_r1_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "vectorize-io/hindsight",
+        "href": "https://github.com/vectorize-io/hindsight",
+        "source": "GitHub"
+      }
+    },
+    "aiml_r1_badge_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python"
+      }
+    },
+    "aiml_r1_badge_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "aiml_r1_stats": {
+      "type": "Text",
+      "props": {
+        "text": "★ 4,463t today (35.1k total)",
+        "variant": "caption"
+      }
+    },
+    "aiml_r1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Memory that learns from an agent's past runs instead of just storing transcripts — moves past plain RAG recall."
+      }
+    },
+    "aiml_repo2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "aiml_r2_header",
+        "aiml_r2_stats",
+        "aiml_r2_desc"
+      ]
+    },
+    "aiml_r2_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "aiml_r2_link",
+        "aiml_r2_badge_lang",
+        "aiml_r2_badge_status"
+      ]
+    },
+    "aiml_r2_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "dream-num/univer",
+        "href": "https://github.com/dream-num/univer",
+        "source": "GitHub"
+      }
+    },
+    "aiml_r2_badge_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript"
+      }
+    },
+    "aiml_r2_badge_status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "secondary"
+      }
+    },
+    "aiml_r2_stats": {
+      "type": "Text",
+      "props": {
+        "text": "★ 920t today (19.9k total)",
+        "variant": "caption"
+      }
+    },
+    "aiml_r2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "One runtime for spreadsheets, docs, slides, and PDFs built specifically so AI agents can manipulate real office files."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "devtools_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "devtools_heading",
+        "devtools_repo1",
+        "devtools_repo2"
+      ]
+    },
+    "devtools_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Devtools",
+        "level": "h2"
+      }
+    },
+    "devtools_repo1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "dev_r1_header",
+        "dev_r1_stats",
+        "dev_r1_desc"
+      ]
+    },
+    "dev_r1_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "dev_r1_link",
+        "dev_r1_badge_lang",
+        "dev_r1_badge_status"
+      ]
+    },
+    "dev_r1_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "anthropics/claude-code-action",
+        "href": "https://github.com/anthropics/claude-code-action",
+        "source": "GitHub"
+      }
+    },
+    "dev_r1_badge_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript"
+      }
+    },
+    "dev_r1_badge_status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "secondary"
+      }
+    },
+    "dev_r1_stats": {
+      "type": "Text",
+      "props": {
+        "text": "★ 225t today (9.2k total)",
+        "variant": "caption"
+      }
+    },
+    "dev_r1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Anthropic's official GitHub Action for running Claude Code in CI, spiking alongside this week's broader agent-skills surge."
+      }
+    },
+    "devtools_repo2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "dev_r2_header",
+        "dev_r2_stats",
+        "dev_r2_desc"
+      ]
+    },
+    "dev_r2_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "dev_r2_link",
+        "dev_r2_badge_lang",
+        "dev_r2_badge_status"
+      ]
+    },
+    "dev_r2_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "mobile-next/mobile-mcp",
+        "href": "https://github.com/mobile-next/mobile-mcp",
+        "source": "GitHub"
+      }
+    },
+    "dev_r2_badge_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript"
+      }
+    },
+    "dev_r2_badge_status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "secondary"
+      }
+    },
+    "dev_r2_stats": {
+      "type": "Text",
+      "props": {
+        "text": "★ 573t today (7.6k total)",
+        "variant": "caption"
+      }
+    },
+    "dev_r2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "MCP server that lets agents drive real iOS/Android devices and emulators, not just simulators."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "infra_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "infra_heading",
+        "infra_repo1"
+      ]
+    },
+    "infra_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Infra",
+        "level": "h2"
+      }
+    },
+    "infra_repo1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "inf_r1_header",
+        "inf_r1_stats",
+        "inf_r1_desc"
+      ]
+    },
+    "inf_r1_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "inf_r1_link",
+        "inf_r1_badge_lang",
+        "inf_r1_badge_status"
+      ]
+    },
+    "inf_r1_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "block/buzz",
+        "href": "https://github.com/block/buzz",
+        "source": "GitHub"
+      }
+    },
+    "inf_r1_badge_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Rust"
+      }
+    },
+    "inf_r1_badge_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "inf_r1_stats": {
+      "type": "Text",
+      "props": {
+        "text": "★ 281t today (35.0k total)",
+        "variant": "caption"
+      }
+    },
+    "inf_r1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Block (Square's parent) is building dedicated multi-agent chat infra instead of routing agent traffic through Slack or Discord."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sources_text": {
+      "type": "Text",
+      "props": {
+        "text": "sources: trending=ok · gh_api=fail (read-only mode; substituted public REST API via curl for created_at) · kept 5/15",
+        "variant": "muted"
+      }
+    }
+  }
+}

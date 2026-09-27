@@ -1,10 +1,10 @@
 {
   "skill": "github-trending",
-  "last_analyzed": "2026-09-26T09:43:33Z",
+  "last_analyzed": "2026-09-27T12:12:00Z",
   "quality_score": 4,
-  "assessment": "Substantive, well-structured trending report with specific, verifiable repos, star counts, links, and transparent limitations. Meets task requirements cleanly despite read-only mode fallback.",
+  "assessment": "Well-structured trending report with specific, verifiable repos, star counts, and clear source transparency; good signal delivery despite API fallback in read-only mode.",
   "flags": [],
-  "avg_score": 3.5,
+  "avg_score": 3.6,
   "history": [
     {
       "date": "2026-09-24",
@@ -28,6 +28,12 @@
       "date": "2026-09-26",
       "score": 4,
       "ts": "2026-09-26T09:43:33Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-27",
+      "score": 4,
+      "ts": "2026-09-27T12:12:00Z",
       "harness": "claude"
     }
   ]

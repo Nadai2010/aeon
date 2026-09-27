@@ -1,21 +1,25 @@
-ℹ️ GitHub Trending
+*GitHub Trending — 2026-09-27*
 
-*GitHub Trending — 2026-09-26*
-
-*Top pick* — [mattpocock/skills](https://github.com/mattpocock/skills)
-The reference Agent Skills repo now has a rival: one developer's personal skills folder just eclipsed it in stars.
+*Top pick* — [vectorize-io/hindsight](https://github.com/vectorize-io/hindsight)
+Persistent agent memory that improves with use instead of just retrieving transcripts pulled the sharpest spike on today's board — 4,463 stars in a single day.
 
 *AI/ML*
-[mattpocock/skills](https://github.com/mattpocock/skills) — 583 stars today (270k total) - Shell - ACCELERATING
-A single dev's Claude Code skills directory just out-starred Anthropic's own official skills repo, 270k vs 178k.
+• [vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) — ★ 4,463t today (35.1k total) · Python · [ACCELERATING]
+Memory that learns from an agent's past runs instead of just storing transcripts — moves past plain RAG recall.
+
+• [dream-num/univer](https://github.com/dream-num/univer) — ★ 920t today (19.9k total) · TypeScript · [RETURNING]
+One runtime for spreadsheets, docs, slides, and PDFs built specifically so AI agents can manipulate real office files.
 
 *Devtools*
-[androoAGI/starnet](https://github.com/androoAGI/starnet) — 93 stars today (578 total) - JavaScript - RETURNING
-Dormant for months, this desktop AI-crew harness spiked 16x its average daily stars overnight.
+• [anthropics/claude-code-action](https://github.com/anthropics/claude-code-action) — ★ 225t today (9.2k total) · TypeScript · [RETURNING]
+Anthropic's official GitHub Action for running Claude Code in CI, spiking alongside this week's broader agent-skills surge.
+
+• [mobile-next/mobile-mcp](https://github.com/mobile-next/mobile-mcp) — ★ 573t today (7.6k total) · TypeScript · [RETURNING]
+MCP server that lets agents drive real iOS/Android devices and emulators, not just simulators.
 
 *Infra*
-[openbao/openbao](https://github.com/openbao/openbao) — 49 stars today (7.9k total) - Go - RETURNING
-HashiCorp Vault's open-source fork, now Linux-Foundation-governed, is trending again as BSL license fatigue lingers.
+• [block/buzz](https://github.com/block/buzz) — ★ 281t today (35.0k total) · Rust · [ACCELERATING]
+Block (Square's parent) is building dedicated multi-agent chat infra instead of routing agent traffic through Slack or Discord.
 
 ---
-sources: trending=ok, gh_api=fail (read-only mode, substituted public REST API via curl for created_at), kept 3/16
+sources: trending=ok · gh_api=fail (read-only mode; substituted public REST API via curl for created_at) · kept 5/15
