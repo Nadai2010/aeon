@@ -1,53 +1,38 @@
-## Tweet Drafts: agent skills repo star race
+tweet drafts: Hindsight's four-memory architecture (vectorize-io/hindsight)
 
-### Tier 1 — One-liner
-**1a. Hot take**
-> Anthropic wrote the skills spec. Three outsiders wrote the repos everyone actually stars.
+— one-liner —
+1a. Hindsight's real trick isn't retrieval — it's refusing to ever delete a memory.
+1b. Most memory tools store transcripts. Hindsight stores opinions — and updates them.
 
-**1b. Observation**
-> 660,898 stars across three unofficial skill repos. The spec's own reference sits at 178,472.
+— two-punch —
+2a. 27K tokens per Hindsight query vs ~7K for Mem0. It's not cheaper memory — it's memory you pay 4x more to read.
+2b. Everyone building agent memory right now is really deciding one thing: a growing archive to search, or a belief state that updates. Hindsight bet on the second.
 
-### Tier 2 — Two-punch
-**2a. Data drop**
-> mattpocock/skills passed 269k stars in about 7.5 months. anthropics/skills, the spec's reference implementation, took a year to hit 178k. Adoption picked a side.
+— paragraph —
+3a. Hindsight never deletes a memory — it just downgrades the ones it stops trusting. Which is either a genuinely good design call or the exact move your uncle pulls to avoid admitting he was wrong about crypto in 2018.
+3b. Someone running Hindsight inside Hermes Agent said they were speechless at how good it is, then immediately flagged that running it locally eats RAM for breakfast. That's the whole tradeoff in one thread: better recall, heavier bill.
 
-**2b. Reframe**
-> Nobody forked Anthropic's skills repo to build a bigger one. Three people just wrote their own, and all three now outstar the original.
+— long tweet —
+4a. Hindsight splits agent memory into four networks — facts, experiences, observations, opinions — then runs a consolidation loop: importance filtering, merge, decay, and no eviction, nothing is ever deleted, just down-weighted. Recall fires four retrieval strategies in parallel (vector, BM25, graph, time-range) and costs zero extra LLM tokens per query. The expensive part is Reflect: a periodic LLM pass that turns raw facts into standing answers. 91.4% on LongMemEval is real. So is spending ~4x the tokens per query versus Mem0 to get there — a comparison nobody's published yet.
+4b. Hindsight hits 91.4% on LongMemEval and 89.6% on LoCoMo, beating the next-best open memory system by 14 points. Impressive — except it also spends ~27K tokens per retrieval vs ~7K for Mem0, a 4x premium nobody's controlled for. Give Mem0 the same token budget and rerun the benchmark: does the gap survive, or is "better memory" just "more expensive memory" wearing a research paper?
 
-### Tier 3 — Paragraph
-**3a. Narrative**
-> Matt Pocock published his personal .agents folder as mattpocock/skills. Jesse Vincent built a prescriptive methodology called superpowers. Addy Osmani shipped production guardrails. None of them coordinated. All three now outstar Anthropic's own reference repo.
-
-**3b. Sardonic**
-> The company that wrote the Agent Skills spec has 178k stars on its reference repo. The three people who didn't write the spec have 660k combined. Reference implementations: read by nobody, forked by nobody, starred least of all.
-
-### Tier 4 — Long tweet
-**4a. Data-driven**
-> anthropics/skills: 178,472 stars, about a year old, the official reference implementation of the Agent Skills spec. mattpocock/skills: 269,929 stars, built in 7.5 months, a solo dev's personal instruction folder. obra/superpowers: 291,805 stars, a full prescriptive methodology. addyosmani/agent-skills: 99,164 stars, production-guardrails flavored. Three independent bets on what a "skill" should be, and none of them resemble the spec's own example. Combined, they outstar the reference 3.7x.
-
-**4b. Structural critique**
-> A spec's reference implementation is supposed to be the thing everyone measures against. When three unrelated repos, curated-minimal, prescriptive-workflow, production-guardrails, all outstar it, the reference stops being the center of gravity. What's left isn't one standard, it's three camps that happen to share a file format. That's the dotfiles problem: everyone's setup works in isolation and breaks the moment you try to merge two of them.
-
-### Tier 5 — Thread opener
-**5a. Thesis-first**
-> The Agent Skills spec has a reference implementation. It also has three unofficial rivals that outstar it combined, 3.7 to 1. That's not a fluke, it's what happens when a spec ships before a convention does.
+— thread opener —
+5a. Every agent memory framework right now is making a bet nobody says out loud: is memory a growing archive to search, or a belief state that updates itself? Hindsight (35.1k★, +4,463 stars today) is the sharpest argument yet for the second option.
 ---
-- anthropics/skills: 178k stars, ~1yr, the spec's own example
-- mattpocock/skills 270k (7.5mo) + obra/superpowers 292k + addyosmani/agent-skills 99k = 661k combined
-- Three incompatible philosophies: curated-minimal, prescriptive-methodology, production-guardrails
-- The dotfiles parallel: popular in isolation, incompatible the moment you merge two setups
-- AGENTS.md already past 60k repos — the real convergence signal, and it's not stars
+- The four-network split — facts, experiences, observations, opinions — and why none of them ever get deleted
+- TEMPR: four retrieval strategies fused in parallel, zero extra LLM cost per query
+- Reflect: the one expensive step, turning "re-derive every time" into "just read the answer"
+- The 4x token bill nobody's benchmarked against a same-budget Mem0
+- What Hindsight's own FAQ admits it still can't do
 
-**5b. Structural critique**
-> Nobody forked Anthropic's skills repo. Three different people just wrote their own from scratch, and all three now have more stars than the original. That's not competition, that's the reference implementation losing its job.
+5b. 91.4% on LongMemEval. 89.6% on LoCoMo, 14 points clear of the next-best open memory system. Hindsight just became the sharpest riser on GitHub Trending — +4,463 stars in a day. Here's the architecture behind the number, and the cost nobody's talking about.
 ---
-- The numbers: 178k (anthropic) vs 270k / 292k / 99k across three unofficial repos
-- Each repo bets on a different philosophy of what a "skill" even is
-- AgentConn's framing: star velocity measures enthusiasm, not maturity
-- The real convergence signal is AGENTS.md, already past 60k repos, quietly doing what stars can't
-- Open question: does a shared file format count as a standard if nobody agrees what goes in it?
+- Four memory networks instead of one vector store, and a Retain/Reflect loop that compounds instead of just growing
+- TEMPR: semantic + BM25 + graph + time-range fused in parallel, recall costs zero extra tokens
+- The catch: ~27K tokens per retrieval vs ~7K for Mem0 — nobody's normalized for that yet
+- Real-world signal: Hermes Agent users praising recall quality, flagging local RAM cost
+- What still doesn't work: no cross-bank analysis, per Hindsight's own FAQ
 
-**Best overall:** #3b — sardonic paragraph, the "read by nobody, forked by nobody, starred least of all" kicker is the most quotable line in the batch.
-**Best per tier:** 1b (stat lands harder than framing) / 2a (cleanest data contrast) / 3b (sardonic punch) / 4b (structural critique, most thinky) / 5a (cleaner thesis-first hook)
+best: #4b — long tweet / question — sharpest hook, carries the article's strongest unresolved critique (unverified 4x token-cost comparison) in one tweet
 
-<!-- Correlation ID: chain-3eb4b37016e35e00de331d691d15557a -->
+<!-- Correlation ID: chain-4f6bc21d5d98b566400251eab5e43827 -->

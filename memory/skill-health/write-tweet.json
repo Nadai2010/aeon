@@ -1,12 +1,12 @@
 {
   "skill": "write-tweet",
-  "last_analyzed": "2026-09-26T09:54:50Z",
-  "quality_score": 2,
-  "assessment": "Skill ran but output lacks substance—doesn't show the tweet draft it claims to exist, violating CLAUDE.md requirement to include work product in stdout; asks for input rather than delivering a result.",
+  "last_analyzed": "2026-09-27T12:23:50Z",
+  "quality_score": 1,
+  "assessment": "Skill produced no usable output—no draft tweet, just a prompt asking for input. Fails to deliver core deliverable.",
   "flags": [
-    "low_quality"
+    "empty_output"
   ],
-  "avg_score": 2,
+  "avg_score": 1.8,
   "history": [
     {
       "date": "2026-09-24",
@@ -30,6 +30,12 @@
       "date": "2026-09-26",
       "score": 2,
       "ts": "2026-09-26T09:54:50Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-27",
+      "score": 1,
+      "ts": "2026-09-27T12:23:50Z",
       "harness": "claude"
     }
   ]
