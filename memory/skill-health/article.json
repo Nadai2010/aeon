@@ -1,12 +1,10 @@
 {
   "skill": "article",
-  "last_analyzed": "2026-09-26T09:49:34Z",
-  "quality_score": 2,
-  "assessment": "Output is metadata (title + link) without substantive content; CLAUDE.md explicitly requires work substance in final message, not just pointers to it",
-  "flags": [
-    "unverifiable_claim"
-  ],
-  "avg_score": 2.5,
+  "last_analyzed": "2026-09-27T12:18:59Z",
+  "quality_score": 4,
+  "assessment": "Substantive, well-researched technical explainer with proper citations, clear structure, and honest critical thinking about Hindsight's tradeoffs.",
+  "flags": [],
+  "avg_score": 2.8,
   "history": [
     {
       "date": "2026-09-24",
@@ -30,6 +28,12 @@
       "date": "2026-09-26",
       "score": 2,
       "ts": "2026-09-26T09:49:34Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-27",
+      "score": 4,
+      "ts": "2026-09-27T12:18:59Z",
       "harness": "claude"
     }
   ]
