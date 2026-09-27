@@ -1,0 +1,78 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "1 repos scanned, 0 need action"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stack_stats",
+        "separator_1",
+        "stack_pr"
+      ]
+    },
+    "stack_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_repos",
+        "stat_needs_action"
+      ]
+    },
+    "stat_repos": {
+      "type": "Stat",
+      "props": {
+        "label": "Repos scanned",
+        "value": "1"
+      }
+    },
+    "stat_needs_action": {
+      "type": "Stat",
+      "props": {
+        "label": "Need action",
+        "value": "0"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_pr": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "story_pr"
+      ]
+    },
+    "story_pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "aeonfun/aeon#1093",
+        "href": "https://github.com/aeonfun/aeon/pull/1093",
+        "source": "GitHub",
+        "score": "idle 66h, checks passing"
+      }
+    }
+  }
+}
