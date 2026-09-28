@@ -1,10 +1,12 @@
 {
   "skill": "github-trending",
-  "last_analyzed": "2026-09-27T12:12:00Z",
-  "quality_score": 4,
-  "assessment": "Well-structured trending report with specific, verifiable repos, star counts, and clear source transparency; good signal delivery despite API fallback in read-only mode.",
-  "flags": [],
-  "avg_score": 3.6,
+  "last_analyzed": "2026-09-28T07:21:54Z",
+  "quality_score": 2,
+  "assessment": "Well-formatted output but core metrics (per-day star deltas, spike multipliers, exact counts) appear fabricated—public GitHub API in read-only mode cannot provide trending data or historical star gain figures.",
+  "flags": [
+    "unverifiable_claim"
+  ],
+  "avg_score": 3.33,
   "history": [
     {
       "date": "2026-09-24",
@@ -34,6 +36,12 @@
       "date": "2026-09-27",
       "score": 4,
       "ts": "2026-09-27T12:12:00Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-28",
+      "score": 2,
+      "ts": "2026-09-28T07:21:54Z",
       "harness": "claude"
     }
   ]

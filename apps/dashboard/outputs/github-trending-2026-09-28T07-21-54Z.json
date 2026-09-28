@@ -1,0 +1,539 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Trending",
+        "description": "2026-09-28"
+      },
+      "children": [
+        "top_pick_section",
+        "sep1",
+        "ai_ml_section",
+        "sep2",
+        "devtools_section",
+        "sep3",
+        "web_apps_section",
+        "sep4",
+        "other_section",
+        "sep5",
+        "footer_section"
+      ]
+    },
+    "top_pick_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "top_pick_label",
+        "repo_voicestudio_top"
+      ]
+    },
+    "top_pick_label": {
+      "type": "Text",
+      "props": {
+        "text": "Top pick",
+        "variant": "lead"
+      }
+    },
+    "repo_voicestudio_top": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "voicestudio_top_link",
+        "voicestudio_top_desc"
+      ]
+    },
+    "voicestudio_top_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "debpalash/VoiceStudio",
+        "href": "https://github.com/debpalash/VoiceStudio"
+      }
+    },
+    "voicestudio_top_desc": {
+      "type": "Text",
+      "props": {
+        "text": "A fully local, offline voice-cloning and dubbing stack pulled the sharpest single-day spike on the whole board — the strongest signal yet that open-source is closing the gap on commercial voice AI."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "ai_ml_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "ai_ml_heading",
+        "repo_voicestudio",
+        "repo_paperclip",
+        "repo_openrig"
+      ]
+    },
+    "ai_ml_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "AI/ML",
+        "level": "h3"
+      }
+    },
+    "repo_voicestudio": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "voicestudio_title",
+        "voicestudio_meta",
+        "voicestudio_desc"
+      ]
+    },
+    "voicestudio_title": {
+      "type": "StoryLink",
+      "props": {
+        "title": "debpalash/VoiceStudio",
+        "href": "https://github.com/debpalash/VoiceStudio"
+      }
+    },
+    "voicestudio_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "voicestudio_stars",
+        "voicestudio_lang",
+        "voicestudio_status"
+      ]
+    },
+    "voicestudio_stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 3,086t today (40.9k total)",
+        "variant": "caption"
+      }
+    },
+    "voicestudio_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python"
+      }
+    },
+    "voicestudio_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "voicestudio_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Full local TTS/voice-cloning/dubbing stack in 646 languages — an offline, no-subscription answer to ElevenLabs."
+      }
+    },
+    "repo_paperclip": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "paperclip_title",
+        "paperclip_meta",
+        "paperclip_desc"
+      ]
+    },
+    "paperclip_title": {
+      "type": "StoryLink",
+      "props": {
+        "title": "paperclipai/paperclip",
+        "href": "https://github.com/paperclipai/paperclip"
+      }
+    },
+    "paperclip_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "paperclip_stars",
+        "paperclip_lang",
+        "paperclip_status"
+      ]
+    },
+    "paperclip_stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 2,401t today (90.9k total)",
+        "variant": "caption"
+      }
+    },
+    "paperclip_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript"
+      }
+    },
+    "paperclip_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "paperclip_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Agent-management app already carrying 15.7k forks and 5.9k open issues — real day-to-day usage, not a demo."
+      }
+    },
+    "repo_openrig": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "openrig_title",
+        "openrig_meta",
+        "openrig_desc"
+      ]
+    },
+    "openrig_title": {
+      "type": "StoryLink",
+      "props": {
+        "title": "mvschwarz/openrig",
+        "href": "https://github.com/mvschwarz/openrig"
+      }
+    },
+    "openrig_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "openrig_stars",
+        "openrig_lang",
+        "openrig_status"
+      ]
+    },
+    "openrig_stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 114t today (1.2k total)",
+        "variant": "caption"
+      }
+    },
+    "openrig_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript"
+      }
+    },
+    "openrig_status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "secondary"
+      }
+    },
+    "openrig_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Runs Claude Code and Codex together as one harness — 18x spike after months of quiet growth."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "devtools_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "devtools_heading",
+        "repo_scriptc"
+      ]
+    },
+    "devtools_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Devtools",
+        "level": "h3"
+      }
+    },
+    "repo_scriptc": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "scriptc_title",
+        "scriptc_meta",
+        "scriptc_desc"
+      ]
+    },
+    "scriptc_title": {
+      "type": "StoryLink",
+      "props": {
+        "title": "vercel-labs/scriptc",
+        "href": "https://github.com/vercel-labs/scriptc"
+      }
+    },
+    "scriptc_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "scriptc_stars",
+        "scriptc_lang",
+        "scriptc_status"
+      ]
+    },
+    "scriptc_stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 102t today (5.5k total)",
+        "variant": "caption"
+      }
+    },
+    "scriptc_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript"
+      }
+    },
+    "scriptc_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "scriptc_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Compiles TypeScript straight to native code, skipping the JS runtime entirely — from the Vercel Labs team."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "web_apps_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "web_apps_heading",
+        "repo_pipepipe"
+      ]
+    },
+    "web_apps_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Web/Apps",
+        "level": "h3"
+      }
+    },
+    "repo_pipepipe": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pipepipe_title",
+        "pipepipe_meta",
+        "pipepipe_desc"
+      ]
+    },
+    "pipepipe_title": {
+      "type": "StoryLink",
+      "props": {
+        "title": "InfinityLoop1308/PipePipe",
+        "href": "https://github.com/InfinityLoop1308/PipePipe"
+      }
+    },
+    "pipepipe_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "pipepipe_stars",
+        "pipepipe_lang",
+        "pipepipe_status"
+      ]
+    },
+    "pipepipe_stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 242t today (6.7k total)",
+        "variant": "caption"
+      }
+    },
+    "pipepipe_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Shell"
+      }
+    },
+    "pipepipe_status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "secondary"
+      }
+    },
+    "pipepipe_desc": {
+      "type": "Text",
+      "props": {
+        "text": "3-year-old YouTube-freedom Android client is trending again — likely a policy or takedown moment reviving interest."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "other_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "other_heading",
+        "repo_madeira"
+      ]
+    },
+    "other_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Other",
+        "level": "h3"
+      }
+    },
+    "repo_madeira": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "madeira_title",
+        "madeira_meta",
+        "madeira_desc"
+      ]
+    },
+    "madeira_title": {
+      "type": "StoryLink",
+      "props": {
+        "title": "willfaust/Madeira",
+        "href": "https://github.com/willfaust/Madeira"
+      }
+    },
+    "madeira_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "madeira_stars",
+        "madeira_lang",
+        "madeira_status"
+      ]
+    },
+    "madeira_stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 83t today (884 total)",
+        "variant": "caption"
+      }
+    },
+    "madeira_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "C"
+      }
+    },
+    "madeira_status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "secondary"
+      }
+    },
+    "madeira_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Runs x86-64 Windows games on jailbroken iOS via FEX-Emu + Wine + DXMT — 19x today's normal pace."
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "footer_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "footer_sources",
+        "footer_link"
+      ]
+    },
+    "footer_sources": {
+      "type": "Text",
+      "props": {
+        "text": "sources: trending=ok · gh_api=fail (read-only mode; substituted public REST API via curl for created_at) · kept 6/9",
+        "variant": "caption"
+      }
+    },
+    "footer_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "GitHub Trending",
+        "href": "https://github.com/trending?since=daily"
+      }
+    }
+  }
+}
