@@ -1,8 +1,8 @@
 {
   "skill": "defi-overview",
-  "last_analyzed": "2026-09-27T12:15:00Z",
+  "last_analyzed": "2026-09-28T15:40:25Z",
   "quality_score": 4,
-  "assessment": "Substantive, well-structured DeFi snapshot with real-sourced data, clear signal extraction, and appropriately scoped depth for a daily overview.",
+  "assessment": "Substantive, well-structured daily report with verified sources, disciplined filtering, and actionable signal (sentiment divergence, macro risk, IL patterns flagged).",
   "flags": [],
   "avg_score": 4,
   "history": [
@@ -34,6 +34,12 @@
       "date": "2026-09-27",
       "score": 4,
       "ts": "2026-09-27T12:15:00Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-28",
+      "score": 4,
+      "ts": "2026-09-28T15:40:25Z",
       "harness": "claude"
     }
   ]

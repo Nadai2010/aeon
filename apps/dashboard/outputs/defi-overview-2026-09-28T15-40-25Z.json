@@ -1,0 +1,489 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "DeFi Overview",
+        "description": "Crypto — 2026-09-28 | DeFi Sideways: TVL -0.6% & volume +0.6% both flat"
+      },
+      "children": [
+        "conviction_badge",
+        "sep1",
+        "tvl_stat",
+        "sep2",
+        "chains_heading",
+        "chains_table",
+        "sep3",
+        "movers_heading",
+        "movers_stack",
+        "sep4",
+        "fees_heading",
+        "fees_table",
+        "sep5",
+        "fees_analysis_heading",
+        "fees_analysis_stack",
+        "sep6",
+        "dex_heading",
+        "dex_stack",
+        "sep7",
+        "stables_stat",
+        "sep8",
+        "yields_heading",
+        "yields_intro_text",
+        "yield_table",
+        "sep8b",
+        "alt_yield_text",
+        "sep9",
+        "incentive_heading",
+        "incentive_table",
+        "sep10",
+        "macro_heading",
+        "macro_stack",
+        "sep11",
+        "take_alert",
+        "sep12",
+        "sources_text"
+      ]
+    },
+    "conviction_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "conviction low",
+        "variant": "secondary"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "tvl_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "TVL",
+        "value": "$94.93B",
+        "delta": "-0.6% 24h, +0.9% 7d",
+        "trend": "neutral"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "chains_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Top Chains",
+        "level": "h3"
+      }
+    },
+    "chains_table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Chain",
+          "TVL",
+          "Change"
+        ],
+        "rows": [
+          [
+            "Ethereum",
+            "$53.3B",
+            "flat 7d"
+          ],
+          [
+            "Solana",
+            "$6.55B",
+            "+5.6%"
+          ],
+          [
+            "Base",
+            "$6.22B",
+            "+4.9%"
+          ]
+        ]
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "movers_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Movers",
+        "level": "h3"
+      }
+    },
+    "movers_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "movers_chains_text",
+        "movers_uscc_text",
+        "movers_protocol_text"
+      ]
+    },
+    "movers_chains_text": {
+      "type": "Text",
+      "props": {
+        "text": "No chain cleared the ±5%/$500M filter today (Bittensor closest at -4.0% 24h, $608M).",
+        "variant": "body"
+      }
+    },
+    "movers_uscc_text": {
+      "type": "Text",
+      "props": {
+        "text": "↑ Bitwise USCC +12.3% ($121M → $137M) — fresh USCC token mint, institutional subscription inflow, not a market move",
+        "variant": "body"
+      }
+    },
+    "movers_protocol_text": {
+      "type": "Text",
+      "props": {
+        "text": "No protocol down-mover cleared the ±10%/$100M filter.",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "fees_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Fees Leaders (24h)",
+        "level": "h3"
+      }
+    },
+    "fees_table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Protocol",
+          "Fees (24h)",
+          "vs 7d Avg"
+        ],
+        "rows": [
+          [
+            "Tether",
+            "$17.6M",
+            "~flat"
+          ],
+          [
+            "Circle USDC",
+            "$7.25M",
+            "~flat"
+          ],
+          [
+            "PumpSwap",
+            "$5.07M",
+            "+26%"
+          ]
+        ]
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "fees_analysis_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Fees Beating TVL",
+        "level": "h3"
+      }
+    },
+    "fees_analysis_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "uniswap_v4_text",
+        "jupiter_text"
+      ]
+    },
+    "uniswap_v4_text": {
+      "type": "Text",
+      "props": {
+        "text": "Uniswap V4 — fees +24.5% / TVL -4.4% (7d, $1.17B) — demand outrunning deposits",
+        "variant": "body"
+      }
+    },
+    "jupiter_text": {
+      "type": "Text",
+      "props": {
+        "text": "Jupiter Perps — fees +58.3% / TVL -0.5% (7d, $819M)",
+        "variant": "body"
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "dex_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "DEX Volume (24h)",
+        "level": "h3"
+      }
+    },
+    "dex_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "dex_total_stat",
+        "dex_top_text"
+      ]
+    },
+    "dex_total_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Total DEX Volume",
+        "value": "$7.49B",
+        "delta": "+0.6%",
+        "trend": "up"
+      }
+    },
+    "dex_top_text": {
+      "type": "Text",
+      "props": {
+        "text": "Top: Uniswap V3 $1.31B (+118.8%, reversing yesterday's -57.4% crash), Uniswap V4 $1.26B (+28.4%), Kalshi $548M (+17.4%)",
+        "variant": "body"
+      }
+    },
+    "sep7": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stables_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Stables",
+        "value": "$313.03B",
+        "delta": "+0.8% (USDS +1.6%)",
+        "trend": "up"
+      }
+    },
+    "sep8": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "yields_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Real Yield (Sustainable, ≥$10M)",
+        "level": "h3"
+      }
+    },
+    "yields_intro_text": {
+      "type": "Text",
+      "props": {
+        "text": "Top-3 by apyBase are all volatile-pair LPs with IL risk (4th straight day of this pattern):",
+        "variant": "body"
+      }
+    },
+    "yield_table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Pool",
+          "APY",
+          "TVL",
+          "IL Risk"
+        ],
+        "rows": [
+          [
+            "Uniswap V3 AAVE-WETH (Ethereum)",
+            "79.0%",
+            "$12.3M",
+            "Yes"
+          ],
+          [
+            "Raydium WSOL-USDC (Solana)",
+            "35.9%",
+            "$37.8M",
+            "Yes"
+          ],
+          [
+            "Uniswap V3 WETH-USDT (Ethereum)",
+            "31.0%",
+            "$108.9M",
+            "Yes"
+          ]
+        ]
+      }
+    },
+    "sep8b": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "alt_yield_text": {
+      "type": "Text",
+      "props": {
+        "text": "Cleaner single-exposure alternatives: stETH 2.3% (Lido, $26B) · sUSDS 3.6% (Sky, $4.5B)",
+        "variant": "body"
+      }
+    },
+    "sep9": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "incentive_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Incentive Yield (Points/Emissions, ≥$25M)",
+        "level": "h3"
+      }
+    },
+    "incentive_table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Pool",
+          "APY",
+          "TVL",
+          "Reward"
+        ],
+        "rows": [
+          [
+            "Aerodrome USDC-AERO (Base)",
+            "24.2%",
+            "$40.3M",
+            "AERO rewards"
+          ],
+          [
+            "Stake DAO sdCRV (Ethereum)",
+            "13.6%",
+            "$38.9M",
+            "CRV rewards"
+          ]
+        ]
+      }
+    },
+    "sep10": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "macro_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Macro",
+        "level": "h3"
+      }
+    },
+    "macro_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "btc_stat",
+        "eth_stat",
+        "fng_stat",
+        "breadth_text",
+        "market_text"
+      ]
+    },
+    "btc_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "BTC",
+        "value": "$83,056",
+        "delta": "-1.8%",
+        "trend": "down"
+      }
+    },
+    "eth_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "ETH",
+        "value": "$2,668",
+        "delta": "-0.8%",
+        "trend": "down"
+      }
+    },
+    "fng_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Fear & Greed Index",
+        "value": "74 (Greed)",
+        "delta": "up from 70",
+        "trend": "up"
+      }
+    },
+    "breadth_text": {
+      "type": "Text",
+      "props": {
+        "text": "Breadth: 3/20",
+        "variant": "body"
+      }
+    },
+    "market_text": {
+      "type": "Text",
+      "props": {
+        "text": "Hot market: \"US x Iran ceasefire continues through Sept 30?\" — YES 95.8%",
+        "variant": "body"
+      }
+    },
+    "sep11": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "take_alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Take",
+        "message": "BTC -1.8% against a crushed 3/20 breadth, even as F&G rose to 74 — sentiment/price divergence. New macro overhang: 10Y yield >5%, ~64-65% odds of Oct Fed hike, Sept 30 PCE print 2 days out.",
+        "type": "warning"
+      }
+    },
+    "sep12": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sources_text": {
+      "type": "Text",
+      "props": {
+        "text": "Sources: llama_tvl=ok llama_dex=ok llama_fees=ok llama_stables=ok llama_yields=ok coingecko=ok fng=ok polymarket=ok websearch=ok",
+        "variant": "caption"
+      }
+    }
+  }
+}
