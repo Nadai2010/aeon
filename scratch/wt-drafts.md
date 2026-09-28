@@ -34,5 +34,3 @@ tweet drafts: VoiceStudio's OmniVoice architecture
 - The uncomfortable flip side: local also means ungatable
 
 best: #4a — long tweet / builder's breakdown. It's the only draft that actually explains the mechanism (relay vs. single-pass diffusion) instead of just reacting to it, and the RTF number gives it a concrete anchor.
-
-<!-- Correlation ID: chain-95d173ce0817fdcdd3c165ad192b1628 -->

@@ -1,12 +1,12 @@
 {
   "skill": "write-tweet",
-  "last_analyzed": "2026-09-27T12:23:50Z",
+  "last_analyzed": "2026-09-28T07:31:54Z",
   "quality_score": 1,
-  "assessment": "Skill produced no usable output—no draft tweet, just a prompt asking for input. Fails to deliver core deliverable.",
+  "assessment": "No substance delivered — prompt for feedback instead of the tweet draft itself.",
   "flags": [
     "empty_output"
   ],
-  "avg_score": 1.8,
+  "avg_score": 1.67,
   "history": [
     {
       "date": "2026-09-24",
@@ -36,6 +36,12 @@
       "date": "2026-09-27",
       "score": 1,
       "ts": "2026-09-27T12:23:50Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-28",
+      "score": 1,
+      "ts": "2026-09-28T07:31:54Z",
       "harness": "claude"
     }
   ]
