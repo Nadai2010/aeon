@@ -1,0 +1,119 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Monitor",
+        "description": "1 repo scanned, 0 need action"
+      },
+      "children": [
+        "content-stack"
+      ]
+    },
+    "content-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alert-info",
+        "pr-section",
+        "separator-1",
+        "sources-section"
+      ]
+    },
+    "alert-info": {
+      "type": "Alert",
+      "props": {
+        "title": "Note",
+        "type": "info"
+      }
+    },
+    "pr-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-link",
+        "pr-metadata"
+      ]
+    },
+    "pr-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "aeonfun/aeon#1093",
+        "href": "https://github.com/aeonfun/aeon/pull/1093",
+        "source": "aeonfun/aeon"
+      }
+    },
+    "pr-metadata": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-idle",
+        "badge-ci",
+        "badge-reviewer"
+      ]
+    },
+    "badge-idle": {
+      "type": "Badge",
+      "props": {
+        "text": "idle 94h",
+        "variant": "outline"
+      }
+    },
+    "badge-ci": {
+      "type": "Badge",
+      "props": {
+        "text": "CI green",
+        "variant": "secondary"
+      }
+    },
+    "badge-reviewer": {
+      "type": "Badge",
+      "props": {
+        "text": "no reviewer assigned",
+        "variant": "outline"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sources-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "sources-label",
+        "sources-content"
+      ]
+    },
+    "sources-label": {
+      "type": "Text",
+      "props": {
+        "text": "Sources:",
+        "variant": "muted"
+      }
+    },
+    "sources-content": {
+      "type": "Badge",
+      "props": {
+        "text": "aeonfun/aeon=ok",
+        "variant": "outline"
+      }
+    }
+  }
+}

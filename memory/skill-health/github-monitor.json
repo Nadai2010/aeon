@@ -1,10 +1,13 @@
 {
   "skill": "github-monitor",
-  "last_analyzed": "2026-09-27T12:09:02Z",
-  "quality_score": 3,
-  "assessment": "Acceptable completion: skill scanned repos and produced a clean report with one informational PR noted, but lacks depth and substantive analysis aligned with strategy priorities.",
-  "flags": [],
-  "avg_score": 3.8,
+  "last_analyzed": "2026-09-28T15:32:42Z",
+  "quality_score": 2,
+  "assessment": "Ran but contains unverifiable specifics: claims PR idle 94h/CI green/no reviewer without corroborating detail; contradicts '0 need action' by flagging a PR that appears actionable",
+  "flags": [
+    "low_quality",
+    "unverifiable_claim"
+  ],
+  "avg_score": 3.5,
   "history": [
     {
       "date": "2026-09-24",
@@ -34,6 +37,12 @@
       "date": "2026-09-27",
       "score": 3,
       "ts": "2026-09-27T12:09:02Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-28",
+      "score": 2,
+      "ts": "2026-09-28T15:32:42Z",
       "harness": "claude"
     }
   ]
