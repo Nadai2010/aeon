@@ -1,10 +1,12 @@
 {
   "skill": "article",
-  "last_analyzed": "2026-09-27T12:18:59Z",
-  "quality_score": 4,
-  "assessment": "Substantive, well-researched technical explainer with proper citations, clear structure, and honest critical thinking about Hindsight's tradeoffs.",
-  "flags": [],
-  "avg_score": 2.8,
+  "last_analyzed": "2026-09-28T07:27:29Z",
+  "quality_score": 2,
+  "assessment": "Output produced but contains specific technical claims without cited sources, violating the operator's hard constraint against unverifiable claims as fact.",
+  "flags": [
+    "unverifiable_claim"
+  ],
+  "avg_score": 2.67,
   "history": [
     {
       "date": "2026-09-24",
@@ -34,6 +36,12 @@
       "date": "2026-09-27",
       "score": 4,
       "ts": "2026-09-27T12:18:59Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-28",
+      "score": 2,
+      "ts": "2026-09-28T07:27:29Z",
       "harness": "claude"
     }
   ]

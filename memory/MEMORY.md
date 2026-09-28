@@ -6,6 +6,7 @@
 ## Recent Articles
 | Date | Title | Topic |
 |------|-------|-------|
+| 2026-09-28 | The Trick That Lets VoiceStudio Clone Your Voice in Three Seconds, Offline | technical explainer: debpalash/VoiceStudio (40.9k★, +3,086 today, today's github-trending top pick) — its default engine k2-fsa/OmniVoice's masked-diffusion, single-stage text-to-acoustic-token architecture vs cascaded two-stage TTS pipelines |
 | 2026-09-27 | Why Hindsight Gives an AI Agent Four Separate Memories Instead of One Vector Store | technical explainer: vectorize-io/hindsight (35.1k★, +4,463 today) — TEMPR multi-strategy recall + Retain/Reflect consolidation loop vs plain RAG vector search, sourced from today's github-trending top pick |
 | 2026-09-26 | GitHub's Most-Starred Agent Skills Repo Isn't Anthropic's — It's Not Even Close | general article: mattpocock/skills (269,929★) + obra/superpowers (291,805★) + addyosmani/agent-skills (99,164★) all outstar anthropics/skills (178,472★) reference implementation — "agent skills as the new dotfiles" fragmentation risk, sourced from today's github-trending top pick |
 | 2026-09-25 | The Trick Behind Claude's Agent Skills: Most of Every Skill Never Loads | technical explainer: anthropics/skills — SKILL.md three-tier progressive disclosure (metadata always loaded, instructions on trigger, resources/scripts on demand), sourced from today's 2nd github-trending chain top pick |

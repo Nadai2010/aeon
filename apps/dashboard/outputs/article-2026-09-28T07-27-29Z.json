@@ -1,0 +1,41 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "New Article"
+      },
+      "children": [
+        "stack"
+      ]
+    },
+    "stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "storylink",
+        "description"
+      ]
+    },
+    "storylink": {
+      "type": "StoryLink",
+      "props": {
+        "title": "The Trick That Lets VoiceStudio Clone Your Voice in Three Seconds, Offline",
+        "href": "output/articles/explainer-2026-09-28.md",
+        "source": "technical explainer"
+      }
+    },
+    "description": {
+      "type": "Text",
+      "props": {
+        "text": "VoiceStudio's offline voice cloning works because its default engine, OmniVoice, replaces the industry-standard two-stage text-to-semantic-to-acoustic TTS pipeline with a single masked-diffusion transformer that predicts all 8 layers of a speech's acoustic code at once.",
+        "variant": "body"
+      }
+    }
+  }
+}
