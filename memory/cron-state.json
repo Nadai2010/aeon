@@ -1,7 +1,7 @@
 {
   "heartbeat": {
-    "last_dispatch": "2026-09-27T12:06:56Z",
-    "last_status": "success",
+    "last_dispatch": "2026-09-28T15:30:55Z",
+    "last_status": "dispatched",
     "last_success": "2026-09-27T12:09:03Z",
     "total_runs": 4,
     "total_successes": 4,
@@ -10,7 +10,7 @@
     "success_rate": 1
   },
   "digest": {
-    "last_status": "success",
+    "last_status": "dispatched",
     "last_success": "2026-09-27T17:01:16Z",
     "total_runs": 6,
     "total_successes": 6,
@@ -18,7 +18,7 @@
     "consecutive_failures": 0,
     "success_rate": 1,
     "last_quality_score": 2,
-    "last_dispatch": "2026-09-27T16:55:19Z"
+    "last_dispatch": "2026-09-28T15:30:55Z"
   },
   "token-pick": {
     "last_status": "success",
@@ -41,7 +41,7 @@
     "last_quality_score": 2
   },
   "defi-overview": {
-    "last_status": "success",
+    "last_status": "dispatched",
     "last_success": "2026-09-27T12:16:25Z",
     "total_runs": 5,
     "total_successes": 5,
@@ -49,10 +49,10 @@
     "consecutive_failures": 0,
     "success_rate": 1,
     "last_quality_score": 4,
-    "last_dispatch": "2026-09-27T12:06:56Z"
+    "last_dispatch": "2026-09-28T15:30:55Z"
   },
   "github-monitor": {
-    "last_status": "success",
+    "last_status": "dispatched",
     "last_success": "2026-09-27T12:09:41Z",
     "total_runs": 5,
     "total_successes": 5,
@@ -60,7 +60,7 @@
     "consecutive_failures": 0,
     "success_rate": 1,
     "last_quality_score": 3,
-    "last_dispatch": "2026-09-27T12:06:56Z"
+    "last_dispatch": "2026-09-28T15:30:55Z"
   },
   "article": {
     "last_status": "success",
