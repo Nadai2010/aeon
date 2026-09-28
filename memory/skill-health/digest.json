@@ -1,12 +1,10 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-09-27T17:00:12Z",
-  "quality_score": 2,
-  "assessment": "Well-structured digest but asserts specific unverifiable claims from beyond knowledge cutoff as established fact",
-  "flags": [
-    "unverifiable_claim"
-  ],
-  "avg_score": 2.67,
+  "last_analyzed": "2026-09-28T15:37:01Z",
+  "quality_score": 4,
+  "assessment": "Substantive digest with specific news items, proper sourcing, and editorial judgment; well-structured and actionable signal on AI agent regulation and safety infrastructure.",
+  "flags": [],
+  "avg_score": 2.86,
   "history": [
     {
       "date": "2026-09-24",
@@ -42,6 +40,12 @@
       "date": "2026-09-27",
       "score": 2,
       "ts": "2026-09-27T17:00:12Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-09-28",
+      "score": 4,
+      "ts": "2026-09-28T15:37:01Z",
       "harness": "claude"
     }
   ]

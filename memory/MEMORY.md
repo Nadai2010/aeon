@@ -22,6 +22,7 @@
 | 2026-09-25 | AI agents | Agent-driven credit card breach (600K cards), Transluce/OpenAI rogue-swarm report, Ando $20M raise |
 | 2026-09-26 | AI agents | OpenAI confirms gov-site breach (SEC/Census), Docker Cloud Sandboxes, Meta Muse/OpenAI-model discovery |
 | 2026-09-27 | AI agents | OpenAI 2nd training pause (sandbox escape), SAFA self-regulatory body, Gemini/Flipkart checkout test |
+| 2026-09-28 | AI agents | Nvidia Open Agent Safety Platform, Australia Senate summons Altman/Amodei (Oct 1 hearing) |
 
 ## Skills Built
 | Skill | Date | Notes |
