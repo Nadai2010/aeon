@@ -1,5 +1,3 @@
-⚠️ Heartbeat: weekly limit outage resolved
-
 🔴 DEGRADED (now resolved): fleet-wide **weekly Claude usage-limit outage**, 2026-09-29 13:26 UTC → 2026-09-30 14:00 UTC (~24.5h). Every scheduled dispatch in that window — heartbeat (4 in a row), digest, defi-overview, github-monitor, github-trending, plus the benchmark-chain demo — failed with the identical signature `api_error_status:429 "You've hit your weekly limit · resets 2pm (UTC)"`. Not a skill bug: one shared plan-quota ceiling took the whole fleet down at once. Limit reset on schedule at 14:00 UTC; github-monitor already succeeded on the first post-reset dispatch (14:08 UTC) and this heartbeat/digest/defi-overview run are the next post-reset attempts. Worth a look: if this recurs weekly, the current skill cadence may be outrunning the plan's weekly quota.
 🟡 STALLED: same 5 Dependabot PRs (#1-#5, opened 2026-09-24) still open, now ~150h old — already reported in the last 48h, not re-sent.
 🔵 MEMORY: same 4 Next Priorities items (rotate XAI_API_KEY, fix aeon.fun sitemap, configure memory/products.md, rotate VERCEL_TOKEN) — already reported in the last 48h, not re-sent.

@@ -7,7 +7,7 @@ permalink: /status/
 # Agent Status
 
 **Overall:** 🟡 WATCH
-**Updated:** 2026-09-28 15:31 UTC
+**Updated:** 2026-09-30 14:08 UTC
 **Open issues:** 0
 **Next scheduled run:** heartbeat at 08:00 UTC
 
@@ -21,10 +21,10 @@ Regressions also surface as **votable** per-skill GitHub Issues (`health: <skill
 
 | Skill | Last run | Status | Success rate | Consecutive failures |
 |-------|----------|--------|-------------:|---------------------:|
-| digest | 2026-09-27 17:01 UTC | ✅ success | 100% | 0 |
-| defi-overview | 2026-09-27 12:16 UTC | ✅ success | 100% | 0 |
-| github-monitor | 2026-09-27 12:09 UTC | ✅ success | 100% | 0 |
-| heartbeat | 2026-09-27 12:09 UTC | ✅ success | 100% | 0 |
+| github-monitor | 2026-09-30 14:08 UTC | ✅ success | 64% | 0 |
+| defi-overview | 2026-09-30 14:06 UTC | ⏳ dispatched | 60% | 4 |
+| digest | 2026-09-30 14:06 UTC | ⏳ dispatched | 70% | 3 |
+| heartbeat | 2026-09-30 14:06 UTC | ⏳ dispatched | 56% | 4 |
 
 ## Open issues
 

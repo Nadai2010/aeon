@@ -1,0 +1,347 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat: Weekly Limit Outage Resolved"
+      },
+      "children": [
+        "alert-degraded",
+        "sep1",
+        "outage-details",
+        "sep2",
+        "stalled-section",
+        "sep3",
+        "memory-section",
+        "sep4",
+        "status-action"
+      ]
+    },
+    "alert-degraded": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "Fleet-wide Claude Usage-Limit Outage (Resolved)",
+        "message": "2026-09-29 13:26 UTC → 2026-09-30 14:00 UTC (~24.5h). Status: Now resolved as of 14:00 UTC."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "outage-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "outage-heading",
+        "failed-skills-title",
+        "failed-skills-table",
+        "error-sig-block",
+        "root-cause-block",
+        "post-reset-block"
+      ]
+    },
+    "outage-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Outage Details",
+        "level": "h3"
+      }
+    },
+    "failed-skills-title": {
+      "type": "Text",
+      "props": {
+        "text": "Failed Skills During Outage Window:",
+        "variant": "lead"
+      }
+    },
+    "failed-skills-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Skill",
+          "Details"
+        ],
+        "rows": [
+          [
+            "heartbeat",
+            "4 consecutive failed dispatches"
+          ],
+          [
+            "digest",
+            "1 failed dispatch"
+          ],
+          [
+            "defi-overview",
+            "1 failed dispatch"
+          ],
+          [
+            "github-monitor",
+            "1 failed dispatch"
+          ],
+          [
+            "github-trending",
+            "1 failed dispatch"
+          ],
+          [
+            "benchmark-chain demo",
+            "1 failed dispatch"
+          ]
+        ]
+      }
+    },
+    "error-sig-block": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "error-sig-label",
+        "error-sig-code"
+      ]
+    },
+    "error-sig-label": {
+      "type": "Text",
+      "props": {
+        "text": "Error Signature:",
+        "variant": "lead"
+      }
+    },
+    "error-sig-code": {
+      "type": "Text",
+      "props": {
+        "text": "api_error_status:429 \"You've hit your weekly limit · resets 2pm (UTC)\"",
+        "variant": "caption"
+      }
+    },
+    "root-cause-block": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "root-cause-label",
+        "root-cause-text"
+      ]
+    },
+    "root-cause-label": {
+      "type": "Text",
+      "props": {
+        "text": "Root Cause:",
+        "variant": "lead"
+      }
+    },
+    "root-cause-text": {
+      "type": "Text",
+      "props": {
+        "text": "One shared plan-quota ceiling took the whole fleet down at once. Not a skill bug."
+      }
+    },
+    "post-reset-block": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "post-reset-label",
+        "post-reset-text",
+        "post-reset-warning"
+      ]
+    },
+    "post-reset-label": {
+      "type": "Text",
+      "props": {
+        "text": "Post-Reset Status:",
+        "variant": "lead"
+      }
+    },
+    "post-reset-text": {
+      "type": "Text",
+      "props": {
+        "text": "Limit reset on schedule at 2026-09-30 14:00 UTC. github-monitor succeeded on first post-reset dispatch (14:08 UTC). Current heartbeat/digest/defi-overview runs are next post-reset attempts."
+      }
+    },
+    "post-reset-warning": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "message": "If this recurs weekly, the current skill cadence may be outrunning the plan's weekly quota."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "stalled-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stalled-title",
+        "stalled-content"
+      ]
+    },
+    "stalled-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Stalled Items",
+        "level": "h3"
+      }
+    },
+    "stalled-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "stalled-badge",
+        "stalled-text"
+      ]
+    },
+    "stalled-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "STALLED — Not Re-sent",
+        "variant": "outline"
+      }
+    },
+    "stalled-text": {
+      "type": "Text",
+      "props": {
+        "text": "5 Dependabot PRs (#1–#5, opened 2026-09-24) still open, ~150 hours old. Already reported in the last 48 hours."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "memory-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "memory-title",
+        "memory-content"
+      ]
+    },
+    "memory-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Memory & Priorities",
+        "level": "h3"
+      }
+    },
+    "memory-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "memory-badge",
+        "memory-items-list"
+      ]
+    },
+    "memory-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "SAME — Not Re-sent",
+        "variant": "outline"
+      }
+    },
+    "memory-items-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "memory-intro",
+        "item-1",
+        "item-2",
+        "item-3",
+        "item-4",
+        "memory-note"
+      ]
+    },
+    "memory-intro": {
+      "type": "Text",
+      "props": {
+        "text": "4 Next Priorities items pending:",
+        "variant": "lead"
+      }
+    },
+    "item-1": {
+      "type": "Text",
+      "props": {
+        "text": "• Rotate XAI_API_KEY"
+      }
+    },
+    "item-2": {
+      "type": "Text",
+      "props": {
+        "text": "• Fix aeon.fun sitemap"
+      }
+    },
+    "item-3": {
+      "type": "Text",
+      "props": {
+        "text": "• Configure memory/products.md"
+      }
+    },
+    "item-4": {
+      "type": "Text",
+      "props": {
+        "text": "• Rotate VERCEL_TOKEN"
+      }
+    },
+    "memory-note": {
+      "type": "Text",
+      "props": {
+        "text": "Already reported in the last 48 hours.",
+        "variant": "caption"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "status-action": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "action-title",
+        "action-text"
+      ]
+    },
+    "action-title": {
+      "type": "Heading",
+      "props": {
+        "text": "Action Taken",
+        "level": "h3"
+      }
+    },
+    "action-text": {
+      "type": "Text",
+      "props": {
+        "text": "STATUS_PAGE=WATCH (stalled Dependabot PRs) — docs/status.md updated."
+      }
+    }
+  }
+}

@@ -37,6 +37,8 @@
 
 ## Next Priorities
 - Rotate XAI_API_KEY — rejected as invalid (HTTP 400 "Incorrect API key provided") across 10+ consecutive runs, 2026-09-24 to 2026-09-30 (digest, write-tweet); digests are falling back to WebSearch for X signal
+- Watch weekly Claude usage limit — fully exhausted 2026-09-29T13:26Z→2026-09-30T14:00Z, a ~24.5h fleet-wide outage (every dispatch of heartbeat/digest/defi-overview/github-monitor/github-trending failed with `api_error_status:429 "weekly limit"`) before resetting on schedule at 14:00 UTC. If this recurs weekly, the current 4-daily-skill cadence may be outrunning the plan's weekly quota — consider trimming schedule density or upgrading the plan.
+- Rotate XAI_API_KEY — rejected as invalid (HTTP 400 "Incorrect API key provided") across 7 consecutive runs, 2026-09-24 to 2026-09-26 (digest x5, write-tweet x2); digests are falling back to WebSearch for X signal
 - Fix aeon.fun sitemap — seo-audit (2026-09-24, first run) found only 1 of 15 linked pages listed, and the canonical points the bare domain away from www instead of the reverse
 - Configure memory/products.md (still the unconfigured template) — blocks bd-radar/product-pulse and degrades idea-forge to repo-only ideation (IDEA_FORGE_NO_PRODUCTS_CONFIG, 2026-09-24)
 - Rotate VERCEL_TOKEN — set but rejected with HTTP 403 "Not authorized" (invalidToken) on deploy-prototype's first live-deploy call, 2026-09-25; build succeeded, deploy blocked, `.pending-deploy/` kept for retry
