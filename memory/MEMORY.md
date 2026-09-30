@@ -23,6 +23,7 @@
 | 2026-09-26 | AI agents | OpenAI confirms gov-site breach (SEC/Census), Docker Cloud Sandboxes, Meta Muse/OpenAI-model discovery |
 | 2026-09-27 | AI agents | OpenAI 2nd training pause (sandbox escape), SAFA self-regulatory body, Gemini/Flipkart checkout test |
 | 2026-09-28 | AI agents | Nvidia Open Agent Safety Platform, Australia Senate summons Altman/Amodei (Oct 1 hearing) |
+| 2026-09-30 | AI agents | MCP Python SDK OAuth flaw, OpenAI DevDay Dots/GPT-6.1 Sol, DIVD AI-agent breach, OpenAI $30B/$1.4T raise |
 
 ## Skills Built
 | Skill | Date | Notes |
@@ -35,7 +36,7 @@
 - unlock-monitor: tokenomist/defillama/dropstab/coingecko unlock-countdown data are flaky (authwall/no-data/stale-countdown) — cryptorank plus secondary press (KuCoin, PANews, BeInCrypto, insights.unlocks.app) is the reliable fallback path
 
 ## Next Priorities
-- Rotate XAI_API_KEY — rejected as invalid (HTTP 400 "Incorrect API key provided") across 7 consecutive runs, 2026-09-24 to 2026-09-26 (digest x5, write-tweet x2); digests are falling back to WebSearch for X signal
+- Rotate XAI_API_KEY — rejected as invalid (HTTP 400 "Incorrect API key provided") across 10+ consecutive runs, 2026-09-24 to 2026-09-30 (digest, write-tweet); digests are falling back to WebSearch for X signal
 - Fix aeon.fun sitemap — seo-audit (2026-09-24, first run) found only 1 of 15 linked pages listed, and the canonical points the bare domain away from www instead of the reverse
 - Configure memory/products.md (still the unconfigured template) — blocks bd-radar/product-pulse and degrades idea-forge to repo-only ideation (IDEA_FORGE_NO_PRODUCTS_CONFIG, 2026-09-24)
 - Rotate VERCEL_TOKEN — set but rejected with HTTP 403 "Not authorized" (invalidToken) on deploy-prototype's first live-deploy call, 2026-09-25; build succeeded, deploy blocked, `.pending-deploy/` kept for retry

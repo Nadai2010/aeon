@@ -1,0 +1,284 @@
+{
+  "root": "main_card",
+  "state": {},
+  "elements": {
+    "main_card": {
+      "type": "Card",
+      "props": {
+        "title": "AI agents digest",
+        "description": "2026-09-30"
+      },
+      "children": [
+        "tldr_section",
+        "stories_stack",
+        "also_glance_section"
+      ]
+    },
+    "tldr_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tldr_text",
+        "sep1"
+      ]
+    },
+    "tldr_text": {
+      "type": "Text",
+      "props": {
+        "text": "TL;DR: A critical OAuth flaw in the official MCP Python SDK demands an immediate patch, while OpenAI unveiled always-on \"Dots\" agents at DevDay and is now raising $30B at a $1.4T valuation after shelving its IPO.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stories_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "story1",
+        "sep2",
+        "story2",
+        "sep3",
+        "story3",
+        "sep4",
+        "story4"
+      ]
+    },
+    "story1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "story1_link",
+        "story1_details",
+        "story1_why",
+        "story1_action"
+      ]
+    },
+    "story1_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Official MCP Python SDK Had an OAuth Credential-Theft Flaw",
+        "href": "https://github.com/modelcontextprotocol/python-sdk/security/advisories/GHSA-qx49-fqc8-xw99",
+        "source": "GitHub Security Advisory"
+      },
+      "children": []
+    },
+    "story1_details": {
+      "type": "Text",
+      "props": {
+        "text": "MCP Python SDK versions 1.9.1–1.29.1 and 2.0.0–2.1.1 let a malicious MCP server redirect a client's OAuth client secret, auth code, and PKCE proof key to an attacker-controlled token endpoint — enough to hijack accounts on Google, Okta, or Microsoft Entra ID.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "story1_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: any HTTP-based MCP client talking to untrusted servers should upgrade to 1.30.0/2.2.0 today and explicitly pass issuer= — upgrading alone isn't enough for machine-to-machine clients.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "story1_action": {
+      "type": "Badge",
+      "props": {
+        "text": "Action Required: Upgrade to 1.30.0/2.2.0",
+        "variant": "destructive"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "story2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "story2_link",
+        "story2_details",
+        "story2_why"
+      ]
+    },
+    "story2_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "OpenAI Launched Always-On \"Dots\" Agents and GPT-6.1 Sol at DevDay",
+        "href": "https://openai.com/index/devday-2026-recap/",
+        "source": "OpenAI"
+      },
+      "children": []
+    },
+    "story2_details": {
+      "type": "Text",
+      "props": {
+        "text": "At DevDay 2026 (Sep 29), OpenAI shipped Dots — agents that keep working after the initial prompt, get their own cloud computer/browser, and reach 4,000+ connected apps — alongside GPT-6.1 Sol, priced at $2/$10 per million input/output tokens, a fifth of Astra's rate.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "story2_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: cheap, always-on agentic coding/computer-use access lowers the bar for production agent deployments built directly on OpenAI's stack.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "story3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "story3_link",
+        "story3_details",
+        "story3_why"
+      ]
+    },
+    "story3_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "An Autonomous AI Agent Breached a Cybersecurity Nonprofit — And Made a Mess Doing It",
+        "href": "https://www.bleepingcomputer.com/news/security/automated-ai-agent-used-to-breach-cybersecurity-nonprofit-divd/",
+        "source": "Bleeping Computer"
+      },
+      "children": []
+    },
+    "story3_details": {
+      "type": "Text",
+      "props": {
+        "text": "DIVD, the Dutch vulnerability-disclosure nonprofit, disclosed its first breach in seven years: an autonomous agent ran post-exploitation on its own, tripping over its own attack (password-spraying that interfered with its own man-in-the-middle attempt) while leaving sloppy trace evidence.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "story3_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: DIVD has promised full technical details October 1 — a rare inside look at how an offensive agent actually fails in the wild.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "story4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "story4_link",
+        "story4_details",
+        "story4_why"
+      ]
+    },
+    "story4_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "OpenAI Seeks $30B at a $1.4T Valuation, Pushes Back Its IPO",
+        "href": "https://www.bloomberg.com/news/articles/2026-09-29/openai-targets-30-billion-in-new-funding-at-1-4-trillion-value",
+        "source": "Bloomberg"
+      },
+      "children": []
+    },
+    "story4_details": {
+      "type": "Text",
+      "props": {
+        "text": "OpenAI is in early talks to raise at least $30B at a $1.4T valuation — nearly 5x its April 2025 mark — after Sam Altman said the company wants more runway before going public; run-rate revenue reportedly jumped 70% since July to $40B in August.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "story4_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: another mega-round outside public markets keeps OpenAI's agent buildout unconstrained by quarterly-earnings pressure, for now.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "also_glance_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "sep5",
+        "also_heading",
+        "also_content"
+      ]
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "also_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Also worth a glance",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "also_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "instinct_story"
+      ]
+    },
+    "instinct_story": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Instinct raised $1B Series C at a $10B valuation (Sep 28), its third jump in a month from $2.5B",
+        "href": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
+        "source": "TechCrunch"
+      },
+      "children": []
+    }
+  }
+}
