@@ -1,0 +1,433 @@
+{
+  "root": "main_card",
+  "state": {},
+  "elements": {
+    "main_card": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Trending",
+        "description": "2026-10-01"
+      },
+      "children": [
+        "intro",
+        "ai_ml_section",
+        "devtools_section",
+        "infra_section",
+        "other_section",
+        "sources"
+      ]
+    },
+    "intro": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "intro_text",
+        "intro_repo"
+      ]
+    },
+    "intro_text": {
+      "type": "Text",
+      "props": {
+        "text": "Top pick — NVIDIA enters the AI-agent-safety conversation with a dedicated sandboxed runtime, not a wrapper — and it pulled today's single sharpest star spike.",
+        "variant": "lead"
+      }
+    },
+    "intro_repo": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "intro_link",
+        "intro_meta",
+        "intro_desc"
+      ]
+    },
+    "intro_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "NVIDIA/OpenShell",
+        "href": "https://github.com/NVIDIA/OpenShell"
+      }
+    },
+    "intro_meta": {
+      "type": "Text",
+      "props": {
+        "text": "★ 1,281 today (13.4k total) · Rust · DEBUT",
+        "variant": "caption"
+      }
+    },
+    "intro_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Ground-up sandboxed runtime for autonomous agents from NVIDIA — not a wrapper, a dedicated safe-execution environment."
+      }
+    },
+    "ai_ml_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "ai_ml_heading",
+        "ai_ml_repos"
+      ]
+    },
+    "ai_ml_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "AI/ML",
+        "level": "h3"
+      }
+    },
+    "ai_ml_repos": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo_pageindex"
+      ]
+    },
+    "repo_pageindex": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pageindex_link",
+        "pageindex_meta",
+        "pageindex_desc"
+      ]
+    },
+    "pageindex_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "VectifyAI/PageIndex",
+        "href": "https://github.com/VectifyAI/PageIndex"
+      }
+    },
+    "pageindex_meta": {
+      "type": "Text",
+      "props": {
+        "text": "★ 1,097 today (38.3k total) · Python · ACCELERATING",
+        "variant": "caption"
+      }
+    },
+    "pageindex_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Skips vector embeddings for RAG entirely, building a reasoning-based document index instead of an embed-and-search pipeline."
+      }
+    },
+    "devtools_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "devtools_heading",
+        "devtools_repos"
+      ]
+    },
+    "devtools_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Devtools",
+        "level": "h3"
+      }
+    },
+    "devtools_repos": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo_openrig",
+        "repo_contextmode",
+        "repo_codegraph"
+      ]
+    },
+    "repo_openrig": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "openrig_link",
+        "openrig_meta",
+        "openrig_desc"
+      ]
+    },
+    "openrig_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "mvschwarz/openrig",
+        "href": "https://github.com/mvschwarz/openrig"
+      }
+    },
+    "openrig_meta": {
+      "type": "Text",
+      "props": {
+        "text": "★ 624 today (3.2k total) · TypeScript · ACCELERATING",
+        "variant": "caption"
+      }
+    },
+    "openrig_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Runs Claude Code and Codex as one harness — nearly tripled its star count in two days."
+      }
+    },
+    "repo_contextmode": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "contextmode_link",
+        "contextmode_meta",
+        "contextmode_desc"
+      ]
+    },
+    "contextmode_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "mksglu/context-mode",
+        "href": "https://github.com/mksglu/context-mode"
+      }
+    },
+    "contextmode_meta": {
+      "type": "Text",
+      "props": {
+        "text": "★ 90 today (24.6k total) · TypeScript · RETURNING",
+        "variant": "caption"
+      }
+    },
+    "contextmode_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Claims a 98% cut in agent tool-output tokens, sandboxing output and routing across 17 platforms via MCP."
+      }
+    },
+    "repo_codegraph": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "codegraph_link",
+        "codegraph_meta",
+        "codegraph_desc"
+      ]
+    },
+    "codegraph_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "colbymchenry/codegraph",
+        "href": "https://github.com/colbymchenry/codegraph"
+      }
+    },
+    "codegraph_meta": {
+      "type": "Text",
+      "props": {
+        "text": "★ 118 today (72.7k total) · C · RETURNING",
+        "variant": "caption"
+      }
+    },
+    "codegraph_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Pre-built, auto-syncing code knowledge graph for Claude Code — fewer tool calls, fewer tokens, runs fully local."
+      }
+    },
+    "infra_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "infra_heading",
+        "infra_repos"
+      ]
+    },
+    "infra_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Infra",
+        "level": "h3"
+      }
+    },
+    "infra_repos": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo_dbx"
+      ]
+    },
+    "repo_dbx": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "dbx_link",
+        "dbx_meta",
+        "dbx_desc"
+      ]
+    },
+    "dbx_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "t8y2/dbx",
+        "href": "https://github.com/t8y2/dbx"
+      }
+    },
+    "dbx_meta": {
+      "type": "Text",
+      "props": {
+        "text": "★ 1,138 today (23.5k total) · Rust · ACCELERATING",
+        "variant": "caption"
+      }
+    },
+    "dbx_desc": {
+      "type": "Text",
+      "props": {
+        "text": "One lightweight client for 100+ databases with a built-in MCP server — any agent queries any database."
+      }
+    },
+    "other_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "other_heading",
+        "other_repos"
+      ]
+    },
+    "other_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Other",
+        "level": "h3"
+      }
+    },
+    "other_repos": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo_hyperframes",
+        "repo_radar"
+      ]
+    },
+    "repo_hyperframes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "hyperframes_link",
+        "hyperframes_meta",
+        "hyperframes_desc",
+        "hyperframes_note"
+      ]
+    },
+    "hyperframes_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "heygen-com/hyperframes",
+        "href": "https://github.com/heygen-com/hyperframes"
+      }
+    },
+    "hyperframes_meta": {
+      "type": "Text",
+      "props": {
+        "text": "★ 349 today (54.9k total) · TypeScript · RETURNING",
+        "variant": "caption"
+      }
+    },
+    "hyperframes_desc": {
+      "type": "Text",
+      "props": {
+        "text": "HeyGen renders video straight from HTML markup — a programmable render target built for agents, not humans."
+      }
+    },
+    "hyperframes_note": {
+      "type": "Text",
+      "props": {
+        "text": "Not a web framework/UI lib or a dev tool — closer to rendering/media infra for AI output.",
+        "variant": "caption"
+      }
+    },
+    "repo_radar": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "radar_link",
+        "radar_meta",
+        "radar_desc",
+        "radar_note"
+      ]
+    },
+    "radar_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "NawfalMotii79/PLFM_RADAR",
+        "href": "https://github.com/NawfalMotii79/PLFM_RADAR"
+      }
+    },
+    "radar_meta": {
+      "type": "Text",
+      "props": {
+        "text": "★ 263 today (26.5k total) · PLSQL · ACCELERATING",
+        "variant": "caption"
+      }
+    },
+    "radar_desc": {
+      "type": "Text",
+      "props": {
+        "text": "A fully open-source, low-cost 10.5GHz phased-array radar design — rare hardware project on a software-dominated board."
+      }
+    },
+    "radar_note": {
+      "type": "Text",
+      "props": {
+        "text": "Hardware engineering project, not software — kept as a genuinely interesting outlier.",
+        "variant": "caption"
+      }
+    },
+    "sources": {
+      "type": "Text",
+      "props": {
+        "text": "sources: trending=ok · gh_api=fail (read-only mode, velocity tags inferred from stars-today) · kept 8/17",
+        "variant": "muted"
+      }
+    }
+  }
+}
