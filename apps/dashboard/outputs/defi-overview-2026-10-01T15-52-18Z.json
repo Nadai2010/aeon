@@ -1,0 +1,670 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "DeFi Overview — 2026-10-01",
+        "description": "Crypto market snapshot"
+      },
+      "children": [
+        "status_header",
+        "sep1",
+        "tvl_section",
+        "sep2",
+        "chains_section",
+        "sep3",
+        "movers_section",
+        "sep4",
+        "fees_section",
+        "sep5",
+        "dex_section",
+        "sep6",
+        "stables_section",
+        "sep7",
+        "yields_section",
+        "sep8",
+        "macro_section",
+        "sep9",
+        "whatsnew_section",
+        "sep10",
+        "sources_section"
+      ]
+    },
+    "status_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge_chop",
+        "badge_conviction",
+        "text_summary"
+      ]
+    },
+    "badge_chop": {
+      "type": "Badge",
+      "props": {
+        "text": "chop",
+        "variant": "secondary"
+      }
+    },
+    "badge_conviction": {
+      "type": "Badge",
+      "props": {
+        "text": "conviction low",
+        "variant": "outline"
+      }
+    },
+    "text_summary": {
+      "type": "Text",
+      "props": {
+        "text": "DeFi Mixed: TVL flat-up, DEX volume down sharply, stables flat",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "tvl_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_tvl",
+        "stat_tvl"
+      ]
+    },
+    "heading_tvl": {
+      "type": "Heading",
+      "props": {
+        "text": "Total Value Locked",
+        "level": "h2"
+      }
+    },
+    "stat_tvl": {
+      "type": "Stat",
+      "props": {
+        "value": "$94.98B",
+        "delta": "+0.8% (24h), +0.3% (7d)",
+        "trend": "up"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "chains_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_chains",
+        "table_chains",
+        "text_chains_note"
+      ]
+    },
+    "heading_chains": {
+      "type": "Heading",
+      "props": {
+        "text": "Top Chains",
+        "level": "h2"
+      }
+    },
+    "table_chains": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Chain",
+          "TVL"
+        ],
+        "rows": [
+          [
+            "Ethereum",
+            "$53.45B"
+          ],
+          [
+            "Solana",
+            "$6.53B"
+          ],
+          [
+            "Base",
+            "$6.30B"
+          ]
+        ]
+      }
+    },
+    "text_chains_note": {
+      "type": "Text",
+      "props": {
+        "text": "All <1% 24h move — deltas suppressed",
+        "variant": "caption"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "movers_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_movers",
+        "table_movers",
+        "text_movers_note"
+      ]
+    },
+    "heading_movers": {
+      "type": "Heading",
+      "props": {
+        "text": "Movers",
+        "level": "h2"
+      }
+    },
+    "table_movers": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Protocol",
+          "Change",
+          "TVL",
+          "Note"
+        ],
+        "rows": [
+          [
+            "Jupiter Lend",
+            "↑ +20.3%",
+            "$1.03B → $1.24B",
+            "Reversal, rebounding from Solana-lending slump"
+          ],
+          [
+            "Deribit",
+            "↓ −17.6%",
+            "$5.11B → $4.21B",
+            "No obvious catalyst"
+          ]
+        ]
+      }
+    },
+    "text_movers_note": {
+      "type": "Text",
+      "props": {
+        "text": "No chain cleared the ≥5%/$500M filter today (Arc closest, −3.4%, $523M)",
+        "variant": "caption"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "fees_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_fees",
+        "heading_fees_leaders",
+        "table_fees",
+        "heading_fees_anomaly",
+        "fees_anomaly_items"
+      ]
+    },
+    "heading_fees": {
+      "type": "Heading",
+      "props": {
+        "text": "Fees",
+        "level": "h2"
+      }
+    },
+    "heading_fees_leaders": {
+      "type": "Heading",
+      "props": {
+        "text": "Leaders (24h)",
+        "level": "h3"
+      }
+    },
+    "table_fees": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Protocol",
+          "Fees (24h)",
+          "vs 7d avg"
+        ],
+        "rows": [
+          [
+            "Tether",
+            "$17.5M",
+            "flat"
+          ],
+          [
+            "Circle USDC",
+            "$7.2M",
+            "flat"
+          ],
+          [
+            "PumpSwap",
+            "$3.9M",
+            "−12%"
+          ]
+        ]
+      }
+    },
+    "heading_fees_anomaly": {
+      "type": "Heading",
+      "props": {
+        "text": "Fees Beating TVL (Anomalies)",
+        "level": "h3"
+      }
+    },
+    "fees_anomaly_items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "fee_anom_1",
+        "fee_anom_2"
+      ]
+    },
+    "fee_anom_1": {
+      "type": "Text",
+      "props": {
+        "text": "Maple — fees +178.6% / TVL −1.7% (7d, $2.97B) — continuation of 09-30 flag",
+        "variant": "body"
+      }
+    },
+    "fee_anom_2": {
+      "type": "Text",
+      "props": {
+        "text": "Lombard LBTC — fees +213.2% / TVL −1.1% (7d, $710M)",
+        "variant": "body"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "dex_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_dex",
+        "stat_dex",
+        "table_dex_top"
+      ]
+    },
+    "heading_dex": {
+      "type": "Heading",
+      "props": {
+        "text": "DEX Volume (24h)",
+        "level": "h2"
+      }
+    },
+    "stat_dex": {
+      "type": "Stat",
+      "props": {
+        "value": "$10.90B",
+        "delta": "−7.1%",
+        "trend": "down"
+      }
+    },
+    "table_dex_top": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "DEX",
+          "Volume (24h)"
+        ],
+        "rows": [
+          [
+            "Uniswap V3",
+            "$1.57B"
+          ],
+          [
+            "Uniswap V4",
+            "$1.41B"
+          ],
+          [
+            "PancakeSwap V3",
+            "$0.95B"
+          ]
+        ]
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stables_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_stables",
+        "stat_stables",
+        "text_stables_note"
+      ]
+    },
+    "heading_stables": {
+      "type": "Heading",
+      "props": {
+        "text": "Stablecoins",
+        "level": "h2"
+      }
+    },
+    "stat_stables": {
+      "type": "Stat",
+      "props": {
+        "value": "$312.5B",
+        "delta": "+0.2%",
+        "trend": "up"
+      }
+    },
+    "text_stables_note": {
+      "type": "Text",
+      "props": {
+        "text": "USDS +2.4% only notable single-issuer move",
+        "variant": "caption"
+      }
+    },
+    "sep7": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "yields_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_real_yield",
+        "real_yield_items",
+        "heading_incentive_yield",
+        "incentive_yield_items"
+      ]
+    },
+    "heading_real_yield": {
+      "type": "Heading",
+      "props": {
+        "text": "Real Yield (sustainable, ≥$10M)",
+        "level": "h2"
+      }
+    },
+    "real_yield_items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "ry_1",
+        "ry_2",
+        "ry_3",
+        "ry_note"
+      ]
+    },
+    "ry_1": {
+      "type": "Text",
+      "props": {
+        "text": "stETH (Lido, ETH) — 2.2% apyBase ($26.5B TVL)",
+        "variant": "body"
+      }
+    },
+    "ry_2": {
+      "type": "Text",
+      "props": {
+        "text": "sUSDS (Sky, ETH) — 3.6% apyBase ($4.65B TVL)",
+        "variant": "body"
+      }
+    },
+    "ry_3": {
+      "type": "Text",
+      "props": {
+        "text": "sGHO (Aave, ETH) — 4.5% apyBase ($169M TVL)",
+        "variant": "body"
+      }
+    },
+    "ry_note": {
+      "type": "Text",
+      "props": {
+        "text": "Raw top-3-by-apyBase are volatile Uniswap/Raydium LPs with ilRisk=yes (6th straight day of this pattern) — single-exposure alternatives shown instead",
+        "variant": "caption"
+      }
+    },
+    "heading_incentive_yield": {
+      "type": "Heading",
+      "props": {
+        "text": "Incentive Yield (points / emissions, ≥$25M)",
+        "level": "h2"
+      }
+    },
+    "incentive_yield_items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "iy_1",
+        "iy_2"
+      ]
+    },
+    "iy_1": {
+      "type": "Text",
+      "props": {
+        "text": "Aerodrome USDC-AERO — 32% apy via AERO rewards ($41M TVL)",
+        "variant": "body"
+      }
+    },
+    "iy_2": {
+      "type": "Text",
+      "props": {
+        "text": "Stake DAO sdCRV — 13% apy via CRV rewards ($45M TVL)",
+        "variant": "body"
+      }
+    },
+    "sep8": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "macro_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_macro",
+        "macro_grid",
+        "text_fed_rate"
+      ]
+    },
+    "heading_macro": {
+      "type": "Heading",
+      "props": {
+        "text": "Macro",
+        "level": "h2"
+      }
+    },
+    "macro_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_btc",
+        "stat_eth",
+        "stat_fng",
+        "stat_breadth"
+      ]
+    },
+    "stat_btc": {
+      "type": "Stat",
+      "props": {
+        "label": "BTC",
+        "value": "$83,881",
+        "delta": "−0.2%",
+        "trend": "down"
+      }
+    },
+    "stat_eth": {
+      "type": "Stat",
+      "props": {
+        "label": "ETH",
+        "value": "$2,676",
+        "delta": "−0.2%",
+        "trend": "down"
+      }
+    },
+    "stat_fng": {
+      "type": "Stat",
+      "props": {
+        "label": "Fear & Greed",
+        "value": "74",
+        "delta": "up from 71",
+        "trend": "up"
+      }
+    },
+    "stat_breadth": {
+      "type": "Stat",
+      "props": {
+        "label": "Breadth",
+        "value": "5/20"
+      }
+    },
+    "text_fed_rate": {
+      "type": "Text",
+      "props": {
+        "text": "Hot market: \"No change in Fed rates after Oct 2026\" YES 69.5%",
+        "variant": "body"
+      }
+    },
+    "sep9": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "whatsnew_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_whatsnew",
+        "whatsnew_items"
+      ]
+    },
+    "heading_whatsnew": {
+      "type": "Heading",
+      "props": {
+        "text": "What's New",
+        "level": "h2"
+      }
+    },
+    "whatsnew_items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "whatsnew_1",
+        "whatsnew_2",
+        "whatsnew_3"
+      ]
+    },
+    "whatsnew_1": {
+      "type": "Alert",
+      "props": {
+        "title": "QNT Peak Narrative Broken",
+        "message": "QNT's 4-day peak narrative just broke (−13.8%, first red day)",
+        "type": "warning"
+      }
+    },
+    "whatsnew_2": {
+      "type": "Alert",
+      "props": {
+        "title": "Sentiment/Price Divergence",
+        "message": "Breadth crashed to 5/20 even as Fear & Greed climbed — sentiment/price divergence",
+        "type": "warning"
+      }
+    },
+    "whatsnew_3": {
+      "type": "Text",
+      "props": {
+        "text": "BTC ETFs' 9-day $3.1B inflow streak snapped (−$148.7M today); blue-chip DeFi TVL (Lido, Aave V3, Morpho Blue) all flipped green on 7d",
+        "variant": "body"
+      }
+    },
+    "sep10": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sources_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_sources",
+        "text_sources"
+      ]
+    },
+    "heading_sources": {
+      "type": "Heading",
+      "props": {
+        "text": "Data Sources",
+        "level": "h3"
+      }
+    },
+    "text_sources": {
+      "type": "Text",
+      "props": {
+        "text": "llama_tvl=ok llama_dex=ok llama_fees=ok llama_stables=ok llama_yields=ok coingecko=ok (global via webfetch fallback) fng=ok polymarket=ok websearch=ok",
+        "variant": "caption"
+      }
+    }
+  }
+}

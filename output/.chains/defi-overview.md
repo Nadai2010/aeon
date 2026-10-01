@@ -1,41 +1,44 @@
-ℹ️ DeFi Overview
+ℹ️ DeFi Overview — 2026-10-01
 
-*Crypto — 2026-09-30* — chop (conviction low) | DeFi Sideways: TVL/DEX both inside flat-band, stables flat
+*Crypto — 2026-10-01* — chop (conviction low) | DeFi Mixed: TVL flat-up, DEX volume down sharply, stables flat
 
-*TVL:* $94.21B (-0.6% 24h, -2.3% 7d)
+*TVL:* $94.98B (+0.8% 24h, +0.3% 7d)
 
 *Top chains*
-1. Ethereum — $52.83B (-2.9% 7d)
-2. Solana — $6.47B (-1.1% 7d)
-3. Base — $6.29B (+0.5% 7d)
+1. Ethereum — $53.45B
+2. Solana — $6.53B
+3. Base — $6.30B
+(all <1% 24h move — deltas suppressed)
 
 *Movers*
-↑ Sui +5.1% ($532M → $559M) — DeepBook App alpha launch (Sep 24) + NAVI lending deposits driving fresh TVL
-↓ Plasma -7.4% ($546M → $506M) — Sept 25 XPL unlock (1.81B tokens, 65% of supply) pressuring incentive-driven TVL
-↑ Lista Lending +12.3% ($898M→$1.01B) — no obvious catalyst
-↓ Jupiter Lend -11.9% ($1.17B→$1.03B) — Solana lending deposits/loans broadly slipping since August, no single-day trigger
+↑ Jupiter Lend +20.3% ($1.03B → $1.24B) — ↔ reversal, rebounding from last week's Solana-lending slump
+↓ Deribit −17.6% ($5.11B → $4.21B) — no obvious catalyst
+_no chain cleared the ≥5%/$500M filter today (Arc closest, -3.4%, $523M)_
 
 *Fees leaders (24h)*
-1. Tether — $17.6M (+0.9% vs 7d avg)
+1. Tether — $17.5M (flat vs 7d avg)
 2. Circle USDC — $7.2M (flat)
-3. Uniswap V4 — $3.8M (+28% vs 7d avg)
+3. PumpSwap — $3.9M (−12% vs 7d avg)
 
 *Fees beating TVL*
-• Maple — fees +262% / TVL -3.2% (7d), $3.0B TVL — demand outrunning deposits
-• Concrete — fees +157% / TVL -1.3% (7d), $1.3B TVL
+• Maple — fees +178.6% / TVL −1.7% (7d, $2.97B) — continuation of 09-30 flag
+• Lombard LBTC — fees +213.2% / TVL −1.1% (7d, $710M)
 
-*DEX vol (24h):* $11.71B (+2.2%) top: Uniswap V3 $1.50B, Uniswap V4 $1.50B, PancakeSwap V3 $687M
+*DEX vol (24h):* $10.90B (−7.1%)  top: Uniswap V3 $1.57B, Uniswap V4 $1.41B, PancakeSwap V3 $0.95B
 
-*Stables:* $312.9B (+0.2%) — USDS +1.6% only notable single-issuer move
+*Stables:* $312.5B (+0.2%)  — USDS +2.4% only notable single-issuer move
 
-*Real yield (sustainable, ≥$10M, filtered)* — top-3 all volatile LPs w/ IL risk (4th+ day of this pattern); single-exposure alts: stETH 2.3% ($26.8B), sUSDS 3.6% ($4.5B), sGHO 4.5% ($168M)
-• WSOL-USDC (Raydium, Solana) — 34.1% apyBase ($38M TVL, ilRisk=yes)
-• AAVE-WETH (Uniswap V3, ETH) — 32.6% apyBase ($13M TVL, ilRisk=yes)
-• WETH-USDT (Uniswap V3, ETH) — 30.7% apyBase ($109M TVL, ilRisk=yes)
+*Real yield (sustainable, ≥$10M, filtered)*
+• stETH (Lido, ETH) — 2.2% apyBase ($26.5B TVL)
+• sUSDS (Sky, ETH) — 3.6% apyBase ($4.65B TVL)
+• sGHO (Aave, ETH) — 4.5% apyBase ($169M TVL)
+_raw top-3-by-apyBase are still volatile Uniswap/Raydium LPs with ilRisk=yes (6th straight day of this pattern) — single-exposure alternatives shown instead_
 
 *Incentive yield (points / emissions, ≥$25M)*
-• USDC-AERO (Aerodrome, Base) — 24.6% apy via AERO rewards ($42M TVL)
-• SDCRV (Stake DAO, ETH) — 12.6% apy via CRV rewards ($49M TVL)
+• Aerodrome USDC-AERO — 32% apy via AERO rewards ($41M TVL)
+• Stake DAO sdCRV — 13% apy via CRV rewards ($45M TVL)
 
-*Macro:* BTC $84,527 (+0.6%) / ETH $2,709 (-0.5%) · F&G 71 (Greed, down from 73) · breadth 13/20 · hot market: Polymarket Fed-rate odds flipped — "no change" now 65.5% YES vs ~65% odds of a hike two days ago
-_sources: llama_tvl=ok llama_dex=ok llama_fees=ok llama_stables=ok llama_yields=ok coingecko=ok fng=ok polymarket=ok websearch=ok | var: none_
+*Macro:* BTC $83,881 (−0.2%) / ETH $2,676 (−0.2%) · F&G 74 (Greed, up from 71) · breadth 5/20 · hot market: "No change in Fed rates after Oct 2026" YES 69.5%
+
+*What's new:* QNT's 4-day peak narrative just broke (−13.8%, first red day); breadth crashed to 5/20 even as F&G climbed — sentiment/price divergence; BTC ETFs' 9-day $3.1B inflow streak snapped (−$148.7M today); blue-chip DeFi TVL (Lido, Aave V3, Morpho Blue) all flipped green on 7d.
+_sources: llama_tvl=ok llama_dex=ok llama_fees=ok llama_stables=ok llama_yields=ok coingecko=ok(global via webfetch fallback) fng=ok polymarket=ok websearch=ok | var: none_
