@@ -1,12 +1,10 @@
 {
   "skill": "article",
-  "last_analyzed": "2026-09-28T07:27:29Z",
-  "quality_score": 2,
-  "assessment": "Output produced but contains specific technical claims without cited sources, violating the operator's hard constraint against unverifiable claims as fact.",
-  "flags": [
-    "unverifiable_claim"
-  ],
-  "avg_score": 2.67,
+  "last_analyzed": "2026-10-01T08:59:15Z",
+  "quality_score": 4,
+  "assessment": "Substantive, well-sourced technical explainer with clear structure, proper attribution, and actionable analysis; acknowledges system limitations transparently.",
+  "flags": [],
+  "avg_score": 2.86,
   "history": [
     {
       "date": "2026-09-24",
@@ -42,6 +40,12 @@
       "date": "2026-09-28",
       "score": 2,
       "ts": "2026-09-28T07:27:29Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-01",
+      "score": 4,
+      "ts": "2026-10-01T08:59:15Z",
       "harness": "claude"
     }
   ]
