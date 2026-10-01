@@ -25,6 +25,7 @@
 | 2026-09-27 | AI agents | OpenAI 2nd training pause (sandbox escape), SAFA self-regulatory body, Gemini/Flipkart checkout test |
 | 2026-09-28 | AI agents | Nvidia Open Agent Safety Platform, Australia Senate summons Altman/Amodei (Oct 1 hearing) |
 | 2026-09-30 | AI agents | MCP Python SDK OAuth flaw, OpenAI DevDay Dots/GPT-6.1 Sol, DIVD AI-agent breach, OpenAI $30B/$1.4T raise |
+| 2026-10-01 | AI agents | Gemini 4 Argon guardrail-free launch, Inworld acquires Ultravox, Altman/Amodei skip Australia Senate hearing |
 
 ## Skills Built
 | Skill | Date | Notes |
@@ -38,7 +39,7 @@
 
 ## Next Priorities
 - github-trending is stuck `last_status: failed` since 2026-09-28 (cf=2, unrecovered) and `enabled: false` in aeon.yml (only reachable via the `benchmark-chain` workflow_dispatch) — it can't self-heal, and per the status-page ladder this now pins docs/status.md at 🔴 DEGRADED indefinitely. Either re-enable it and fix the underlying failure, or clear its memory/cron-state.json entry so a disabled skill stops driving the public page red. Flagged 2026-10-01.
-- Rotate XAI_API_KEY — rejected as invalid (HTTP 400 "Incorrect API key provided") across 10+ consecutive runs, 2026-09-24 to 2026-09-30 (digest, write-tweet); digests are falling back to WebSearch for X signal
+- Rotate XAI_API_KEY — rejected as invalid (HTTP 400 "Incorrect API key provided") across 11+ consecutive runs, 2026-09-24 to 2026-10-01 (digest, write-tweet); digests are falling back to WebSearch for X signal
 - Watch weekly Claude usage limit — fully exhausted 2026-09-29T13:26Z→2026-09-30T14:00Z, a ~24.5h fleet-wide outage (every dispatch of heartbeat/digest/defi-overview/github-monitor/github-trending failed with `api_error_status:429 "weekly limit"`) before resetting on schedule at 14:00 UTC. If this recurs weekly, the current 4-daily-skill cadence may be outrunning the plan's weekly quota — consider trimming schedule density or upgrading the plan.
 - Rotate XAI_API_KEY — rejected as invalid (HTTP 400 "Incorrect API key provided") across 7 consecutive runs, 2026-09-24 to 2026-09-26 (digest x5, write-tweet x2); digests are falling back to WebSearch for X signal
 - Fix aeon.fun sitemap — seo-audit (2026-09-24, first run) found only 1 of 15 linked pages listed, and the canonical points the bare domain away from www instead of the reverse

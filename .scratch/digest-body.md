@@ -1,5 +1,3 @@
-ℹ️ AI agents digest
-
 *AI agents — 2026-10-01*
 
 _TL;DR: Google shipped a frontier agentic model with its cyber guardrails deliberately switched off for vetted defenders, the same day Australia's AI-accountability hearing went ahead without either CEO it summoned._

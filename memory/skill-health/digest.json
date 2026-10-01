@@ -1,10 +1,10 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-09-30T14:11:35Z",
+  "last_analyzed": "2026-10-01T15:49:29Z",
   "quality_score": 4,
-  "assessment": "Substantive, well-sourced digest with clear structure; aligns to operator strategy and surfaces signal early (critical OAuth flaw with patch path), though analysis is summary-level rather than deeply insightful.",
+  "assessment": "Substantive, well-structured news digest with real URLs and proper context; aligns with strategy (signal, correct work, technical audience); verifiable sourcing and clear \"why it matters\" framing for each story.",
   "flags": [],
-  "avg_score": 3,
+  "avg_score": 3.11,
   "history": [
     {
       "date": "2026-09-24",
@@ -52,6 +52,12 @@
       "date": "2026-09-30",
       "score": 4,
       "ts": "2026-09-30T14:11:35Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-01",
+      "score": 4,
+      "ts": "2026-10-01T15:49:29Z",
       "harness": "claude"
     }
   ]
