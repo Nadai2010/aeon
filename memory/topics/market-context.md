@@ -6,70 +6,70 @@ tags:
   - macro
   - defi
 resource: https://api.llama.fi
-timestamp: 2026-09-30T14:14:07Z
+timestamp: 2026-10-01T15:46:00Z
 ---
 
-# Market Context (as of 2026-09-30)
+# Market Context (as of 2026-10-01)
 
-> **Take:** chop — BTC +0.6% 24h against a moderate 13/20 top-20 breadth, with TVL drifting down -2.3% 7d even as DEX volume jumped to $11.7B. Conviction: low.
+> **Take:** chop — BTC -0.2% 24h (essentially flat) while breadth crashed to 5/20 green even as Fear & Greed climbed to 74. Conviction: low.
 
 ## Signal Snapshot
-- BTC $84,527 (+0.6% 24h, -1.2% 7d) · dominance 58.37% (last logged 58.25% on 2026-09-28, no run 2026-09-29)
-- ETH $2,708.81 (-0.5% 24h, -0.6% 7d) · ETH/BTC 0.0320
-- SOL $121.04 (+0.2% 24h, +3.3% 7d)
-- Total mcap $2.91T (-2.6% 24h) · DEX vol $11.71B 24h
-- Breadth: 13/20 green 24h · 6/20 green 7d
-- Fear & Greed: 71 (Greed) — yesterday 73
+- BTC $83,881 (-0.2% 24h, -0.3% 7d) · dominance 58.53% (+0.16pp vs 58.37% logged 09-30)
+- ETH $2,675.85 (-0.2% 24h, +0.7% 7d) · ETH/BTC 0.0319
+- SOL $117.04 (-1.5% 24h, +2.1% 7d)
+- Total mcap $2.88T (-2.8% 24h) · DEX vol $10.90B 24h
+- Breadth: 5/20 green 24h · 9/20 green 7d
+- Fear & Greed: 74 (Greed) — yesterday 71
 
 ## What Changed Since Last Refresh
-- Polymarket's Fed-rate market flipped direction: "no change after October 2026 meeting" now leads at 65.5% YES (25bp-hike only 33.5%) — a reversal from 2026-09-28's snapshot, which cited ~64-65% odds favoring a hike.
-- Breadth partially recovered to 13/20 green (from the crushed 3/20 logged 2026-09-28), even as Fear & Greed eased to 71 from 74 that day — price and sentiment reconverging after the sharpest divergence seen this run.
-- QNT is trending for a 4th straight day and reaccelerated (+17.1% 24h to $295.65, up from $229 on 09-28) rather than fading as flagged two days ago — the "peak, momentum stalling" call hasn't played out yet.
-- Blue-chip DeFi TVL leaders remain broadly red on 7d (Aave V3 -4.8%, Lido -0.6%, SSV Network -1.5%, Binance staked ETH -1.4%) with Morpho Blue the lone green outlier (+0.9%) — continuation of the reversal flagged 2026-09-28, not a new move.
-- Note: no run occurred 2026-09-29 (gap in daily cadence), so several deltas above span two days rather than one.
+- Breadth crashed to 5/20 green 24h (from 13/20 on 09-30) even as Fear & Greed kept climbing (71→74) — sharpest price/sentiment divergence since the 09-28 episode (3/20 breadth vs F&G 74).
+- Spot BTC ETFs' 9-day, $3.1B net-inflow streak ended today with $148.7M in net outflows (BlackRock's IBIT own 9-day $1.6B streak also snapped, -$9.5M; Fidelity's FBTC led outflows at -$125.6M).
+- QNT's "peak" narrative (flagged 09-28, reaccelerated 09-30) finally broke: -13.8% 24h to $259.53, the first red day after 4+ consecutive trending days — the reversal flagged two days ago as "the real top signal" has now arrived.
+- Blue-chip DeFi TVL leaders (Lido, Aave V3, SSV Network, Morpho Blue, Binance staked ETH) all flipped green on 7d — reversing 09-30's broadly-red pattern (Aave V3 was -4.8% worst that day, now +0.3%).
 
 ## Active Narratives
-- **Quant (QNT)** — phase: peak. Evidence: 4th consecutive trending day, +17.1% 24h to $295.65 — persistence well beyond a typical single-day spike, no confirming TVL of its own.
-- **NEAR ecosystem** — phase: rising. Evidence: NEAR +7.9% 24h to $5.31, now confirmed by TVL (LiNEAR Protocol +10.6% 24h, Meta Pool Near +10.0% 24h) — price and deposits moving together for the first time this run.
-- **Sui DeFi** — phase: rising. Evidence: chain TVL +5.05% 24h, the only chain clearing the ≥5%/$500M mover filter; DeepBook App alpha launch (Sept 24) plus NAVI lending deposits driving fresh inflows.
-- **Zcash / privacy** — phase: fading. Evidence: ZEC +1.7% 24h bounce, but 7d still -10.2% — one-day stabilization, not a confirmed reversal.
+- **Quant (QNT)** — phase: fading. Evidence: -13.8% 24h to $259.53 (was $295.65 on 09-30) — first red day after 4 straight trending/up days.
+- **NEAR ecosystem** — phase: fading. Evidence: NEAR -6.8% 24h to $4.87 (was $5.31), reversing 09-30's price+TVL-confirmed "rising" call.
+- **Monad** — phase: emerging. Evidence: MON +17.0% 24h, chain TVL also +1.6% 1d / +2.5% 7d — price and deposits moving together.
+- **Backpack (BP)** — phase: emerging. Evidence: +27.2% 24h to $1.41, today's top CoinGecko trending gainer; no TVL confirmation of its own yet.
+- **Zcash / privacy** — phase: fading. Evidence: ZEC -4.2% 24h, extending the fade flagged 09-30 (that day's +1.7% bounce proved temporary).
 
 ## Top DeFi Protocols (TVL, 7d change)
-- Lido: $26.58B (-0.6%)
-- Aave V3: $17.69B (-4.8%)
-- SSV Network: $14.09B (-1.5%)
-- Morpho Blue: $11.11B (+0.9%)
-- Binance staked ETH: $10.03B (-1.4%)
+- Lido: $26.59B (+1.9%)
+- Aave V3: $18.14B (+0.3%)
+- SSV Network: $14.10B (+0.8%)
+- Morpho Blue: $11.14B (+2.6%)
+- Binance staked ETH: $10.05B (+1.1%)
 
 ## Chain Flow (top 3 by TVL, 7d)
-- Ethereum: $52.83B (-2.9%)
-- Solana: $6.47B (-1.1%)
-- Base: $6.29B (+0.5%)
+- Ethereum: $53.33B (-0.5%)
+- Solana: $6.53B (+2.1%)
+- Base: $6.30B (+2.1%)
 
 ## Stablecoins
-Total: $312.90B (+1.3% 7d, +0.2% 24h). USDT $183.76B · USDC $74.48B · USDS $6.70B (+1.6% 24h, notable) · USDe $4.90B · combined share ~10.7% of total mcap.
+Total: $312.53B (+1.6% 7d, +0.2% 24h). USDT $183.84B · USDC $74.25B · USDS $6.83B (+2.4% 24h, notable) · USDe $4.90B · combined share ~10.9% of total mcap.
 
 ## Trending (CoinGecko)
-- QNT (Quant) — $295.65 (+17.1% 24h) — 4th straight trending day, reaccelerating rather than fading
-- NEAR (NEAR Protocol) — $5.31 (+7.9% 24h) — TVL now confirming the price move (see narratives)
-- TRUMP (Official Trump) — $2.09 (+0.3% 24h) — flat mover, lowest-signal entry on today's trending board
+- BP (Backpack) — $1.41 (+27.2% 24h) — today's top trending gainer, no TVL confirmation yet
+- MON (Monad) — $0.032 (+17.0% 24h) — price and chain TVL (+1.6% 1d) moving together
+- QNT (Quant) — $259.53 (-13.8% 24h) — first red day after 4-day peak, see narratives
 
 ## Prediction Markets (Polymarket, top by 24h vol)
 | Market | YES% | 24h Vol | Liquidity |
 |--------|------|---------|-----------|
-| Dota 2: BetBoom Team vs. OG (BO3) | 19.0% | $1.58M | $68K |
-| No change in Fed rates after Oct 2026 meeting? | 65.5% | $1.02M | $251K |
-| Fed +25bps after Oct 2026 meeting? | 33.5% | $0.87M | $248K |
+| No change in Fed rates after Oct 2026 meeting? | 69.5% | $0.40M | $247K |
+| Fed +25bps after Oct 2026 meeting? | 29.5% | $0.33M | $243K |
+| 2026 Balance of Power: R Senate, R House | 7.5% | $0.36M | $846K |
 
-Top-liquidity table cleared zero markets again — all ten are still effectively-settled 2028 Democratic-nomination long shots (YES ≤0.1%), same pattern as 2026-09-28.
+Top-liquidity table cleared zero markets again — all ten are still effectively-settled 2028 Democratic-nomination long shots (YES ≤0.15%), same pattern as 09-28/09-30.
 
 ## Macro Catalysts (next 48h)
-- Fed-rate odds have flipped toward "no change" (65.5% YES) from ~65% odds of a hike two days ago — the October 2026 FOMC decision is the dominant near-term catalyst.
-- BTC ETF YTD net flows just turned positive (+$886.8M, reversing a $5.7B July outflow), but the daily pace has been moderating since the Sept 21 single-day peak ($999M) as BTC pulled back off its September high.
+- Friday's jobs report is the next major Fed-policy signal; Polymarket's "no change after Oct 2026 meeting" odds sit at 69.5% YES, up from 65.5% two days ago.
+- BTC spot ETF flows just snapped a 9-day, $3.1B inflow streak with a $148.7M outflow day — watch whether this is one-day noise or a genuine reversal; YTD flows remain positive (~$970M cumulative).
 
 ## Implications for Downstream Skills
-- **token-pick:** NEAR and Sui both show price+TVL confirmation (not just a price pump) — better risk/reward than QNT, which is 4 days into an extended move with no TVL confirmation of its own.
-- **narrative-tracker:** Keep Quant at "peak" but flag it has outlasted a typical peak (4 days running) — watch for the first red day as the real top signal, not this one.
+- **token-pick:** Avoid chasing QNT — its peak narrative just broke (-13.8%, first red day). Monad shows the cleanest price+TVL confirmation of today's movers.
+- **narrative-tracker:** Flip Quant from "peak" to "fading" now that the red day has arrived; flip NEAR from "rising" to "fading" on today's -6.8% reversal.
 
 ## Token Picks Made
 | Date | Token | Price | Thesis |
@@ -77,4 +77,4 @@ Top-liquidity table cleared zero markets again — all ten are still effectively
 
 ---
 *Sources — btc/eth: CoinGecko · defi: DeFiLlama · sentiment: alternative.me · markets: Polymarket*
-*Source status: coingecko=ok defillama=ok fng=ok polymarket=ok websearch=ok*
+*Source status: coingecko=ok (global via WebFetch fallback, 401 on direct call) defillama=ok fng=ok polymarket=ok websearch=ok*
