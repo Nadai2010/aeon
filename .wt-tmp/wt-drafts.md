@@ -32,5 +32,3 @@ tweet drafts: OpenShell's agent-can't-approve-itself trick
 - Where it still breaks: multi-step requests that are individually fine but collectively a leak
 
 best: #4b — sharpest, most specific claim (the composite-action gap), and it's the one angle none of the X discourse (Sacks, Ng, Clem, NVIDIA's own posts) touched — they're all framing this as "problem solved," not "here's the seam."
-
-<!-- Correlation ID: chain-7c2b0fdd8101a406b8102e3f2953897f -->

@@ -1,12 +1,13 @@
 {
   "skill": "write-tweet",
-  "last_analyzed": "2026-09-28T07:31:54Z",
-  "quality_score": 1,
-  "assessment": "No substance delivered — prompt for feedback instead of the tweet draft itself.",
+  "last_analyzed": "2026-10-01T09:03:56Z",
+  "quality_score": 2,
+  "assessment": "Skill ran but output contains only a generic refinement prompt with no substantive tweet draft — violates strategy priority on verifiable work and CLAUDE.md rule that final output must carry substance, not pointers.",
   "flags": [
-    "empty_output"
+    "empty_output",
+    "generic_content"
   ],
-  "avg_score": 1.67,
+  "avg_score": 1.71,
   "history": [
     {
       "date": "2026-09-24",
@@ -42,6 +43,12 @@
       "date": "2026-09-28",
       "score": 1,
       "ts": "2026-09-28T07:31:54Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-01",
+      "score": 2,
+      "ts": "2026-10-01T09:03:56Z",
       "harness": "claude"
     }
   ]
