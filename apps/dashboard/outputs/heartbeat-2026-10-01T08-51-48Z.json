@@ -1,0 +1,43 @@
+{
+  "root": "card-heartbeat",
+  "state": {},
+  "elements": {
+    "card-heartbeat": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat",
+        "description": "fleet DEGRADED"
+      },
+      "children": [
+        "stack-alerts"
+      ]
+    },
+    "stack-alerts": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alert-github-trending",
+        "alert-benchmark-chain"
+      ]
+    },
+    "alert-github-trending": {
+      "type": "Alert",
+      "props": {
+        "title": "🔴 FAILED: github-trending",
+        "message": "Stuck in a failed state since 2026-09-28 (2 consecutive failures, last failure 2026-09-30). Same fleet-wide weekly-limit outage already reported yesterday. Now disabled in aeon.yml, status page flipped to DEGRADED. Actions needed: re-enable and fix it, or clear its stale cron-state entry.",
+        "type": "error"
+      }
+    },
+    "alert-benchmark-chain": {
+      "type": "Alert",
+      "props": {
+        "title": "🟡 WATCH: chain:benchmark-chain",
+        "message": "Also failed in same outage window and hasn't recovered. Workflow dispatch only with no cron schedule—just sits until next manual dispatch.",
+        "type": "warning"
+      }
+    }
+  }
+}
