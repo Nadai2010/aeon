@@ -1,10 +1,12 @@
 {
   "skill": "github-trending",
-  "last_analyzed": "2026-10-01T08:52:59Z",
-  "quality_score": 4,
-  "assessment": "Substantive, well-curated report with verifiable URLs and star counts; transparent about API limitations (read-only mode) and inferred velocity tags; strong signal-first structure aligned to strategy.",
-  "flags": [],
-  "avg_score": 3.43,
+  "last_analyzed": "2026-10-02T11:31:30Z",
+  "quality_score": 3,
+  "assessment": "Acceptable — well-structured trending report with specific repos and verifiable details, but data source fell back from primary GitHub API and content doesn't align to operator's core projects.",
+  "flags": [
+    "api_error"
+  ],
+  "avg_score": 3.38,
   "history": [
     {
       "date": "2026-09-24",
@@ -46,6 +48,12 @@
       "date": "2026-10-01",
       "score": 4,
       "ts": "2026-10-01T08:52:59Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-02",
+      "score": 3,
+      "ts": "2026-10-02T11:31:30Z",
       "harness": "claude"
     }
   ]

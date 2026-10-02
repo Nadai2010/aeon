@@ -1,0 +1,676 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Trending",
+        "description": "2026-10-02"
+      },
+      "children": [
+        "top-pick-section",
+        "sep1",
+        "ai-ml-section",
+        "sep2",
+        "devtools-section",
+        "sep3",
+        "web-apps-section",
+        "sep4",
+        "sources-section"
+      ]
+    },
+    "top-pick-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "top-pick-label",
+        "top-pick-item"
+      ]
+    },
+    "top-pick-label": {
+      "type": "Text",
+      "props": {
+        "text": "Top pick",
+        "variant": "lead"
+      }
+    },
+    "top-pick-item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "top-pick-link",
+        "top-pick-desc"
+      ]
+    },
+    "top-pick-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "DietrichGebert/ponytail",
+        "href": "https://github.com/DietrichGebert/ponytail"
+      }
+    },
+    "top-pick-desc": {
+      "type": "Text",
+      "props": {
+        "text": "The clearest fix yet for AI-generated code bloat — a measured decision framework, not just another prompt tweak, already wired into 20+ coding agents."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "ai-ml-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "ai-ml-heading",
+        "ai-ml-repos"
+      ]
+    },
+    "ai-ml-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "AI/ML",
+        "level": "h3"
+      }
+    },
+    "ai-ml-repos": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo1",
+        "repo2"
+      ]
+    },
+    "repo1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo1-header",
+        "repo1-meta"
+      ]
+    },
+    "repo1-header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "repo1-link",
+        "repo1-status"
+      ]
+    },
+    "repo1-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Panniantong/Agent-Reach",
+        "href": "https://github.com/Panniantong/Agent-Reach"
+      }
+    },
+    "repo1-status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "repo1-meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo1-stats",
+        "repo1-desc"
+      ]
+    },
+    "repo1-stats": {
+      "type": "Text",
+      "props": {
+        "text": "★ 683t today (87.7k total) · Python",
+        "variant": "caption"
+      }
+    },
+    "repo1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Routes agent web access through primary+fallback backends (yt-dlp, Jina Reader, session replay) — warns X/Reddit need throwaway accounts."
+      }
+    },
+    "repo2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo2-header",
+        "repo2-meta"
+      ]
+    },
+    "repo2-header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "repo2-link",
+        "repo2-status"
+      ]
+    },
+    "repo2-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "heygen-com/hyperframes",
+        "href": "https://github.com/heygen-com/hyperframes"
+      }
+    },
+    "repo2-status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "repo2-meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo2-stats",
+        "repo2-desc"
+      ]
+    },
+    "repo2-stats": {
+      "type": "Text",
+      "props": {
+        "text": "★ 627t today (55.6k total) · TypeScript",
+        "variant": "caption"
+      }
+    },
+    "repo2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Headless-Chrome+FFmpeg renders plain HTML/CSS into deterministic MP4 — agents already know HTML, no new format to learn."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "devtools-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "devtools-heading",
+        "devtools-repos"
+      ]
+    },
+    "devtools-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Devtools",
+        "level": "h3"
+      }
+    },
+    "devtools-repos": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo3",
+        "repo4",
+        "repo5",
+        "repo6",
+        "repo7"
+      ]
+    },
+    "repo3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo3-header",
+        "repo3-meta"
+      ]
+    },
+    "repo3-header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "repo3-link",
+        "repo3-status"
+      ]
+    },
+    "repo3-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "DietrichGebert/ponytail",
+        "href": "https://github.com/DietrichGebert/ponytail"
+      }
+    },
+    "repo3-status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "repo3-meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo3-stats",
+        "repo3-desc"
+      ]
+    },
+    "repo3-stats": {
+      "type": "Text",
+      "props": {
+        "text": "★ 1,194t today (151.1k total) · JavaScript",
+        "variant": "caption"
+      }
+    },
+    "repo3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Seven-rung already-exists ladder wired into 20+ coding agents — cuts generated code ~54% in real sessions."
+      }
+    },
+    "repo4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo4-header",
+        "repo4-meta"
+      ]
+    },
+    "repo4-header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "repo4-link",
+        "repo4-status"
+      ]
+    },
+    "repo4-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "JuliusBrussee/caveman",
+        "href": "https://github.com/JuliusBrussee/caveman"
+      }
+    },
+    "repo4-status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "repo4-meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo4-stats",
+        "repo4-desc"
+      ]
+    },
+    "repo4-stats": {
+      "type": "Text",
+      "props": {
+        "text": "★ 193t today (108.8k total) · Go",
+        "variant": "caption"
+      }
+    },
+    "repo4-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Proxy compresses tool-call output before the model sees it — real savings land near 33%, not headline 65%."
+      }
+    },
+    "repo5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo5-header",
+        "repo5-meta"
+      ]
+    },
+    "repo5-header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "repo5-link",
+        "repo5-status"
+      ]
+    },
+    "repo5-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "pbakaus/impeccable",
+        "href": "https://github.com/pbakaus/impeccable"
+      }
+    },
+    "repo5-status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "repo5-meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo5-stats",
+        "repo5-desc"
+      ]
+    },
+    "repo5-stats": {
+      "type": "Text",
+      "props": {
+        "text": "★ 495t today (73.9k total) · JavaScript",
+        "variant": "caption"
+      }
+    },
+    "repo5-desc": {
+      "type": "Text",
+      "props": {
+        "text": "61 deterministic rules (no LLM needed) catch gradient-SaaS-template tells before an agent's design output ships."
+      }
+    },
+    "repo6": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo6-header",
+        "repo6-meta"
+      ]
+    },
+    "repo6-header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "repo6-link",
+        "repo6-status"
+      ]
+    },
+    "repo6-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "colbymchenry/codegraph",
+        "href": "https://github.com/colbymchenry/codegraph"
+      }
+    },
+    "repo6-status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "repo6-meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo6-stats",
+        "repo6-desc"
+      ]
+    },
+    "repo6-stats": {
+      "type": "Text",
+      "props": {
+        "text": "★ 241t today (72.8k total) · C",
+        "variant": "caption"
+      }
+    },
+    "repo6-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Tree-sitter AST graph, local SQLite, auto-syncs on save — one query replaces grep/read discovery, 88% fewer tool calls."
+      }
+    },
+    "repo7": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo7-header",
+        "repo7-meta"
+      ]
+    },
+    "repo7-header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "repo7-link",
+        "repo7-status"
+      ]
+    },
+    "repo7-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "cursor/plugins",
+        "href": "https://github.com/cursor/plugins"
+      }
+    },
+    "repo7-status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "outline"
+      }
+    },
+    "repo7-meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo7-stats",
+        "repo7-desc"
+      ]
+    },
+    "repo7-stats": {
+      "type": "Text",
+      "props": {
+        "text": "★ 150t today (9.4k total) · TypeScript",
+        "variant": "caption"
+      }
+    },
+    "repo7-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Bundles a skill, .mdc rules, and an MCP server into one manifest — Cursor's first official plugin packaging."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "web-apps-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "web-apps-heading",
+        "web-apps-repos"
+      ]
+    },
+    "web-apps-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Web/Apps",
+        "level": "h3"
+      }
+    },
+    "web-apps-repos": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo8"
+      ]
+    },
+    "repo8": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo8-header",
+        "repo8-meta"
+      ]
+    },
+    "repo8-header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "repo8-link",
+        "repo8-status"
+      ]
+    },
+    "repo8-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Effect-TS/effect",
+        "href": "https://github.com/Effect-TS/effect"
+      }
+    },
+    "repo8-status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "outline"
+      }
+    },
+    "repo8-meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo8-stats",
+        "repo8-desc"
+      ]
+    },
+    "repo8-stats": {
+      "type": "Text",
+      "props": {
+        "text": "★ 76t today (16.4k total) · TypeScript",
+        "variant": "caption"
+      }
+    },
+    "repo8-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Effect v4.0.0 shipped Oct 1 — explains today's spike in a TS framework quiet for 6 years."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sources-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "sources-text"
+      ]
+    },
+    "sources-text": {
+      "type": "Text",
+      "props": {
+        "text": "sources: trending=ok · gh_api=fail (read-only mode, used unauthenticated api.github.com) · kept 8/17",
+        "variant": "caption"
+      }
+    }
+  }
+}

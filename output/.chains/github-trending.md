@@ -1,39 +1,36 @@
 ℹ️ GitHub Trending
 
-*GitHub Trending — 2026-10-01*
+*GitHub Trending — 2026-10-02*
 
-*Top pick* — [NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell)
-NVIDIA enters the AI-agent-safety conversation with a dedicated sandboxed runtime, not a wrapper — and it pulled today's single sharpest star spike.
+*Top pick* — [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
+The clearest fix yet for AI-generated code bloat — a measured decision framework, not just another prompt tweak, already wired into 20+ coding agents.
 
 *AI/ML*
-• [NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell) — ★ 1,281t today (13.4k total) · Rust · [DEBUT]
-Ground-up sandboxed runtime for autonomous agents from NVIDIA — not a wrapper, a dedicated safe-execution environment.
+• [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) — ★ 683t today (87.7k total) · Python · [ACCELERATING]
+Routes agent web access through primary+fallback backends (yt-dlp, Jina Reader, session replay) — warns X/Reddit need throwaway accounts.
 
-• [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) — ★ 1,097t today (38.3k total) · Python · [ACCELERATING]
-Skips vector embeddings for RAG entirely, building a reasoning-based document index instead of an embed-and-search pipeline.
+• [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) — ★ 627t today (55.6k total) · TypeScript · [ACCELERATING]
+Headless-Chrome+FFmpeg renders plain HTML/CSS into deterministic MP4 — agents already know HTML, no new format to learn.
 
 *Devtools*
-• [mvschwarz/openrig](https://github.com/mvschwarz/openrig) — ★ 624t today (3.2k total) · TypeScript · [ACCELERATING]
-Runs Claude Code and Codex as one harness — nearly tripled its star count in two days.
+• [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) — ★ 1,194t today (151.1k total) · JavaScript · [ACCELERATING]
+Seven-rung already-exists ladder wired into 20+ coding agents — cuts generated code ~54% in real sessions.
 
-• [mksglu/context-mode](https://github.com/mksglu/context-mode) — ★ 90t today (24.6k total) · TypeScript · [RETURNING]
-Claims a 98% cut in agent tool-output tokens, sandboxing output and routing across 17 platforms via MCP.
+• [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) — ★ 193t today (108.8k total) · Go · [ACCELERATING]
+Proxy compresses tool-call output before the model sees it — real savings land near 33%, not headline 65%.
 
-• [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) — ★ 118t today (72.7k total) · C · [RETURNING]
-Pre-built, auto-syncing code knowledge graph for Claude Code — fewer tool calls, fewer tokens, runs fully local.
+• [pbakaus/impeccable](https://github.com/pbakaus/impeccable) — ★ 495t today (73.9k total) · JavaScript · [ACCELERATING]
+61 deterministic rules (no LLM needed) catch gradient-SaaS-template tells before an agent's design output ships.
 
-*Infra*
-• [t8y2/dbx](https://github.com/t8y2/dbx) — ★ 1,138t today (23.5k total) · Rust · [ACCELERATING]
-One lightweight client for 100+ databases with a built-in MCP server — any agent queries any database.
+• [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) — ★ 241t today (72.8k total) · C · [ACCELERATING]
+Tree-sitter AST graph, local SQLite, auto-syncs on save — one query replaces grep/read discovery, 88% fewer tool calls.
 
-*Other*
-• [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) — ★ 349t today (54.9k total) · TypeScript · [RETURNING]
-HeyGen renders video straight from HTML markup — a programmable render target built for agents, not humans.
-(Other: not a web framework/UI lib or a dev tool — closer to rendering/media infra for AI output.)
+• [cursor/plugins](https://github.com/cursor/plugins) — ★ 150t today (9.4k total) · TypeScript · [RETURNING]
+Bundles a skill, .mdc rules, and an MCP server into one manifest — Cursor's first official plugin packaging.
 
-• [NawfalMotii79/PLFM_RADAR](https://github.com/NawfalMotii79/PLFM_RADAR) — ★ 263t today (26.5k total) · PLSQL · [ACCELERATING]
-A fully open-source, low-cost 10.5GHz phased-array radar design — rare hardware project on a software-dominated board.
-(Other: hardware engineering project, not software — kept as a genuinely interesting outlier.)
+*Web/Apps*
+• [Effect-TS/effect](https://github.com/Effect-TS/effect) — ★ 76t today (16.4k total) · TypeScript · [RETURNING]
+Effect v4.0.0 shipped Oct 1 — explains today's spike in a TS framework quiet for 6 years.
 
 ---
-sources: trending=ok · gh_api=fail (read-only mode, velocity tags inferred from stars-today) · kept 8/17
+sources: trending=ok · gh_api=fail (read-only mode, used unauthenticated api.github.com) · kept 8/17
