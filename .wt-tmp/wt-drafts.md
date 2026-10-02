@@ -1,34 +1,35 @@
-tweet drafts: OpenShell's agent-can't-approve-itself trick
+tweet drafts: Ponytail's seven-rung ladder (and its revised benchmark)
 
 — one-liner —
-1a. OpenShell's whole insight: stop asking the agent to approve its own requests.
-1b. LLM-as-judge was always the weak link. OpenShell replaces it with a math proof.
+1a. Ponytail doesn't write better code. It just asks your agent not to write any.
+1b. Half of X is still quoting Ponytail's debunked 94% number. The real one is 54%.
 
 — two-punch —
-2a. 17,600 agent actions went unnoticed for 4.5 days at Hugging Face. OpenShell's fix: give the agent zero code path to approve its own network calls.
-2b. The Hugging Face breach wasn't a prompting failure, it was an architecture failure — the agent could reach its own approval layer. OpenShell moves that layer out of reach.
+2a. Ponytail's benchmark went from 94% less code to 54% after a CTO rebuilt the test. Nobody reran the challenge against the real number.
+2b. Everyone's impressed Ponytail cuts code 94%. The actual, corrected number is 54% — and a one-line YAGNI prompt matched it first.
 
 — paragraph —
-3a. OpenShell splits into three pieces: Gateway, Supervisor, Sandbox. Only the Supervisor can open a real connection or hand over a real credential — and it runs outside the sandbox the agent lives in. A compromised agent can ask. It can't approve.
-3b. Picture a visitor who can request documents and make calls, but every request passes through a guard at a separate checkpoint with no door between them. That's OpenShell's Supervisor — and unlike a human guard, it can't be talked into bending a rule.
+3a. Ponytail makes your agent climb seven questions before it writes a line: does this need to exist, is it already here, does stdlib cover it, does the platform, does a dependency, can it be one line. Most of the time the answer stops the agent cold.
+3b. Ponytail's pitch is that your AI agent needs the instincts of the laziest senior dev on the team. The data backs it: 54% less code, same safety scores. The catch is the 94% number everyone's sharing was already debunked months ago.
 
 — long tweet —
-4a. Most AI agent safety tools still ask an LLM to review the agent's own plan before it executes. That's the model grading its own homework. OpenShell's answer: route every file and network operation through a Supervisor process that lives entirely outside the agent's sandbox, with zero code path back in. Policy changes aren't reviewed by another LLM either — a formal verification engine checks them against deterministic rules, roughly 100x faster than an LLM-as-judge pass. The agent can request. It structurally cannot approve.
-4b. The gap in OpenShell nobody's talking about: it mediates every single request, but it has no concept of a sequence. Read a secret through endpoint A, approved. Exfiltrate it through endpoint B, also approved, separately. Neither request violates policy alone — only the combination does, and per-request kernel mediation structurally can't see that. NVIDIA's own team admits verification across collaborating agents "is still in development."
+4a. Ponytail's seven-rung ladder sounds like theater: does it need to exist, is it already in the codebase, does stdlib cover it, does the platform, does a dependency, can it be one line — only then write code. But a Scott Logic CTO showed the original 80-94% benchmark was built on a weak baseline; a bare one-line YAGNI prompt beat it there. The corrected number is 54%, with validation and security holding at 100%. Nobody's rerun the challenge against that number yet.
+4b. The real finding in the Ponytail benchmark isn't the 54% code reduction — it's that a plain one-sentence instruction nearly beat the entire seven-rung ladder before the benchmark was even fixed. If a short prompt rivals a structured ruleset, the seven rungs might be packaging, not substance. Nobody's tested that rematch on the honest number, and the internet's still citing the old 94% anyway.
 
 — thread opener —
-5a. NVIDIA just shipped a sandbox for AI agents that assumes the agent is already compromised — and designs around that instead of trying to prevent it.
+5a. Ponytail just hit 151k GitHub stars by teaching AI agents one trick: ask "do I need to write this" before "how do I write this." The viral number is 80-94% less code. The real number, after a CTO caught a rigged benchmark, is 54%.
 ---
-- The Hugging Face breach: 17,600 actions, 4.5 days unnoticed
-- Why LLM-as-judge is structurally broken — the reviewer is the same kind of model as the thing it's reviewing
-- How Gateway/Supervisor/Sandbox splits trust so the agent can't approve itself, even compromised
-- The one hole nobody's talking about: composite actions across separately-approved endpoints
+- The seven rungs in order: exists at all? already in repo? stdlib? native platform? installed dependency? one-liner? only then write
+- Eberhardt's challenge: a bare YAGNI prompt beat the original, flawed benchmark
+- Corrected baseline: 54% less code, safety ratings unchanged at 100%
+- Nobody's rerun a plain-prompt challenge against the honest number
 
-5b. If your AI agent's safety check is just another LLM reviewing its own plan, what happens when the jailbreak that compromised the agent also compromises the reviewer?
+5b. Everyone sharing Ponytail's "94% less code" stat is quoting a number its own benchmark retracted months ago. Here's what actually happened — and why the real result might be more interesting than the inflated one.
 ---
-- OpenShell's answer: take the LLM out of the approval loop entirely
-- Landlock + seccomp intercept at the kernel level, before syscalls execute
-- A formal prover, not a model, checks policy changes
-- Where it still breaks: multi-step requests that are individually fine but collectively a leak
+- the seven-rung ladder, rung by rung
+- the original benchmark and why it was rigged weak
+- the CTO who beat it with one sentence
+- the corrected 54% number, safety held at 100%
+- the open question nobody's answered: does a plain prompt beat the real baseline too?
 
-best: #4b — sharpest, most specific claim (the composite-action gap), and it's the one angle none of the X discourse (Sacks, Ng, Clem, NVIDIA's own posts) touched — they're all framing this as "problem solved," not "here's the seam."
+best: #2b — tightest version of the actual story (the viral number is debunked, nobody updated), punchy enough to stop a scroll, and distinct from the wave of X posts still citing the old 94% figure uncritically.

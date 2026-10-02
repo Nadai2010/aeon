@@ -1,1 +1,1 @@
-{"model":"grok-4.6","input":[{"role":"user","content":"Search X for what people are saying about AI agent sandboxing and NVIDIA OpenShell in the last 24 hours. Return the 5 most notable tweets with @handle and summary."}],"tools":[{"type":"x_search"}]}
+{"model":"grok-4.6","input":[{"role":"user","content":"Search X for what people are saying about Ponytail (DietrichGebert/ponytail), the AI coding agent YAGNI ladder tool, in the last 24-48 hours. Return the 5 most notable tweets with handle and summary."}],"tools":[{"type":"x_search"}]}
