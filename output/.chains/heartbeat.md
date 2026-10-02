@@ -1,4 +1,6 @@
-⚠️ Heartbeat: fleet DEGRADED
+ℹ️ Heartbeat — 2026-10-02
 
-🔴 FAILED: github-trending — stuck in a failed state since 2026-09-28 (2 consecutive failures, last failure 2026-09-30, same fleet-wide weekly-limit outage already reported yesterday). It's now `enabled: false` in aeon.yml, so it can't self-recover on its own schedule → status page flipped to 🔴 DEGRADED. Needs a call: re-enable + fix it, or clear its stale cron-state entry.
-🟡 WATCH: chain:benchmark-chain also failed in that same outage window and hasn't recovered (workflow_dispatch only, no cron — so it just sits until next manual dispatch).
+🟢 github-trending recovered (success 2026-10-01, cf=0) — status page back from 🔴 DEGRADED to 🟡 WATCH.
+🟡 STALLED: Dependabot PR #16, #17 (dashboard/mcp-server bumps) opened 2026-10-01 ~04:40 UTC, now ~31h old — crossed the 24h stall threshold.
+ℹ️ #1, #3, #4 still open (~8 days, already reported).
+No urgent issues, no failed/stuck skills, 0 open health issues.
