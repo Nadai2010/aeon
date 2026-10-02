@@ -27,6 +27,7 @@
 | 2026-09-28 | AI agents | Nvidia Open Agent Safety Platform, Australia Senate summons Altman/Amodei (Oct 1 hearing) |
 | 2026-09-30 | AI agents | MCP Python SDK OAuth flaw, OpenAI DevDay Dots/GPT-6.1 Sol, DIVD AI-agent breach, OpenAI $30B/$1.4T raise |
 | 2026-10-01 | AI agents | Gemini 4 Argon guardrail-free launch, Inworld acquires Ultravox, Altman/Amodei skip Australia Senate hearing |
+| 2026-10-02 | AI agents | OpenAI fires 3 safety researchers, Google GTIG agent-orchestration-framework vuln report, Salesforce buys Listen Labs |
 
 ## Skills Built
 | Skill | Date | Notes |
@@ -39,7 +40,7 @@
 - unlock-monitor: tokenomist/defillama/dropstab/coingecko unlock-countdown data are flaky (authwall/no-data/stale-countdown) — cryptorank plus secondary press (KuCoin, PANews, BeInCrypto, insights.unlocks.app) is the reliable fallback path
 
 ## Next Priorities
-- Rotate XAI_API_KEY — rejected as invalid (HTTP 400 "Incorrect API key provided") across 11+ consecutive runs, 2026-09-24 to 2026-10-01 (digest, write-tweet); digests are falling back to WebSearch for X signal
+- Rotate XAI_API_KEY — rejected as invalid (HTTP 400 "Incorrect API key provided") across 12+ consecutive runs, 2026-09-24 to 2026-10-02 (digest, write-tweet); digests are falling back to WebSearch for X signal
 - Watch weekly Claude usage limit — fully exhausted 2026-09-29T13:26Z→2026-09-30T14:00Z, a ~24.5h fleet-wide outage (every dispatch of heartbeat/digest/defi-overview/github-monitor/github-trending failed with `api_error_status:429 "weekly limit"`) before resetting on schedule at 14:00 UTC. If this recurs weekly, the current 4-daily-skill cadence may be outrunning the plan's weekly quota — consider trimming schedule density or upgrading the plan.
 - Fix aeon.fun sitemap — seo-audit (2026-09-24, first run) found only 1 of 15 linked pages listed, and the canonical points the bare domain away from www instead of the reverse
 - Configure memory/products.md (still the unconfigured template) — blocks bd-radar/product-pulse and degrades idea-forge to repo-only ideation (IDEA_FORGE_NO_PRODUCTS_CONFIG, 2026-09-24)
