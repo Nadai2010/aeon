@@ -1,5 +1,5 @@
-technical explainer: The Trick NVIDIA's OpenShell Uses to Sandbox an AI Agent That's Already Compromised
+technical explainer: The Seven-Rung Ladder That Talks Your AI Agent Out of Writing Code
 
-OpenShell keeps a compromised agent from doing damage by running every file/network op through a Supervisor process outside the sandbox — so the agent has no code path to approve its own requests.
+Ponytail doesn't make a coding agent write better code — it makes the agent climb a seven-question checklist that often ends with 'don't write any code at all.'
 
-read it: output/articles/explainer-2026-10-01.md
+read it: output/articles/explainer-2026-10-02.md
