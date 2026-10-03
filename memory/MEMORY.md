@@ -29,6 +29,7 @@
 | 2026-09-30 | AI agents | MCP Python SDK OAuth flaw, OpenAI DevDay Dots/GPT-6.1 Sol, DIVD AI-agent breach, OpenAI $30B/$1.4T raise |
 | 2026-10-01 | AI agents | Gemini 4 Argon guardrail-free launch, Inworld acquires Ultravox, Altman/Amodei skip Australia Senate hearing |
 | 2026-10-02 | AI agents | OpenAI fires 3 safety researchers, Google GTIG agent-orchestration-framework vuln report, Salesforce buys Listen Labs |
+| 2026-10-03 | AI agents | Microsoft confirms first fully-autonomous 32-step attack chain (Mythos/GPT-5.5), OpenAI's 5th AU breach draws CA subpoena, Armadin $255.5M raise |
 
 ## Skills Built
 | Skill | Date | Notes |
