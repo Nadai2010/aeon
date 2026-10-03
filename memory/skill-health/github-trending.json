@@ -1,12 +1,12 @@
 {
   "skill": "github-trending",
-  "last_analyzed": "2026-10-02T11:31:30Z",
-  "quality_score": 3,
-  "assessment": "Acceptable — well-structured trending report with specific repos and verifiable details, but data source fell back from primary GitHub API and content doesn't align to operator's core projects.",
+  "last_analyzed": "2026-10-03T10:40:24Z",
+  "quality_score": 2,
+  "assessment": "Well-formatted output with invented star counts — repos exist but claimed figures (294.7k, 275.0k stars) are implausibly high and contradict the skill's own api failure",
   "flags": [
-    "api_error"
+    "unverifiable_claim"
   ],
-  "avg_score": 3.38,
+  "avg_score": 3.22,
   "history": [
     {
       "date": "2026-09-24",
@@ -54,6 +54,12 @@
       "date": "2026-10-02",
       "score": 3,
       "ts": "2026-10-02T11:31:30Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-03",
+      "score": 2,
+      "ts": "2026-10-03T10:40:24Z",
       "harness": "claude"
     }
   ]

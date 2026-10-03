@@ -1,0 +1,385 @@
+{
+  "root": "card-trending",
+  "state": {},
+  "elements": {
+    "card-trending": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Trending"
+      },
+      "children": [
+        "subtitle",
+        "sep-1",
+        "heading-top-pick",
+        "item-top-pick",
+        "sep-2",
+        "heading-aiml",
+        "item-aiml-1",
+        "item-aiml-2",
+        "item-aiml-3",
+        "sep-3",
+        "heading-devtools",
+        "item-devtools-1",
+        "sep-4",
+        "metadata"
+      ]
+    },
+    "subtitle": {
+      "type": "Text",
+      "props": {
+        "text": "GitHub Trending — 2026-10-03",
+        "variant": "muted"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-top-pick": {
+      "type": "Heading",
+      "props": {
+        "text": "Top Pick",
+        "level": "h2"
+      }
+    },
+    "item-top-pick": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-top-pick",
+        "desc-top-pick"
+      ]
+    },
+    "link-top-pick": {
+      "type": "StoryLink",
+      "props": {
+        "title": "obra/superpowers",
+        "href": "https://github.com/obra/superpowers",
+        "source": "GitHub"
+      }
+    },
+    "desc-top-pick": {
+      "type": "Text",
+      "props": {
+        "text": "Three separate agent-skills frameworks are trending simultaneously today — superpowers is the most mature of the pack, past 294k stars with sustained daily growth.",
+        "variant": "body"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-aiml": {
+      "type": "Heading",
+      "props": {
+        "text": "AI/ML",
+        "level": "h2"
+      }
+    },
+    "item-aiml-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "header-aiml-1",
+        "desc-aiml-1"
+      ]
+    },
+    "header-aiml-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "link-aiml-1",
+        "stat-aiml-1-today",
+        "stat-aiml-1-total",
+        "badge-aiml-1-lang",
+        "badge-aiml-1-status"
+      ]
+    },
+    "link-aiml-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "obra/superpowers",
+        "href": "https://github.com/obra/superpowers",
+        "source": "GitHub"
+      }
+    },
+    "stat-aiml-1-today": {
+      "type": "Stat",
+      "props": {
+        "label": "Today",
+        "value": "556★"
+      }
+    },
+    "stat-aiml-1-total": {
+      "type": "Stat",
+      "props": {
+        "label": "Total",
+        "value": "294.7k"
+      }
+    },
+    "badge-aiml-1-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Shell",
+        "variant": "secondary"
+      }
+    },
+    "badge-aiml-1-status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      }
+    },
+    "desc-aiml-1": {
+      "type": "Text",
+      "props": {
+        "text": "A full dev methodology encoded as composable skills, not just a prompt library — still adding 500+ stars/day past 294k.",
+        "variant": "body"
+      }
+    },
+    "item-aiml-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "header-aiml-2",
+        "desc-aiml-2"
+      ]
+    },
+    "header-aiml-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "link-aiml-2",
+        "stat-aiml-2-today",
+        "stat-aiml-2-total",
+        "badge-aiml-2-lang",
+        "badge-aiml-2-status"
+      ]
+    },
+    "link-aiml-2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "mattpocock/skills",
+        "href": "https://github.com/mattpocock/skills",
+        "source": "GitHub"
+      }
+    },
+    "stat-aiml-2-today": {
+      "type": "Stat",
+      "props": {
+        "label": "Today",
+        "value": "955★"
+      }
+    },
+    "stat-aiml-2-total": {
+      "type": "Stat",
+      "props": {
+        "label": "Total",
+        "value": "275.0k"
+      }
+    },
+    "badge-aiml-2-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Shell",
+        "variant": "secondary"
+      }
+    },
+    "badge-aiml-2-status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "default"
+      }
+    },
+    "desc-aiml-2": {
+      "type": "Text",
+      "props": {
+        "text": "Outstarred Anthropic's own skills repo by 100k+ a week ago — back on top of trending with today's single biggest spike.",
+        "variant": "body"
+      }
+    },
+    "item-aiml-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "header-aiml-3",
+        "desc-aiml-3"
+      ]
+    },
+    "header-aiml-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "link-aiml-3",
+        "stat-aiml-3-today",
+        "stat-aiml-3-total",
+        "badge-aiml-3-lang",
+        "badge-aiml-3-status"
+      ]
+    },
+    "link-aiml-3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "coreyhaines31/marketingskills",
+        "href": "https://github.com/coreyhaines31/marketingskills",
+        "source": "GitHub"
+      }
+    },
+    "stat-aiml-3-today": {
+      "type": "Stat",
+      "props": {
+        "label": "Today",
+        "value": "140★"
+      }
+    },
+    "stat-aiml-3-total": {
+      "type": "Stat",
+      "props": {
+        "label": "Total",
+        "value": "52.6k"
+      }
+    },
+    "badge-aiml-3-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "JavaScript",
+        "variant": "secondary"
+      }
+    },
+    "badge-aiml-3-status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      }
+    },
+    "desc-aiml-3": {
+      "type": "Text",
+      "props": {
+        "text": "Packages copywriting and positioning frameworks as loadable Claude Code skills — marketing's entry into the agent-skills format war.",
+        "variant": "body"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-devtools": {
+      "type": "Heading",
+      "props": {
+        "text": "Devtools",
+        "level": "h2"
+      }
+    },
+    "item-devtools-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "header-devtools-1",
+        "desc-devtools-1"
+      ]
+    },
+    "header-devtools-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "link-devtools-1",
+        "stat-devtools-1-today",
+        "stat-devtools-1-total",
+        "badge-devtools-1-lang",
+        "badge-devtools-1-status"
+      ]
+    },
+    "link-devtools-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "pablostanley/yoinks",
+        "href": "https://github.com/pablostanley/yoinks",
+        "source": "GitHub"
+      }
+    },
+    "stat-devtools-1-today": {
+      "type": "Stat",
+      "props": {
+        "label": "Today",
+        "value": "623★"
+      }
+    },
+    "stat-devtools-1-total": {
+      "type": "Stat",
+      "props": {
+        "label": "Total",
+        "value": "3.7k"
+      }
+    },
+    "badge-devtools-1-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript",
+        "variant": "secondary"
+      }
+    },
+    "badge-devtools-1-status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      }
+    },
+    "desc-devtools-1": {
+      "type": "Text",
+      "props": {
+        "text": "No commits in 11 weeks, yet pulled 623 stars in a single day — a dormant tool going viral on word-of-mouth alone.",
+        "variant": "body"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "metadata": {
+      "type": "Text",
+      "props": {
+        "text": "sources: trending=ok · gh_api=fail (read-only mode, used unauthenticated api.github.com) · kept 4/17",
+        "variant": "muted"
+      }
+    }
+  }
+}
