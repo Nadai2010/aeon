@@ -1,0 +1,41 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "write-tweet",
+        "description": "Draft ready for refinement"
+      },
+      "children": [
+        "stack-content"
+      ]
+    },
+    "stack-content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-tag",
+        "text-prompt"
+      ]
+    },
+    "text-tag": {
+      "type": "Text",
+      "props": {
+        "text": "[write-tweet::revise]",
+        "variant": "caption"
+      }
+    },
+    "text-prompt": {
+      "type": "Text",
+      "props": {
+        "text": "Want to refine this draft? Reply with a change and I'll revise it.",
+        "variant": "body"
+      }
+    }
+  }
+}
