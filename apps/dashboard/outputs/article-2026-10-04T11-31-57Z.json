@@ -1,0 +1,48 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "New Article"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "badge_category",
+        "story_link",
+        "text_description"
+      ]
+    },
+    "badge_category": {
+      "type": "Badge",
+      "props": {
+        "text": "technical explainer",
+        "variant": "secondary"
+      }
+    },
+    "story_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "The Trick That Lets an AI Coding Agent Forget Everything and Still Remember It All",
+        "href": "output/articles/explainer-2026-10-04.md"
+      }
+    },
+    "text_description": {
+      "type": "Text",
+      "props": {
+        "text": "claude-mem doesn't keep your last coding session in context — it compresses it into a searchable database and makes the next session ask for pieces of it, instead of rereading the whole thing.",
+        "variant": "body"
+      }
+    }
+  }
+}
