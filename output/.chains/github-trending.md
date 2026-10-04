@@ -1,23 +1,29 @@
-ℹ️ GitHub Trending
+*GitHub Trending — 2026-10-04*
 
-*GitHub Trending — 2026-10-03*
-
-*Top pick* — [obra/superpowers](https://github.com/obra/superpowers)
-Three separate agent-skills frameworks are trending simultaneously today — superpowers is the most mature of the pack, past 294k stars with sustained daily growth.
+*Top pick* — [cloudflare/cloudflare-os](https://github.com/cloudflare/cloudflare-os)
+Cloudflare — not a startup — just shipped its own agent workspace, signaling infra vendors now treat agent tooling as core product, not a bolt-on.
 
 *AI/ML*
-• [obra/superpowers](https://github.com/obra/superpowers) — ★ 556t today (294.7k total) · Shell · [ACCELERATING]
-A full dev methodology encoded as composable skills, not just a prompt library — still adding 500+ stars/day past 294k.
+• [affaan-m/ECC](https://github.com/affaan-m/ECC) — ★ 889t today (272.6k total) · JavaScript · [ACCELERATING]
+Bundles skills, memory, and security into one harness across Claude Code, Codex, Cursor — cross-agent infra, not single-tool.
 
-• [mattpocock/skills](https://github.com/mattpocock/skills) — ★ 955t today (275.0k total) · Shell · [RETURNING]
-Outstarred Anthropic's own skills repo by 100k+ a week ago — back on top of trending with today's single biggest spike.
+• [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) — ★ 627t today (95.8k total) · TypeScript · [ACCELERATING]
+Compresses session history with AI and re-injects it next session — persistent memory spanning seven different agent platforms.
 
-• [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) — ★ 140t today (52.6k total) · JavaScript · [ACCELERATING]
-Packages copywriting and positioning frameworks as loadable Claude Code skills — marketing's entry into the agent-skills format war.
+• [meituan-longcat/LongCat-Video](https://github.com/meituan-longcat/LongCat-Video) — ★ 307t today (8.9k total) · Python · [RETURNING]
+13.6B-parameter video model, dormant since May, just went viral again — long-form generation without the usual quality collapse.
 
 *Devtools*
-• [pablostanley/yoinks](https://github.com/pablostanley/yoinks) — ★ 623t today (3.7k total) · TypeScript · [ACCELERATING]
-No commits in 11 weeks, yet pulled 623 stars in a single day — a dormant tool going viral on word-of-mouth alone.
+• [pingdotgg/t3code](https://github.com/pingdotgg/t3code) — ★ 492t today (24.9k total) · TypeScript · [ACCELERATING]
+Steers Claude Code or Cursor from your phone — an agent control surface, not another terminal-only CLI.
+
+*Infra*
+• [cloudflare/cloudflare-os](https://github.com/cloudflare/cloudflare-os) — ★ 336t today (10.7k total) · TypeScript · [ACCELERATING]
+Runs document editing, app building, and agents directly on Cloudflare Workers — infra vendor builds the full workspace.
+
+*Web/Apps*
+• [OpenCut-app/OpenCut](https://github.com/OpenCut-app/OpenCut) — ★ 512t today (91.8k total) · TypeScript · [ACCELERATING]
+Open-source CapCut alternative gaining 500+ stars/day — video editing joins the wave of proprietary-app clones going open-source.
 
 ---
-sources: trending=ok · gh_api=fail (read-only mode, used unauthenticated api.github.com) · kept 4/17
+sources: trending=ok · gh_api=fail (read-only mode, used unauthenticated api.github.com) · kept 6/19

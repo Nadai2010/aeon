@@ -1,0 +1,533 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Trending — 2026-10-04"
+      },
+      "children": [
+        "top_pick_section",
+        "sep1",
+        "ai_ml_section",
+        "sep2",
+        "devtools_section",
+        "sep3",
+        "infra_section",
+        "sep4",
+        "web_apps_section",
+        "sep5",
+        "sources_note"
+      ]
+    },
+    "top_pick_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "top_pick_heading",
+        "top_pick_stack"
+      ]
+    },
+    "top_pick_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Top pick",
+        "level": "h3"
+      }
+    },
+    "top_pick_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "cloudflare_os_link",
+        "cloudflare_os_desc"
+      ]
+    },
+    "cloudflare_os_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "cloudflare/cloudflare-os",
+        "href": "https://github.com/cloudflare/cloudflare-os"
+      }
+    },
+    "cloudflare_os_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Cloudflare — not a startup — just shipped its own agent workspace, signaling infra vendors now treat agent tooling as core product, not a bolt-on.",
+        "variant": "body"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "ai_ml_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "ai_ml_heading",
+        "ecc_item",
+        "claude_mem_item",
+        "longcat_item"
+      ]
+    },
+    "ai_ml_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "AI/ML",
+        "level": "h3"
+      }
+    },
+    "ecc_item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "ecc_link",
+        "ecc_meta",
+        "ecc_desc"
+      ]
+    },
+    "ecc_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "affaan-m/ECC",
+        "href": "https://github.com/affaan-m/ECC"
+      }
+    },
+    "ecc_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "ecc_stars",
+        "ecc_lang",
+        "ecc_status"
+      ]
+    },
+    "ecc_stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 889t today (272.6k total)",
+        "variant": "caption"
+      }
+    },
+    "ecc_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "JavaScript",
+        "variant": "secondary"
+      }
+    },
+    "ecc_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "outline"
+      }
+    },
+    "ecc_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Bundles skills, memory, and security into one harness across Claude Code, Codex, Cursor — cross-agent infra, not single-tool.",
+        "variant": "body"
+      }
+    },
+    "claude_mem_item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "claude_mem_link",
+        "claude_mem_meta",
+        "claude_mem_desc"
+      ]
+    },
+    "claude_mem_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "thedotmack/claude-mem",
+        "href": "https://github.com/thedotmack/claude-mem"
+      }
+    },
+    "claude_mem_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "claude_mem_stars",
+        "claude_mem_lang",
+        "claude_mem_status"
+      ]
+    },
+    "claude_mem_stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 627t today (95.8k total)",
+        "variant": "caption"
+      }
+    },
+    "claude_mem_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript",
+        "variant": "secondary"
+      }
+    },
+    "claude_mem_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "outline"
+      }
+    },
+    "claude_mem_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Compresses session history with AI and re-injects it next session — persistent memory spanning seven different agent platforms.",
+        "variant": "body"
+      }
+    },
+    "longcat_item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "longcat_link",
+        "longcat_meta",
+        "longcat_desc"
+      ]
+    },
+    "longcat_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "meituan-longcat/LongCat-Video",
+        "href": "https://github.com/meituan-longcat/LongCat-Video"
+      }
+    },
+    "longcat_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "longcat_stars",
+        "longcat_lang",
+        "longcat_status"
+      ]
+    },
+    "longcat_stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 307t today (8.9k total)",
+        "variant": "caption"
+      }
+    },
+    "longcat_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python",
+        "variant": "secondary"
+      }
+    },
+    "longcat_status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "outline"
+      }
+    },
+    "longcat_desc": {
+      "type": "Text",
+      "props": {
+        "text": "13.6B-parameter video model, dormant since May, just went viral again — long-form generation without the usual quality collapse.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "devtools_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "devtools_heading",
+        "t3code_item"
+      ]
+    },
+    "devtools_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Devtools",
+        "level": "h3"
+      }
+    },
+    "t3code_item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "t3code_link",
+        "t3code_meta",
+        "t3code_desc"
+      ]
+    },
+    "t3code_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "pingdotgg/t3code",
+        "href": "https://github.com/pingdotgg/t3code"
+      }
+    },
+    "t3code_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "t3code_stars",
+        "t3code_lang",
+        "t3code_status"
+      ]
+    },
+    "t3code_stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 492t today (24.9k total)",
+        "variant": "caption"
+      }
+    },
+    "t3code_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript",
+        "variant": "secondary"
+      }
+    },
+    "t3code_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "outline"
+      }
+    },
+    "t3code_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Steers Claude Code or Cursor from your phone — an agent control surface, not another terminal-only CLI.",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "infra_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "infra_heading",
+        "cloudflare_infra_item"
+      ]
+    },
+    "infra_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Infra",
+        "level": "h3"
+      }
+    },
+    "cloudflare_infra_item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "cloudflare_infra_link",
+        "cloudflare_infra_meta",
+        "cloudflare_infra_desc"
+      ]
+    },
+    "cloudflare_infra_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "cloudflare/cloudflare-os",
+        "href": "https://github.com/cloudflare/cloudflare-os"
+      }
+    },
+    "cloudflare_infra_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "cloudflare_infra_stars",
+        "cloudflare_infra_lang",
+        "cloudflare_infra_status"
+      ]
+    },
+    "cloudflare_infra_stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 336t today (10.7k total)",
+        "variant": "caption"
+      }
+    },
+    "cloudflare_infra_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript",
+        "variant": "secondary"
+      }
+    },
+    "cloudflare_infra_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "outline"
+      }
+    },
+    "cloudflare_infra_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Runs document editing, app building, and agents directly on Cloudflare Workers — infra vendor builds the full workspace.",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "web_apps_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "web_apps_heading",
+        "opencut_item"
+      ]
+    },
+    "web_apps_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Web/Apps",
+        "level": "h3"
+      }
+    },
+    "opencut_item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "opencut_link",
+        "opencut_meta",
+        "opencut_desc"
+      ]
+    },
+    "opencut_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "OpenCut-app/OpenCut",
+        "href": "https://github.com/OpenCut-app/OpenCut"
+      }
+    },
+    "opencut_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "opencut_stars",
+        "opencut_lang",
+        "opencut_status"
+      ]
+    },
+    "opencut_stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 512t today (91.8k total)",
+        "variant": "caption"
+      }
+    },
+    "opencut_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript",
+        "variant": "secondary"
+      }
+    },
+    "opencut_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "outline"
+      }
+    },
+    "opencut_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Open-source CapCut alternative gaining 500+ stars/day — video editing joins the wave of proprietary-app clones going open-source.",
+        "variant": "body"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sources_note": {
+      "type": "Text",
+      "props": {
+        "text": "sources: trending=ok · gh_api=fail (read-only mode, used unauthenticated api.github.com) · kept 6/19",
+        "variant": "muted"
+      }
+    }
+  }
+}
