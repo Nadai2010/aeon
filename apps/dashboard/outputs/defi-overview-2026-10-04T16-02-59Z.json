@@ -1,0 +1,444 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "DeFi Overview",
+        "description": "Crypto Market Status — 2026-10-04"
+      },
+      "children": [
+        "subtitle",
+        "tvl-stat",
+        "sep1",
+        "chains-heading",
+        "chains-stack",
+        "sep2",
+        "movers-heading",
+        "movers-stack",
+        "sep3",
+        "fees-heading",
+        "fees-table",
+        "sep4",
+        "fees-beating-heading",
+        "fees-beating-stack",
+        "sep5",
+        "dex-heading",
+        "dex-stat",
+        "dex-venues",
+        "sep6",
+        "stables-stat",
+        "sep7",
+        "real-yield-heading",
+        "real-yield-note",
+        "real-yield-stack",
+        "sep8",
+        "incentive-heading",
+        "incentive-stack",
+        "sep9",
+        "macro-heading",
+        "macro-stack",
+        "sep10",
+        "sources-text"
+      ]
+    },
+    "subtitle": {
+      "type": "Text",
+      "props": {
+        "text": "risk-on (mild) (conviction medium) | DeFi Sideways: TVL & stables flat, DEX volume reporting is lagged today",
+        "variant": "lead"
+      }
+    },
+    "tvl-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Total Value Locked",
+        "value": "$95.82B",
+        "delta": "+0.92% (24h), +0.37% (7d)",
+        "trend": "up"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "chains-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Top chains",
+        "level": "h3"
+      }
+    },
+    "chains-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "chain-eth",
+        "chain-sol",
+        "chain-base"
+      ]
+    },
+    "chain-eth": {
+      "type": "Text",
+      "props": {
+        "text": "Ethereum — $53.66B (+0.2% 7d)"
+      }
+    },
+    "chain-sol": {
+      "type": "Text",
+      "props": {
+        "text": "Solana — $6.72B (+1.4% 7d)"
+      }
+    },
+    "chain-base": {
+      "type": "Text",
+      "props": {
+        "text": "Base — $6.40B (+2.0% 7d)"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "movers-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Movers",
+        "level": "h3"
+      }
+    },
+    "movers-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "mover-up",
+        "mover-down"
+      ]
+    },
+    "mover-up": {
+      "type": "Text",
+      "props": {
+        "text": "↑ Starknet Bridge +19.1% ($246M → $294M) — bridge TVL and STRK token (+19.8% 24h) rising together, a rare confirmed pair"
+      }
+    },
+    "mover-down": {
+      "type": "Text",
+      "props": {
+        "text": "↓ none cleared the ≥10%/$100M filter today (closest: Quickswap Dex −5.5%, $109M)"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "fees-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Fees leaders (24h)",
+        "level": "h3"
+      }
+    },
+    "fees-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Protocol",
+          "Fees (24h)",
+          "vs 7d avg"
+        ],
+        "rows": [
+          [
+            "Tether",
+            "$17.2M",
+            "−1%"
+          ],
+          [
+            "Circle USDC",
+            "$7.0M",
+            "−2%"
+          ],
+          [
+            "PumpSwap",
+            "$4.3M",
+            "−6%"
+          ]
+        ]
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "fees-beating-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Fees beating TVL",
+        "level": "h3"
+      }
+    },
+    "fees-beating-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "fees-beating-stader",
+        "fees-beating-rocketpool"
+      ]
+    },
+    "fees-beating-stader": {
+      "type": "Text",
+      "props": {
+        "text": "Stader — fees +633% / TVL −1.4% (7d), $273M — LSD fee demand without deposit growth"
+      }
+    },
+    "fees-beating-rocketpool": {
+      "type": "Text",
+      "props": {
+        "text": "Rocket Pool — fees +208% / TVL −0.6% (7d), $1.41B — second LSD protocol, same pattern"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "dex-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "DEX Volume & Top Venues",
+        "level": "h3"
+      }
+    },
+    "dex-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "DEX Volume (24h)",
+        "value": "~$10.85B",
+        "delta": "same-window estimate (DeFiLlama's raw 24h shows snapshot-lag undercount)"
+      }
+    },
+    "dex-venues": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "venue-uniswapv4",
+        "venue-uniswapv3",
+        "venue-pumpswap"
+      ]
+    },
+    "venue-uniswapv4": {
+      "type": "Text",
+      "props": {
+        "text": "Uniswap V4 — $1.43B"
+      }
+    },
+    "venue-uniswapv3": {
+      "type": "Text",
+      "props": {
+        "text": "Uniswap V3 — $596M"
+      }
+    },
+    "venue-pumpswap": {
+      "type": "Text",
+      "props": {
+        "text": "PumpSwap — $402M"
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stables-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Total Stablecoins",
+        "value": "$313.4B",
+        "delta": "+0.2% (24h) — USDS +2.2% the only notable single-issuer move",
+        "trend": "neutral"
+      }
+    },
+    "sep7": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "real-yield-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Real Yield (sustainable, ≥$10M, filtered)",
+        "level": "h3"
+      }
+    },
+    "real-yield-note": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "message": "Top-ranked list is still obscure synthetic wrappers (axis SUSDX 18.3%, hipo HGRAM 17.6%) — 9th straight day publishing blue-chip alternatives instead"
+      }
+    },
+    "real-yield-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "yield-steth",
+        "yield-susds",
+        "yield-sgho"
+      ]
+    },
+    "yield-steth": {
+      "type": "Text",
+      "props": {
+        "text": "stETH (Lido, ETH) — 2.2% apyBase ($26.5B TVL)"
+      }
+    },
+    "yield-susds": {
+      "type": "Text",
+      "props": {
+        "text": "sUSDS (Sky, ETH) — 3.6% apyBase ($4.7B TVL)"
+      }
+    },
+    "yield-sgho": {
+      "type": "Text",
+      "props": {
+        "text": "sGHO (Aave, ETH) — 4.5% apyBase ($169M TVL)"
+      }
+    },
+    "sep8": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "incentive-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Incentive Yield (points / emissions, ≥$25M)",
+        "level": "h3"
+      }
+    },
+    "incentive-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "incentive-aerodrome",
+        "incentive-stakedao"
+      ]
+    },
+    "incentive-aerodrome": {
+      "type": "Text",
+      "props": {
+        "text": "Aerodrome USDC-AERO — 32.8% apy ($44M TVL)"
+      }
+    },
+    "incentive-stakedao": {
+      "type": "Text",
+      "props": {
+        "text": "Stake DAO sdCRV — 12.0% apy ($44M TVL)"
+      }
+    },
+    "sep9": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "macro-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Macro",
+        "level": "h3"
+      }
+    },
+    "macro-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "macro-prices",
+        "macro-fng",
+        "macro-breadth",
+        "macro-catalyst",
+        "macro-polymarket"
+      ]
+    },
+    "macro-prices": {
+      "type": "Text",
+      "props": {
+        "text": "BTC $85,333 (+0.6%) / ETH $2,699 (+0.7%)"
+      }
+    },
+    "macro-fng": {
+      "type": "Progress",
+      "props": {
+        "value": 65,
+        "max": 100,
+        "label": "Fear & Greed Index (Greed, down from 67)"
+      }
+    },
+    "macro-breadth": {
+      "type": "Progress",
+      "props": {
+        "value": 16,
+        "max": 20,
+        "label": "Market Breadth"
+      }
+    },
+    "macro-catalyst": {
+      "type": "Text",
+      "props": {
+        "text": "Catalyst: Ethena's 3.03B-token unlock lands tomorrow (Oct 5)"
+      }
+    },
+    "macro-polymarket": {
+      "type": "Text",
+      "props": {
+        "text": "No macro-relevant Polymarket market today (top-10 by volume is all sports/esports)"
+      }
+    },
+    "sep10": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sources-text": {
+      "type": "Text",
+      "props": {
+        "text": "sources: llama_tvl=ok llama_dex=ok(lag) llama_fees=ok(lag) llama_stables=ok llama_yields=ok coingecko=ok(401 direct, WebFetch fallback) fng=ok polymarket=ok websearch=ok | var: none",
+        "variant": "caption"
+      }
+    }
+  }
+}
