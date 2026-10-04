@@ -1,0 +1,203 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "AI agents digest"
+      },
+      "children": [
+        "text_header",
+        "text_tldr",
+        "sep1",
+        "story1_stack",
+        "sep2",
+        "story2_stack",
+        "sep3",
+        "story3_stack",
+        "sep4",
+        "text_also_heading",
+        "text_also1",
+        "text_also2"
+      ]
+    },
+    "text_header": {
+      "type": "Text",
+      "props": {
+        "text": "AI agents — 2026-10-04",
+        "variant": "muted"
+      }
+    },
+    "text_tldr": {
+      "type": "Text",
+      "props": {
+        "text": "TL;DR: South Korea's president ordered a full security probe after an AI automation tool was linked to breaches at seven banks and lenders in days, while Apple and IBM both shipped defensive moves to the same agent-access problem.",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story1_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story1_heading",
+        "story1_body",
+        "story1_why",
+        "story1_link"
+      ]
+    },
+    "story1_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "South Korea's President Orders Bank-Wide Probe After AI-Tool Hacking Spree",
+        "level": "h2"
+      }
+    },
+    "story1_body": {
+      "type": "Text",
+      "props": {
+        "text": "Shinhan Bank (25,000 customers), Yegaram Savings Bank (40,000), Hyundai Capital (146 loan agents), KB Kookmin, Hana, BNK Busan and Welcome Savings all reported breaches within days; investigators found matching IP addresses and traces of an AI-based automation tool across multiple incidents. President Lee Jae Myung ordered a full investigation and new protective measures."
+      }
+    },
+    "story1_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: first confirmed multi-institution AI-tool hacking spree against a national banking system — South Korea is likely to move first on mandatory AI-agent security disclosure rules for finance.",
+        "variant": "muted"
+      }
+    },
+    "story1_link": {
+      "type": "Link",
+      "props": {
+        "label": "Read full article",
+        "href": "https://www.koreatimes.co.kr/economy/20261004/lee-orders-thorough-probe-into-ai-powered-cyberattacks-in-banks"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story2_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story2_heading",
+        "story2_body",
+        "story2_why",
+        "story2_link"
+      ]
+    },
+    "story2_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Apple Curtails macOS Full Disk Access, Names AI Agents as the Reason",
+        "level": "h2"
+      }
+    },
+    "story2_body": {
+      "type": "Text",
+      "props": {
+        "text": "Apple's developer notice says it will require more explicit user action before granting Full Disk Access, directly citing AI agents that \"ask for blanket access far beyond the purpose it was built for\" — weeks after reports that Meta's Muse agent read messages it wasn't authorized to see."
+      }
+    },
+    "story2_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: any desktop AI agent (Muse, Claude, ChatGPT) leaning on blanket Full Disk Access today will need a new permission flow once Apple ships the tightened prompts.",
+        "variant": "muted"
+      }
+    },
+    "story2_link": {
+      "type": "Link",
+      "props": {
+        "label": "Read full article",
+        "href": "https://www.macrumors.com/2026/10/02/apple-announces-macos-full-disk-access-changes/"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "story3_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "story3_heading",
+        "story3_body",
+        "story3_why",
+        "story3_link"
+      ]
+    },
+    "story3_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "IBM Puts Its Bob Coding Agent Inside the Firewall",
+        "level": "h2"
+      }
+    },
+    "story3_body": {
+      "type": "Text",
+      "props": {
+        "text": "Bob can now run fully self-hosted — on-prem, sovereign cloud, or air-gapped — for banks, governments and other regulated enterprises that were blocked from sending code to a third-party AI cloud. IBM jumped ~5% on the news; the company says 80,000 employees now use Bob, up from ~100 in June 2025."
+      }
+    },
+    "story3_why": {
+      "type": "Text",
+      "props": {
+        "text": "Why it matters: opens coding-agent adoption to the exact regulated sectors that have been sitting out the agent wave over data-residency rules.",
+        "variant": "muted"
+      }
+    },
+    "story3_link": {
+      "type": "Link",
+      "props": {
+        "label": "Read full article",
+        "href": "https://newsroom.ibm.com/2026-10-01-ibm-introduces-self-hosted-deployment-for-ibm-bob-to-help-enterprises-advance-ai-sovereignty-and-governance"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text_also_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Also worth a glance",
+        "level": "h3"
+      }
+    },
+    "text_also1": {
+      "type": "Text",
+      "props": {
+        "text": "Flow Engineering raised $50M (Valor/Atreides, Sequoia) for AI agents that sync CAD files with hardware test data — Rivian and Joby are customers"
+      }
+    },
+    "text_also2": {
+      "type": "Text",
+      "props": {
+        "text": "Photon raised $4.5M (Gradient/A*, Vercel) to put agents inside iMessage and WhatsApp instead of standalone apps."
+      }
+    }
+  }
+}
