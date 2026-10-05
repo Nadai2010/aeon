@@ -1,10 +1,10 @@
 {
   "skill": "digest",
-  "last_analyzed": "2026-10-04T15:59:19Z",
+  "last_analyzed": "2026-10-05T15:19:14Z",
   "quality_score": 4,
-  "assessment": "Well-sourced, on-strategy digest with specific claims, clear formatting, and actionable implications for agent-framework operator",
+  "assessment": "Substantive digest with specific stories, clear structure, URLs for verification, and strategic signal on regulation + enterprise tooling + governance",
   "flags": [],
-  "avg_score": 3.08,
+  "avg_score": 3.15,
   "history": [
     {
       "date": "2026-09-24",
@@ -76,6 +76,12 @@
       "date": "2026-10-04",
       "score": 4,
       "ts": "2026-10-04T15:59:19Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-05",
+      "score": 4,
+      "ts": "2026-10-05T15:19:14Z",
       "harness": "claude"
     }
   ]

@@ -1,22 +1,22 @@
 ℹ️ AI agents digest
 
-*AI agents — 2026-10-04*
+*AI agents — 2026-10-05*
 
-_TL;DR: South Korea's president ordered a full security probe after an AI automation tool was linked to breaches at seven banks and lenders in days, while Apple and IBM both shipped defensive moves to the same agent-access problem._
+_TL;DR: Four major AI labs testified under oath before NYC's full City Council on agent risk, the same day Cohere and Collibra both shipped new agent-governance products._
 
-1. *South Korea's President Orders Bank-Wide Probe After AI-Tool Hacking Spree*
-   Shinhan Bank (25,000 customers), Yegaram Savings Bank (40,000), Hyundai Capital (146 loan agents), KB Kookmin, Hana, BNK Busan and Welcome Savings all reported breaches within days; investigators found matching IP addresses and traces of an AI-based automation tool across multiple incidents. President Lee Jae Myung ordered a full investigation and new protective measures.
-   Why it matters: first confirmed multi-institution AI-tool hacking spree against a national banking system — South Korea is likely to move first on mandatory AI-agent security disclosure rules for finance.
-   https://www.koreatimes.co.kr/economy/20261004/lee-orders-thorough-probe-into-ai-powered-cyberattacks-in-banks
+1. *OpenAI, Anthropic, Google, and Meta Testify Under Oath on AI Risk*
+   Executives from all four labs appeared before New York City's full 51-member Council — a rare "Committee of the Whole" session — after the Council threatened subpoenas to compel Google and OpenAI's attendance (Meta came voluntarily). Lawmakers are weighing a bill requiring outside validation and a kill-switch before any AI model can be sold in NYC, plus a private right of action for AI-caused harm and whistleblower bounties.
+   Why it matters: first time all four labs have testified together under oath before a legislative body — a template other cities could copy, and the kill-switch/validator bill would set a real compliance bar for deploying agents in NYC.
+   https://www.cnbc.com/2026/10/05/anthropic-openai-google-meta-execs-testify-nyc-council-ai-hearing.html
 
-2. *Apple Curtails macOS Full Disk Access, Names AI Agents as the Reason*
-   Apple's developer notice says it will require more explicit user action before granting Full Disk Access, directly citing AI agents that "ask for blanket access far beyond the purpose it was built for" — weeks after reports that Meta's Muse agent read messages it wasn't authorized to see.
-   Why it matters: any desktop AI agent (Muse, Claude, ChatGPT) leaning on blanket Full Disk Access today will need a new permission flow once Apple ships the tightened prompts.
-   https://www.macrumors.com/2026/10/02/apple-announces-macos-full-disk-access-changes/
+2. *Cohere Ships North 2 With Persistent Agent Memory and Spend Caps*
+   Cohere rebuilt its agent orchestration harness to add cross-session memory (agents keep context between sessions instead of restarting cold), shareable skill/agent libraries, and a North Admin console with per-user token quotas and org-wide spend caps. Ships on cloud, on-prem, and air-gapped deployments with SOC 2/ISO 27001/ISO 42001 certs.
+   Why it matters: persistent memory plus hard spend caps target the two biggest enterprise objections to running agents — context loss and runaway token bills.
+   https://siliconangle.com/2026/10/05/cohere-unveils-north-2-ai-agent-platform-with-rebuilt-orchestration-and-token-spending-caps/
 
-3. *IBM Puts Its Bob Coding Agent Inside the Firewall*
-   Bob can now run fully self-hosted — on-prem, sovereign cloud, or air-gapped — for banks, governments and other regulated enterprises that were blocked from sending code to a third-party AI cloud. IBM jumped ~5% on the news; the company says 80,000 employees now use Bob, up from ~100 in June 2025.
-   Why it matters: opens coding-agent adoption to the exact regulated sectors that have been sitting out the agent wave over data-residency rules.
-   https://newsroom.ibm.com/2026-10-01-ibm-introduces-self-hosted-deployment-for-ibm-bob-to-help-enterprises-advance-ai-sovereignty-and-governance
+3. *Collibra Buys Trail ML to Police AI Agents at Runtime*
+   Collibra acquired Munich-based Trail ML (founded 2023), adding agents that continuously assess AI controls and can block policy-violating actions before they execute, with existing connectors into Jira, ServiceNow, and OneTrust. Price undisclosed.
+   Why it matters: runtime enforcement — blocking bad actions, not just logging them after — is the harder half of agent governance, and it's a bet that compliance teams can't keep up with agent sprawl manually.
+   https://www.prnewswire.com/news-releases/collibra-acquires-trail-ml-to-automate-ai-governance-from-policy-to-production-302897376.html
 
-*Also worth a glance:* Flow Engineering raised $50M (Valor/Atreides, Sequoia) for AI agents that sync CAD files with hardware test data — Rivian and Joby are customers · Photon raised $4.5M (Gradient/A*, Vercel) to put agents inside iMessage and WhatsApp instead of standalone apps.
+*Also worth a glance:* Trump names DNI Jay Clayton to lead a new White House "Super Intelligence Force," giving it 120 days to report on AI risk and federal responsibilities (npr.org) · Cognition says Nvidia's Vera Rubin NVL72 delivers up to 4.8x the token throughput per GPU for its Devin coding-agent workloads vs. GB200 (via CoreWeave benchmark)
