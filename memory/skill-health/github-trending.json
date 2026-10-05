@@ -1,10 +1,12 @@
 {
   "skill": "github-trending",
-  "last_analyzed": "2026-10-04T11:26:29Z",
-  "quality_score": 4,
-  "assessment": "Substantive trending report with verified structure, specific metrics, and curated signal across 6 repos; well-sourced data with documented filtering and interpretation, though read-only mode forced API fallback.",
-  "flags": [],
-  "avg_score": 3.3,
+  "last_analyzed": "2026-10-05T15:22:51Z",
+  "quality_score": 3,
+  "assessment": "Acceptable trending report with polished structure, but specific star counts and project descriptions are asserted without independently verifiable sources due to gh_api failure.",
+  "flags": [
+    "unverifiable_claim"
+  ],
+  "avg_score": 3.27,
   "history": [
     {
       "date": "2026-09-24",
@@ -64,6 +66,12 @@
       "date": "2026-10-04",
       "score": 4,
       "ts": "2026-10-04T11:26:29Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-05",
+      "score": 3,
+      "ts": "2026-10-05T15:22:51Z",
       "harness": "claude"
     }
   ]

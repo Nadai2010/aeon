@@ -1,0 +1,628 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Trending",
+        "description": "2026-10-05"
+      },
+      "children": [
+        "top-pick-label",
+        "top-pick-repo",
+        "top-pick-desc",
+        "sep1",
+        "devtools-heading",
+        "devtools-repos",
+        "sep2",
+        "aiml-heading",
+        "aiml-repos",
+        "sep3",
+        "infra-heading",
+        "infra-repos",
+        "sep4",
+        "web-heading",
+        "web-repos",
+        "sep5",
+        "footer"
+      ]
+    },
+    "top-pick-label": {
+      "type": "Text",
+      "props": {
+        "text": "Top pick",
+        "variant": "lead"
+      }
+    },
+    "top-pick-repo": {
+      "type": "StoryLink",
+      "props": {
+        "title": "tester-army/e2e",
+        "href": "https://github.com/tester-army/e2e",
+        "source": "GitHub"
+      }
+    },
+    "top-pick-desc": {
+      "type": "Text",
+      "props": {
+        "text": "A single-day star spike bigger than its entire prior lifetime total validates a genuinely new approach to AI testing cost: record a natural-language task once, replay it forever without re-invoking the model."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "devtools-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Devtools",
+        "level": "h3"
+      }
+    },
+    "devtools-repos": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "devtools-repo-1",
+        "devtools-repo-2"
+      ]
+    },
+    "devtools-repo-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "devtools-1-link",
+        "devtools-1-meta",
+        "devtools-1-desc"
+      ]
+    },
+    "devtools-1-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "tester-army/e2e",
+        "href": "https://github.com/tester-army/e2e"
+      }
+    },
+    "devtools-1-meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "devtools-1-stars",
+        "devtools-1-lang",
+        "devtools-1-trend"
+      ]
+    },
+    "devtools-1-stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 1,430t today (4k total)",
+        "variant": "caption"
+      }
+    },
+    "devtools-1-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript"
+      }
+    },
+    "devtools-1-trend": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "outline"
+      }
+    },
+    "devtools-1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Records an agent natural-language task once, replays it silently afterward — skips the model, cuts AI testing recurring cost."
+      }
+    },
+    "devtools-repo-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "devtools-2-link",
+        "devtools-2-meta",
+        "devtools-2-desc"
+      ]
+    },
+    "devtools-2-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "michael-denyer/pstack-claude",
+        "href": "https://github.com/michael-denyer/pstack-claude"
+      }
+    },
+    "devtools-2-meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "devtools-2-stars",
+        "devtools-2-lang",
+        "devtools-2-trend"
+      ]
+    },
+    "devtools-2-stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 222t today (1.3k total)",
+        "variant": "caption"
+      }
+    },
+    "devtools-2-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "JavaScript"
+      }
+    },
+    "devtools-2-trend": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "outline"
+      }
+    },
+    "devtools-2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Ports one rigorous agent workflow across five harnesses — same primitives, zero vendor lock-in."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "aiml-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "AI/ML",
+        "level": "h3"
+      }
+    },
+    "aiml-repos": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "aiml-repo-1",
+        "aiml-repo-2",
+        "aiml-repo-3",
+        "aiml-repo-4",
+        "aiml-repo-5"
+      ]
+    },
+    "aiml-repo-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "aiml-1-link",
+        "aiml-1-meta",
+        "aiml-1-desc"
+      ]
+    },
+    "aiml-1-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Panniantong/Agent-Reach",
+        "href": "https://github.com/Panniantong/Agent-Reach"
+      }
+    },
+    "aiml-1-meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "aiml-1-stars",
+        "aiml-1-lang",
+        "aiml-1-trend"
+      ]
+    },
+    "aiml-1-stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 1,156t today (91.6k total)",
+        "variant": "caption"
+      }
+    },
+    "aiml-1-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python"
+      }
+    },
+    "aiml-1-trend": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "outline"
+      }
+    },
+    "aiml-1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Gives an agent read access to Twitter, Reddit, YouTube, GitHub and more — one CLI, zero API fees."
+      }
+    },
+    "aiml-repo-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "aiml-2-link",
+        "aiml-2-meta",
+        "aiml-2-desc"
+      ]
+    },
+    "aiml-2-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "calesthio/OpenMontage",
+        "href": "https://github.com/calesthio/OpenMontage"
+      }
+    },
+    "aiml-2-meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "aiml-2-stars",
+        "aiml-2-lang",
+        "aiml-2-trend"
+      ]
+    },
+    "aiml-2-stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 758t today (63.7k total)",
+        "variant": "caption"
+      }
+    },
+    "aiml-2-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python"
+      }
+    },
+    "aiml-2-trend": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "outline"
+      }
+    },
+    "aiml-2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Turns an AI coding assistant into a video-production studio — 12 pipelines, 100+ tools, an early agentic-video attempt."
+      }
+    },
+    "aiml-repo-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "aiml-3-link",
+        "aiml-3-meta",
+        "aiml-3-desc"
+      ]
+    },
+    "aiml-3-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "msitarzewski/agency-agents",
+        "href": "https://github.com/msitarzewski/agency-agents"
+      }
+    },
+    "aiml-3-meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "aiml-3-stars",
+        "aiml-3-lang",
+        "aiml-3-trend"
+      ]
+    },
+    "aiml-3-stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 595t today (157k total)",
+        "variant": "caption"
+      }
+    },
+    "aiml-3-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Shell"
+      }
+    },
+    "aiml-3-trend": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "outline"
+      }
+    },
+    "aiml-3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "157k stars for a pack of specialized AI personas — frontend experts, community managers, even a built-in reality checker."
+      }
+    },
+    "aiml-repo-4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "aiml-4-link",
+        "aiml-4-meta",
+        "aiml-4-desc"
+      ]
+    },
+    "aiml-4-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "earthtojake/text-to-cad",
+        "href": "https://github.com/earthtojake/text-to-cad"
+      }
+    },
+    "aiml-4-meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "aiml-4-stars",
+        "aiml-4-lang",
+        "aiml-4-trend"
+      ]
+    },
+    "aiml-4-stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 456t today (17.2k total)",
+        "variant": "caption"
+      }
+    },
+    "aiml-4-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python"
+      }
+    },
+    "aiml-4-trend": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "outline"
+      }
+    },
+    "aiml-4-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Lets an AI agent design real CAD models — bridging LLM agents into mechanical and hardware engineering, not just code."
+      }
+    },
+    "aiml-repo-5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "aiml-5-link",
+        "aiml-5-meta",
+        "aiml-5-desc"
+      ]
+    },
+    "aiml-5-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Panniantong/Agent-Reach",
+        "href": "https://github.com/Panniantong/Agent-Reach"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "infra-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Infra",
+        "level": "h3"
+      }
+    },
+    "infra-repos": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "infra-repo-1"
+      ]
+    },
+    "infra-repo-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "infra-1-link",
+        "infra-1-meta",
+        "infra-1-desc"
+      ]
+    },
+    "infra-1-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "caddyserver/caddy",
+        "href": "https://github.com/caddyserver/caddy"
+      }
+    },
+    "infra-1-meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "infra-1-stars",
+        "infra-1-lang",
+        "infra-1-trend"
+      ]
+    },
+    "infra-1-stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 526t today (76.9k total)",
+        "variant": "caption"
+      }
+    },
+    "infra-1-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Go"
+      }
+    },
+    "infra-1-trend": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "outline"
+      }
+    },
+    "infra-1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "A decade-old web server spiked 526 stars per day after a patch fixing HTTP/2 crashes and hardening against Slowloris-style attacks."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {}
+    },
+    "web-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Web/Apps",
+        "level": "h3"
+      }
+    },
+    "web-repos": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "web-repo-1"
+      ]
+    },
+    "web-repo-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "web-1-link",
+        "web-1-meta",
+        "web-1-desc"
+      ]
+    },
+    "web-1-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "DuarteSantos8/openGym",
+        "href": "https://github.com/DuarteSantos8/openGym"
+      }
+    },
+    "web-1-meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "web-1-stars",
+        "web-1-lang",
+        "web-1-trend"
+      ]
+    },
+    "web-1-stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 1,444t today (3.7k total)",
+        "variant": "caption"
+      }
+    },
+    "web-1-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "JavaScript"
+      }
+    },
+    "web-1-trend": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "outline"
+      }
+    },
+    "web-1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Self-hosted fitness tracker pulled 1,444 stars in a day with no obvious announcement — pure privacy-first, no-telemetry appeal."
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {}
+    },
+    "footer": {
+      "type": "Text",
+      "props": {
+        "text": "sources: trending=ok · gh_api=fail (read-only mode, used unauthenticated api.github.com for enrichment) · kept 8/13",
+        "variant": "caption"
+      }
+    }
+  }
+}
