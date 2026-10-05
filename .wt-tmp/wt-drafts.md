@@ -1,35 +1,36 @@
-tweet drafts: Ponytail's seven-rung ladder (and its revised benchmark)
+tweet drafts: tester-army/e2e — record once, replay without the model
 
 — one-liner —
-1a. Ponytail doesn't write better code. It just asks your agent not to write any.
-1b. Half of X is still quoting Ponytail's debunked 94% number. The real one is 54%.
+1a. AI testing isn't expensive because LLMs are bad at clicking buttons. It's expensive because nobody cached the click.
+1b. tester-army/e2e pays the model once per test, then replays the exact same test for free, forever.
 
 — two-punch —
-2a. Ponytail's benchmark went from 94% less code to 54% after a CTO rebuilt the test. Nobody reran the challenge against the real number.
-2b. Everyone's impressed Ponytail cuts code 94%. The actual, corrected number is 54% — and a one-line YAGNI prompt matched it first.
+2a. One cached act step: 9,412 input tokens, $0.0198, once. Every run after that: $0. That's the whole pitch of tester-army/e2e.
+2b. Agent-based E2E testing fixed brittleness by re-asking the model every run. tester-army/e2e asks the obvious next question: why pay for the same answer twice?
 
 — paragraph —
-3a. Ponytail makes your agent climb seven questions before it writes a line: does this need to exist, is it already here, does stdlib cover it, does the platform, does a dependency, can it be one line. Most of the time the answer stops the agent cold.
-3b. Ponytail's pitch is that your AI agent needs the instincts of the laziest senior dev on the team. The data backs it: 54% less code, same safety scores. The catch is the 94% number everyone's sharing was already debunked months ago.
+3a. Selenium IDE recorded pixels and XPaths, so it broke the moment a button moved. LLM-driven testing fixed that by asking the model to look at the screen every single run — robust, but you're paying inference on every PR, forever. tester-army/e2e splits the difference: record the role+name+testId once, replay that for free, only call the model back when the UI actually changes.
+3b. A real log from tester-army/e2e: "Cache 4 replayed · 1 handed off · 1 missed." Four of six steps in that test ran with zero model calls. The two that didn't are exactly where the system is supposed to spend money — not where it's forced to.
 
 — long tweet —
-4a. Ponytail's seven-rung ladder sounds like theater: does it need to exist, is it already in the codebase, does stdlib cover it, does the platform, does a dependency, can it be one line — only then write code. But a Scott Logic CTO showed the original 80-94% benchmark was built on a weak baseline; a bare one-line YAGNI prompt beat it there. The corrected number is 54%, with validation and security holding at 100%. Nobody's rerun the challenge against that number yet.
-4b. The real finding in the Ponytail benchmark isn't the 54% code reduction — it's that a plain one-sentence instruction nearly beat the entire seven-rung ladder before the benchmark was even fixed. If a short prompt rivals a structured ruleset, the seven rungs might be packaging, not substance. Nobody's tested that rematch on the honest number, and the internet's still citing the old 94% anyway.
+4a. The actual mechanism in tester-army/e2e is more interesting than "it caches stuff." First run, the model gets a text-only snapshot — roles, names, states, never a screenshot — and picks an action. That action gets cached as a semantic key: control role + name + testId + the route before and after + what appeared or vanished. Next run, it walks that cached list and matches controls by that key instead of asking anything. Four specific triggers kick it back to the model: target gone, target ambiguous, wrong route, or the expected end-state controls didn't show up. It's not "replay until it breaks, then fail" like old record-and-playback — it's "replay until it breaks, then let the model finish the step and record a fresh cache entry." The exception path heals itself.
+4b. Nobody asks whether their CI pipeline is cost-rational because VM-minutes are cheap. LLM-driven E2E testing quietly imported a different cost model — every assertion re-invokes a model, multiplied by test count times run frequency — and most teams haven't noticed yet because the per-call price looks small until the invoice multiplies by your commit volume. tester-army/e2e is a bet that most of a test suite's actions are identical run over run, so most of that spend was always avoidable.
 
 — thread opener —
-5a. Ponytail just hit 151k GitHub stars by teaching AI agents one trick: ask "do I need to write this" before "how do I write this." The viral number is 80-94% less code. The real number, after a CTO caught a rigged benchmark, is 54%.
+5a. AI test suites have a cost problem nobody's pricing correctly: every test, every run, re-invokes a model just to click the same button it clicked yesterday. tester-army/e2e is the first project I've seen fix this at the right layer.
 ---
-- The seven rungs in order: exists at all? already in repo? stdlib? native platform? installed dependency? one-liner? only then write
-- Eberhardt's challenge: a bare YAGNI prompt beat the original, flawed benchmark
-- Corrected baseline: 54% less code, safety ratings unchanged at 100%
-- Nobody's rerun a plain-prompt challenge against the honest number
+- The brittleness problem LLM-driven testing solved (vs. Selenium IDE XPaths) — and the new cost problem it created
+- How the cache actually works: role+name+testId, not pixels, not prompts
+- The 4 triggers that hand control back to the model, and why that's the real design
+- The number that matters: 61% of one cached call already hit prompt caching, and cache mode avoids the other 39% entirely
+- What breaks it: nobody's published a real-world cache-hit rate yet
 
-5b. Everyone sharing Ponytail's "94% less code" stat is quoting a number its own benchmark retracted months ago. Here's what actually happened — and why the real result might be more interesting than the inflated one.
+5b. If your CI suite re-runs the same AI-driven test 50 times a week, how many of those runs actually needed a fresh model decision?
 ---
-- the seven-rung ladder, rung by rung
-- the original benchmark and why it was rigged weak
-- the CTO who beat it with one sentence
-- the corrected 54% number, safety held at 100%
-- the open question nobody's answered: does a plain prompt beat the real baseline too?
+- Most agent-based E2E tools answer "all of them" by design
+- tester-army/e2e's answer: almost none, if the UI didn't change
+- The mechanism: semantic caching on role+name+testId, verified against route + end-state
+- The failure modes baked into the docs (route-sensitivity, ambiguous controls) read like scar tissue from hitting this in production
+- The open question: does the hit rate hold up outside demo apps
 
-best: #2b — tightest version of the actual story (the viral number is debunked, nobody updated), punchy enough to stop a scroll, and distinct from the wave of X posts still citing the old 94% figure uncritically.
+best: #4a — long tweet / builder's breakdown (the mechanism is the whole story here, and the healing-cache-on-failure detail is the part nobody else is saying)

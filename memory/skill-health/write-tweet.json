@@ -1,12 +1,12 @@
 {
   "skill": "write-tweet",
-  "last_analyzed": "2026-10-04T11:37:26Z",
-  "quality_score": 2,
-  "assessment": "Output is a refinement prompt with no actual tweet draft shown; expects user to refine unseen content. Fails Priority #1 (verifiable work) and provides no deliverable.",
+  "last_analyzed": "2026-10-05T15:35:54Z",
+  "quality_score": 1,
+  "assessment": "No deliverable produced — skill asked for user refinement instead of providing a tweet draft",
   "flags": [
-    "low_quality"
+    "empty_output"
   ],
-  "avg_score": 1.8,
+  "avg_score": 1.73,
   "history": [
     {
       "date": "2026-09-24",
@@ -66,6 +66,12 @@
       "date": "2026-10-04",
       "score": 2,
       "ts": "2026-10-04T11:37:26Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-05",
+      "score": 1,
+      "ts": "2026-10-05T15:35:54Z",
       "harness": "claude"
     }
   ]

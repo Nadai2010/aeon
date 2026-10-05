@@ -1,0 +1,22 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "write-tweet"
+      },
+      "children": [
+        "message"
+      ]
+    },
+    "message": {
+      "type": "Text",
+      "props": {
+        "text": "Want to refine this draft? Reply with a change and I'll revise it.",
+        "variant": "lead"
+      }
+    }
+  }
+}

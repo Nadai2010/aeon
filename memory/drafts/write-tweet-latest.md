@@ -1,53 +1,55 @@
-## Tweet Drafts: claude-mem's memory trade-off (search vs. completeness)
+## Tweet Drafts: tester-army/e2e — record once, replay without the model
 
 ### Tier 1 — One-liner
 **1a. Hot take**
-> claude-mem doesn't fix forgetting. It just makes forgetting silent.
+> AI testing isn't expensive because LLMs are bad at clicking buttons. It's expensive because nobody cached the click.
 
 **1b. Observation**
-> Nobody who ships a memory system benchmarks what it fails to retrieve.
+> tester-army/e2e pays the model once per test, then replays the exact same test for free, forever.
 
 ### Tier 2 — Two-punch
 **2a. Data drop**
-> claude-mem hit 95,843 stars by promising ~10x token savings on memory recall. The catch: that math only works if next session's question uses the same words as this session's summary.
+> One cached `act` step: 9,412 input tokens, $0.0198, once. Every run after that: $0.
+>
+> That's the whole pitch of tester-army/e2e.
 
 **2b. Reframe**
-> The problem was never context windows being too small. It's that every fix for "too small" is some flavor of deciding what to throw away first.
+> Agent-based E2E testing fixed brittleness by re-asking the model every run. tester-army/e2e asks the obvious next question: why pay for the same answer twice?
 
 ### Tier 3 — Paragraph
-**3a. Narrative**
-> claude-mem logs every tool call, compresses it into a one-line summary, and stores it in SQLite plus a vector index. Next session, it doesn't reload your history — it searches it. The risk: a summary is a bet on which words you'll use to ask for it later.
+**3a. Observation**
+> Selenium IDE recorded pixels and XPaths, so it broke the moment a button moved. LLM-driven testing fixed that by asking the model to look at the screen every single run — robust, but you're paying inference on every PR, forever. tester-army/e2e splits the difference: record the role+name+testId once, replay that for free, only call the model back when the UI actually changes.
 
-**3b. Sardonic/ironic**
-> 95.8k stars for a tool whose core promise is "I'll decide what you're allowed to remember." We used to call that lossy compression. Now it's a GitHub trending #1.
+**3b. Narrative**
+> A real log from tester-army/e2e: "Cache 4 replayed · 1 handed off · 1 missed." Four of six steps in that test ran with zero model calls. The two that didn't are exactly where the system is supposed to spend money — not where it's forced to.
 
 ### Tier 4 — Long tweet
 **4a. Builder's breakdown**
-> claude-mem's pipeline: capture every tool call via lifecycle hooks, compress it into a short summary with an LLM, store it in SQLite plus a vector index, then inject only what's relevant at the next session start. A three-layer query — search, timeline, get_observations — pulls more detail on demand, claiming ~10x token savings over dumping full history back in. None of that changes the bet: compression is lossy, and retrieval only works if you phrase things close to how the index was labeled. MEMORY.md fails by truncating position; claude-mem fails by mismatched vocabulary.
+> The actual mechanism in tester-army/e2e is more interesting than "it caches stuff." First run, the model gets a text-only snapshot — roles, names, states, never a screenshot — and picks an action. That action gets cached as a semantic key: control role + name + testId + the route before and after + what appeared or vanished. Next run, it walks that cached list and matches controls by that key instead of asking anything. Four specific triggers kick it back to the model: target gone, target ambiguous, wrong route, or the expected end-state controls didn't show up. It's not "replay until it breaks, then fail" like old record-and-playback — it's "replay until it breaks, then let the model finish the step and record a fresh cache entry." The exception path heals itself.
 
 **4b. Reframe**
-> Compare claude-mem to Gmail's search bar replacing fifty open tabs. The tabs are heavy but complete — anything you kept open, you can still read, no matter what you'd call it today. Search is light but conditional — it only returns what you can describe in the index's own vocabulary. claude-mem is betting agent memory should look like the second kind. That's probably right for cost. It's a real regression for completeness, and the 95.8k people who starred it are mostly cheering the cost line, not pricing in the completeness one.
+> Nobody asks whether their CI pipeline is cost-rational because VM-minutes are cheap. LLM-driven E2E testing quietly imported a different cost model — every assertion re-invokes a model, multiplied by test count times run frequency — and most teams haven't noticed yet because the per-call price looks small until the invoice multiplies by your commit volume. tester-army/e2e is a bet that most of a test suite's actions are identical run over run, so most of that spend was always avoidable.
 
 ### Tier 5 — Thread opener
-**5a. Hot take**
-> claude-mem just became one of GitHub's most-forked agent-memory tools: 95,843 stars for a pipeline that compresses coding sessions into a searchable database instead of keeping them in context. Real fix for cost, not for forgetting — it just relocates it.
+**5a. Thesis-first**
+> AI test suites have a cost problem nobody's pricing correctly: every test, every run, re-invokes a model just to click the same button it clicked yesterday. tester-army/e2e is the first project I've seen fix this at the right layer.
 ---
-- The five steps: capture (hooks) → compress (LLM summary) → store (SQLite + vectors) → serve (local worker) → inject + query on demand
-- Why it beats MEMORY.md's 200-line position truncation: relevance beats position, usually
-- The hidden cost: a summary is a bet on which words you'll search with later
-- What breaks it: "that bug we fixed" vs. a stored observation titled "resolved null pointer in trade engine" — same fact, invisible to search
-- The actual shift: agent memory starting to look like search engines replacing browser tabs — cheaper, but conditional
+- The brittleness problem LLM-driven testing solved (vs. Selenium IDE XPaths) — and the new cost problem it created
+- How the cache actually works: role+name+testId, not pixels, not prompts
+- The 4 triggers that hand control back to the model, and why that's the real design
+- The number that matters: 61% of one cached call already hit prompt caching, and cache mode avoids the other 39% entirely
+- What breaks it: nobody's published a real-world cache-hit rate yet
 
 **5b. Question**
-> claude-mem compresses your coding session into a summary, stores it, and only pulls full detail back if you ask the right way. 95.8k stars call this the future of agent memory. The question nobody's asking: what happens to the context it decided wasn't worth keeping?
+> If your CI suite re-runs the same AI-driven test 50 times a week, how many of those runs actually needed a fresh model decision?
 ---
-- What claude-mem actually captures and compresses (5-step pipeline, lossy by design)
-- The progressive-disclosure query claiming ~10x token savings
-- Why this beats Claude Code's native MEMORY.md (200-line cap, position-based truncation)
-- The failure mode that's structurally different, not fixed: vocabulary mismatch at retrieval time
-- Why this matters beyond one tool: every agent-memory project right now is making the same trade, just pricing the cost differently
+- Most agent-based E2E tools answer "all of them" by design
+- tester-army/e2e's answer: almost none, if the UI didn't change
+- The mechanism: semantic caching on role+name+testId, verified against route + end-state
+- The failure modes baked into the docs (route-sensitivity, ambiguous controls) read like scar tissue from hitting this in production
+- The open question: does the hit rate hold up outside demo apps
 
-**Best overall:** 4a — long tweet / builder's breakdown. The MEMORY.md-vs-claude-mem failure-mode comparison nobody in today's X discourse is making (it's all feature lists and star counts).
-**Best per tier:** 1a (one-liner) · 2a (two-punch) · 3b (paragraph) · 4a (long tweet) · 5a (thread opener)
+**Best overall:** 4a — long tweet / builder's breakdown. The mechanism is the whole story here, and the healing-cache-on-failure detail (model finishes the step and records a fresh entry, instead of just failing) is the part nobody else covering this repo is saying.
+**Best per tier:** 1b (one-liner) · 2a (two-punch) · 3a (paragraph) · 4a (long tweet) · 5a (thread opener)
 
-<!-- Correlation ID: chain-6a8ae8a84c72249cb44e75f430b046d0 -->
+<!-- Correlation ID: chain-a70eaae9d1138eca80f826294a9cc55d -->
