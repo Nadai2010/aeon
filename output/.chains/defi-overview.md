@@ -1,40 +1,40 @@
-ℹ️ DeFi Overview
+ℹ️ Crypto — DeFi Overview
 
-*Crypto — 2026-10-04* — risk-on (mild) (conviction medium) | DeFi Sideways: TVL & stables flat, DEX volume reporting is lagged today
+*Crypto — 2026-10-05* — rotation (conviction medium) | DeFi Mixed: TVL drifting up (+1.5%), DEX volume surging +8%, stables flat
 
-*TVL:* $95.82B (+0.92% 24h, +0.37% 7d)
+*TVL:* $96.64B (+1.5% 24h, +1.2% 7d)
 
 *Top chains*
-1. Ethereum — $53.66B (+0.2% 7d)
-2. Solana — $6.72B (+1.4% 7d)
-3. Base — $6.40B (+2.0% 7d)
+1. Ethereum — $54.34B (+1.9%)
+2. Solana — $6.70B (+1.3%)
+3. Base — $6.44B (+1.1%)
 
 *Movers*
-↑ Starknet Bridge +19.1% ($246M → $294M) — bridge TVL and STRK token (+19.8% 24h) rising together, a rare confirmed pair
-↓ none cleared the ≥10%/$100M filter today (closest: Quickswap Dex −5.5%, $109M)
+↓ Unit (bridge) -15.4% ($1.05B → $0.89B) — no obvious catalyst
+(no mover cleared the ≥10%/$100M up-filter today)
 
 *Fees leaders (24h)*
-1. Tether — $17.2M (−1% vs 7d avg)
-2. Circle USDC — $7.0M (−2% vs 7d avg)
-3. PumpSwap — $4.3M (−6% vs 7d avg)
+1. Tether — $17.2M (flat)
+2. Circle — $7.0M (flat)
+3. PumpSwap — $5.2M (+21% 1d)
 
 *Fees beating TVL*
-• Stader — fees +633% / TVL −1.4% (7d), $273M — LSD fee demand without deposit growth
-• Rocket Pool — fees +208% / TVL −0.6% (7d), $1.41B — second LSD protocol, same pattern
+• Kelp — fees +186% / TVL +0.5% (7d, $1.13B) — restaking demand without deposit growth
+• Polymarket Intl — fees +23% / TVL -1.0% (7d, $336M)
 
-*DEX vol (24h):* ~$10.85B same-window estimate (DeFiLlama's raw 24h total shows a snapshot-lag undercount today, see footer) · top venues: Uniswap V4 $1.43B, Uniswap V3 $596M, PumpSwap $402M
+*DEX vol (24h):* $6.76B (+8.0%) top: Uniswap $2.21B, Aerodrome $0.56B, PancakeSwap $0.41B
 
-*Stables:* $313.4B (+0.2% 24h) — USDS +2.2% the only notable single-issuer move
+*Stables:* $313.37B (+0.1%) — USDS +3.4% only notable single-issuer move
 
 *Real yield (sustainable, ≥$10M, filtered)*
-• stETH (Lido, ETH) — 2.2% apyBase ($26.5B TVL)
+• stETH (Lido, ETH) — 2.2% apyBase ($26.7B TVL)
 • sUSDS (Sky, ETH) — 3.6% apyBase ($4.7B TVL)
-• sGHO (Aave, ETH) — 4.5% apyBase ($169M TVL)
-_top-ranked list is still obscure synthetic wrappers (axis SUSDX 18.3%, hipo HGRAM 17.6%) — 9th straight day publishing blue-chip alternatives instead_
+• sGHO (Aave, ETH) — 4.5% apyBase ($167M TVL)
 
 *Incentive yield (points / emissions, ≥$25M)*
-• Aerodrome USDC-AERO — 32.8% apy ($44M TVL)
-• Stake DAO sdCRV — 12.0% apy ($44M TVL)
+• Aerodrome USDC-AERO — 32.4% apy via AERO rewards ($44M TVL)
+• Stake DAO sdCRV — 12.3% apy via CRV rewards ($45M TVL)
 
-*Macro:* BTC $85,333 (+0.6%) / ETH $2,699 (+0.7%) · F&G 65 (Greed, down from 67) · breadth 16/20 · catalyst: Ethena's 3.03B-token unlock lands tomorrow (Oct 5) · no macro-relevant Polymarket market today (top-10 by volume is all sports/esports)
-_sources: llama_tvl=ok llama_dex=ok(lag) llama_fees=ok(lag) llama_stables=ok llama_yields=ok coingecko=ok(401 direct, WebFetch fallback) fng=ok polymarket=ok websearch=ok | var: none_
+*Macro:* BTC $85,524 (+0.3%) / ETH $2,701.84 (+0.2%) · F&G 70 (Greed) · breadth 11/20 · hot market: Brazil presidential election — Bolsonaro 84.8% YES ($2.2M vol)
+
+_sources: llama_tvl=ok llama_dex=ok llama_fees=ok llama_stables=ok llama_yields=ok coingecko=ok(global via WebFetch, direct 401) fng=ok polymarket=ok websearch=ok | var: none_
