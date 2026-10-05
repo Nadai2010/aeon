@@ -6,67 +6,72 @@ tags:
   - macro
   - defi
 resource: https://api.llama.fi
-timestamp: 2026-10-04T16:00:26Z
+timestamp: 2026-10-05T15:18:07Z
 ---
 
-# Market Context (as of 2026-10-04)
+# Market Context (as of 2026-10-05)
 
-> **Take:** risk-on (mild) — BTC +0.58% 24h to $85,333 with breadth rebounding to 16/20 green, even as BTC dominance rose to 59.14% and Fear & Greed eased to 65 for a third straight day. Conviction: medium.
+> **Take:** rotation — ADA +8.5% leads a narrow alt rally as BTC dominance slips to 58.69% (from 59.14% on 10-04) while BTC itself sits flat (+0.28% 24h). Conviction: medium.
 
 ## Signal Snapshot
-- BTC $85,333 (+0.58% 24h, +0.30% 7d) · dominance 59.14% (+0.45pp vs 58.69% on 10-03)
-- ETH $2,699.35 (+0.67% 24h, -0.45% 7d) · ETH/BTC 0.0316
-- SOL $121.65 (+1.67% 24h, -1.13% 7d)
-- Total mcap $2.89T (-2.91% 24h, per CoinGecko global) · DEX vol ~$10.85B 24h (same-window estimate — see Source Status)
-- Breadth: 16/20 green 24h · 10/20 green 7d
-- Fear & Greed: 65 (Greed) — yesterday 67
+- BTC $85,524 (+0.28% 24h, +2.39% 7d) · dominance 58.69% (-0.45pp vs 59.14% on 10-04)
+- ETH $2,701.84 (+0.15% 24h, +0.52% 7d) · ETH/BTC 0.0316
+- SOL $119.63 (-1.77% 24h, -0.25% 7d)
+- Total mcap $2.92T (-1.71% 24h, per CoinGecko global) · DEX vol $6.76B 24h (+8.0% 1d)
+- Breadth: 11/20 green 24h · 13/20 green 7d
+- Fear & Greed: 70 (Greed) — yesterday 65
 
 ## What Changed Since Last Refresh
-- Breadth rebounded sharply: 8/20 green 24h (10-03) → 16/20 today — continuing the week's volatile swings (5→17→8→16), still not a clean trend.
-- Fear & Greed eased for a third straight day (72→67→65), though it remains in Greed, not Fear.
-- BTC dominance rose to 59.14% (from 58.69%) — majors outperforming alts even as breadth count improved, a mild divergence from a clean "risk-on" read.
-- LayerZero V2's two-day TVL surge (+35.5%, then +48.5%) stalled today (-0.07% 1d) — the rally has topped out at $11.7B after pushing into DeFi's top 5.
-- The Sandbox's exchange-driven rally is cooling: $0.077 (+1.7% 24h), down from yesterday's $0.081 after two days of double-digit gains.
+- BTC dominance reversed back down to 58.69% (from 59.14%) — alts clawing back share, led by ADA.
+- Fear & Greed jumped 65 → 70, back into firmer Greed after three straight down days (72→67→65→70).
+- ADA rallied +8.5% 24h to $0.269 (3-month high) on Cardano's Oct 1 RealFi launch (USDrf/sUSDrf real-world credit access) plus an Oct 3 golden cross (50D crossing above 200D) — the clearest single-asset catalyst of the week.
+- Ethena's flagged 3.03B-token unlock landed today without stress: USDe supply flat (-0.00% 1d), ENA price actually +4.7% 24h — the absorption test referenced in yesterday's log passed cleanly.
+- ↔ QNT's "oversold bounce" from 10-04 (+3.4%) reversed back to -2.6% 24h today — one-day bounce, not a trend; NEAR held its modest gain (+2.4% 24h).
 
 ## Active Narratives
-- **LayerZero / cross-chain infra** — phase: peak. Evidence: TVL growth stalled at -0.07% 1d ($11.72B) after back-to-back +35.5%/+48.5% days — the move has topped out.
-- **The Sandbox (SAND)** — phase: fading. Evidence: $0.077 (+1.7% 24h), down from yesterday's $0.081 — the two-day exchange-driven spike is losing steam.
-- **Zcash / privacy coins** — phase: fading. Evidence: -19.8% 7d to $1,325 even as 24h ticks up +1.8% — weekly reversal continues despite a minor daily bounce.
-- **Liquid-staking fee surge** — phase: emerging. Evidence: Stader (+633% fees 7d, flat TVL $273M) and Rocket Pool (+208% fees 7d, flat TVL $1.41B) both show triple-digit fee growth without TVL growth — a demand-side signal, not yet reflected in deposits.
-- **Oversold-majors bounce (QNT, NEAR)** — phase: emerging. Evidence: Quant +3.4% 24h to $257 and NEAR +4.4% 24h to $4.84 both re-appear in today's trending list after multi-day selloffs — first green day for each.
+- **Cardano (ADA) / RealFi** — phase: emerging. Evidence: +8.5% 24h to $0.269, highest since May, on Oct 1 RealFi launch + Oct 3 golden cross — no other top-20 asset moved more than half as much today.
+- **LayerZero / cross-chain infra** — phase: peak (unchanged from 10-04). Evidence: TVL flat -0.17% 1d at $11.66B, still topped out after the prior two 35-48% days; 7d change remains +45.6%.
+- **Zcash / privacy coins** — phase: fading (unchanged from 10-04). Evidence: -16.76% 7d to $1,308 even as 24h is only -1.3% — the weekly bleed continues.
+- **Ethena unlock absorption** — phase: resolved. Evidence: USDe supply flat (-0.00% 1d) through the 3.03B-token unlock; ENA +4.7% 24h — no stress signal.
+- **Oversold-majors bounce (QNT, NEAR)** — phase: fading/mixed. Evidence: QNT reversed to -2.6% 24h after yesterday's +3.4% bounce (↔ one-day move, not sustained); NEAR +2.4% 24h, holding up better.
 
 ## Top DeFi Protocols (TVL, 7d change)
-- Lido: $26.63B (-0.2%)
-- Aave V3: $18.29B (-0.4%)
-- SSV Network: $14.12B (-0.4%)
-- LayerZero V2: $11.72B (+45.7%)
-- Morpho Blue: $11.33B (+2.0%)
+- Lido: $26.74B (+1.4%)
+- Aave V3: $18.56B (+2.6%)
+- SSV Network: $14.19B (+1.7%)
+- LayerZero V2: $11.66B (+45.6%)
+- Morpho Blue: $11.42B (+3.7%)
 
 ## Chain Flow (top 3 by TVL, 7d)
-- Ethereum: $53.66B (+0.2%)
-- Solana: $6.72B (+1.4%)
-- Base: $6.40B (+2.0%)
+- Ethereum: $54.34B (+1.58%)
+- Solana: $6.70B (+0.95%)
+- Base: $6.44B (+2.92%)
 
-No chain-level mover cleared a ≥5%/$500M filter today — per-chain 24h/7d deltas weren't available from `/v2/chains` this run (field missing from the response), so this section relies on `historicalChainTvl` for the three largest chains only.
+No chain-level mover cleared the ≥5%/$500M filter today (closest: Sui +3.59% 1d at $0.56B TVL — below the size threshold) — per-chain 24h/7d deltas are still missing from `/v2/chains` this run (same gap as 10-03/10-04), so this section again relies on `historicalChainTvl` for the three largest chains plus a spot-check of BSC, Tron, Arbitrum, Hyperliquid L1, Sui, and Plasma.
 
 ## Stablecoins
-Total: $313.37B (+0.74% 7d, +0.16% 24h). USDT $184.04B · USDC $74.21B · USDS $6.85B (+2.15% 24h, notable) · USDe $4.91B · combined share ~10.8% of total mcap.
+Total: $313.37B (+0.28% 7d, +0.13% 24h). USDT $184.03B · USDC $74.05B · USDS $6.94B (+3.40% 24h, notable) · USDe $4.90B · combined share ~10.7% of total mcap.
 
 ## Trending (CoinGecko)
-- PUMP (Pump.fun) — $0.00649 (+12.9% 24h) — token rising alongside PumpSwap's continued top-5 DEX fee ranking
-- STRK (Starknet) — $0.0579 (+19.8% 24h) — token and Starknet Bridge TVL (+19.1% 1d) rising together, a rare confirmed pair
-- QNT (Quant) — $257.22 (+3.4% 24h) — first green day after a multi-day selloff
+- NEAR (NEAR Protocol) — $4.97 (+2.4% 24h) — holding its bounce, back-to-back trending days
+- FET (Artificial Superintelligence Alliance) — $0.249 (+3.5% 24h) — AI-agent token catching a bid
+- PENGU (Pudgy Penguins) — $0.0097 (+4.1% 24h) — NFT-adjacent token re-entering trending
 
 ## Prediction Markets (Polymarket, top by 24h vol)
-No macro or crypto-relevant market cleared today's top-10 by volume — the list is entirely sports/esports (NFL matchups, LoL, CS). The top-liquidity table remains all settled 2026 Brazilian-election / 2028 Democratic-nomination long shots (YES ≤0.15%), same pattern as recent runs — both tables skipped per the <3%/>97% settled-market filter.
+| Market | YES% | 24h Vol | Liquidity |
+|--------|------|---------|-----------|
+| Will Flávio Bolsonaro win the 2026 Brazilian presidential election? | 84.8% | $2.22m | $0.67m |
+| Will Luiz Inácio Lula da Silva win the 2026 Brazilian presidential election? | 14.5% | $2.32m | $1.18m |
+
+No Fed-rate or crypto-native market cleared today's top-10 by volume (rest is NFL/esports); the top-liquidity table is again all settled 2028-nomination long shots (YES ≤0.1%) and is skipped per the <3%/>97% filter — same pattern as 10-04.
 
 ## Macro Catalysts (next 48h)
-- Ethena's 3.03B-token unlock lands Oct 5, 2026 — USDe TVL has stayed flat heading in (+0.36% 1d, -0.87% 7d), so this is a real test of absorption, not yet showing stress.
-- Sept jobs report remains the key swing factor (~90K payrolls consensus, 4.1% unemployment) — unchanged from 09-30 through 10-03 logs, not re-flagged as new.
+- Fed meeting minutes this week are the key swing factor — softer-than-expected inflation data and dovish Fed commentary have already pulled back imminent-hike odds, a tailwind referenced across today's coverage.
+- Ethena's Oct 5 unlock (see Narratives) has now landed and resolved cleanly — removed from forward catalysts.
 
 ## Implications for Downstream Skills
-- **token-pick:** Starknet's bridge TVL (+19.1% 1d) and STRK token (+19.8% 24h) moving together is a rarer confirmed TVL+token signal than SAND's cooling exchange-driven move — worth a closer look.
-- **narrative-tracker:** Move LayerZero from "rising" to "peak" (growth stalled after two 35-48% days). Watch Ethena's Oct 5 unlock as the next 48h catalyst for the stablecoin/basis-trade thread.
+- **token-pick:** ADA's RealFi launch + golden cross is the week's cleanest single-asset catalyst — worth a closer look at Cardano DeFi/RWA exposure ahead of the Dijkstra upgrade.
+- **narrative-tracker:** Keep LayerZero at "peak" (no further TVL growth). Watch whether QNT's reversal confirms the "oversold bounce" narrative was a one-day move rather than a trend.
 
 ## Token Picks Made
 | Date | Token | Price | Thesis |
@@ -74,4 +79,4 @@ No macro or crypto-relevant market cleared today's top-10 by volume — the list
 
 ---
 *Sources — btc/eth: CoinGecko · defi: DeFiLlama · sentiment: alternative.me · markets: Polymarket*
-*Source status: coingecko=ok(markets+global via WebFetch fallback, direct calls 401 — same pattern as 10-03) defillama=ok(dexs/fees total24h figures show an apparent snapshot-lag undercount — change_1d of -42.6%/-15.74% don't match total48hto24h, which is flat vs yesterday's logged totals; used total48hto24h in place of the raw headline) fng=ok polymarket=ok websearch=ok*
+*Source status: coingecko=ok(global via WebFetch fallback, direct call 401 — same pattern as 10-03/10-04) defillama=ok fng=ok polymarket=ok websearch=ok*
