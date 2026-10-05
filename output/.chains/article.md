@@ -1,7 +1,7 @@
-ℹ️ New Article
+ℹ️ New technical explainer
 
-technical explainer: The Trick That Lets an AI Coding Agent Forget Everything and Still Remember It All
+technical explainer: The Trick That Lets an AI Test Suite Stop Paying the Model to Click the Same Button Twice
 
-claude-mem doesn't keep your last coding session in context — it compresses it into a searchable database and makes the next session ask for pieces of it, instead of rereading the whole thing.
+tester-army/e2e lets an LLM agent perform a browser/mobile test once, records the intent (role+name+testId, not pixels/XPath), and replays it with zero model calls — until a route or control mismatch forces a fallback to the model.
 
-read it: output/articles/explainer-2026-10-04.md
+read it: output/articles/explainer-2026-10-05.md

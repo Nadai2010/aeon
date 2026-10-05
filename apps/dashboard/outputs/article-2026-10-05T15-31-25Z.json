@@ -1,0 +1,41 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "New technical explainer"
+      },
+      "children": [
+        "heading",
+        "text",
+        "link"
+      ]
+    },
+    "heading": {
+      "type": "Heading",
+      "props": {
+        "text": "The Trick That Lets an AI Test Suite Stop Paying the Model to Click the Same Button Twice",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "text": {
+      "type": "Text",
+      "props": {
+        "text": "tester-army/e2e lets an LLM agent perform a browser/mobile test once, records the intent (role+name+testId, not pixels/XPath), and replays it with zero model calls — until a route or control mismatch forces a fallback to the model.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Read the full explainer",
+        "href": "output/articles/explainer-2026-10-05.md"
+      },
+      "children": []
+    }
+  }
+}

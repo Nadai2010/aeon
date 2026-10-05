@@ -6,6 +6,7 @@
 ## Recent Articles
 | Date | Title | Topic |
 |------|-------|-------|
+| 2026-10-05 | The Trick That Lets an AI Test Suite Stop Paying the Model to Click the Same Button Twice | technical explainer: tester-army/e2e (4.1k★, +1,430 today, today's github-trending top pick) — semantic record-once/replay cache (role+name+testId matching) vs classic Selenium IDE XPath playback, 4-trigger LLM fallback (target-not-found/ambiguous/wrong-context/end-mismatch) |
 | 2026-10-04 | The Trick That Lets an AI Coding Agent Forget Everything and Still Remember It All | technical explainer: thedotmack/claude-mem (95.8k★, +627 today, today's github-trending pick) — capture/compress/inject hook pipeline, SQLite+Chroma progressive-disclosure retrieval vs native MEMORY.md's 200-line position-based truncation |
 | 2026-10-03 | A Repo With No Commits in 11 Weeks Just Had Its Best Day Ever | general article: pablostanley/yoinks (3.7k★, +623 today, no commits since 2026-07-17, today's github-trending pick) → stars decoupled from maintenance signal, 26% of 10k+★ AI repos dormant >1mo (olud.ai audit) |
 | 2026-10-02 | The Seven-Rung Ladder That Talks Your AI Agent Out of Writing Code | technical explainer: DietrichGebert/ponytail (151.1k★, +1,194 today, today's github-trending top pick) — the already-exists decision ladder, 54% LOC reduction benchmark (revised down from 80-94% after Eberhardt's contributor challenge), YAGNI-as-instruction-layer |
